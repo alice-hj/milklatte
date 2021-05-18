@@ -1,0 +1,8 @@
+html{ font-size: 20px;}
+body{ display: flex; height: 100vh; font-size: 1rem; background: #7552c4; text-align: center; color: #fff;}
+.intro{ margin: auto; position: relative; top: -5%; color: #fff;}
+/* 포지션,top 대신 쓸 수 있음 transform: translateY(-5%); */
+.intro h2{ margin: 0 auto; width: 7.9666rem; height: 2.05rem; background: url(../images/h1_logo.png) 0 0 / 100% auto;}
+.intro p{ padding: .6333rem 0 2.7333rem; font-size: .6rem; line-height: 1;}
+.intro div{ margin: 2.7rem 0 0; padding: 3.8666rem 0 0; font-size: .5834rem; background: url(../images/ico_food.png) no-repeat center top / 3.2834rem auto;}
+.intro a{display: inline-block; color: #fff;}

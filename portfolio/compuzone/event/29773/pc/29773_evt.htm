@@ -1,0 +1,158 @@
+<?php
+	$db14 = new Db('coz_pr');
+	$Rlt = SelectAsTableWhileOptionWithClass('coz_pr','ProductNo,Amount','ProductAmount',"where ProductNo IN(768390)",'',$db14,0);
+	$Arr = array();
+	
+	while($Row = getNextFetch($Rlt)){
+		$Arr[$Row['ProductNo']] = $Row['Amount'];
+	}
+	
+?>
+
+
+<style type="text/css">
+#loader_img{display:none !important;}
+a:hover{text-decoration:none;}
+.event_wrap{width:1300px; margin:0 auto; overflow:hidden;}
+.event_wrap > div{position:relative; }
+
+.section1{height:1534px; background:url("../29773/evt29773_bg_01.jpg") center top no-repeat;}
+.subTxt_top{display:block; position:Absolute; left:50%; margin-left:-273px; top:196px; width: 512px; height: 26px;}
+.mainTit{position:Absolute; left:50%; margin-left:-383px; top:210px;}
+.mainTit .main_bg{display:block; position:absolute; left:50%; width:668px; height:170px; background:url("../29773/29773mainTit_bg.png") }
+.mainTit .main_bg.ani{
+center top no-repeat; animation:titbg 0.8s ease-in-out forwards;  animation-iteration-count:1; opacity:0; transform:scale(0);
+-webkit-center top no-repeat; animation:titbg 0.8s ease-in-out forwards;  -webkit-animation-iteration-count:1; opacity:0; transform:scale(0);
+-ms-center top no-repeat; animation:titbg 0.8s ease-in-out forwards;  -ms-animation-iteration-count:1; opacity:0; transform:scale(0);
+-moz-center top no-repeat; animation:titbg 0.8s ease-in-out forwards;  -moz-animation-iteration-count:1; opacity:0; transform:scale(0);
+}
+
+.mainTit .main_bgTit{display:block; position:absolute; left:50%; margin-left:43px; top:57px; width:422px; height:51px; background:url("../29773/29773mainTit_txt.png") center top no-repeat; }
+.mainTit .main_bgTit.ani{
+animation:subtitle 0.6s ease-in-out forwards;  animation-iteration-count:1; opacity:0;  animation-delay:0.8s;
+-webkit-animation:subtitle 0.6s ease-in-out forwards;  -webkit-animation-iteration-count:1; opacity:0;  -webkit-animation-delay:0.8s;
+-ms-animation:subtitle 0.6s ease-in-out forwards;  -ms-animation-iteration-count:1; opacity:0;  -ms-animation-delay:0.8s;
+-moz-animation:subtitle 0.6s ease-in-out forwards;  animation-iteration-count:1; opacity:0;  -moz-animation-delay:0.8s;
+}
+
+.subTit_txt{display:block; position:absolute; left:50%; margin-left:-450px; top:298px; width:860px; height:237px; background:url("../29773/29773subTit2_txt.png") center top no-repeat; z-index:10;}
+.subTit_txt.ani{
+animation:subtitle2 0.6s ease-in-out forwards; animation-iteration-count:1; opacity:0; transform:scale(0); animation-delay:1.6s;
+-webkit-animation:subtitle2 0.6s ease-in-out forwards;  -webkit-animation-iteration-count:1; opacity:0; transform:scale(0); -webkit-animation-delay:1.6s;
+-ms-animation:subtitle2 0.6s ease-in-out forwards;  -ms-animation-iteration-count:1; opacity:0; transform:scale(0); -ms-animation-delay:1.6s;
+-moz-animation:subtitle2 0.6s ease-in-out forwards;  -moz-animation-iteration-count:1; opacity:0; transform:scale(0); -moz-animation-delay:1.6s;
+}
+
+@keyframes titbg{
+	0% {opacity:0; transform:scale(0);}
+	100% {opacity:1; transform:scale(1);}
+}
+
+@keyframes subtitle {
+  0% {margin-left:350px; width:0; opacity:0;}
+  100% {margin-left:43px; width:597px; opacity:1;}
+}
+
+@keyframes subtitle2 {
+	0% {opacity:0; transform:scale(0);}
+	100% {opacity:1; transform:scale(1);}
+}
+
+
+.bnr .left{position:absolute; top:535px; left:50%; margin-left:-240px; 
+animation:sale_left 0.6s ease-in-out forwards; animation-iteration-count:1; opacity:0; transform:scale(0); animation-delay:2s;
+-webkit-animation:sale_left 0.6s ease-in-out forwards;  -webkit-animation-iteration-count:1; opacity:0; transform:scale(0); -webkit-animation-delay:2s;
+-ms-animation:sale_left 0.6s ease-in-out forwards;  -ms-animation-iteration-count:1; opacity:0; transform:scale(0); -ms-animation-delay:2s;
+-moz-animation:sale_left 0.6s ease-in-out forwards;  -moz-animation-iteration-count:1; opacity:0; transform:scale(0); -moz-animation-delay:2s;
+}
+.bnr .right{position:absolute; top:535px; right:34%; 
+animation:sale_right 0.6s ease-in-out forwards;  animation-iteration-count:1; opacity:0; transform:scale(0); animation-delay:2s;
+-webkit-animation:sale_right 0.6s ease-in-out forwards;  -webkit-animation-iteration-count:1; opacity:0; transform:scale(0); -webkit-animation-delay:2s;
+-ms-animation:sale_right 0.6s ease-in-out forwards;  -ms-animation-iteration-count:1; opacity:0; transform:scale(0); -ms-animation-delay:2s;
+-moz-animation:sale_right 0.6s ease-in-out forwards;  -moz-animation-iteration-count:1; opacity:0; transform:scale(0); -moz-animation-delay:2s;
+}
+
+@keyframes sale_left {
+	0% {left:0; opacity:0; transform:scale(0);}
+	100% {left:50%; opacity:1; transform:scale(1);}
+}
+@keyframes sale_right {
+	0% {right:0; opacity:0; transform:scale(0);}
+	100% {right:34%; opacity:1; transform:scale(1);}
+}
+
+.section1 .c_img_move{position:Absolute; left:50%; top:50%; margin-left:220px; margin-top:-100px; width:329px; height:429px; z-index:90; }
+.section1 .c_img_move.ani{ animation:img_move 1.2s ease-in-out infinite; }
+@keyframes img_move {
+	0% {margin-top:-120px; }
+	50%{margin-top:-100px;}
+	100% {margin-top:-120px; }
+}
+
+.section1 .pc .txt{position:Absolute; left:50%; top:50%; margin-left:151px; margin-top:262px; text-align:left; }
+.section1 .pc .txt *{color:#fff;}
+.section1 .pc .txt .name{display:block; font-size:28px;}
+.section1 .pc .txt .top_pri {margin-top:23px; font-size:30px;}
+.section1 .pc .txt .top_pri  em{text-decoration: line-through;}
+.section1 .pc .txt .top_pri > strong{display:inline-block; margin-left:10px; width:70px ; height:34px; line-height:34px; background:#000; font-size:20px; color:#16f700; border-radius:20px; text-align:center; vertical-align:3px;}
+.section1 .pc .txt > p{font-size:50px; font-weight:bold;}
+.section1 .pc .sticker{display:inline-block; margin-left:-9px; width:126px; height:126px; background:url("../29598/sticker.png") center top no-repeat;}
+.section1 .pc .txt .sticker > em{display:inline-block; font-size:28px; padding-top:55px; width:100%; height:100%; font-weight:bold; text-align:center; box-sizing: border-box;}
+
+
+.section2{height:1336px; background:url("../29773/evt29773_bg_02.jpg") center top no-repeat;}
+
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	//익스 8~9에서는 애니메이트 뺀 클래스로 바꾸는 스크립트입니다.
+	var trident = navigator.userAgent.match(/Trident\/(\d.\d)/i);
+	if(trident != null){
+		if(trident[1] < '6.0'){
+			$(".ani").attr('class','no_ani');
+		}
+	}
+	// getElementsByClassName 을 IE8 이하에서 동작하게 하는 코드
+	if (!document.getElementsByClassName) {
+		document.getElementsByClassName = function (cn) {
+			var rx = new RegExp("(?:^|\\s)" + cn+ "(?:$|\\s)");
+			var allT = document.getElementsByTagName("*"), allCN = [],ac="", i = 0, a;
+
+			while (a = allT[i=i+1]) {
+				ac=a.className;
+				if ( ac && ac.indexOf(cn) !==-1) {
+					if(ac===cn){ allCN[allCN.length] = a; continue;   }
+						rx.test(ac) ? (allCN[allCN.length] = a) : 0;
+					}
+			}
+			return allCN;
+		};
+	}
+	// getElementsByClassName 을 IE8 이하에서 동작하게 하는 코드
+});
+</script>
+<div class="event_wrap">
+	<div class="section1">
+		<span class="subTxt_top"><img src="../29773/29773subTit_txt.png"/></span>
+		<div class="mainTit">
+			<span class="main_bg ani"></span>
+			<span class="main_bgTit ani"></span>
+		</div>
+		<span class="subTit_txt ani"></span>
+		<div class="bnr">
+			<span class="left ani"><img src="../29773/29773_sale.png"/></span>
+			<span class="right ani"><img src="../29773/29773_total.png"/></span>
+		</div>
+		<div class="c_img_move ani"><img src="../29773/29773_dragon.png"/></div>
+		<div class="pc">
+			<div class="txt">
+				<span class="sticker"><em><?php echo ($Arr[768390]) ? $Arr[768390] : 0;?>대</em></span>
+				<span class="name">게이밍추천PC_R0052 (R5/3060)</span>
+				<div class="top_pri"><em>1,301,000원</em><strong>3%</strong></div>
+				<p>1,259,000원</p>
+			</div>
+		</div>
+	</div>
+	<div class="section2"></div>
+</div>

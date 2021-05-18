@@ -1,0 +1,220 @@
+<style>
+a:hover{text-decoration:none;}
+area{outline:none; border:none;}
+.event_wrap{width:1300px; margin:0 auto; overflow:hidden;}
+.event_wrap > div {position: relative; width: 100%;}
+.event_wrap > div > img{display:block; width:100%;}
+.evt_29944{font-size: 0;}
+.evt_29944 span{display:inline-block;}	
+.evt_29944 span:nth-child(1){height:1314px;position: relative;}
+.evt_29944 span:nth-child(2){height:800px;}
+.evt_29944 span:nth-child(3){height:1460px;}
+.evt_29944 span:nth-child(4){height:693px;}
+.evt_29944 span:nth-child(5){height:1078px;}
+.evt_29944 span:nth-child(6){height:917px;}
+.evt_29944 span em{display:inline-block; position:absolute; height:333px; bottom: 0; left: 0;z-index: 2;}
+.pollen_falling{height:1015px; overflow: hidden; position: absolute;left: 0;top:0px;}
+.confetti {z-index: 0; position: absolute; left: 0; top:0; width: 0; height: 0; pointer-events: none; }
+/* ¿ÕΩ∫ 9∫Œ≈Õ¥¬ æ» ∏‘¿∏π«∑Œ, ≤…¿Ÿ¿∫ ¿ÃπÃ¡ˆ∑Œ ≥÷æÓæﬂ«‘. */
+.confetti span {position: absolute; top: -70px; left: 0; display: block;
+background: -webkit-linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
+background: -o-linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
+background: -ms-linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
+background: -moz-linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
+background: linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
+-webkit-border-radius: 12px 1px;
+-o-border-radius: 12px 1px;
+-ms-border-radius: 12px 1px;
+-moz-border-radius: 12px 1px;
+border-radius: 12px 1px;
+-webkit-pointer-events: none;
+-moz-pointer-events: none;
+-ms-pointer-events: none;
+-o-pointer-events: none;
+pointer-events: none;
+position: absolute}
+.confetti span {position: absolute; top: -70px; left: 0; display: block; }
+.confetti span:nth-child(n) {background:url("../29944/evt29944_pollen1.png") no-repeat;
+	width: 24px; height: 14px; } 
+.confetti span:nth-child(2n) {background:url("../29944/evt29944_pollen2.png") no-repeat; 
+	width: 19px; height: 21px; }
+.confetti span:nth-child(3n) {background:url("../29944/evt29944_pollen3.png") no-repeat; 
+	width: 33px; height: 15px; }
+.confetti span:nth-child(4n) {background:url("../29944/evt29944_pollen4.png") no-repeat; 
+	width: 32px; height: 16px; }
+.confetti span:nth-child(5n) {background:url("../29944/evt29944_pollen5.png") no-repeat; 
+	width: 17px; height: 34px; }
+.confetti span:nth-child(6n) {background:url("../29944/evt29944_pollen6.png") no-repeat;
+	width: 18px; height: 20px; } 
+</style>
+<div class="event_wrap">
+	<div class="evt_29944">
+		<span><img src="../29944/29944_PC_01.jpg" alt="">
+			<em><img src="../29944/29944_zero.png" alt=""></em>
+		</span>
+		<span><img src="../29944/29944_PC_02.jpg" alt=""></span>
+		<span><img src="../29944/29944_PC_03.jpg" alt=""></span>
+		<span><img src="../29944/29944_PC_04.jpg" alt=""></span>
+		<span><img src="../29944/29944_PC_05.jpg" alt=""></span>
+		<span><img src="../29944/29944_PC_06.jpg" alt=""></span>
+		
+		<!--≥™πµ¿Ÿ-->
+		<div class="pollen_falling" style="width: 1300px;">
+			<div class="confetti"></div>
+		</div>
+</div>
+<script type="text/javascript" src="pollen_falling.js"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var teraUI = {};
+
+	$(document).ready(function(){
+
+		teraUI.storage = {
+			browser: {
+				ie: false,
+				ie9Low: false,
+				ie8Low: false,
+				ie7Low: false,
+				ie9: false,
+				ie8: false,
+				ie7: false,
+				ie6: false,
+				chrome: false,
+				firefox: false,
+				flash: false
+			},
+			initVideoCnt: 0
+		},
+
+		teraUI.init = {
+
+			setSize: function () {
+
+				$('.pollen_falling').css('width','1300px');
+ 
+			},
+
+			setAgent: function () {
+
+				var browser, name, version;
+				browser = teraUI.storage.browser;
+				name = Detectizr.browser.name;
+				version = parseInt(Detectizr.browser.version);
+
+				if (name == 'ie') browser.ie = true;
+				if (name == 'ie' && version <= 9) browser.ie9Low = true;
+				if (name == 'ie' && version <= 8) browser.ie8Low = true;
+				if (name == 'ie' && version <= 7 || Detectizr.browser.version == '8.compat') browser.ie7Low = true;
+				if (name == 'ie' && version == 9) browser.ie9 = true;
+				if (name == 'ie' && version == 8) browser.ie8 = true;
+				if (name == 'ie' && version == 7 || Detectizr.browser.version == '8.compat') browser.ie7 = true;
+				if (name == 'ie' && version == 6) browser.ie6 = true;
+				if (name == 'chrome') browser.chrome = true;
+				if (name == 'firefox') browser.firefox = true;
+			
+				try {
+					teraUI.storage.flash = Boolean(new ActiveXObject('ShockwaveFlash.ShockwaveFlash'));
+				} catch (exception) {
+					teraUI.storage.flash = ('undefined' != typeof navigator.mimeTypes['application/x-shockwave-flash']);
+				}
+			}
+
+		},
+
+		teraUI.confetti = function () {
+		
+			$('.confetti').append('<span class="confetti1"></span>');
+//			$('.confetti').append('<span class="confetti1"></span><span class="confetti2"></span>');
+			for (i=0; i<60; i++){ 
+				$('.confetti1').append('<span></span>');
+//				$('.confetti2').append('<span></span>');
+			}
+			$('.confetti1 span:lt(4), .confetti2 span:lt(4)').addClass('c1');
+//			$('.confetti1 span:gt(3), .confetti2 span:gt(3)').addClass('c2');
+		
+			var confeffi = $(".confetti1, .confetti2"),
+					c = confeffi.find('span'),
+					c1 = confeffi.find('.c1');
+//					c2 = confeffi.find('.c2');
+		
+			c.each(function(){
+				var fall = new TimelineMax({repeat:-1,  delay: R(-0.5, 20)}),
+					  delay = "+=" + R(5, 10);
+				fall
+					.set($(this), {x:R(0, 360), y:R(0, 0) })
+					.to($(this), R(15,20), {y:R(2300, 2600), ease:Linear.easeNone})
+					.to($(this), 0.2, {opacity:0}, "-=0.2");
+			});
+		
+			c1.each(function(){
+				TweenMax.to($(this), R(2, 4), {x:'-=160',repeat:-1, yoyo:true, ease:Sine.easeInOut})
+				TweenMax.to($(this), R(1, 2), { opacity: 1, repeat: -1, rotation: R(40,90), yoyo:true,ease:Sine.easeInOut})
+			});
+			c2.each(function(){
+				TweenMax.to($(this), R(1, 2), {x:'+=90',repeat:-1, yoyo:true, ease:Sine.easeInOut})
+				TweenMax.to($(this), R(1, 2), {opacity:1, repeat:-1,  rotation: R(40,90), yoyo:true,ease:Sine.easeInOut})
+			});
+
+			function R(min,max) {
+				return min+Math.random()*(max-min)
+			}
+		}
+
+	});
+
+	$(document).ready(function() {
+		teraUI.init.setAgent();
+		teraUI.init.setSize();
+
+		function randomNum  (min, max) {
+			return Math.random() * (max - min) + min;
+		}
+
+		$('.confetti').append('<p class="confetti1"></p><p class="confetti2"></p>');
+		for (i=0; i<30; i++){ 
+			$('.confetti1').append('<span></span>');
+//			$('.confetti2').append('<span></span>');
+		}
+
+		$('.confetti1 span:lt(3), .confetti2 span:lt(3)').addClass('c1');
+//		$('.confetti1 span:gt(7)').addClass('c2');
+//		$('.confetti2 span:gt(7)').addClass('c2');
+
+		
+		var particles = $(".confetti1, .confetti2"),
+				ptc = particles.find('span'),
+				p1 = particles.find('.c1');
+//				p2 = particles.find('.c2');
+		
+
+		ptc.each(function(){
+			var fallTl = new TimelineMax({repeat:-1, delay: randomNum(-0.5, 20)});
+			fallTl
+				.set($(this), {x: randomNum(0, 1300), y: 0, opacity:1}) //≥–¿Ã1300px
+				.to($(this),  randomNum(13, 20),{ y: 2600, ease:Linear.easeNone})
+				.to($(this), 1, {opacity:0}, "-=1");
+
+		});
+		ptc.each(function () {
+			TweenMax.to($(this), randomNum(1,4),{x:'-=50', repeat:-1, yoyo: true, ease:Sine.easeInOut, delay: -0.6});
+		})
+		p1.each(function(){
+			TweenMax.to($(this), randomNum(1,4),{x:'-=100', repeat:-1, yoyo: true, ease:Sine.easeInOut, delay: -0.6});
+		});
+		p2.each(function(){
+			TweenMax.to($(this), randomNum(1,4),{x:'+=120', repeat:-1, yoyo: true, ease:Sine.easeInOut, delay: -0.6});
+		});
+
+	});
+
+	$(window).resize(function(){
+		teraUI.init.setSize();
+	});
+
+	$(window).scroll(function(){
+		teraUI.init.setSize();
+	});
+});
+</script>

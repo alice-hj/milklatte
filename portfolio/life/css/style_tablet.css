@@ -1,0 +1,32 @@
+/* 타블렛 */
+html{font-size:  20px;}
+body{font-size: 1rem;}
+.snb{display: none;}
+.container{padding: 3.8rem 0 0; width: 100%;}
+.contents{float: none; width: 100%;}
+/* 헤더 */
+header {margin:0 auto; width: 95%; min-width: 30rem; max-width: 64.05rem;}
+header h1{top:50%; left:0; height: 1.55rem;}
+header .nav{margin:0 0 0 8.9rem;}
+header .nav li{padding:0; width: 25%;}
+header .nav li a{font-size: 1rem;}
+header .notshow{display: none;}
+/* 메인 */
+/* 비쥬얼 */
+.visual{height: 6.25rem;}
+.visual .text span{font-size: .45rem;}
+.visual .text p{padding: .5rem 0 0;font-size: 1.05rem; }
+/* 컨텐츠 헤더영역 h2 + 현재위치 */
+.header ul{display: none;}
+.header h2{float: none; padding: 0 0 0 1.85rem; background:none; font-size: 1.85rem; text-align: center;}
+/* 푸터 */
+/* 푸터 배너 */
+footer .fban{margin: 0 1.25rem;}
+footer .fban .slider{margin:0 1.25rem;}
+/* 푸터주소*/
+footer .fadres{padding:0 0 7.6rem;}
+footer .fadres .fimg{display: none;}
+footer .fadres .fico{ left: 1.3rem;top: 8.1rem;right:0; }
+footer .fadres address{padding:2.4rem 0 0 1rem;}
+footer .fadres address a{padding:0 0 .8rem;}
+footer .fadres address li {line-height:.9rem;}

@@ -1,0 +1,152 @@
+<style>
+ /* IE8 호환성 */
+ html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
+dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
+html>body .ie8{display:none;}   
+a:hover{text-decoration:none;}
+area{outline:none; border:none;}
+.event_wrap{width:100%; margin:0 auto; overflow:hidden;}
+.event_wrap > div{position:relative; z-index:5; box-sizing:border-box;font-size: 0;}
+.event_wrap img{width: 100%;height: auto; display: block;}
+.title_29427{height: 2163px;position: relative;} 
+.body_29427{height: 1038px;}
+.event_wrap> div .inner_29427{width: 1600px; position: relative; left: 50%;margin-left:-800px; } 
+.title_29427 .inner_29427{ z-index: 3;} 
+.title_29427:before{display: block;content: "";clear: both;width: 100%;height: 2163px;background: #fbfbfb; position: absolute; top: 0;left: 0;}
+.title_29427:after{display:block; content: ""; clear: both; width: 100%;height: 695px; position: absolute; top: 0; left:0;
+ background: url(../29427/BG_top.png) no-repeat center top; z-index: 1}
+.body_29427:before{display: block;content: "";clear: both;width: 100%;height: 2163px;background: #f4f4f4; position: absolute; top: 0;left: 0;}
+.title_29427 .inner_29427 span{display:inline-block;position: absolute;}
+.title_29427 .inner_29427 .date{top:106px; left: 304px; z-index: 1;}
+.title_29427 .inner_29427 .heart_l{top:138px; left: 252px; 
+animation: float1 3s ease-in-out infinite;
+-webkit-animation:float1 3s ease-in-out infinite;
+ -ms-animation:float1 3s ease-in-out infinite;
+ -moz-animation:float1 3s ease-in-out infinite;
+} 
+.title_29427 .inner_29427 .product{top:247px; left: 312px;
+/*	top:307px; left: 248px;*/
+animation: float2 3s ease-in-out infinite;
+-webkit-animation: float2 3s ease-in-out infinite;
+-ms-animation: float2 3s ease-in-out infinite;
+-moz-animation: float2 3s ease-in-out infinite;
+} 
+.title_29427 .inner_29427 .heart_r{top:575px; right: 404px;
+ animation: float1 3s 0.5s ease-in-out infinite;
+ -webkit-animation:float1 3s ease-in-out infinite;
+ -ms-animation:float1 3s ease-in-out infinite;
+ -moz-animation:float1 3s ease-in-out infinite;
+ }
+
+.body_29427 .inner_29427 .ferrisWheel{display:inline-block; position: absolute; width: 424px; height: 430px;top:608px; right: 23px;}
+.body_29427 .inner_29427 .ferrisWheel span{display:inline-block;position: absolute;}
+.body_29427 .inner_29427 .ferrisWheel .fw_bk{width: 273px; height: 275px; top:76px; left:74px; transform-origin: center; animation: rotate-back 10s linear infinite;}
+.body_29427 .inner_29427 .ferrisWheel .fw_tr{top:205px; right:25px;}
+.body_29427 .inner_29427 .ferrisWheel .fw_out_bor{position: absolute;top:-142px;right: 134px;width:418px; height: 397px; box-sizing: border-box;animation: rotate-out 10s linear infinite;}
+.body_29427 .inner_29427 .ferrisWheel .fw_c{top:166px; left:163px;z-index: 1;}
+.body_29427 .inner_29427 .ferrisWheel .c2{width: 99px; height: 99px;top:166px; left:163px; position: relative; animation: rotate-out 10s linear infinite;}
+.body_29427 .inner_29427 .ferrisWheel .fw_bor{width: 361px; height: 379px; top:-142px; left:-133px;transform-origin: center; }	
+	
+/* 하트부분 가운데부터(12시)시계방향*/
+.body_29427 .inner_29427 .ferrisWheel .fw_h{width: 55px; height: 47px; animation:  wheel_rotate_2 10s infinite linear; }
+@keyframes wheel_rotate_2 { 0% { transform: rotate(0) ; } 100% { transform: rotate(-360deg) ; } }
+.body_29427 .inner_29427 .ferrisWheel .heart01{top:-166px; left: 19px;}
+.body_29427 .inner_29427 .ferrisWheel .heart02{top:-127px;left: 135px;}
+.body_29427 .inner_29427 .ferrisWheel .heart03{top:-35px; left: 204px;}
+.body_29427 .inner_29427 .ferrisWheel .heart04{top:82px; left: 204px;}
+.body_29427 .inner_29427 .ferrisWheel .heart05{top:187px; left: 128px;}
+.body_29427 .inner_29427 .ferrisWheel .heart06{top:221px ;left: 19px;}
+.body_29427 .inner_29427 .ferrisWheel .heart07{top:182px;left: -97px;}
+.body_29427 .inner_29427 .ferrisWheel .heart08{top:79px; left: -166px;}
+.body_29427 .inner_29427 .ferrisWheel .heart09{top:-30px;left: -166px;}
+.body_29427 .inner_29427 .ferrisWheel .heart10{top:-134px;left: -91px;}
+
+.title_29427 .inner_29427 .txt_ani1{top:236px; right: 556px;  animation: bounce 1.2s  1s ease-in-out;}
+.title_29427 .inner_29427 .txt_ani2{top:236px; right: 297px;  animation: bounce2 1.2s 1s ease-in-out;} 
+.title_29427 .inner_29427 .txt_heart{top: 236px; right:218px; animation: bounce3 1.2s 1.5s ease-in-out infinite;}
+
+@keyframes float1{
+  0%{transform: translateY(0);}
+  50%{transform: translateY(-40px);}
+  100%{transform: translateY(0);}
+ }
+ @keyframes float2{
+  0%{transform: translateY(0);}
+  50%{transform: translateY(20px);}
+  100%{transform: translateY(0);}
+ }
+ @keyframes bounce{
+  0%{ width:244px; }
+  10%{width:274px;}
+  30%{width: 244px;}
+  50%{ width:274px;}
+  70%{width: 244px;}
+  100%{width:244px;}
+ }
+  @keyframes bounce2{
+  0%{ width:244px; }
+  10%{width: 244px;}
+  30%{width:264px;}
+  50%{width: 244px;}
+  70%{width: 264px;}
+  100%{width:244px;}
+ }
+@keyframes bounce3 {
+	0% {transform: scale(1);}
+	60% {transform: scale(1.3);}
+	80% {transform: scale(0.6);}
+	100% {transform: scale(1);}
+}
+@keyframes rotate-back{
+  0%{ transform: rotate(0deg); webkit-transform: rotate(0deg); }
+  100%{ transform: rotate(-360deg); webkit-transform: rotate(-360deg); }
+}  
+@keyframes rotate-out{
+  0%{transform: rotate(0deg); webkit-transform: rotate(0deg);}
+  100%{transform: rotate(360deg); webkit-transform: rotate(360deg); }
+ }
+ 
+</style>
+ 
+<div class="event_wrap">
+ <div class="title_29427">
+	<div class="inner_29427">
+		<img src="../29427/bg1.png" alt="" usemap="#Map" border="0">
+        <map name="Map">
+          <area shape="rect" coords="302,921,725,1389" href="../product/product_detail.htm?ProductNo=433825" target="_blank">
+          <area shape="rect" coords="869,920,1284,1386" href="../product/product_detail.htm?ProductNo=404088" target="_blank">
+          <area shape="rect" coords="587,1485,996,1931" href="../product/product_detail.htm?ProductNo=737352" target="_blank">
+        </map>
+		<span class="date"><img src="../29427/date.png" alt=""></span>
+		<span class="heart_l"><img src="../29427/heart_l.png" alt=""></span>
+		<span class="product"><img src="../29427/produt.png" alt=""></span>
+		<span class="txt_ani1"><img src="../29427/text_ani.png" alt=""></span>
+		<span class="txt_ani2"><img src="../29427/text_ani.png" alt=""></span>
+		<span class="txt_heart"><img src="../29427/heart_text.png" alt=""></span>
+		<span class="heart_r"><img src="../29427/heart_r.png" alt=""></span>		
+	</div>
+ </div>
+ <div class="body_29427">
+	<div class="inner_29427">
+		<img src="../29427/bg02.jpg" alt="">
+		<div class="ferrisWheel">
+			<span class="fw_bk"><img src="../29427/fw_bk.png" alt=""></span>
+			<span class="fw_tr"><img src="../29427/fw_tr.png" alt=""></span>
+			<span class="fw_c"><img src="../29427/fw_c.png" alt=""></span>
+			<span class="c2">
+				<span class="fw_bor"><img src="../29427/fw_bor.png" alt=""></span>
+				<span class="fw_h heart01"><img src="../29427/fw_heart.png" alt=""></span>
+				<span class="fw_h heart02"><img src="../29427/fw_heart.png" alt=""></span>
+				<span class="fw_h heart03"><img src="../29427/fw_heart.png" alt=""></span>
+				<span class="fw_h heart04"><img src="../29427/fw_heart.png" alt=""></span>
+				<span class="fw_h heart05"><img src="../29427/fw_heart.png" alt=""></span>
+				<span class="fw_h heart06"><img src="../29427/fw_heart.png" alt=""></span>			
+				<span class="fw_h heart07"><img src="../29427/fw_heart.png" alt=""></span>			
+				<span class="fw_h heart08"><img src="../29427/fw_heart.png" alt=""></span>			
+				<span class="fw_h heart09"><img src="../29427/fw_heart.png" alt=""></span>
+				<span class="fw_h heart10"><img src="../29427/fw_heart.png" alt=""></span>
+		   </span>
+		</div>
+	</div>
+ </div>
+</div>

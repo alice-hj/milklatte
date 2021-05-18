@@ -1,0 +1,63 @@
+/* ------------sub1----------- */
+.contents{box-sizing: border-box;}
+.list_type1{padding:0 0 0 .8rem; }
+/* --컨텐츠 --*/
+/* 조회 */
+.lookup{margin:2rem 0 1.35rem; padding:1rem; background: #f6f8fa;border-top: 1px solid #d9dcdd; border-bottom: 1px solid #d9dcdd;box-sizing: border-box; font-size: 0;}
+.lookup span{display: inline-block; vertical-align: middle;}
+.lookup .date{float:left; width: 35%;}
+.lookup .list{float:right; margin:0 0 0 1%; width:64%;}
+.lookup .list span:last-child{width: 4.2rem;}
+.lookup .subject{font-size: .75rem; width: 4.2rem; color: #000; font-weight: bold; box-sizing: border-box;}
+.lookup .subject:before{content: ""; display: inline-block; margin: 0 .5rem 0 0; width: .3rem; height: .3rem; background: #108ad3; border-radius: 100%; vertical-align: middle;}
+.lookup select{width: 100%; height: 1.95rem; line-height: 1.95rem; font-size: .75rem; color: #000; border: 1px solid #d2d2d2; text-indent: .55rem; box-sizing: border-box; -webkit-appearance: none;-moz-appearance: none; appearance: none;background:url(../images/icon_sel_arrow02.png) no-repeat right .55rem center / .55rem auto #fff;}
+.lookup select::-ms-expand { display: none; }
+.lookup .date .select{width: calc(100% - 4.2rem);}
+.lookup .date .select select{width:49%;}
+.lookup .date .select select:last-of-type{margin-left: 1%;}
+.lookup .list .select{width:calc(99% - 8.4rem); padding: 0 1% 0 0;}
+/* 단위 */
+.align.justify div:first-child{font-size:.8rem;color: #666;}
+/* ------------sub2----------- */
+/*
+----스타일css 에 있는 코트 참고----
+.list_type3 > li{border-bottom: 1px solid #ddd;}
+.list_type3 li{position: relative;}
+.list_type3 .down{position: absolute; right: 1.45rem; top:50%; width: 7.2rem; height: 1.65rem; background: none; border: 1px solid #ddd; border-radius: 1.65rem; transform: translateY(-50%);}
+.list_type3 .down:after{content: ""; display: inline-block; margin: 0 0 0 .55rem; width: .65rem; height: .65rem; background:url(../images/ico_download.png) no-repeat; vertical-align: -0.1rem;}
+.btn.big{padding: 0 1.75rem; line-height: 2.65rem; font-size: .85rem; border-radius: 2.65rem;}
+.btn.ico:after{content: ""; display: inline-block; margin:0 0 0 .2rem; width: .85rem; height: .85rem; vertical-align: -0.15rem;}*/
+.list_type3.no3 {margin:2.9rem 0 0;}
+.list_type3.no3 li{position: relative; background: #f6f8fa; height: 3.4rem; line-height: 3.4rem;}
+.list_type3.no3 li > *{display: inline-block;}
+.list_type3.no3 li > p{ width: 12.9rem; font-size: .75rem; color: #222; padding: 0 0 0 1.8rem; }
+.list_type3.no3 li > span{font-size: .7rem; color: #666;}
+.fy{text-align: center;}
+.fy .btn.ico.down.blue{margin:1.7rem auto 0;}
+
+/* -------------sub3-------------*/
+/* 공통
+.pb17{padding:0 0 0 .85rem;}
+lh31:line-height:1.55rem;
+.mt31{margin:1.55rem 0 0;}
+type1
+.table_type1{border-top: 2px solid #0d2d4f; font-size: .75rem;}
+.table_type1 thead th{background: #dfe6ed;}
+.table_type1 thead th ~ th{border-left:1px solid #ddd; }
+.table_type1 tbody th{background: #f6f8fa;}
+.table_type1 tr{border-bottom: 1px solid #ddd;}
+.table_type1 td{padding:.65rem 0; border-left: 1px solid #ddd; color: #666; text-align:center;}
+.table_type1 th{padding:.65rem 0; color: #222; font-weight: normal;}*/
+.sub3{margin:2.8rem 0 10.8rem;}
+.sub3 .h3{padding:0.3rem 0; }
+.sub3 .h4{padding:0.25rem 0;}
+.sub3 .mt63{margin:3.15rem 0 0;}
+.sub3 .pb17 p{padding:.75rem 0; line-height: 1.4rem; font-size: 0.75rem; color: #666666;}
+.sub3 .align.justify h4{margin: 0;}
+.sub3 .align.justify div:last-child{padding:0.45rem 0 0 .8rem; font-size:.75rem; color: #666666;}
+.sub3 .list_type1.lh31{padding:.6rem 0 0 .8rem;}
+.sub3 .list_type1.lh31 li{ line-height: 1.55rem; font-size: .75rem; color: #666666;}
+.sub3 > a {position: relative; display: block; margin:.65rem 0 .75rem .8rem; padding: 0 1.2rem 0 0;width: 15.35rem; height: 2.25rem; border: 1px solid #ddd; border-radius: 0.15rem; line-height: 2.25rem; font-size: 0.7rem; color: #2e2e2e;box-sizing: border-box; text-align: right;}
+.sub3 > a:before{content: ""; position:absolute;display: inline-block; width:100%; height: 1.1rem; top:50% ; left:1.25rem; background: url(../images/logo_liscc.jpg) no-repeat left 100%/contain; transform: translateY(-50%);}
+.sub3 > em{display: block; padding:2.25rem 0 0 .9rem; font-size: .75rem; color: #666666;}
+.sub3 .table_type1 em{display: block;padding: 1.1rem 0; font-size: .75rem; color: #666666;}

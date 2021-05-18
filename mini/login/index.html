@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/3eee069757.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Song+Myung&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index-1.css">
+  <link rel="stylesheet" href="index-2.css">
+  <title>로그인페이지</title>
+</head>
+<body>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#0" class="login1">Login version 1</a></li>
+      <li><a href="#0" class="login2">Login version 2</a></li>
+    </ul>
+  </nav>
+  <!-- <a href="" class="close-form">close</a> -->
+  <div class="modal">
+    <div class="container1">
+        <ul class="switcher">
+          <li><a href="#0">Sign in</a></li>
+          <li><a href="#0">New account</a></li>
+        </ul>
+        <div id="login">
+          <form class="form">
+            <p class="piece">
+              <label class="email" for="sigin-email">E-mail</label>
+              <input class="" id="singin-mail" type="email" placeholder="E-mail">
+              <!-- <span class="error">An account with this email address does not exist!</span> -->
+            </p>
+            <p class="piece">
+              <label class="password" for="password">Password</label>
+              <input class="" type="password" placeholder="Password">
+              <!-- <span class="error">Wrong password! Try again.</span> -->
+            </p>
+            <p class="piece checkbox">
+              <input type="checkbox" id="remember" checked>
+              <label for="remember">Remember</label>
+            </p>
+            <p class="piece">
+              <input class="" type="submit" value="Login">
+            </p>
+          </form>
+          <p class="form-bottom"><button>Forgot your password?</button></p>
+        </div>
+        <!-- login -->
+        <div id="signup">
+          <form class="form">
+            <p class="piece">
+              <label class="username" for="sigup-username">Username</label>
+              <input class="" id="sigup-username" type="text" placeholder="Username">
+              <!-- <span class="error">An account with this email address does not exist!</span> -->
+            </p>
+            <p class="piece">
+              <label class="email" for="sigin-email">E-mail</label>
+              <input class="" id="singin-mail" type="email" placeholder="E-mail">
+              <!-- <span class="error">An account with this email address does not exist!</span> -->
+            </p>
+            <p class="piece">
+              <label class="password" for="password">Password</label>
+              <input class="" type="password" placeholder="Password">
+              <!-- <span class="error">Wrong password! Try again.</span> -->
+            </p>
+            <p class="piece checkbox">
+              <input type="checkbox" id="terms">
+              <label for="terms">I agree to the terms.</label>
+            </p>
+            <p class="piece">
+              <input class="" type="submit" value="Create account">
+            </p>
+          </form>
+        </div>
+        <!-- signup -->
+        <div id="reset-password">
+          <p class="form-message">Lost your password? Please enter your email address.</br> You will receive a link to create a new password.</p>
+          <form class="form">
+            <p class="piece">
+              <label class="email" for="sigin-email">E-mail</label>
+              <input class="" id="singin-mail" type="email" placeholder="E-mail">
+              <!-- <span class="error">An account with this email address does not exist!</span> -->
+            </p>
+            <p class="piece">
+              <input class="" type="submit" value="Rest password">
+            </p>
+          </form>
+          <p class="form-bottom"><button>Back to log-in</button></p>
+        </div>
+        <!-- reset-password -->
+      </div>
+    <!-- container1 -->
+    <div class="container2">
+      <div class="move">
+        <div class="p-button signin animated pulse">SIGN IN</div>
+      </div>
+      <div class="welcome">
+        <h4 class="welcome-text">Welcome Back!</h4>
+        <p class="text">To keep connected with us please login with your personal info</p>
+      </div>
+      <div class="hello">
+        <h4 class="welcome-text">Hello Friend :)</h4>
+        <p class="text">Enter your personal details and start journey with us</p>
+      </div>
+      <div class="creat-account">
+        <h4 class="title">Create Account</h4>
+        <div class="icons">
+          <div class="icon"><i class="fab fa-facebook-f"></i></div>
+          <div class="icon"><i class="fab fa-github"></i></div>
+          <div class="icon"><i class="fab fa-twitter"></i></div>
+        </div>
+        <p class="form-text">Or use your email for registration</p>
+        <input type="text" placeholder="Name" class="name">
+        <input type="text" placeholder="Email">
+        <br>
+        <input type="password" placeholder="Password"><br>
+        <p class="forgot">Forgot your password?</p>
+        <button class="b-button">SIGN UP</button>
+      </div>
+    </div>
+    <!-- container2 -->
+ </div>
+  <!-- modal -->
+  <script src="index-1.js"></script>
+  <script src="index-2.js"></script>
+</body>
+</html>

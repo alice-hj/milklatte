@@ -1,0 +1,81 @@
+.m0auto{ margin: 0 auto; width: 1160px;}
+.m0auto_2{ margin: 0 auto; width: 992px;}
+header{border-bottom:1px solid #e4e4e4;}
+header h1{ float: left; padding: 22px 84px 0 0;}
+header nav{ float: left;}
+header nav > ul{font-size: 0;}
+header nav > ul > li{ display: inline-block; vertical-align: top; position: relative;}
+header nav > ul > li a{ display: block; width: 160px; height: 100px; line-height: 100px; color: #000; font-size: 18px; transition: color .5s; text-align: center; transition: all .2s;}
+header nav > ul > li a:hover{ color: #368932; font-weight: bold;}
+header nav > ul > li span{ position: relative;}
+header nav > ul > li span:after{ content: ""; position: absolute; left: 0; bottom: -39px; width: 0; height: 3px; background: #368932; transition: width .5s;}
+header nav li a:hover span:after{ width: 100%;}
+/* 메뉴의 메뉴추가 */
+header nav .menulist{position: absolute; display: none; padding:36px 0 0; height: 290px; border-top: 1px solid #eee; z-index: 5; left: 0;}
+header nav .menulist > li{display: block; width: 190px;}
+header nav .menulist > li > a{display: block; height: 36px; line-height: 36px;color: #898989; font-size: 14px; text-align: center;}
+header nav .white_box{display: none; position: absolute; top: 100px; left: 0; right: 0; background: #fff;z-index: 2;height: 327px;border: 1px solid #eee;}
+/* 여기까지추가 */
+header .right{padding: 33px 0 0; float: right;position: absolute;top: 0;right:294px;}
+header .right .search{float: left; padding: 0 0 0 9px; height: 31px; border: 1px solid #ddd; border-radius: 31px; font-size: 0;}
+header .right .search input{ width: 129px; border: none; border-radius: 31px 0 0 31px;}
+header .right .search input::-ms-input-placeholder{color: rgba(130,132,130,1);}
+header .right .search input::placeholder,
+header .right .search input::-webkit-input-placeholder{ text-indent: 0; font-size: 12px; color:rgba(130,132,130,1);transition: all .5s;}
+header .right .search input:focus::placeholder,
+header .right .search input:focus::-webkit-input-placeholder{ text-indent: 10px; color:rgba(130,132,130,0);}
+header .right .search button{ width: 31px; height: 31px; background: url(../images/icon_search.png) no-repeat center;}
+header .right ul{ float: left;}
+header .right li{ float: left; padding: 0 0 0 10px;}
+header .right li a{ display: block; height: 33px; line-height: 33px; font-size: 12px; color: #8f918f;}
+/*-------- footer : 바로가기_SNS_패밀리사이트----------*/
+footer{border-top:1px solid #e4e4e4;}
+.dongwhat_info .dongwhat_info_L{float: left; padding: 105px 0 0; }
+.dongwhat_info .dongwhat_info_R{float: right; display: block; padding: 105px 0 0;}
+.dongwhat_info h3{font-size: 17px; color: #444468; font-weight: normal; padding: 0 0 25px;}
+.dongwhat_info .site_map ul li{display:inline-block; width: 180px; vertical-align: top;}
+.dongwhat_info .site_map ul li a{display: block; color: #929492; font-size:13px; line-height: 29px;}
+.dongwhat_info .site_map ul li a:hover {color:#368932; font-weight: bold;}
+.dongwhat_info_R .sns ul{ margin:0 0 47px;}
+.dongwhat_info_R .sns ul li{float: left; padding:0 14px 0 0;}
+.dongwhat_info_R .sns ul li a{ display: block; width: 47px; height: 47px; }
+.dongwhat_info_R .sns ul li:last-of-type{padding: 0;}
+.dongwhat_info_R .youtube a{background: url(../images/youtube_icon_off.png) no-repeat;}
+.dongwhat_info_R .instagram a{background: url(../images/insta_icon_off.png) no-repeat;}
+.dongwhat_info_R .facebook a{background: url(../images/facebook_icon_off.png) no-repeat;}
+.dongwhat_info_R .naverblog a{background: url(../images/blog_icon_off.png) no-repeat;}
+.dongwhat_info_R .youtube:hover a{background-image:url(../images/youtube_icon_off_hover.png);}
+.dongwhat_info_R .instagram:hover a{background-image: url(../images/insta_icon_off_hover.png);}
+.dongwhat_info_R .facebook:hover a{background-image: url(../images/facebook_icon_off_hover.png);}
+.dongwhat_info_R .naverblog:hover a{background-image: url(../images/blog_icon_off_hover.png);}
+.dongwhat_info_R .familysite select {height: 64px; width: 226px; line-height: 64px; font-size: 15px; border: none; border-bottom: 2px solid #cfcfcf; color: #cfcfcf; }
+/* footer : 유틸메뉴  */
+.util_menu{ background: #444; width: 100%; height: 156px; margin-top: 98px;}
+.util_menu p{display: block; padding-left: 91px;}
+.util_menu p a{display: inline-block; font-size: 16px; color: #fff; padding:45px 25px 0 0; }
+.util_menu p em {display: inline-block; font-size: 16px; color: #cccac3; vertical-align: middle; margin: 23px 0 0;}
+.util_menu p em:after{display: inline-block; content: ""; height: 16px; width: 1px; transform: rotate(22deg); background: #cccac3; margin: 0 12px; vertical-align: middle;}
+.util_menu p em:last-child:after{display: none;}
+/* 제이쿼리 */
+.bx-controls.bx-has-controls-direction.bx-has-pager{display: none;}
+/* 탑버튼 */
+.talk{position: fixed; right: 30px; bottom: 280px; z-index: 10; width: 66px; height: 66px; border-radius: 100%; background:url(../images/ico_plus_sns.png) no-repeat center #e3e3e3; transition:all .2s; outline: 0;}
+.talk.on{transform: rotate(45deg);}
+.talkin.on{display: block; outline: 0;}
+/* .talk.on .talkin{display: block; outline: 0;} */
+.talkin {display: none;}
+.talkin .counsel{position: fixed; right: 30px; bottom: 440px; z-index: 10; width: 66px; height: 66px; border-radius: 100%; background:url(../images/btn_counsel.png) no-repeat; transition:all .5s;}
+.talkin .chat{position: fixed; right: 30px; bottom: 360px; z-index: 10; width: 66px; height: 66px; border-radius: 100%; background:url(../images/btn_chat.png) no-repeat; transition: all .7s;}
+.top{position: fixed; right: 30px; bottom: 200px; z-index: 10; width: 66px; height: 66px; border-radius: 100%; background:url(../images/ico_top.png) no-repeat center #444444; outline: 0;}
+/*
+.first_slide .bx-pager div{ display: inline-block; padding:0 10px;}
+.first_slide .bx-pager div a{font-size: 0; color: transparent; display: block; width: 20px; height: 20px; border-radius: 100%; background: #000;}
+.first_slide .bx-pager div a.active{background: blue;} */
+/* 유도버튼 */
+.clk:before{display: inline-block; content: ""; width: 5px; height: 5px; border-radius: 100%; background:rgba(234,109,54,.5); animation: bck 2s infinite;
+}
+@keyframes bck {
+  0% {box-shadow: none;}
+  50%{box-shadow: 0px 0px 4px 3px #ffe2e2;}
+  100%{box-shadow: 0px 0px 5px 3px #ffe2e2;}
+}

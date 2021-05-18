@@ -1,0 +1,69 @@
+html{font-size: 20px;}
+body{position: relative; font-size: 1rem; padding:0 0 2.333rem;}
+/* psd width:720px 그래서 나누기 40 */
+header{position: absolute; top:0; width: 100%;}
+header nav{display: flex; padding-top: .575rem;}
+header nav .menu{flex: none; padding:.425rem .9rem .35rem 1.325rem; background: url(../images/ico_menu2.png) no-repeat center/1.3rem .975rem;}
+header nav ul{display: flex;flex: 1; justify-content: space-between; padding:0 1rem;}
+header nav ul li a{display: block; padding:0 .475rem; font-size: .775rem; line-height: 1.575rem; color:#525252; font-weight: bold;}
+header nav ul li a.on,
+header nav ul li:hover a{color:#000; border-bottom: .15rem solid #000;}
+main{background: #fff;}
+/* ----------------index1 main :home--------------------------*/
+.login{padding: 5.2rem 0 2.7rem; text-align: center; line-height: 1.15rem; color:#353535; font-size:.85rem; }
+.login button{display: block; margin: 1.65rem auto 0; padding: 0 2.75rem; height: 2rem; background: #915dd6; border-radius: 2rem; line-height: 2rem; font-size: .8rem; color:#fff;}
+.my p{padding: .2rem 0; background: #fff; border-top: .025rem solid #cacaca; border-top-left-radius: .3rem; border-top-right-radius: .3rem;}
+.my p a{ display: block; padding-left: 0.875rem; height: 2.65rem; line-height: 2.65rem; font-size: .625rem; color: #262626;}
+.my p a em{display: inline-block; margin-right:.6rem; padding: 0 0.15rem; background: #e5e9fa; box-shadow: 0px 5px 5px 5px #fff inset; font-size: .875rem; color: #1d2855; font-weight: bold;  line-height: 1.225rem; }
+.my p a:after{display: inline-block; content: ""; width: .375rem; height: .725rem; background: url(../images/ico_next.png) no-repeat center/.375rem auto; padding-left: 1.675rem; vertical-align: middle;}
+.my > div{position: relative; background: linear-gradient(to left, #7178d4,#766fd2,#8061cf, #8b55cd );}
+
+
+.card{position: relative; width: 100%; height: 8.2rem; }
+/* .bx-wrapper{max-width: 0 !important;} */
+.card .slider{}
+.card .slider ul{margin:0 auto;}
+.card .slider ul li{left:50%; transform: translateX(-50%);padding: 1.9rem 0 1.525rem;width: 144px !important;}
+.card .slider ul li img{display: block;width: 7.2rem; height: 4.55rem;}
+.bx-controls-direction a{position: absolute; top:50%; width: 3.35rem; height: 4.625rem; transform: translateY(-50%); background:rgba(150,150,150,.5);  color:#cfcfcf; font-size: 0;}
+.bx-controls .bx-prev{left: 0; border-top-right-radius: .25rem; border-bottom-right-radius: .25rem;}
+.bx-controls .bx-prev:before{content:"\e93b";position: absolute;top: 50%; left: 50%;transform:translate(-50%,-50%);font-size: .675rem;}
+.bx-controls .bx-next{right: 0; border-top-left-radius: .25rem; border-bottom-left-radius: .25rem}
+.bx-controls .bx-next:before{content:"\e93e";position: absolute;top: 50%; left: 50%;transform:translate(-50%,-50%);font-size: .675rem;}
+.bx-pager.bx-default-pager {display: none;}
+.my span{display: block; position: absolute; top: 70%; left:50%; width: 3.6rem; height: 1.425rem; background: #fff; border-radius: 1.425rem; font-size: .575rem; line-height: 1.425rem; text-align: center; color:#4766b5; transform: translate(-50% ,-30%);}
+.my .varcode{display: flex; height: 2.7rem; background: rgba(255,255,255,.1);}
+.my .varcode li{flex:1; text-align: center; }
+.my .varcode li{border-right: .025rem solid rgba(137, 139, 215, 1);}
+.my .varcode li a{display: block; line-height: 2.7rem; font-size:.775rem; color:#ebeaff;}
+.my .varcode li:first-child a:before{content: "\ea00"; padding-right: .35rem;}
+.my .varcode li:last-child a:before{content: "\e9ff"; padding-right: .35rem;}
+.bottom{ position: fixed; left:0; right: 0; background:linear-gradient(to left, #445086,#474a84,#4b4483,#4d4083,#4f3d81);}
+.plateform{position: relative; display: flex; overflow: hidden; margin:0 2.6rem; padding: 1rem 0 .9rem;}/*  padding: .755rem 0 .475rem;*/
+.slider2{position: absolute; left: 0; top: 0; height: 20px; overflow: hidden; padding: 10px 0 0;}
+.second_slide{}
+.plateform ul li{float: left; text-align: center; width: 78px; margin-right: 20px;}
+/* .plateform ul li{float: left; text-align: center; width: 108px !important} */
+.plateform ul li a{display: block; font-size:.725rem; color:#eef0ff;line-height: 1rem;}
+/* .plateform ul li a{display: block; width: 78px;font-size:.725rem; color:#eef0ff;line-height: 1rem;} */
+.plateform button{flex: none; position: absolute; top: 50%; right:0;transform: translateY(-50%);width:1rem; height: 1rem; font-size: 1rem; color:#cdd6ef; background: transparent;}
+.plateform button:before{content: "\e916";}
+.benefit{position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(to bottom,transparent 1.275rem,#cdd6ef 1.275rem, #cdd6ef); transition: all .5s;}
+.benefit.on{background: linear-gradient(to bottom,#fff 1.275rem,#cdd6ef 1.275rem, #cdd6ef);z-index: 99;}
+/* background: linear-gradient(to bottom,transparent 1.275rem,#cdd6ef 1.275rem, #cdd6ef) */
+.benefit button{ display: block; margin:0 auto; width: 2.95rem; height: 2.95rem; background: #494784; border-radius: 100%; outline: 0;}
+.benefit button span{ display: block; margin:auto;  width: 2.2rem; height: 2.2rem; background: #fff; border-radius: 100%; color:#2e51ab; text-align: center; font-size: .7rem; line-height: 2.2rem; font-weight: bold;}
+/*  width: 3.625rem; height: 2.975rem;background: url(../images/benfit_back.png) no-repeat center;*/
+.benefit .bnf{display: none; height: 30.3rem;}
+
+/* 제이쿼리 css */
+.second_slide .bx-pager .bx-default-pager{display: none;}
+.second_slide .bx-controls-direction{display: none;}
+/* 유도버튼 */
+.clk:before{display: inline-block; content: ""; width: 5px; height: 5px; border-radius: 100%; background:rgba(243,125,72,.7); animation: bck 2s infinite;
+}
+@keyframes bck {
+  0% {box-shadow: none;}
+  50%{box-shadow: 0px 0px 4px 3px #ffe2e2;}
+  100%{box-shadow: 0px 0px 5px 3px #ffe2e2;}
+}

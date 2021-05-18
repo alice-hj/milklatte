@@ -1,0 +1,124 @@
+<?php
+	$db14 = new Db('coz_pr');
+	$Rlt = SelectAsTableWhileOptionWithClass('coz_pr','ProductNo,Amount','ProductAmount',"where ProductNo IN(769433,769783,769434)",'',$db14,0);
+	$Arr = array();
+	
+	while($Row = getNextFetch($Rlt)){
+		$Arr[$Row['ProductNo']] = $Row['Amount'];
+	}
+	
+?>
+<script type="text/javascript" src="../script/jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});
+</script>
+<style>
+a:hover{text-decoration:none;}
+area {outline: none;}
+.mw_wrap{width:100%;}
+.mw_wrap img{display:block; width:100%;height: auto;}
+.event{width:100%; max-width: 1000px; margin:0 auto; overflow:hidden;}
+.event > div{position:relative;font-size:0;}
+.event img{display:block; width:100%; height:auto;}
+.event > div span{display:inline-block;position: absolute;}
+.title_29727{height:898px;}
+.body_29727{height:1533px;}
+.title_29727 .txt1{background:url(../29727/mo_txt1.png) no-repeat center; background-size: contain;width:227px; height:101px; left:264px; top:156px;transform: translateX(-500px); animation: txt1 0.6s 1s ease-out forwards;}
+.title_29727 .txt2{background:url(../29727/mo_txt2.png) no-repeat center; background-size: contain;width:475px; height:211px; left:267px; top:177px;  transform: translateY(-750px); animation: txt2 0.4s 0.8s ease-out forwards;}	
+.title_29727 .effect{background:url(../29727/mo_effect.png) no-repeat center; background-size: contain; width:545px; height:174px; left:226px; top:184px; opacity: 0;z-index: 2; animation: ani 0.3s 1.5s linear forwards; }	
+.body_29727 .coupon{width:476px; height:187px; left:244px; top:223px;}		
+.body_29727 div{position: absolute; width: 253px; height: 436px; top:444px;}
+.body_29727 .prodct1{left:110px;}
+.body_29727 .prodct2{left:375px;}
+.body_29727 .prodct3{left:638px;}
+.soldout:before{display:inline-block; content: ""; width: 100%; height: 100%;background: #fff; opacity: 88%;position: absolute;
+top: 0; left: 0; z-index: 1;}	
+.soldout:after{display:inline-block; content: ""; width: 193px; height:196px;position: absolute;top:70px; left: 50%; z-index: 2;
+	background:  url(../29727/ico_soldout.png) no-repeat center; background-size: contain;transform: translateX(-50%);}	
+.body_29727 div span{display: inline-block; position:absolute;font-family: 'spoqa B';letter-spacing: 0;}
+.body_29727 div .qtybx{width: 140px; height: 43px; top:9px; left: 9px ; border-radius: 22px; line-height: 43px;font-size: 16px; background:#c4141a; color:#fff; text-align: center; }
+.body_29727 .percent{left: 23px; top: 363px; font-size: 16px;color: #eb1722;}
+.body_29727 .lastprice{left: 64px; top: 366px; font-size: 13px;color: #666666;text-decoration: line-through; font-family: 'spoqa R';}
+.body_29727 .price{left:23px; top: 386px; font-size: 19px;color:#000; }
+
+	@keyframes txt1{
+		0%{transform: translateX(-5000px);}
+		100%{transform: translateX(0);}
+	} 
+	@keyframes txt2{
+		0%{transform: translateY(-750px);}
+		100%{transform: translateY(0);}
+	}
+	@keyframes ani{
+		0% {
+			opacity: 0;
+			transform: scale(0);
+		}
+		100% {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	
+
+@media screen and (max-width: 1000px) {
+.title_29727{height:89.8vw;}
+.body_29727{height:153.3vw;}
+	
+.title_29727 .txt1{width:22.7vw; height:10.1vw; left:26.4vw; top:15.6vw;transform: translateX(-50.0vw);}
+.title_29727 .txt2{width:47.5vw; height:21.1vw; left:26.7vw; top:17.7vw;  transform: translateY(-75.0vw);}	
+.title_29727 .effect{width:54.5vw; height:17.4vw; left:22.6vw; top:18.4vw;}	
+.body_29727 .coupon{width:47.6vw; height:18.7vw; left:24.4vw; top:22.3vw;}		
+	
+.body_29727 div{ width: 25.3vw; height: 43.6vw; top:44.4vw;}
+.body_29727 .prodct1{left:11.0vw;}
+.body_29727 .prodct2{left:37.5vw;}
+.body_29727 .prodct3{left:63.8vw;}
+.body_29727 div .qtybx{width: 14.0vw; height: 4.3vw; top:0.9vw; left: 0.9vw ; border-radius: 2.2vw; line-height: 4.3vw;font-size: 1.8vw;}
+.body_29727 .percent{left: 2.3vw; top: 36.3vw; font-size: 1.6vw;}
+.body_29727 .lastprice{left: 6.4vw; top: 36.4vw; font-size: 1.4vw; }
+.body_29727 .price{left:2.3vw; top: 38.6vw; font-size: 1.9vw; }
+.soldout:after{ width: 19.3vw; height:19.6vw;top:7.0vw; }
+}
+
+</style>
+<div class="mw_wrap" >
+    <div class="event">
+	<div class="title_29727">
+		<img src="../29727/evt29727_mo_bg1.jpg" alt="">
+		<span class="txt2"></span>
+		<span class="txt1"></span>
+		<span class="effect"></span>
+	</div>
+	<div class="body_29727">
+		<img src="../29727/evt29727_mo_bg2.jpg" alt="">
+<!--
+		<span class="qty1">잔여수량 <?php echo ($Arr[769433]) ? $Arr[769433] : 0;?>대</span>
+		<span class="qty2">잔여수량 <?php echo ($Arr[769783]) ? $Arr[769783] : 0;?>대</span>
+		<span class="qty3">잔여수량 <?php echo ($Arr[769434]) ? $Arr[769434] : 0;?>대</span>
+-->
+		<span class="coupon"><img src="../29727/mo_coupon.png" alt=""></span>	
+		<div class="prodct1 soldout">
+			 <span class="qtybx qty1">잔여수량 &nbsp;<?php echo ($Arr[769433]) ? $Arr[769433] : 0;?>대</span>
+			 <span class="percent">8%</span>
+			 <span class="lastprice">1,373,000원</span>
+			 <span class="price">1,259,000원</p>
+		 </div>	
+		<div class="prodct2">
+			 <span class="qtybx qty2">잔여수량 &nbsp;<?php echo ($Arr[769783]) ? $Arr[769783] : 0;?>대</span>
+			 <span class="percent">9%</span>
+			 <span class="lastprice">1,812,000원</span>
+			 <span class="price">1,654,000원</p>
+		</div>		 
+		<div class="prodct3 soldout">
+			 <span class="qtybx qty3">잔여수량 &nbsp;<?php echo ($Arr[769434]) ? $Arr[769434] : 0;?>대</span>
+			 <span class="percent">8%</span>
+			 <span class="lastprice">1,448,000원</span>
+			 <span class="price">1,338,000원</p>
+		</div>
+	</div>
+    </div>
+</div>

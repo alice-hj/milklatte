@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주소 찾기</title>
+<!-- <link href="../css/coz2005.css" rel="stylesheet" type="text/css">
+<link href="../css/font.css" rel="stylesheet" type="text/css">
+<link href="../css/basic.css" rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" href="../default.css">
+<style type="text/css">
+* { font-family:Malgun Gothic, dotum, verdana;}
+
+/* css 변경  */
+.zipcode_title {padding:15px 0 15px 30px; width:100%; float:left; color:#000; font-size:27px; letter-spacing:-1px; font-family:Noto-R; border-bottom:3px solid #000000;}
+.zipcode_title > b{font-family:Noto-B;}
+/* css 변경  */
+
+.zipcode_area {padding:19px;}
+.search_box {width:100%; float:left; margin-top:15px; padding-bottom:5px; margin-bottom:25px; border-bottom:2px solid #989898;}
+.input_delnum {	border-radius: 4px;	border: #cfcfcf 1px solid; width:440px; .width:400px; height:40px; padding-left:10px; letter-spacing:-1px; color:#888; float:left;}
+.btn {
+	padding:9px 25px 10px 25px;
+	.padding:9px 23px 10px 23px;
+	display:inline-block;
+	background:#576073;
+	color:#ffffff !important;
+	letter-spacing:-1px;
+	font-size:14px !important;
+	border: #3e485e 1px solid;
+	border-radius: 4px;
+	font-family:Malgun Gothic, dotum, verdana !important;
+	line-height:18px !important;
+}
+.btn:hover {
+	text-decoration:none;
+	font-weight:bold;
+}
+select {border-radius:4px; border: #cfcfcf 1px solid; .border: #cfcfcf 1px solid; width:140px; height:23px; padding-left:10px; letter-spacing:-1px; color:#888;}
+
+.zipcode_listBOX {padding:5px; height:350px; border:1px solid #cccccc; overflow:auto; overflow-x:hidden;}
+table {border-top:1px solid #eee; margin-bottom:10px;}
+td {height:30px; }
+.zipcode_type1 {border-bottom:1px solid #eee; }
+.zipcode_type2 {border-bottom:2px solid #d2d2d2; }
+.zipcode_count {width:100%; float:left;}
+.zipcode_listBOX .black12B {border-right:1px solid #eee; }
+.pasing .num {height:17px; padding:3px 9px;}
+</style>
+
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript" src="../script/jquery-1.7.1.min.js"></script>
+<script type='text/javascript'>
+	// 검색
+	function schform(){
+		$('#StartNum').val('');
+		$('#PageNum').val('');
+		
+		var sch_key = $('#SchAddress').val();
+		
+		if(sch_key.length < 2){
+			alert('검색어는 최소 2글자 이상 입력해주시기 바랍니다.');
+			return;
+		}
+		
+		document.global_form.submit();
+	}
+	
+	function schsido(){
+		document.global_form.submit();
+	}
+	
+	// 주소 선택 및 부모창 전달
+	function select_address(idx,jibunchk){
+		var o_zip1 = $('#openerzip1').val();
+		var o_zip2 = $('#openerzip2').val();
+		var o_txt1 = $('#openertxt1').val();
+		var o_txt2 = $('#openertxt2').val();
+		var o_info = $('#openerinfo').val();
+		var zip_result = $('#ZipcodeResult_' + idx).val();
+		var addr_result = $('#RoadResult_' + idx).val();
+		var addr_resultshort = $('#ResultDong_Short_' + idx).val();
+		
+		// 주소검색 텍스트 전송
+		if(window.opener.document.getElementById(o_txt1) != null){
+			if(o_txt1 == 'QuickService_Addr1'){
+				// 예외 1. 퀵서비스 동별 운임 검색 팝업의 경우 시도, 시군구, 읍면동 정보만 사용한다.
+				window.opener.document.getElementById(o_txt1).value = addr_resultshort;
+			}
+			else{
+				window.opener.document.getElementById(o_txt1).value = addr_result;
+			}
+
+			// 우편번호 텍스트 전송
+			if(window.opener.document.getElementById(o_zip1) != null){
+				// 우편번호 입력칸이 두 개로 나누어진 경우 결과값을 3,2로 나눈다.
+				if(window.opener.document.getElementById(o_zip2) != null){
+					window.opener.document.getElementById(o_zip1).value = zip_result.substring(0,3);
+					
+					// 구 지번 정보이면 우편번호 6자리 사용 (3, 3)
+					if(jibunchk==true)
+						window.opener.document.getElementById(o_zip2).value = zip_result.substring(3,6);
+					else
+						window.opener.document.getElementById(o_zip2).value = zip_result.substring(3,5);
+				}
+				else{
+					window.opener.document.getElementById(o_zip1).value = zip_result;
+				}
+			}
+			
+			// 상세주소 폼 리셋
+			if(window.opener.document.getElementById(o_txt2) != null){
+				window.opener.document.getElementById(o_txt2).value = '';
+				window.opener.document.getElementById(o_txt2).focus();
+			}
+			
+			// 예외. 우편번호 검색 후 opener function 실행		- 주문페이지	newcozlch	2016-06-16 오전 11:46:42
+			if(o_info=='orderpage'){
+				window.opener.checkFreightMethod();
+				window.opener.zipcode_function();
+			}
+			
+			// 네트워크 방문설치 금액 계산
+			if(o_zip1 == 'VisitZipCode1'){
+				window.opener.visit_area_price();
+			}
+
+			window.close();
+		}
+		else{
+			alert('주소입력 실패');
+			return;
+		}
+	}
+</script>
+</head>
+
+<body onload="document.global_form.SchAddress.focus();">
+<form name='global_form' method='post' action='' />
+	<input type="hidden" name="StartNum" id="StartNum" value="0" />
+	<input type="hidden" name="PageNum" id="PageNum" value="1" />
+	<input type='hidden' name='openerzip1' id='openerzip1' value='' />
+	<input type='hidden' name='openerzip2' id='openerzip2' value='' />
+	<input type='hidden' name='openertxt1' id='openertxt1' value='' />
+	<input type='hidden' name='openertxt2' id='openertxt2' value='' />
+	<input type='hidden' name='openerinfo' id='openerinfo' value='' />
+	
+ <div class="zipcode_title"><b>주소</b> 찾기</div><!-- css도 같이 변경해주세요!! 이미지->텍스트로 변경했습니다. SHW 210331 -->
+ 
+ <div style="width:100%; float:left;"><div class="zipcode_area">
+   <!-- 검색 -->
+   <div style="float:left; width:100%;">
+     <span class="black13">도로명, 지번, 건물명에 대해 통합검색이 가능합니다.</span>
+     <br/>
+     <span class="Eblack12">예) 원효로 58길 1, 가산로 9길 87, 여의도동 35-1, 세종문화회관</span>
+      <br/>
+     <span class="Tblue12B">※ 6자리 우편번호(지번주소)는 오래된 정보입니다. 도로명 주소 결과가 없는 경우에만 사용해주세요.</span>
+   </div>
+   <div class="search_box">
+     <input type='text' id='SchAddress' name='SchAddress' value='' class="input_delnum" onKeyPress="if(event.keyCode=='13') schform();" onClick="this.value=''" size="10" style="" />
+     <a class="btn" style="margin: 0px 0px 20px 10px; .margin:0px 0px 20px 4px" href="javascript:schform();">검색</a>
+   </div>
+   
+   <!-- 검색결과 -->
+   <div class="zipcode_list">
+ </div>
+</body>
+</html>

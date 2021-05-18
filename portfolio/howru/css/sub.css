@@ -1,0 +1,203 @@
+html{font-size: 20px;}
+body{font-size: 1rem;padding:0 0 2.333rem;}
+/*  margin: 50px auto 0; width:18rem; height: 32rem; box-shadow: 10px 10px 10px  #c7c7c7; */
+h2{font-size: .6666rem; color:#282828; line-height: 1;}
+h2 > span{ padding: 0 0 0 .1666rem; color: #7552c4;}
+.back_page{display: block; width: 18rem; padding:.9333rem 0;}
+.back_page a{padding-left:1.266rem;width: 0.55rem;}
+.back_page a img{width: 0.55rem; height: 0.8333rem;}
+.m0auto{padding:0  2.1666rem 0 2.1rem;}/* {margin: 0 auto;width: 13.7666rem; } */
+.m0auto h2{text-align: center; font-size:1rem; line-height: 1; color: #000; font-weight: normal;}
+.m0auto2{padding:0 3rem 0 2.95rem;}/* {margin: 0 auto;width: 12.0833rem; } */
+.m0auto3{padding: 0 .4rem 0 .5833rem;}/* .m0auto3{margin:0 auto; width: 17.35rem;} */
+.m0auto4{margin:0 2.8333rem 0 2.666rem; width: 100%}
+/* 가로사이즈 100%하기위해선 left:0 right:0 */
+header{position: fixed; left:0;right:0; bottom: 0; height: 2.3333rem; background: #f7f7f7; border-top: 1px solid #818181; z-index: 100;}
+header ul{display: flex;}
+header ul li{flex: 1;}/* 1/n */
+header ul li a{display: block; position: relative; margin: 0 auto; width: 2.3333rem; height: 2.3333rem; }
+header ul li a i {position: absolute; left: 50%; top:.5166rem; transform: translateX(.6666rem); width: .7833rem; height: .7833rem; background: #ed1c24; border-radius: 100%; text-align: center; line-height: .7833rem; font-size: .5833rem; color:#fff; font-style: normal;}
+header ul li:nth-child(1) a{ background: url(../images/ico_home_off.png) no-repeat center / 1.4166rem auto;}/* 이미지의 가로,세로사이즈 */
+header ul li:nth-child(2) a{ background: url(../images/ico_addfriend_off.png) no-repeat center / 1.2rem auto;}
+header ul li:nth-child(3) a{ background: url(../images/ico_alarm_off.png) no-repeat center / 1.1rem auto;}
+header ul li:nth-child(4) a{ background: url(../images/ico_setting_off.png) no-repeat center / 1.2333rem auto;}
+header ul li:nth-child(1):hover a,
+header ul li:nth-child(1).on a{background-image: url(../images/ico_home_on.png);}
+header ul li:nth-child(2):hover a,
+header ul li:nth-child(2).on a{background-image: url(../images/ico_addfriend_on.png);}
+header ul li:nth-child(3):hover a,
+header ul li:nth-child(3).on a{background-image: url(../images/ico_alarm_on.png);}
+header ul li:nth-child(4):hover a,
+header ul li:nth-child(4).on a{background-image: url(../images/ico_setting_on.png);}
+.search { display: flex; padding: .5166rem 0; background: #eee;}
+.search > * { flex: 1;}
+.search > a:first-child { flex:none; width: 2.6rem; height: 1.9166rem; background: url(../images/ico_menu.png) no-repeat center / .8833rem auto;}
+.search > a:last-child { flex: none; display: flex; width: 2.6666rem; height: 1.9166rem;}
+.search > a:last-child i { display: block; margin: auto; width: 1.4166rem; height: 1.4166rem; background: url(../images/c1.png) no-repeat center / cover; border-radius: 100%; border:1px solid #c7c7c7;}
+.search div { padding: 0 0 0 2.4166rem; border-radius:.3333rem; border:1px solid #b9b9b9; background:url(../images/ico_search.png) no-repeat 1.016rem center / .7333rem auto  #fff;}
+.search div input { border: none; width: 100%; height: 1.8833rem;border-radius:.3333rem; box-sizing: border-box;}
+.search + .member_list{padding-top: .9166rem;}
+.member_list{padding: 0 .4rem 0 .5833rem;}
+.member_list ul{padding:0 0 0 2.3333rem;}
+.member_list ul li{position: relative; display: flex;}
+.member_list ul li span{ overflow: hidden; position: absolute; left: -2.3333rem; top: calc(50% - .975rem); width: 1.95rem; height: 1.95rem; border-radius: 100%; line-height: 1;border: 1px solid #c7c7c7;}
+.member_list ul li span img{width: 1.95rem;}
+.member_list ul li ~ li{border-top: 1px solid #d0d0d0;}
+.member_list ul li a{display: block; flex: 1;height: 2.45rem; line-height: 2.45rem; color:#323131; font-size: .75rem;}
+.member_list .option1{display: flex; flex: none; align-items: center; justify-content: space-around; width: 5.25rem;}
+.member_list .option2{position: absolute; right: 0;top: 50%; padding:0 1.6833rem 0 0;line-height: 1;  background: url(../images/ico_arrow.png) no-repeat right .5rem center/ .5333rem auto; transform: translateY(-50%);}
+.option3 {display: flex; align-items: center;}
+.option3 label em{display: block; text-align: center; font-size: .4333rem; color: #343434;}
+.option3 label b{display: inline-block;}
+.option3 label i{ display: block; position: relative; width: 1.6rem; height: .6666rem; background: #959595; border-radius: .6666rem; line-height: 1;transition:background .3s;}
+.option3 label i:before{content: ""; position: absolute; left: .083rem; top:calc(50% - 0.2333rem); width: .4666rem; height: .4666rem; background: #fff; border-radius: 100%; transition: left .3s;}
+.member_list.today .option3 label i:after{display: block; content: "OFF"; position: absolute;  top:calc(50% - 0.2433rem);  left:0.65rem; color: #fff; font-size: .23rem; font-style: normal;}
+.option3 input:checked + label i{background: #5cb846;}
+.option3 input:checked + label .red{background: #eb1f27;}
+.option3 input:checked + label .blue{background: #369bff;}
+.option3 input:checked + label i:before{left: 1.083rem;}
+.member_list.today .option3 input:checked + label i:after{content: "ON"; left: .2rem; }
+.member_list.today .option3 input:checked + label .red:after{content: "방해"; left: .2rem; top:calc(50% - .2rem);}
+.member_list.today .option3 input:checked + label .blue:after{content: "비행"; left: .2rem; top:calc(50% - .2rem);}
+.member_list ~ .member_list{padding-top: 1.1666rem;}
+.btn{display: inline-block; padding: 0 .4166rem; min-width: 2.3333rem; height: 1.2666rem; border-radius:.4166rem; line-height: 1.2666rem; text-align: center; font-size: .6rem; color:#fff; }
+.btn.type1{background: #7552c4;}
+.btn.type2{background: #9f9f9f;}
+/* sub2 */
+.member_list ul li a{display: block; flex: 1; padding: 0.5rem 0 0;height: 2.45rem; line-height: 1.1333rem; color:#323131; font-size: .75rem;}/* 위와 동일한  */
+.member_list ul li a b{display: block; line-height: 1rem; color:#737373; font-weight: normal; font-size: .55rem;}
+.member_list ul li a p:after{display: inline-block; content: ""; padding-left:.25rem; width: .833rem; height: .833rem; background: url(../images/ico_car_ing.png) no-repeat center/.833rem .833rem;}
+.member_list ul li:nth-child(2) a p:after{background-image: url(../images/ico_bicy_ing.png)}
+.member_list ul li:nth-child(3) a p:after{background-image: url(../images/ico_eat_ing.png)}
+.member_list ul li:nth-child(4) a p:after{background-image: url(../images/ico_writ_ing.png)}
+.member_list ul li:nth-child(5) a p:after{background-image: url(../images/ico_meting_ing.png)}
+.member_list.today .option3 label i{margin: 0 0 .5rem auto;}
+.member_list.today .option3 label em{color:#000;}
+/* 최근활동친구:recent */
+.recent{ padding: .8666rem .4rem 0 .5833rem;}
+.recent ul{ display: flex; padding: .5833rem 0 .8666rem; text-align: center;}
+.recent ul li{ flex: 1;}
+.recent ul li a{ display: block;}
+.recent ul li b{ display: inline-block; position: relative;}
+.recent > ul li a span{ display: block; margin: 0 auto; padding: .4166rem 0 0 0; width: 3.0833rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .45rem; line-height: 1; }
+.recent ul li a img{ width: 2.45rem; border-radius: 100%}
+.recent ul li a em{ position: absolute; right: 0; bottom: 0; display: inline-block; width: .3666rem; height: .3666rem; background: #4bcc1f; border: .0833rem solid #fff; border-radius: 100%;}
+/* edit */
+.edit{margin:.8333rem .4rem .85rem .5833rem; padding: .4rem .7166rem .4rem .5833rem; height: 2rem; background: #7552c4;border-radius: .15rem; color:#fff; text-align: center; font-size: .55rem; line-height: 2rem; }
+.edit strong{padding:0 .1666rem 0 .3rem;font-size: .6333rem; line-height: 2rem; }
+.edit img{margin: auto 0; width: 1.8rem;border-radius: 100%; border: 1px solid #c7c7c7;}
+.edit a{ display: inline-block; margin: auto;width: .7166rem;height: .7166rem;
+background: url(../images/ico_writting.png) no-repeat right 0 top 50%/ .7166rem .7166rem;padding-left: 4.733rem;}
+/* 프로필설정 :sub_intro5*/
+.setting_profile div em{display: flex;position: relative; margin:2.05rem 0 1.466rem; height: 7.366rem; background: url(../images/profile_backgound.png) no-repeat center/100% 7.366rem;}
+.setting_profile div em:after{content: "";position: absolute; bottom: 0.1333rem; right: 0.1333rem; width: 1.3333rem; height: 1.3333rem; background: url(../images/ico_add_photo.png) no-repeat center/1.3333rem 1.3333rem;}
+.setting_profile div em i{display: block; position: relative; margin: auto; width: 4.3333rem; height: 4.3333rem; background: url(../images/back_pic.png) no-repeat center/4.3333rem 4.3333rem; border-radius: 100%;}
+.setting_profile div em i:after{content: "";position: absolute; bottom: 0; right: 0;width: 1.3333rem; height: 1.3333rem; background: url(../images/ico_add_photo.png) no-repeat center/1.3333rem 1.3333rem;}
+.setting_profile div p{ display: flex; position: relative; height: 2.2666rem; background: #f7f7f7; border: 1px solid #b3b3b3; border-radius: 0.15rem; line-height: 2.2666rem; }
+.setting_profile div p input{flex: 1 95%; width: 11.95rem;height: 2.2333rem;border: none;outline: 0;background: transparent;text-align: center;}
+/* .setting_profile div p input::-webkit-input-placeholder{color:#000; font-size:.6166rem; line-height:2.2333rem;} */
+.setting_profile div p > button{ flex: 1 15%; position: relative; background: transparent;cursor: pointer;}
+.setting_profile div p button:before{content: ""; position: absolute; top:50%; left: 50%;width: 0.6666rem; height: 0.6666rem; background: url(../images/ico_revise.png) no-repeat center/0.6666rem 0.6666rem; transform: translate(-50%,-50%);}
+.accept{margin-top: 1.1333rem;width: 100%;height: 2.3rem; background: #ab47bc; line-height: 2.3rem;text-align: center; font-size: 0.75rem; font-weight: bold; color: #fff; cursor: pointer;border-radius: 0.15rem; }
+/* sub_intro4 전화번호인증약관: phonum_agree */
+.phonum_agree .certifi_num{display: flex; margin:2.2rem 0 0.5rem;justify-content: space-between;}
+.phonum_agree .certifi_num input{flex: 1; width: 9.7rem; height: 2.2666rem; background: #f7f7f7; border: 1px solid #b3b3b3;border-radius: .15rem;text-align: center;}
+.phonum_agree .certifi_num button{margin-left:.3833rem; width: 3.7rem; height: 2.2666rem; background: #9d9d9d;color: #fff;border-radius: .15rem;}
+.phonum_agree .reset{margin-bottom:3.233rem; width: 100%; height: 1.6166rem; background: #fff; font-size: .6rem; line-height: 1.6166rem; border: 1px solid #b3b3b3; color: #000; border-radius: .15rem; text-align: center;}
+.phonum_agree ul li{position: relative;margin-bottom: .5666rem; height: 5.9333rem; border: 1px solid #b3b3b3; border-radius: .15rem; color: #000; }
+.phonum_agree ul li:last-child{margin-bottom:0; }
+.phonum_agree ul li p{margin:0 .41666rem 0 .5166rem; border-bottom: 1px solid #dcdcdc; line-height: 1.7rem; font-size: .6166rem; }
+.phonum_agree ul li p:before{display: inline-block; content: "";  margin:0 .25rem 0 .2166rem; width: .3166rem; height: .3166rem; background: #9d9d9d;border-radius: 100%;}
+.phonum_agree ul li em{display: block; overflow: auto; margin:0.1166rem .41666rem 0.1166rem .5166rem;   height: 2.55rem; font-size: .6166rem; color: #9c9c9c; font-style: normal;}
+.phonum_agree .agree {position:absolute; bottom: 0.2rem; right: .7166rem;}
+.phonum_agree .agree label{font-size: .55rem; line-height: 1;vertical-align: middle;}
+.phonum_agree .agree label:after{display: inline-block; content: ""; padding-left: .3666rem;width: 0.9333rem; height: 0.9333rem; background: url(../images/ico_agree_off.png) no-repeat center / .9333rem .9333rem; border-radius: 100%; vertical-align: middle;}
+.phonum_agree .agree input:checked + label:after{background-image: url(../images/ico_agree_on.png);}
+/* addnum */
+.addnum .input_num{ display: flex; justify-content: space-between; margin:1.95rem 0 0.5666rem; padding: .6rem 0 .4833rem;border: 1px solid #b3b3b3;border-radius: .15rem; font-size: .75rem;}
+.addnum .input_num b {margin:auto 0;width: 3.2166rem;line-height: 1.1666rem; text-align: center;border-right: 1px solid #d0d0d0;}
+.addnum .input_num input{flex: 1; padding-left: .9666rem; border: none;outline: 0;background: transparent;}
+.addnum > div p{padding:.5833rem 0 0; font-size: .5833rem; line-height: 1;color: #737171; text-indent: .1166rem;}
+.addnum > div small{font-size: .4rem;color: #d56060;}
+
+/* infro2: info_use */
+.info_use em{padding: .75rem  0 2.2666rem;display: block; line-height: .85rem; font-size:.7rem; color: #7e7e7e;font-style: normal; text-align: center;}
+.info_use .useinfo{display: flex;padding-bottom: .4333rem; justify-content: space-between; border-bottom: 1px solid #c5c5c5;}
+.info_use .useinfo label{flex: 1; padding-left:2.3333rem; align-content: center; line-height: 1.3333rem;font-size: .75rem; color:#000; background: url(../images/ico_tell_off.png) no-repeat left/1.2833rem auto,url(../images/ico_agree2_off.png) no-repeat 97% 100%/1.2833rem auto; }
+.info_use .useinfo.save label{background-image: url(../images/ico_save_off.png) ,url(../images/ico_agree2_off.png) ; }
+.info_use .useinfo.save input:checked + label{background-image: url(../images/ico_save_off.png) ,url(../images/ico_agree2_on.png) ; }
+.info_use .useinfo.adsbook label{background-image: url(../images/ico_addresslist_off.png) ,url(../images/ico_agree2_off.png); }
+.info_use .useinfo.adsbook input:checked + label{background-image: url(../images/ico_addresslist_off.png) ,url(../images/ico_agree2_on.png); }
+.info_use .useinfo.tell label{background-image:url(../images/ico_tell_off.png), url(../images/ico_agree2_off.png) ;}
+.info_use .useinfo.tell input:checked + label{background-image:url(../images/ico_tell_on.png), url(../images/ico_agree2_on.png) ;}
+.info_use ul li p{padding:.5rem 0 1.4666rem .2166rem;line-height: .85rem;font-size:.5333rem;color: #000; }
+/* creat_accout */
+.creat_accout h2{padding: 3.8666rem 0 2.1666rem; text-align: center; font-size:1rem; line-height: 1; color: #000; font-weight: normal; }
+.creat_accout i{display: block; margin: .8333rem auto .75rem; font-size:.8rem; color:#929292; text-align: center;line-height: 1; }
+.creat_accout .accept.facebook{margin:0;  background: url(../images/ico_facebook.png) no-repeat 1.3666rem .666rem/ 0.55rem 1.05rem #3b5998;   font-weight: normal; }
+.creat_accout .accept.facebook:before{display: inline-block; margin:0 .6833rem 0 1rem;content: ""; width: 1px; height: 0.6rem; background: #7c90ba;}
+.creat_accout .accept.kakaotalk{margin:.7166rem 0 0;  background: url(../images/ico_kakaotalk.png) no-repeat .9666rem .666rem/ 1.2rem 1.1rem  #f7da00; color: #381e1f; font-weight: normal; }
+.creat_accout .accept.kakaotalk:before{display: inline-block; margin:0 .6833rem 0 1rem;content: ""; width: 1px; height: 0.6rem; background: #b89c0a;}
+.creat_accout .accept.phonenum{margin:0; padding: 0 0 0; background: #f7f7f7; border: .0166px solid #a7a7a7;color: #3d3c3c; line-height: .6166rem; font-weight: normal;}
+
+/* sub3 */
+.myprofile{color: #000;}
+.myprofile .back_pic{ position: relative; margin: 0 auto; width:100%; height: 11.7666rem; background: url(../images/house2.jpg) no-repeat center/ cover;}
+.myprofile .back_page2{display: block; position: absolute; top:.5666rem; left:.9166rem ; width: 1.1333rem; height: 1.1333rem; background: url(../images/ico_out.png) no-repeat center; z-index: 2;}
+.myprofile em{display: block;font-size:.5333rem; font-style: normal;color: #595959;}
+.myprofile .back_pic .myphoto{ position: absolute; left:0; top:60%; width: 100%; text-align: center;}
+.myprofile .back_pic .myphoto a{ display: block;}
+.myprofile .back_pic .myphoto b{ display:inline-block; position: relative;}
+.myprofile .back_pic .myphoto b img{ width: 6.1666rem; border-radius: 100%; border: .0166px solid #e8e8e8;}
+.myprofile .back_pic .myphoto b > em{display: inline-block; position: absolute; right: 0; bottom: 0;  width: 1.7rem; height: 1.7rem; background  :url(../images/ico_eat_ing.png) no-repeat center/1.7rem auto; border: .0833rem solid #fff; border-radius: 100%;}
+.myprofile .back_pic .myphoto span{ display: block; margin: 0 auto; padding: .5333rem 0 0 0; font-size: 0.9rem; }
+.member_list.today.situ .option3{display: block; margin: 3.066rem auto 0; text-align: center;}
+.member_list.today.situ .option3 label i{margin: 0;}
+.option3 label .situation{display: inline-block; vertical-align: middle;}
+.option3 label b{display: inline-block;  font-size: .5166rem;}
+.myprofile > p{margin: .7666rem 2.866rem 0; padding:0.4rem 0; height: 2 .3rem;  background: #f1f1f1; border-radius: .3666rem;line-height: 0.75rem; text-align: center; font-size: 0.5333rem; vertical-align: middle;}
+.myprofile .sns{display: flex; margin: .7666rem 2.866rem 0; justify-content: space-between;}
+.myprofile .sns li{margin-right: .7166rem;}
+.myprofile .sns li button{width: 1.9rem; height: 1.9rem; cursor: pointer;}
+.myprofile .sns li:last-child{margin-right: 0;}
+.myprofile .sns li:first-child button{background:url(../images/ico_tell.png) no-repeat 0 0/100% auto;}
+.myprofile .sns li:nth-child(2) button{background: url(../images/ico_sms.png) no-repeat center/1.9rem auto;}
+.myprofile .sns li:nth-child(3) button{background: url(../images/ico_kakaotalk.png) no-repeat center/1.9rem auto;}
+.myprofile .sns li:nth-child(4) button{background: url(../images/ico_facetime.png) no-repeat center/1.9rem auto;}
+.myprofile .sns li:nth-child(5) button{background: url(../images/ico_etc.png) no-repeat center/1.9rem auto;}
+.myprofile .contact{ position: fixed; left:0; bottom: 2.333rem; width: 100%;}
+.myprofile .contact > button{display: block; margin: 0 auto; width: 4.6333rem; height:1.1rem; background: #4e3783; border-top-left-radius:.4166rem;  border-top-right-radius:.4166rem;  font-size: .4666rem; line-height: 1.1rem; color: #fff; text-align: center;}
+.myprofile .contact .touch{opacity: 0; height: 0; transition: all .3s ease-out;}
+.myprofile .contact .touch.show{opacity: 1; height: 3.5rem; }
+.myprofile .contact ul{display: flex; padding:0 3.8rem;justify-content: space-around; height:3.4333rem; background: #7552c4; border: 1px solid #4e3783;}
+.myprofile .contact ul li{ margin-right: 1.0666rem; padding: .4666rem 0;font-size: 0.4333rem; text-align: center; line-height: 1;color: #fff; font-size: .4333rem;}
+.myprofile .contact ul li:last-child{margin: 0;}/*  */
+.myprofile .contact ul li button{display: block; margin:0 0 .2333rem; width: 1.85rem; height: 1.85rem; border-radius: 100%; cursor: pointer;}
+.myprofile .contact ul li:first-child button{background:url(../images/ico_tell3.png) no-repeat 0 0/100% auto #fff;}
+.myprofile .contact ul li:nth-child(2) button{background:url(../images/ico_sms3.png) no-repeat center/1.85rem auto #fff;}
+.myprofile .contact ul li:nth-child(3) button{background:url(../images/ico_kakaotalk3.png) no-repeat center/1.85rem auto #fff;}
+.myprofile .contact ul li:nth-child(4) button{background:url(../images/ico_facetime3.png) no-repeat center/1.85rem auto #fff;}
+/*sub4:알림 */
+.alarm .tab{display: flex; margin:0 0 .7333rem;background: #eeeeee; }
+.alarm .tab li {flex: 1; }
+.alarm .tab li a{display: block; font-size: .6666rem; color:#a3a3a3; text-align: center; line-height: 1.9rem;}
+.alarm .tab li a.on,
+.alarm .tab li a:hover a{ color:#7552c4; border-bottom: .01666rem solid #7552c4;}
+.alarm .member_list ul li a {display: block; font-size: .55rem; color:#939393; line-height: .85rem;}
+.alarm .member_list ul li a strong{display: inline-block; padding-right: .2166rem;font-size: .6rem; color: #000;}
+.alarm .option3 label i{margin: 0 0 .5rem auto;}
+/*
+line-height: 40rem;}
+**CSS 속성 입력 순서 ***
+overflow
+display,flex
+float
+position ,left,right,top,bottom
+padding, margin
+width,height
+background
+border,border-radius,box-sizing
+font관련(letter-spacing,line-height,font-size,color,text-indent등등)
+animation,transition
+etc
+*/

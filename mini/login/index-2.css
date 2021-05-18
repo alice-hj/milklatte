@@ -1,0 +1,228 @@
+/**************************************
+****로그인페이지2 [container2]**********
+***************************************/
+body{
+  /* background: #4d4d4d; */
+  margin: 0;
+}
+h4{
+font-size:22px;
+font-family: 'Montserrat', sans-serif;
+font-weight:700;
+font-size:25px;
+}
+p{
+font-size:14px;
+}
+button{outline: none;}
+.bold{}
+.normal{}
+
+.container2{
+  position: absolute;
+  width: 900px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.move{
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  background: #3884e2 left/cover;
+  text-align: center;
+  border-radius: 10px 0px 0px 10px;
+  transition: .4s ease;
+  z-index: 20;
+  /* 애니메이션시 움직이기위해 */
+}
+.creat-account{
+  position:absolute;
+  width:500px;
+  height:100%;
+  background:#fff;
+  border-radius:0px 10px 10px 0px;
+  text-align:center;
+  transform:translate(400px);
+}
+.welcome{
+  position: absolute;
+  width: 400px;
+  height: 50%;
+  text-align: center;
+  color: #fff;
+  z-index: 30;
+  /* 움직이는 배경보다 글짜가 위에 */
+}
+.hello{
+  display: none;
+  position: absolute;
+  width: 400px;
+  height: 50%;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  z-index: 30;
+}
+.p-button{
+ position: absolute;
+ margin: auto;
+ padding: 12px 60px;
+ left: 0;
+ right: 0;
+ top: 60%;
+ color: #fff;
+ text-align: center;
+ width: 50%;
+ font-size: 14px;
+ border-radius: 25px;
+ border: 1px solid #fff;
+ cursor: pointer;
+ transition: all .4s ease;
+ animation-iteration-count: 5;
+
+}
+.p-button:hover{
+  transition:all .4s ease;
+  background-color:rgba(0,0,0,.7);
+}
+.welcome-text{
+  margin-top:100px;
+  color:#fff;
+}
+.text{
+  width:60%;
+  line-height:20px;
+  margin:0 auto;
+}
+.icons{
+  text-align: center;
+  margin-bottom:20px;
+}
+.icon{
+  display:inline-block;
+  width:30px;
+  height:30px;
+  border:1px solid lightgray;
+  border-radius:50%;
+  text-align:center;
+  cursor:pointer;
+  line-height:30px;
+}
+
+.icon:hover{
+  background-color:#000;
+  color:white;
+}
+.creat-account p {
+  color:#b2bec3;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight:500;
+  font-size:17px;
+}
+.creat-account input{
+width: 60%;
+padding: 8px 5px;
+margin-bottom: 15px;
+border: 0px;
+border-bottom: 1px solid lightgray;
+
+}
+.b-button{
+  padding:12px 60px;
+  background:#e53434;
+  color:#fff;
+  font-size:14px;
+  border-radius:25px;
+  border: none;
+}
+.b-button:hover {
+	background: #d83d3d;
+}
+.forgot{
+  display:none;
+}
+.forgot:hover{
+  color:red;
+  font-weight: bold;
+}
+.moving{
+  animation: moving .4s linear forwards;
+  transition: all .4s ease-out;
+}
+
+.movingForm{
+  animation: movingForm .4s linear forwards;
+  transition: all .4s ease-out;
+}
+.start{
+  animation: start .4s linear forwards;
+  transition: all .4s ease-out;
+}
+.startForm{
+  animation: startForm .4s linear forwards;
+  transition: all .4s ease-out;
+}
+@keyframes moving {
+  0%{width: 400px; transform: translate(0px);}
+  50%{width: 550px; transform: translate(200px);}
+  100%{width: 400px; transform: translate(500px);}
+}
+@keyframes movingForm {
+  0%{width: 500px; transform: translate(400px);}
+  50%{width: 650px; transform: translate(200px);}
+  100%{width: 500px; transform: translate(0px);}
+}
+@keyframes start {
+  0%{width: 400px; transform: translate(500px);}
+  50%{width: 550px; transform: translate(200px);}
+  100%{width: 400px; transform: translate(0px);}
+}
+@keyframes startForm {
+  0%{width: 500px; transform: translate(0px);}
+  50%{width: 650px; transform: translate(200px);}
+  100%{width: 500px; transform: translate(400px);}
+}
+
+
+/**********************
+*********반응형********
+ *********************/
+
+@media screen and (max-width:910px) {
+.container2{width: 700px;}
+.move{width: 300px;}
+.welcome{width: 300px;}
+.hello{width: 300px;}
+.p-button{width: 76%;}
+.creat-account{width:400px; transform: translate(300px);}
+@keyframes moving {
+  0%{width: 300px; transform: translate(0px);}
+  50%{width: 450px; transform: translate(200px);}
+  100%{width: 300px; transform: translate(400px);}
+}
+@keyframes movingForm {
+  0%{width: 400px; transform: translate(400px);}
+  50%{width: 500px; transform: translate(200px);}
+  100%{width: 400px; transform: translate(0px);}
+}
+@keyframes start {
+  0%{width: 300px; transform: translate(400px);}
+  50%{width: 550px; transform: translate(200px);}
+  100%{width: 300px; transform: translate(0px);}
+}
+@keyframes startForm {
+  0%{width: 400px; transform: translate(0px);}
+  50%{width: 500px; transform: translate(200px);}
+  100%{width: 400px; transform: translate(300px);}
+}
+}/* max-width 910 */
+
+ @media screen and (max-width:750px){
+.container2{display: none;}
+.move{display: none;}
+.welcome{display: none;}
+.hello{display:none;}
+.creat-account{width: 100%; max-width: 76vw;left: 50%; transform: translateX(-50%); border-radius: 10px;}
+}/* max-width 750 */

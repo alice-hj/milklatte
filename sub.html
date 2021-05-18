@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <title>서브</title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/default.css"><!-- 베이직 -->
+  <link rel="stylesheet" href="css/sub.css"><!-- 서브 -->
+  <link rel="stylesheet" href="css/common.css"><!-- 공통수정 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Song+Myung&display=swap" rel="stylesheet">
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- 팝업 제이쿼리 -->
+  <script src="js/default.js"></script>
+  <!-- 제이쿼리 :메뉴섹션 슬라이드 -->
+  <script src="js/scroll_menu.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+<style>
+  .grid article dl{display: inline-block;}
+  article p{background: #000;width: 352px;
+    height: 218px;
+    color: #fff;
+    text-align: center;}
+</style>
+<body>
+  <header id="header2">
+    <!--헤더:fixed  -->
+    <div class="container2">
+      <h1 id="logo">
+        <a href="index.html">LEE HYUN JEONG</a>
+      </h1>
+    </div>
+  </header>
+  <div id="fullpage">
+    <div id="container">
+      <div class="section_01">
+        <div class="s01_txt">
+          <h3 class="animate__delay-0s">ALL PROJECT</h3>
+          <p class="animate__delay-1s">웹 표준과 웹 접근성 준수하며</p>
+          <p class="animate__delay-2s">트랜드를 어떻게 제공해야 하는지 고민하는 웹 퍼블리셔 이현정입니다</p>
+        </div>
+        <!--s01_txt-->
+        <ul class="visual">
+          <li class="v_01"></li>
+        </ul>
+      </div>
+      <!--section_01-->
+      <div class="section_02">
+        <div class="s2_txt">
+          <h2>LIST</h2>
+          <!-- <p>단순히 트렌드를 따라가는 것이 아닌 왜 필요하며,<br>어떻게 제공해야 하는지 고민하는 웹 퍼블리셔 이현정입니다.</p> -->
+        </div>
+        <!--s2_txt-->
+      </div>
+      <!--section_02-->
+      <div class="button-group filters-button-group">
+        <button class="button is-checked" data-filter="*">all</button>
+        <button class="button" data-filter=".responsive">responsive</button>
+        <button class="button" data-filter=".mobile">mobile</button>
+        <button class="button" data-filter=".web">web</button>
+        <button class="button" data-filter=".mini">mini</button>
+      </div>
+      <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+        <h3><span class="hide">all lists</span></h3>
+        <article class="mini responsive">
+          <img src="images/Momentum.png" class="img-responsive" alt="image" />
+          <dl>
+            <dt>VanillaJS Momentum</dt>
+            <dd>순수 바닐라 자바스크립트</dd>
+          </dl>
+          <a href="mini/momentum/index.html" target="_blank"></a>
+        </article>
+        <article class="mobile">
+          <img src="images/howru2.png" class="img-responsive" alt="image" />
+          <dl>
+            <dt>HowRU</dt>
+            <dd>모바일버전</dd>
+            <dd>작업시간 : 6일 , 10페이지</dd>
+          </dl>
+          <a href="#none" class="mob" onclick="window.open('portfolio/howru/index.html','window','width=470,height=670,left=0,top=0')" target="_blank"><span class="hide"></span></a>
+        </article>
+        <article class="mini responsive">
+          <img src="images/slide.png" class="img-responsive" alt="image" />
+          <dl>
+            <dt>VanillaJS Slide</dt>
+            <dd>순수자바스크립트 슬라이드</dd>
+          </dl>
+          <a href="mini/slide/index.html" target="_blank"></a>
+        </article>
+        <article class="responsive">
+          <img src="images/life.png" class="img-responsive" alt="image" />
+          <dl>
+            <dt>생명보험협회</dt>
+            <dd>반응형버전</dd>
+            <dd>작업시간 : 1일, 4페이지</dd>
+          </dl>
+          <a href="portfolio/life/sub1.html" target="_blank"></a>
+        </article>
+        <article class="web">
+          <img src="images/tving.png" class="img-responsive" alt="image" />
+          <dl>
+            <dt>티빙</dt>
+            <dd>웹버전</dd>
+            <dd>작업시간 : 5일, 4페이지</dd>
+          </dl>
+          <a href="portfolio/tving/index.html" target="_blank"></a>
+        </article>
+        <article class="responsive">
+          <img src="images/casa.png" class="img-responsive" alt="image" />
+          <dl>
+            <dt>까사</dt>
+            <dd>반응형버전</dd>
+            <dd>작업시간 : 5일, 1페이지</dd>
+          </dl>
+          <a href="portfolio/casa/index.html" target="_blank"></a>
+        </article>
+        <article class="web">
+          <img src="images/maru.jpg" class="img-responsive" alt="image" />
+          <dl>
+            <dt>동화자연마루</dt>
+            <dd>웹버전</dd>
+            <dd>작업시간 : 5일, 6페이지</dd>
+          </dl>
+          <a href="mini/type2/index2.html" target="_blank"></a>
+        </article>
+        <article class="mobile">
+          <img src="images/pan.png" class="img-responsive" alt="image" />
+          <dl>
+            <dt>신한판</dt>
+            <dd>모바일버전</dd>
+            <dd>작업시간 : 5일, 5페이지</dd>
+          </dl>
+          <a href="#none" class="mob" onclick="window.open('portfolio/pan/index.html','window','width=400,height=670,left=0,top=0')"><span class="hide"></span></a>
+        </article>
+        <article class="mini responsive">
+          <img src="images/login.png" class="img-responsive" alt="image" />
+          <dl>
+            <dt>LOGIN PAGE</dt>
+            <dd>두가지 타입의 로그인페이지</dd>
+          </dl>
+          <a href="mini/login/index.html" target="_blank"></a>
+        </article>
+        <article class="web">
+          <img src="images/evnt1.png" class="img-responsive" alt="image" />
+          <!-- <p >컴퓨존 유지 보수/웹버전</p> -->
+          <dl>
+            <dt>컴퓨존 유지 보수</dt>
+            <dd>웹버전</dd>
+          </dl>
+          <a href="portfolio/compuzone/유지보수/compuzone_list.html" target="_blank"></a>
+        </article>
+        <article class="web">
+          <img src="images/evnt29467.png" class="img-responsive" alt="image" />
+          <!-- <p >미라캐스트/웹버전</p> -->
+          <dl>
+            <dt>컴퓨존 이벤트 페이지 : <br>미라캐스트</dt>
+            <dd>웹버전</dd>
+          </dl>
+          <a href="portfolio/compuzone/event/29467/29467_evt.htm" target="_blank"></a>
+        </article>
+        <article class="responsive">
+          <img src="images/evnt29449.png" class="img-responsive" alt="image" />
+          <!-- <p >추천아이템기획전/반응형</p> -->
+          <dl>
+            <dt>컴퓨존 이벤트 페이지 : <br>추천아이템 기획전</dt>
+            <dd>웹버전</dd>
+          </dl>
+          <a href="portfolio/compuzone/event/29449/pc/29449.htm" target="_blank"></a>
+        </article>
+        <article class="web">
+          <img src="images/evnt29822.png" class="img-responsive" alt="image" />
+          <!-- <p >씨게이트/웹버전</p> -->
+          <dl>
+            <dt>컴퓨존 이벤트 페이지 : <br>씨게이트</dt>
+            <dd>웹버전</dd>
+          </dl>
+          <a href="portfolio/compuzone/event/29822/29822_evt.htm" target="_blank"></a>
+        </article>
+        <article class="responsive">
+          <img src="images/evnt29662.png" class="img-responsive" alt="image" />
+          <!-- <p >봄며들다기획전/반응형</p> -->
+          <dl>
+            <dt>컴퓨존 이벤트 페이지 : <br>봄며들다 기획전</dt>
+            <dd>반응형</dd>
+          </dl>
+          <a href="portfolio/compuzone/event/29662/pc/29662_evt.htm" target="_blank"></a>
+        </article>
+        <article class="responsive">
+          <img src="images/evnt29636.png" class="img-responsive" alt="image" />
+          <!-- <p >게이밍모니터/반응형</p> -->
+          <dl>
+            <dt>컴퓨존 이벤트 페이지 : <br>게이밍모니터</dt>
+            <dd>반응형</dd>
+          </dl>
+          <a href="portfolio/compuzone/event/29636/pc/29636_evt.htm" target="_blank"></a>
+        </article>
+        <article class="responsive">
+          <img src="images/evnt29724.png" class="img-responsive" alt="image" />
+          <!-- <p >빔프로젝트 기획전/반응형</p> -->
+          <dl>
+            <dt>컴퓨존 이벤트 페이지 : <br>빔프로젝트 기획전</dt>
+            <dd>반응형</dd>
+          </dl>
+          <a href="portfolio/compuzone/event/29724/pc/29724_evt.htm" target="_blank"></a>
+        </article>
+        <article class="responsive">
+          <img src="images/evnt29727.png" class="img-responsive" alt="image" />
+          <!-- <p >ASUS 기획전/반응형</p> -->
+          <dl>
+            <dt>컴퓨존 이벤트 페이지 :<br>ASUS기획전</dt>
+            <dd>반응형</dd>
+          </dl>
+          <a href="portfolio/compuzone/event/29727/pc/29727_evt.htm" target="_blank"></a>
+        </article>
+        <article class="responsive">
+          <img src="images/evnt29427.png" class="img-responsive" alt="image" />
+          <!-- <p >3월정규이벤트/반응형</p> -->
+          <dl>
+            <dt>컴퓨존 이벤트 페이지 : <br>3월정규이벤트</dt>
+            <dd>반응형</dd>
+          </dl>
+          <a href="portfolio/compuzone/event/29427/pc/29427_evt.htm" target="_blank"></a>
+        </article>
+
+      </section>
+      <section id="section4" data-num="4" class=" fp-auto-height footer">
+        <!--푸터  -->
+        <div class="f_inner">
+          <h2>CONTACT</h2>
+          <dl>
+            <dt>LEE HYUNJEONG INFO</dt>
+            <dd>010-3207-7490</dd>
+            <dd>github.com/alice-hj/portfolio</dd>
+            <dd>valdinet@hanmail.net</dd>
+          </dl>
+        </div>
+        <p class="copy">&copy;LEEHYUNJEONG.AII rights reserved</p>
+      </section>
+    </div>
+    <a href="#" class="top">TOP</a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007714979/custom/page/hack-a-thon-3/masonry.min.min.js'></script>
+    <script src='https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007849180/custom/page/hack-a-thon-3/isotope.min.js'></script>
+    <script id="rendered-js">
+      $(function() {
+        var $grid = $('.grid').isotope({
+          itemSelector: 'article'
+        });
+
+
+        // filter buttons
+        $('.filters-button-group').on('click', 'button', function() {
+          var filterValue = $(this).attr('data-filter');
+          $grid.isotope({
+            filter: filterValue
+          });
+        });
+        $('.button-group').each(function(i, buttonGroup) {
+          var $buttonGroup = $(buttonGroup);
+          $buttonGroup.on('click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $(this).addClass('is-checked');
+          });
+        });
+      });
+      // debounce so filtering doesn't happen every millisecond
+      function debounce(fn, threshold) {
+        var timeout;
+        return function debounced() {
+          if (timeout) {
+            clearTimeout(timeout);
+          }
+
+          function delayed() {
+            fn();
+            timeout = null;
+          }
+          timeout = setTimeout(delayed, threshold || 100);
+        };
+      }
+
+      $(window).bind("load", function() {
+        $('#all').click();
+      });
+      //# sourceURL=pen.js
+    </script>
+  </div>
+</body>
+
+</html>

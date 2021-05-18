@@ -1,0 +1,154 @@
+body{padding:100px 0 0; background: #212121; color: #fff;}
+section {margin:0 auto; width: 1200px;}
+section ul:after{content: "";display: block; clear: both;}
+h3{ font-size: 24px; font-weight: normal;line-height: 1;}
+main{padding-bottom: 200px;}
+
+/*#search_family:section .search_page */
+.search_n_tab{padding:59px 0 0; width: 100%; background: #1b1b1b;}
+.search_n_tab > div{margin: 0 auto; width: 1200px;}
+.search_n_tab .box{display: flex; padding: 0 26px 0 49px;  margin: 0 auto; align-items: center; width: 815px; height: 66px; border-radius: 66px; background: #fff; }
+.search_n_tab .box input{width: 815px;background: transparent; border:none; outline: 0; color: #000; font-size: 24px;}
+.search_n_tab button{background: none; cursor: pointer;}/* 버튼의 기본배경색은 회색  */
+.search_n_tab button:before{content: "\e97a"; color:#000; font-size: 33px; font-weight: bold;}
+.search_n_tab > div ul{margin:24px auto 0; width: 538px;}
+.search_n_tab > div ul li{float: left; margin-right: 20px; }
+.search_n_tab > div ul li a{display: block; padding:0 11px; font-size: 16px;  color: #6e6e6e;  line-height: 56px;}
+.search_n_tab > div ul li.on a,
+.search_n_tab > div ul li:hover a{color:#fff; border-bottom: 1px solid #bbb;}
+/* #search_family: sub_공통 */
+.search_family h2{padding: 80px 0 0;text-align: center; font-size: 28px; color:#dedede; font-weight: normal; line-height: 1;}
+.search_family h3{padding:44px 0 0;}
+.search_family h3 span{padding:0 0 0 13px; color: #ff1f45; font-size: 13px;}
+.family{padding:0 0 44px; border-bottom: 1px solid #373737;}
+.family ul{padding:20px 0 0;}
+.family ul li{float: left; margin-right: 24px; width: 180px;transition: transform 0.5s; transform: translateY(0);}
+.family ul li:last-child{margin-right: 0;}
+.family ul li img{ padding: 0 0 19px; width: 180px; height: 260px; border-radius: 3px;}
+.family ul li p{ overflow: hidden; font-size: 15px; color: #e3e3e3; text-indent: 3px; white-space: nowrap; text-overflow: ellipsis;}
+.family ul li:hover{transform: translateY(-10px);}
+/* #search_family: sub_section .family.clip */
+.family.clip{border: 0;}
+.family.clip ul li{margin-right: 20px; width: 224px;}
+.family.clip ul li:last-child{margin-right: 0;}
+.family.clip ul li img{width: 224px; height: 126px;}
+.family.clip ul li p{ overflow: visible; white-space: normal; line-height: 18px; padding: 0 0 0 3px;}
+.family.clip .clip_time{display: block; position: absolute; right:4px; bottom: 56px; width: 29px; height: 20px; background: rgba(45,48,52,.9); border-radius: 2px; color: #ebeae8; font-size: 8px; text-align: center; line-height: 20px;}
+/* #search_family: sub_.button */
+.family > div {position: relative;}
+/* .family > div .controls button{ display: none; position: absolute; top:50%; width: 40px; height: 40px; background:#1b1b1b; opacity: 0.7; border-radius: 100%; font-size: 19px; color:#646464; transform: translateY(-50%); z-index: 10; cursor: pointer;}
+.family > div:hover .controls button{display: block;}
+.prev{left:-20px;}
+.prev:before{content: "\e93b";}
+.next{right:-20px;}
+.next:before{content: "\e93e";} */
+/* 제이쿼리 */
+.bx-controls a{display: none; position: absolute;top:50%;width: 40px; height: 40px;background:#1b1b1b; border-radius: 100%; color:#646464;font-size: 0;opacity: 0.7;transform: translateY(-50%);}
+.first_slide:hover .bx-controls a{display: block;}
+.bx-controls .bx-prev{left: -20px;}
+.bx-controls .bx-prev:before{content: "\e93b";position: absolute;left: 18%;top: 29%;font-size: 19px;}
+.bx-controls .bx-next{right:-20px;}
+.bx-controls .bx-next:before{content: "\e93e";position: absolute;right: 23%; top: 29%;font-size: 19px;}
+.bx-pager{position: absolute;right: 0; top: 0;}
+.bx-pager div{ display: inline-block; margin: 0 4px; width: 12px; height: 5px;}
+.bx-pager div a{display: block; width: 5px; height: 5px; border-radius: 100%; background: #4c4c4c;font-size: 0; color: transparent;transition: all .3s;}
+.bx-pager div a.active{width: 14px; border-radius: 4px; background: #fff;}
+/*#login*/
+.login h3 {padding: 62px 0 21px; border-bottom: 1px solid #323232;}
+.login a{color: #6e6e6e;}
+.login form > div{margin: 0 auto; width: 402px;}
+.login .tab{font-weight: 1; }
+.login .tab p{display: inline-block; padding: 72px 36px 0; border-bottom: 1px solid #323232;}
+.login .tab p a{display: block; padding:7px 16px; color: #6e6e6e;font-size: 14px;font-weight: bold;}
+.login .tab p a.on,
+.login .tab p:hover a{color: #fff; border-bottom: 1px solid #fff;}
+.login .idpw{padding:0 14px 0 38px; height: 64px; border-radius: 64px; background: #000; font-size: 0;}
+.login .idpw.id{margin:28px 0 10px;}
+.login .idpw button{background:transparent; cursor: pointer;}
+.login .idpw button:before{content: "\e924"; color: #3c3c3c; font-size: 22px; }
+.login .idpw input{display: inline-block; width: 324px; height: 64px; border:none; outline: 0; background: transparent; font-size: 19px;color: #ededed;}
+.login .idpw input::-webkit-input-placeholder{color:#464645; font-size:18px; line-height:100%;}
+.login .holding{padding:20px 15px 20px 0; text-align: right; font-size: 0;}
+.login .holding input{display: none;}
+.login .holding label{color: #6e6e6e;font-size: 15px; vertical-align: middle;}
+.login .holding label:before{display:inline-block; margin-right: 7px; content: ""; width: 8px; height: 8px; border-radius: 100%; background:#6e6e6e; vertical-align: middle;}
+.login .holding input:checked + label{color:#fff;}
+.login .holding input:checked + label:before{background:#d90000; }
+.login .button button{width: 100%; height: 64px; background: #d90000; border-radius: 64px; color:#fff; font-size: 16px; font-weight: bold; text-align: center; cursor: pointer;}
+.login .findit{padding:34px 0 52px; width: 100%; margin: 0 auto; border-bottom: 1px solid #323232;}
+.login .findit{font-size: 0; text-align: center;}
+.login .findit li{display: inline-block; padding-right:21px;}
+.login .findit li:last-child{padding-right: 0;}
+.login .findit li a{display: block; font-size: 14px; line-height: 1;}
+.login .findit li a.on,
+.login .findit li:hover a{color:#fff;}
+.login .login_by_sns{font-size: 0; text-align: center;}
+.login .login_by_sns em{display: block; padding:34px 0 23px; font-size: 15px; font-style: normal; line-height: 1; }
+.login .login_by_sns a{display: inline-block; margin-right: 20px; background:url(../images/sprite.png) no-repeat; width: 58px; height: 58px; border-radius: 100%;}
+.login .login_by_sns a:nth-child(2){background-position: 0 -80px;}
+.login .login_by_sns a:nth-child(3){background-position: -78px -80px;}
+.login .login_by_sns a:nth-child(4){background-position: -155px -80px;}
+.login .login_by_sns a:nth-child(5){background-position: -233px -80px;}
+.login .login_by_sns a:last-child{margin-right: 0;background-position: -311px -80px;}
+
+/* utiliz */
+.utilize h3{padding: 62px 0 21px; border-bottom: 1px solid #323232;}
+.utilize h5{padding:54px 0 0; font-size: 17px; font-weight: normal;}
+.utilize ul{padding:40px 0 55px; text-align: center;}
+.utilize ul li{float: left; margin-right: 30px; width: 380px;height: 410px;background: #3e59d2;border-radius: 7px; }
+.utilize ul li:last-child{margin-right: 0;}
+.utilize ul li:last-child{background: #7d57fc;}
+.utilize ul li h4{padding:59px 0 28px;font-size: 29px; line-height: 0;}
+.utilize ul li p{line-height: 20px; font-size: 14px;}
+.utilize ul li p:last-of-type{padding-top: 22px;}
+.utilize ul li:last-of-type a{margin-top: 98px;}
+.utilize .plus{position: relative; background: #ff1f45;}
+.utilize .plus h4:after{display: inline-block; content: ""; position: absolute; top: 48px;right: 96px;width: 8px; height: 8px; background: url(../images/ticket-star.png);}
+.utilize .plus .recommend{display: flex; position: absolute; left:0px; top:0px; align-items: center;  justify-content: center; width: 78px; height: 78px;
+  border-radius:7px;
+  background: linear-gradient(135deg,#fff 45%, transparent 0), linear-gradient(-45deg, #ff1f45 55%,transparent 0);}
+.utilize .plus .recommend > div{display: flex;  margin: 20px 0 0 10px; width: 78px; height: 78px; color:#ff1f45; font-weight:bold; font-size: 14px;}
+.utilize .price_detail{margin:33px 50px 0 50px;}
+.utilize .price_detail a{display: block;  margin-bottom: 10px; padding: 0 20px; width: 235px; height: 52px; background:rgba(33,33,33,.3); border-radius: 52px; }
+.utilize .price_detail a:after{display: block; content: ""; clear: both;}
+.utilize .price_detail a:hover{background: rgba(33,33,33,.7);}
+.utilize .price_detail a span{ float: left; line-height: 52px; font-size: 13px; color: #fafafa;}
+.utilize .price_detail a > div{float: right; color: #fafafa;}
+.utilize .price_detail a > div strong{font-size: 23px; line-height: 52px;}
+.utilize .price_detail a > div i{font-style: normal; font-size: 17px;}
+.utilize table{margin-top:20px; text-align: center; border-right:hidden; border-left: hidden;}
+.utilize table th,td{ border: 1px solid #5b5b5b; color:#ededed;}
+.utilize table thead{border-top: 2px solid #5b5b5b;}
+.utilize table thead tr{ height: 36px;}
+.utilize table thead tr th{ font-size: 15px; font-weight: normal;}
+.utilize table tbody tr{height: 45px;}
+.utilize table tbody tr td{font-size: 14px; line-height: 20px;}
+.utilize table tbody .left{ position: relative; padding:12px 0 10px 20px;text-align: left;  color: #ccc;}
+.utilize table tbody a{display: block; position: absolute; top: 18px;right: 16px;content: "";width: 6px;height: 6px;border-top: 1px solid #7c7c7c;border-right: 1px solid #7c7c7c;transform: rotate(45deg);}
+.utilize table tbody td em{display: block; color: #8f8d8f; font-size: 12px;}
+.utilize table tbody .free{font-size: 11px; color: #ccc; background: rgba(39,39,39);}
+.utilize table tbody .okay:before{display: block; content: ""; margin: 0 auto; width: 10px; height: 10px; background: #ff1f45;border-radius: 100%;}
+.utilize table tbody .none:before{display: block; content: "\e9af"; margin: 0 auto; width: 13px; height: 13px; color: #787878; font-size: 13px; }
+.utilize img{display: block; padding:65px 0 18px; width: 1200px; height: 146px;}
+.utilize .exclamation:before{display:inline-block; content: "\e9aa";margin: 0 11px;  color: #333; font-size: 25px;vertical-align:text-top;}
+.utilize h6{padding: 30px 0 13px; font-size: 14px; font-weight: normal;}
+.utilize .precautions > div{padding-left: 23px;}
+.utilize .precautions p{line-height: 22px;font-size: 14px; color:#535253;}
+.utilize .precautions p:before{display: inline-block; content: ""; margin-right: 5px; width: 3px; height: 3px; border-radius: 100%; background:#535253; vertical-align: middle;;}
+.utilize .precautions .sevice_precautions p{padding-bottom: 10px; color: #969696;}
+.utilize .precautions .sevice_precautions span{display: block; padding-left: 11px; color:#535253;}
+
+/*
+**CSS 속성 입력 순서 ***
+overflow
+display,flex
+float
+position ,left,right,top,bottom
+padding, margin
+width,height
+background
+border,border-radius,box-sizing
+font관련(letter-spacing,line-height,font-size,color,text-indent등등)
+animation,transition
+etc
+ */

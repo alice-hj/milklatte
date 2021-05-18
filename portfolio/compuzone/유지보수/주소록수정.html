@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CompuZone - 컴퓨터 전문 쇼핑몰 -</title>
+<!-- 
+<script language='javascript' src='../script/common.js'></script>
+<script type="text/javascript" src='../script/design.js'></script>
+<link href="../css/coz2005.css" rel="stylesheet" type="text/css"> 
+<link type="text/css" rel="stylesheet" href="../css/font.css?utime=210401">
+<link type="text/css" rel="stylesheet" href="../css/common_style.css?utime=210401">
+ -->
+<link rel="stylesheet" href="defalt.css">
+</head>
+<style>
+html,body {width:100%; box-sizing:border-box; }
+body {word-wrap:break-word; word-break:keep-all; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0; padding:0;}
+dl,ul,ol,menu,li {list-style:none;}
+
+.bsksimp_winpop{padding:30px;}
+.bsksimp_winpop *{color:#1a1a1a; letter-spacing:-0.5px; font-family:Noto-R; box-sizing:border-box;}
+.winpop_wrap{text-align:center;}
+.winpop_wrap > h1{margin-bottom:13px; padding-bottom:15px; color:#1a1a1a; font-size:18px; font-family:Noto-B; text-align:center; border-bottom:1px solid #1a1a1a;}
+.tableWrap{margin-top:20px; box-sizing:border-box;}
+.tableWrap th , .tableWrap td{text-align:left;}
+.tableWrap th{padding:20px; background:#f9f9f9; color:#1a1a1a; font-size:16px; font-weight:normal; border-top:1px solid #e8e8e8;}
+.tableWrap td{padding:20px 15px; border-top:1px solid #e8e8e8;}
+.tableWrap tr:last-child th , .tableWrap tr:last-child td{border-bottom:1px solid #e8e8e8;}
+.okConfirm{color:#585858; font-size:16px;}
+.ingConfirm{color:#3262c1; font-size:16px;}
+.chkConfirm{color:#f14738; font-size:16px; }
+.modConfirm{font-size:16px;}
+.hp_wrap > span {position:relative; margin-right:25px; width:100px;}
+.hp_wrap > span:last-child{margin-right:0;}
+.hp_wrap > span + span:before{content:""; position:Absolute; left:-17px; top:11px; display:block; width:7px; height:1px; background:#d8d8d8; }
+.hp_wrap + .hp_wrap{margin-top:8px;}
+.bskS_file{width:470px;}
+.bskS_file .fileName{display:inline-block; padding:0 13px; width:384px; height:40px; line-height:40px; border:1px solid #d8d8d8; border-right:none; color:#1a1a1a; font-size:14px; outline:none; vertical-align:top;}
+.bskS_file .bskS_MBtnG{position: absolute; right:0; top:0; padding:0; width:88px; height:38px; line-height:38px; font-size:14px;}
+.bskS_file input[type="file"]{position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; border:0; z-index:-1;}
+.address_tr .bskS_input{display:block; margin-top:9px; width:470px; }
+.address_tr .bskS_input input{width: 100%;}
+/* .bskS_address > a{height:40px; line-height:40px; font-family:Noto-R; text-align:center; vertical-align:top; text-decoration:none;} */
+.bskS_address > a{display: inline-block; height: 21px; line-height: 20px; font-family: Noto-R; text-align: center;vertical-align: top; text-decoration: none; font-size: 13px;background: #efefef;margin-top: 1px;padding: 0 5px; margin-left: 2px;}
+.email_wrap{color:#d8d8d8;}
+.email_wrap .bskS_input{width:150px; vertical-align:middle;}
+.email_wrap .bskS_select {margin-left:10px; width:100px;}
+.num_tr .bskS_MBtnG{padding:0; margin-left:8px; width:88px; font-size:14px; }
+.red_star{margin-left:-2px; color:#f14738; font-style:normal; }
+.btn_area{margin-top:30px;}
+.btn_area button{width:200px;}
+.btn_area button + button {margin-left:10px;}
+
+</style>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div class="bsksimp_winpop">
+	<div class="winpop_wrap">
+		<h1>주소록 수정</h1>
+		<div class="tableWrap">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<colgroup>
+					<col width="25%">
+					<col width="75%">
+				</colgroup>
+				<tr>
+					<th>배송지명</th>
+					<td>
+						<span class="bskS_input"><input type="text"></span>
+					</td>
+				</tr>
+				<tr>
+					<th>수령인<i class="red_star">＊</i></th>
+					<td>
+						<span class="bskS_input"><input type="text"></span>
+					</td>
+				</tr>
+				<tr class="address_tr">
+					<th>배송지<i class="red_star">＊</i></th>
+					<td>
+						<div class="conS_right">
+							<div class="bskS_address">
+								<input type="text" placeholder="우편번호" readonly="">
+								<a href="javascript:open_searchaddress('ReceiverZipCode1','ReceiverZipCode2','ReceiverAddr1','ReceiverAddr2','orderpage');" class="bskS_MBtnG" title="우편번호 찾기" tabindex="1">우편번호 찾기</a>
+							</div>
+							<span class="bskS_input"><input type="text" placeholder="기본주소"></span>
+							<span class="bskS_input"><input type="text" placeholder="상세주소"></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>연락처<i class="red_star">＊</i></th>
+					<td>
+						<div class="hp_wrap">
+							<span class="bskS_select">
+								<select name="">
+									<option>010</option>
+									<option>011</option>
+									<option>019</option>
+									<option>018</option>
+									<option>016</option>
+									<option>017</option>
+								</select>
+							</span>
+							<span class="bskS_input"><input type="text"></span>
+							<span class="bskS_input"><input type="text"></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>추가 연락처</th>
+					<td>
+						<div class="hp_wrap">
+							<span class="bskS_select">
+								<select name="">
+									<option>010</option>
+									<option>011</option>
+									<option>019</option>
+									<option>018</option>
+									<option>016</option>
+									<option>017</option>
+								</select>
+							</span>
+							<span class="bskS_input"><input type="text"></span>
+							<span class="bskS_input"><input type="text"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="email_tr">
+					<th>이메일</th>
+					<td>
+						<div class="email_wrap">
+							<span class="bskS_input"><input type="text"></span>&nbsp;&nbsp;@&nbsp;
+							<span class="bskS_input"><input type="text"></span>
+							<span class="bskS_select">
+								<select name="">
+									<option>직접입력</option>
+									<option>naver.com</option>
+									<option>nate.com</option>
+									<option>gamil.com</option>
+									<option>hotmail.com</option>
+									<option>dreamwiz.com</option>
+									<option>lycos.co.kr</option>
+									<option>korea.com</option>
+								</select>
+							</span>
+						</div>
+					</td>
+				</tr>
+				<tr class="">
+					<th>기본 배송지</th>
+					<td>
+						<div class="chk_agree bskS_check">
+							<input type="checkbox" class="bskS_chk" id="basicDelivery">
+							<label for="basicDelivery" class="bskS_chk"><i></i>기본 배송지로 설정</label>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn_area">
+			<button class="bskS_BBtnB" >저장</button>
+			<button class="bskS_BBtnG" >닫기</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

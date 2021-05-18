@@ -1,0 +1,158 @@
+/* 현정포폴 index 웹버젼 */
+section{background: #fff; height: 100vh;}
+.m0uto{width: 1400px; margin: 0 auto;}
+/* 헤더 */
+header{position: fixed;height: 70px; top: 0;left: 0; right: 0; z-index: 2;background: #fff;}
+header .menu2 {float:right;}
+header .menu2 li { padding:25px 60px 0px 0px; float:left; list-style: none; color: #CCCCCC; font-size: 20px;}
+header .menu2 li a { color:#666; text-decoration:none; }
+header .menu2 li.on a { color:#000; font-weight:bold; }
+header .container{clear: both;}
+#logo {float:left; padding:13px 0 0 20px; color:#FFFFFF;}
+#logo a{text-decoration: none; color: #666; font-size: 30px;}
+/* 섹션1 : 인덱스 */
+.index{position: relative;height: 100vh;}
+.index .visual{position: absolute; left:50%; top:9%; width: 765px; height:696px; background: url(../images/index_back.png) no-repeat center; transform: translateX(-50%);}
+.index .visual .flight_back{height: 100%;transform: rotate(-11deg);}
+.index .visual .flight{position: absolute; top: 46%; left: 1%;
+  width: 51px;height: 40px; background: url(../images/flight_head.png) no-repeat;
+  animation: flight 5s linear infinite;
+}
+@keyframes flight {
+  0% {left:0%;}
+  60% { left: 100%;}
+  100% { left: 100%;}
+}
+.index .title{position: absolute; top: 45%; left: 50%; text-align:center; transform: translateX(-50%);}
+.index .title p{font-size: 60px; animation: flip 1s .5s both;}
+@keyframes flip{
+  0% {opacity: 0;transform: rotateX(90deg);}
+  100% {opacity: 1; transform: rotateX(0);}
+}
+.index .title span{ display: block; font-size: 37px; animation: flip2 1s .5s both; }
+@keyframes flip2{
+  0% {opacity: 0;transform: rotateX(180deg);}
+  100% {opacity: 1; transform: rotateX(0);}
+}
+
+.index .intro {position: absolute; bottom: 2%; left: 50%; padding:20px; background: url(../images/intro_arrow.png) no-repeat center/ 22px auto; transform: translateX(-50%);
+animation-name:bounce;
+animation-duration: 1s;
+animation-delay: 1s;
+animation-direction: alternate;
+animation-iteration-count: infinite;}
+.index .intro:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  animation-duration: 1.5s;}
+@keyframes bounce {
+  0% {transform: translate(-50% , 0);}
+  40%{transform: translate(-50% , -30px);}
+  100%{transform: translate(-50% , -15px);}
+}
+.fp-auto-height, .fp-auto-height .fp-tableCell { height: auto !important;}
+
+/* 섹션2 : 어바웃*/
+.about{padding: 180px 0 180px;background:#fcfcfc;}
+.about .my_img{ float:left; margin: 60px 0 0 85px;}
+.about .my_img img{width:460px;}
+.about .my_img h2{padding: 30px 0 0; line-height: 1; font-size: 23px;text-align: center;}
+.about .my_img h2 span{display: block; padding: 0 0 10px; font-size: 18px; font-weight: normal;}
+.about .txt{float:right; margin: 20px 200px 0 0;}
+/* .about .txt > div {display: inline-block; margin-left: 20px; width: 360px; vertical-align: top;} */
+.about .txt > div{padding:0 0 68px; }
+.about .txt ul{padding:10px 0 0;}
+.about .txt ul li{line-height: 36px; font-size: 17px; text-indent: 5px; color: #1b1b1b;}
+.about .txt ul li em{padding: 0 0 0 2px;font-size: 10px; color:#3d3829;}
+.about .txt ul li span{display: block; padding:0 0 0 20px; line-height: 24px;text-indent: -10px; font-size: 14px; color:#636363;}
+.about .txt ul li.lan_icon{ display: inline-block; margin:4px;width: 70px;height: 70px; background: no-repeat center/100% auto;vertical-align: middle;}
+.about .txt ul li.lan_icon.ht{background-image: url(../images/ico_html.png);}
+.about .txt ul li.lan_icon.cs{background-image: url(../images/ico_css.png);}
+.about .txt ul li.lan_icon.jq{background-image: url(../images/icon_jq.png);}
+.about .txt ul li.lan_icon.ps{background-image: url(../images/icon_ps.png);}
+.about .txt ul li.lan_icon.ai{background-image: url(../images/icon_ai.png);}
+.about .txt h3{padding: 0 0 2px; font-size: 24px;color:#569ba9; text-indent: 0; font-weight: normal;}
+.about .txt .gh{font-size: 19px; color:#df4f04; }
+.about .txt .gh a{font-size: 16px; text-decoration: underline;}
+/* 섹션3 : 포트폴리오 */
+#section2{position: relative;}
+.portfolio .slider > div{height: 100vh;}
+/*------------ 포트폴리오부분 수정 ----------*/
+.portfolio2{width: 1400px; margin: 0 auto;}
+.container { margin:0 auto ; padding-top: 130px; text-align: center; }
+.portfolio2 li{background:rgba(246,230,220,.4); display: inline-block; position: relative;margin: 0 20px 40px; width: 330px; height: 330px; border-radius: 50%;}
+.portfolio2 li button{display: block;position: absolute; top: 0;left: 0; width: 330px;height: 330px;background: transparent;outline: 0;}
+.portfolio2 li span{display: block;width: 100%; height: 100%; color: #fff;border-radius:50%; }
+.portfolio2 li .front{background: no-repeat center/83% auto;  transition: 0.5s; transform-origin: 50% 0;}
+.portfolio2 li .back{position: absolute; top: 0; background:rgba(246,230,220,.4); transform: scaleY(0); transition: .5s; transform-origin: 0 100%;}
+.portfolio2 li button:hover .front{transform: scaleY(0);}
+.portfolio2 li button:hover .back{transform: scaleY(1);}
+.portfolio2 li .front.wb{background: no-repeat 50% 45%/90% auto;}
+.portfolio2 li .front.mb{background: no-repeat 50% 40%/42% auto;}
+.portfolio2 li .front.life{background-image: url(../images/life1_mu.png);}
+.portfolio2 li .front.casa{background-image: url(../images/casa1_mu.png);}
+.portfolio2 li .front.maru{background-image: url(../images/donghwa_mu.png);}
+.portfolio2 li .front.tving{background-image: url(../images/tving_mu.png);}
+.portfolio2 li .front.howru{background-image: url(../images/howru_mu.png);}
+.portfolio2 li .front.pan{background-image: url(../images/pan_mu.png);}
+.portfolio2 li .front .name{position: absolute; bottom: 9%; width: 55%;  height: 20%;  background:no-repeat center/100% auto;}
+.portfolio2 li .front .name.life_n{background-image:url(../images/h2_life.png); left: 50%; bottom: 12%; transform: translate(-50%,50%);}
+.portfolio2 li .front .name.casa_n{background-image:url(../images/h2_casa.png); left: 60%; bottom: 12%;transform: translate(-40%,50%);}
+.portfolio2 li .front .name.maru_n{background-image:url(../images/h2_maru.png); left: 51%; transform: translate(-49%,10%);}
+.portfolio2 li .front .name.tving_n{background-image:url(../images/h2_tving.png); left: 53%;transform: translate(-47%,10%);}
+.portfolio2 li .front .name.howru_n{background-image:url(../images/h2_howru.png); left: 57%;transform: translate(-45%,37%);}
+.portfolio2 li .front .name.pan_n{background-image:url(../images/h2_pan.png);left: 50%;transform: translate(-45%,37%);}
+.portfolio2 li .back > *{position: absolute; left: 50%; width: 300px; color: black;}
+.portfolio2 li .back strong{top: 30%;  padding: 0 -21px; font-size: 22px;color: #d2690e; transform: translate(-50%,-50%); text-shadow: 2px 2px 2px #a2a2a2;}
+.portfolio2 li .back small{top: 50%;width: 270px;font-size: 12px;line-height: 22px; transform: translate(-50%,-50%);}
+.portfolio2 li .back em{ bottom: 27%;transform: translate(-50%,73%); font-size: 18px;text-decoration: underline;color: #000;text-shadow: 2px 2px 1px #c0c0c0;}
+
+/* 탑버튼 */
+.top{display:none; position: fixed; right:3%;bottom:3%; width: 40px; line-height: 40px; background:rgba(255,255,255,.4); border-radius: 100%; text-align: center; z-index: 50; }
+/* footer */
+.contact{padding:80px 0 46px; background: #282828; text-align: center; }
+.contact ul{padding:50px 0 0;}
+.contact ul li{line-height: 28px;font-size: 14px;font-weight: lighter;color: #cccbcb;}
+.contact h2{font-size: 40px;color: #fff;}
+/* 팝업 */
+.popup{display: none; position:absolute;top:0; left: 0; right: 0; bottom: 0; background: rgba(254,254,254,1); z-index:60;}
+.sub_header{position: absolute; top:0; left:0; right: 0; margin: 0 auto;width: 1400px; height: 65px; text-align: center; }
+.sub_header h2{position: absolute;top: 40%; left:-3%; width: 16%;height: 80%;background: no-repeat left/100% auto;}
+.popup.donghwa2 .sub_header h2{background-image:  url(../images/h2_maru.png);}
+.popup.tving2 .sub_header h2{background-image:  url(../images/h2_tving.png);}
+.popup.howru2 .sub_header h2{background-image:  url(../images/h2_howru.png);}
+.popup.pan2 .sub_header h2{background-image:  url(../images/h2_pan.png);}
+.popup.casa2 .sub_header h2{background-image:  url(../images/h2_casa.png);}
+.popup.life2 .sub_header h2{background-image:  url(../images/h2_life.png);}
+.sub_header .icon{display: inline-block;margin: 30px 0 0; z-index: 20;}
+.sub_header .icon li > a >span{display: block; margin:32px 0 -2px; color:#363124;}
+.sub_header .icon li {display: inline-block; margin:0 10px; transition:.5s;}
+.sub_header .icon li > a{display: inline-block;width: 41px; height: 32px; background: no-repeat center/64% auto transparent; outline: 0; vertical-align: middle;}
+.sub_header .icon li.ico_list a{background-image:  url(../images/ico_list_off.png); }
+.sub_header .icon li.ico_web a{background-image: url(../images/ico_web_off_b.png);}
+.sub_header .icon li.ico_tablet a{background-image: url(../images/ico_tablet_off_b.png) ;}
+.sub_header .icon li.ico_mobile a{background-image: url(../images/ico_mobile_off_b.png) ;}
+.sub_header .icon li.ico_list:hover a,
+.sub_header .icon li.ico_list.on a{background-image:  url(../images/ico_list_on.png); }
+.sub_header .icon li.ico_web:hover a,
+.sub_header .icon li.ico_web.on a{background-image: url(../images/ico_web_on.png);}
+.sub_header .icon li.ico_tablet:hover a,
+.sub_header .icon li.ico_tablet.on a{background-image: url(../images/ico_tablet_on.png) ;}
+.sub_header .icon li.ico_mobile:hover a,
+.sub_header .icon li.ico_mobile.on a{background-image: url(../images/ico_mobile_on.png) ;}
+.sub_header .icon li.on span,
+.sub_header .icon li:hover span{color:#569ba9;}
+.sub_header .icon a:after{display: block; content: ""; width:0; height: 2px; background: #569ba9;transition:.5s;}
+.sub_header .icon li.on a:after,
+.sub_header .icon li:hover a:after{width:100%;}
+.sub_header .close{position:absolute;top: 28%;right:3%;width:53px;height: 53px;background: url(../images/btn_close_b.png)no-repeat center transparent;}
+
+.iframe_bck{margin:6% auto 0; width: 1280px; height:auto; background: #fff; border: 9px solid #363124; border-radius: 14px; text-align: center; box-shadow:21px 21px 26px #c0c0c0; transition: width .5s;}
+iframe{width: 100%; height:820px; border-radius: 7px; vertical-align: middle; transition: width .5s, height .5s;}
+.iframe_bck360{margin: 4% auto 0; width: 480px; height:auto; background: #fff; border: 9px solid #363124; border-radius: 14px; text-align: center; box-shadow:21px 21px 26px #c0c0c0; transition: width .4s;}
+.iframe_bck360 iframe{width: 100%; height:720px; border-radius: 7px; vertical-align: middle; transition: width .4s, height .4s;}
+
+.list{display: none;}
+.typo{position: absolute; font-size: 340px;letter-spacing: -32px;z-index: -1; overflow: hidden;}
+.typo.back1{top: -20%; left: -2%; color: #e4e4e4; opacity: 0.3;}
+.typo.back2{bottom: -15%;right: -3%;opacity: 1;color:#e4e4e4;}

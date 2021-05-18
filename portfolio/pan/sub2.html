@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>신한은행페이판/리볼빙</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/xeicon.css">
+</head>
+<body>
+ <main class="revolving">
+   <div class="out">
+     <button onclick="location.href='index.html'"><span class="hide">나가기</span></button>
+   </div>
+   <section class="subject">
+     <h2>신한카드_일부결제금액이월약정[리볼빙]</h2>
+   </section>
+   <section class="m0auto">
+    <h3>일부결제금액이월약정[리볼빙]<br>이용안내 / 체험하기</h3>
+    <p class="try">결제비율을 조정해서 리볼빙을 체험해보세요!</p>
+    <div>
+      <ul class="tab">
+        <li><button class="on">최근청구금액</button></li>
+        <li><button>직접입력</button></li>
+      </ul>
+      <h4>최근 청구금액 선택</h4>
+      <div class="recently">
+        <select>
+          <option>002 2019.10.03</option>
+          <option>002 2019.11.03</option>
+          <option>002 2019.12.03</option>
+        </select>
+        <button>결제정보확인</button>
+      </div>
+      <ul class="charge">
+        <li>
+          <label for="cg_1">이번달 청구 금액</label>
+          <div><input type="text" value="693,447" id="cg_1" disabled><em>원</em></div>
+        </li>
+        <li>
+          <label for="cg_2">약정 미적용 금액</label>
+          <div><input type="text" value="24,300" id="cg_2" disabled><em>원</em></div>
+        </li>
+      </ul>
+    </div>
+    <ul class="ntc_list">
+        <li>결제비율 100% 기준 이번달 청구금액 입니다.</li>
+        <li>약정 미적용 금액은 미적용 일시불 및 할부, 대출, 이자금액, 기타비용의 합계입니다.</li>
+        <li>모든 일시불 금액이 약정 적용되는 경우를 가정하여 계산합니다.</li>
+      </ul>
+    <div class="rate">
+      <h4>약정결제비율</h4>
+      <ul>
+        <li>
+          <label for="cg_3">최소</label>
+          <div>
+            <input type="text" value="10.0" id="cg_3" disabled>
+            <em>%</em>
+          </div>
+        </li>
+        <li>
+          <label for="cg_4">약정</label>
+          <div>
+            <input type="text" value="60" id="cg_4" disabled>
+            <em>%</em>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="chart">
+      <div><span><b></b></span></div>
+      <ul>
+        <li>0%</li>
+        <li>50%</li>
+        <li>100%</li>
+      </ul>
+    </div>
+    <button class="result">결과보기</button>
+    <ul class="list no2 rv">
+      <li>
+        <a href="#">
+          청구금액 미만 입금 시,적용방식
+        </a>
+        <div class="method">
+          <p>결제일 당일 약정결제비율에 따라 청구된 금액 미만으로 입금되어도
+          다음과 같이 적용됩니다.</p>
+          <ol>
+            <li>최소결제금액 이상 입금된 경우
+              <ul class="type1">
+                <li>미결제된 나머지 잔액은 자동으로 이월되어 연체처리되지 않음
+                  (이월된 금액은 다음달에 리볼빙 이자 금액과 함께 청구)</li>
+                <li>연체된 금액이 없으므로 결제일 이후 추가 인출 없음</li>
+              </ul>
+            </li>
+            <li>최소결젝금액 미만 입금되거나 입금금액이 없는 경우
+              <ul class="type1">
+                <li>최소결제금액 외 미결제된 나머지 잔액은 자동으로 이월
+                (이월된 금액은 다음달에 리볼빙 이자 금액과 함께 청구)</li>
+                <li>최소결제금액 중 미납된 금액만 연체 처리되어 입금될 때까지 추가인출 됨
+                (미납된 연체금액은 입금될 때까지 연체 이자금액 발생)</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          청구금액 미만 입금 예시
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          금리인하 요구권 안내
+        </a>
+        <div class="method">
+          <table>
+            <colgroup>
+              <col style="width:3.5rem">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>금리인하요구권</th>
+                <td>고객의 신용상태가 호전되었다고 인정되는 경우 금리 인하를
+                요구할 수 있는 권리로 일부결제금액이월약정(리볼빙) 상품에 적용</td>
+              </tr>
+              <tr>
+                <th>이용대상</th>
+                <td>약정시점 대비 신용상태가 현저히 개선된 고객</td>
+              </tr>
+              <tr>
+                <th>문의/신청</th>
+                <td>1544-7000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+    </ul>
+    <button class="ntc">일부결제금액이월약정[리볼빙] 안내사항<i></i></button>
+    <ul class="ntc_list typ2">
+     <li>회사명 : 신한카드</li>
+     <li>상품명 : 일부결제금액이월약정[리볼빙]</li>
+     <li>일시불 리볼빙 정상이자율 :5.4% ~ 23.9%</li>
+     <li>단기카드대출 리볼빙 정상이자율 : 6.4% ~ 23.9% [2014.12.29 이전가입고객]</li>
+     <li>연체이자율 : 약정금리 + 최대3%, 법정 최고금리 [24%]이내</li>
+     <li>자세한 내용은 이용 전 홈페이지 내 약관 및 상품설명을 참조하시기 바랍니다.</li>
+   </ul>
+   </section>
+   <section class="apply">
+     <div>
+       <button>약정 확인/변경</button>
+       <button>신규 약정 신청</button>
+     </div>
+   </section>
+ </main>
+</body>
+</html>

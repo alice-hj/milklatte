@@ -1,0 +1,19 @@
+/* width:375 */
+/************ s:header***********/
+.headerIn {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 64px;
+  padding: 0 20px;
+}
+/* 로고 */
+.headerIn > h1.logo {
+  left: 20px;
+}
+/************ e:header***********/
+/************ s:notice***********/
+#notice .inner a {
+  padding: 0 20px;
+}
+/************ e:notice***********/

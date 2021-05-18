@@ -1,0 +1,231 @@
+/************ s:visual***********/
+.visual_bg {
+  height: 443px;
+}
+.visual_bg span {
+  padding-top: 137px;
+  font-size: 12px;
+}
+.visual_bg h2 {
+  padding-top: 19px;
+  font-size: 50px;
+}
+.visual_bg strong {
+  padding-top: 35px;
+  font-size: 18px;
+}
+.visual_bg p {
+  padding-top: 14px;
+  font-size: 12px;
+  padding: 0 20px;
+}
+.visual_bg .detail {
+  margin: 38px auto 0;
+}
+.visual_bg .detail a {
+  font-size: 15px;
+  width: 164px;
+  height: 43px;
+  line-height: 45px;
+}
+.visual_bg .detail a em {
+  width: 10px;
+}
+.market_list .none-swiper {
+  display: none;
+}
+.market_list .swiper-container {
+  display: block;
+}
+.market_list div ul {
+  width: calc(100% / 3);
+  height: 150px;
+  position: relative;
+}
+.market_list div ul:after {
+  height: 0;
+}
+.market_list div ul li {
+  float: left;
+  padding: 20px 0 0;
+  text-align: center;
+}
+.market_list div ul li:first-child {
+  width: 100%;
+  padding-left: 0;
+}
+.market_list div ul li:last-child {
+  width: 100%;
+  padding: 0;
+}
+.market_list .m_price {
+  padding: 2px 0 0;
+}
+.market_list .m_payment {
+  padding: 26px 0 0;
+}
+.market_list .gab {
+  margin: 0;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.graph {
+  display: none;
+}
+/****************************************swiper */
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 5px;
+}
+/************ e:visual***********/
+/********************main*******************************/
+/************ s:ccoin_box***********/
+#coin_box {
+  padding: 0;
+}
+#coin_box .inner .inner_in {
+  padding: 0;
+  box-shadow: none;
+}
+#coin_box .table_top {
+  padding: 16px 0 14px;
+  margin: 0;
+}
+#coin_box .ttl {
+  display: none;
+}
+#coin_box .table_tablist {
+  float: none;
+  width: 100%;
+}
+#coin_box .table_tablist span {
+  width: calc(100% / 3);
+  text-align: center;
+}
+#coin_box .table_tablist span a {
+  padding: 0;
+}
+#coin_box .table_tablist span:after {
+  left: 0;
+}
+/* table */
+#coin_box .coin_table col:nth-child(4) {
+  width: 80px;
+}
+#coin_box .coin_table col:nth-child(5) {
+  width: 90px;
+}
+#coin_box .coin_table thead th:last-child {
+  padding-right: 10px;
+}
+#coin_box .coin_table thead th.coin {
+  padding-left: 35px;
+}
+#coin_box .coin_table tbody .icon_logo {
+  width: 35px;
+}
+#coin_box .coin_table tbody td.payment {
+  padding-right: 10px;
+}
+.add {
+  padding: 16px 0;
+  font-size: 16px;
+}
+/************ e:ccoin_box***********/
+/************ s:h_service***********/
+#h_service .inner {
+  width: 100%;
+  padding: 0 0 53px;
+}
+#h_service dt {
+  padding: 85px 0 0;
+  font-size: 16px;
+}
+#h_service dt strong {
+  font-size: 36px;
+}
+#h_service dd {
+  padding: 10px 20px 0;
+  font-size: 14px;
+}
+#h_service button em {
+  display: inline-block;
+  margin-left: 4px;
+  width: 5px;
+  height: 11px;
+  background: url(../../images/icon_arrow02_w.png) no-repeat center/auto;
+}
+#h_service .service_container div {
+  float: none;
+  margin: 0 auto 30px;
+  width: 335px;
+  height: 252px;
+}
+#h_service .service_container ul {
+  padding: 13px 20px 11px;
+}
+#h_service .service_container .img.no1 {
+}
+#h_service .service_container .img {
+  background-size: 100% 100%;
+  width: 335px;
+  height: 179px;
+}
+#h_service .service_container ul li {
+  height: 24px;
+  line-height: 24px;
+}
+#h_service .service_container ul p {
+  font-size: 13px;
+}
+#h_service .service_container ul span {
+  font-size: 13px;
+  font-family: 'Noto Sans KR';
+}
+/************ e:h_service***********/
+/************ s:contents***********/
+#contents > .parallax {
+  height: 54%;
+}
+#contents .inner {
+  width: 100%;
+  padding: 30px 0 48px 0;
+}
+#contents h2 {
+  display: block;
+  padding: 0 0 18px;
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+#contents h2:after {
+  display: inline-block;
+  content: '';
+  background: url(../../images/icon_up.png) no-repeat center/100% 100%;
+  width: 34px;
+  height: 34px;
+}
+#contents .inner div {
+  margin: 0;
+  padding: 0 27px;
+  width: 335px;
+  height: 230px;
+}
+
+#contents dl dt {
+  padding: 27px 0 0;
+  font-size: 22px;
+}
+#contents dl dt:after {
+  width: 280px;
+  margin: 19px auto 10px;
+}
+#contents button {
+  padding: 0 36px;
+  margin: 22px 0 0;
+  font-size: 16px;
+  line-height: 40px;
+}

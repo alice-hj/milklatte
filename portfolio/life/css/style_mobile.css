@@ -1,0 +1,90 @@
+/* 모바일 */
+html{font-size:  20px;}
+body{font-size: 1rem;}
+.snb{display: none;}
+.container{padding: 3.8rem 0 0; width: 100%;}
+.contents{float: none; width: 100%;}
+/* 헤더 */
+header {margin:0 auto; width: 95%; min-width: 0; max-width: 29.95rem;}
+header h1{display: none;}
+header .nav{ margin:0 1.35rem;}
+header .nav li{padding: 0;width: 25%;}
+header .nav li a{font-size: .8rem;}
+header .notshow{display: none;}
+/* 메인 */
+/* 비쥬얼 */
+.visual{height: 6.25rem;}
+.visual .text span{font-size: .45rem;}
+.visual .text p{padding: .5rem 0 0; font-size: 1.05rem;}
+/* 컨텐츠 헤더영역 h2 + 현재위치 */
+.header ul{display: none;}
+.header h2{float: none; padding: 0 0 0 1.2rem; background:none; font-size: 1.2rem; text-align: center;}
+/* 제목 */
+.h3{font-size: .85rem; color: #171616;}
+.h3:before{content: ""; display: inline-block; margin: 0 .25rem 0 0; width: .25rem; height: .8rem; border-radius: .25rem; background: #108ad3;vertical-align:-0.15rem;}
+.h4{font-size: .7rem; color: #171616;}
+.h4:before{content: ""; display: inline-block; margin: 0 .3rem 0 0; width: .3rem; height: .3rem; border-radius: .2rem; background: #108ad3;vertical-align:.05rem;}
+
+/* 리스트 스타일 */
+.list_type1 > li{ padding: 0 0 0 .25rem; font-size: .7rem; line-height: 1.15rem; }
+.list_type1 > li:before{top: .55rem; width: .15rem; height: .15rem;}
+/* 이렇게 직속 으로 시키면 두번째 li 는 먹질 않는다. */
+.list_type1 > li > ul > li{padding: 0 0 0 .35rem; font-size: .7rem; line-height: 1.15rem; text-indent: -0.35rem;}
+.list_type1 > li > ul > li:before{padding: 0 .1rem 0 0;}
+
+.list_type2 > li > div{float: none;}
+.list_type2 > li > a{right: .75rem; bottom: 1rem;}
+.list_type2 .logo a{margin:0 auto;}
+.list_type2 .con{padding:1rem 0 0;}
+
+.list_type3 .top .title{line-height: 3rem;}
+.list_type3 .btm{padding:.75rem;}
+.list_type3.no2 .down{ right: 2rem; }
+.list_type3.no2 .title{background-position:right .7rem center; background-size: .7rem auto;}
+/* 내가추가함 */
+.list_type3 .down{width: 1.4rem; height: 1.4rem; border-radius: 100%;}
+.list_type3 .down:after{margin: 0; background-position: center;}
+.down .text{display: none;}
+/*모바일 테이블가이드 */
+/* type1 */
+.table_type1{overflow: auto;}
+.table_type1 table{width: 1000px;}/* 위드값주고 오버플로우 오토 주면 스크롤이 생긴다 */
+/* type2 */
+table.type2{font-size: .65rem;}
+table.type2 tr {height: 1.9rem;}
+table.type2 th,
+table.type2 td{display: none;}
+table.type2 .show{display: table-cell;}
+
+/* 모바일 탭가이드 */
+/* type1 */
+.tab_type1 button{display: block; position: relative;  width: 100%; height: 2rem;  background: none;border: 1px solid #d5d9de; text-indent: .75rem; font-size: .7rem; text-align: left;}
+.tab_type1 button:after{content: ""; position: absolute; right: 0; top:-1px; width: 2rem; height: 2rem; border-left: 1px solid #d5d9de; background: url(../images/ico_arrow_down.png) no-repeat center/.8rem auto;}
+.tab_type1 ul{display: none; position: absolute; width: 100%; background:#fff;border-bottom:none; }
+.tab_type1 li{display: block;}
+.tab_type1 li ~ li{margin: 0;}
+.tab_type1 li a{padding:0 .75rem; font-size: .7rem; line-height: 2rem; border-radius: 0;}
+.tab_type1 li.on a{background:none; color:#333; border-color:#ddd;}
+/* 버튼가이드 */
+.btn.small{padding:0 .65rem; border-radius: 1.25rem; font-size: .55rem; line-height: 1.25rem;}
+.btn.mid{padding: 0 1.15rem; line-height: 1.6rem; font-size: .6rem; }
+.btn.big{padding: 0 1.1rem; line-height: 2rem; font-size: .75rem; border-radius: 2rem;}
+
+/* 푸터 */
+footer{margin:4.6rem 0 0;height:auto; border-top: 1px solid #d9d9d9; box-sizing: border-box;}
+/* 푸터 배너 */
+footer .fban{margin: 0 .4rem; height:2.5rem;}
+footer .fban button{width: .75rem; height: .75rem;}
+footer .fban .slider{margin:0 3.5rem; height:2.5rem;}
+footer .fban .slider img{height: 2.5rem;}
+/* 푸터주소*/
+footer .fadres{padding:0 0 3.3rem;}
+footer .fadres .fimg{display: none;}
+footer .fadres .fico{top:5.25rem; right:0; left:1.3rem;}
+footer .fadres .fico a{margin: .6rem .1rem 0;}
+footer .fadres .fico a:first-child{width: 2.5rem;}
+footer .fadres .fico a:last-child{width:4.35rem;}
+footer .fadres address{padding:1.15rem 0 0 1.15rem;}
+footer .fadres address a{padding:0 0 .35rem; font-size: .55rem;}
+footer .fadres address li {font-size: .5rem; line-height:.8rem;}
+footer .fadres address .cpy{padding:.35rem 0 0; font-size: .45rem;}

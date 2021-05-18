@@ -1,0 +1,8 @@
+/*--- 메인 ---*/
+/* --컨텐츠 --*/
+.contents{padding:0 1.3rem 6.6rem 1.3rem; width: 100%;}
+.header {border-bottom: 0;}
+.snb{display: none;}
+/* 조회 */
+.lookup .date select{width: 7.75rem;}
+.lookup .list select{width: 29.9rem;}

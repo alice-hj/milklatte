@@ -1,0 +1,98 @@
+/* 공통 */
+body{background-color:#a77b7b;}
+/* ---------------------------------------
+-------------header-------------------
+---------------------------------------- */
+header{position: fixed;height: 70px; top: 0;left: 0; right: 0; z-index: 2;}
+header .menu2 {float:left; margin: 0.86vw 0 0 0;}
+header .menu2 li { float:left; position: relative; list-style: none; padding: 0 1.2vw;}
+header .menu2 li a{ color:#e6bebe; text-decoration:none;font-size: 17px;}
+header .menu2 li::after{content: ""; display: inline-block; position:absolute; width: 1px; height: 17px; vertical-align: middle; background:#e6bebe;
+position: absolute; top: 50%; right:0; transform: translateY(-50%);}
+header .menu2 li:last-child::after{display: none;}
+header .menu2 li.on a{ color:#fff; font-weight: bold;}
+header .container2{clear:both; height: 100%;}
+#logo {float:right; padding:1vw; line-height: 1;}
+#logo a{text-decoration: none; color:#fff;font-size: 22px;}
+/* header .menu2 li::after{content: ""; display: inline-block; margin: 0 0.9vw;width: 1px; height: 11px; vertical-align: middle; background:#fff;} */
+
+/* 탑버튼 */
+.top{display:none; position: fixed; right:3%;bottom:3%; width: 3vw;line-height: 3vw; font-size: 12px; background:rgba(255,255,255,.4); border-radius: 100%; text-align: center; z-index: 70; }
+
+/* ---------------------------------------
+-------------푸터--------------------
+---------------------------------------- */
+.footer{position:relative; height: 250px;}
+.footer .f_inner{position: absolute;
+  text-align: center;
+  height: 85px;
+  display: block;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+.footer .f_inner h2{position:relative; color: #fff; font-size: 26px;}
+.footer .f_inner dl{margin-top: 1vw;}
+.footer .f_inner dl dt{font-weight:600; font-size:15px; color:#fff;    margin-top: 32px;}
+.footer .f_inner dl dd{display:inline-block; color:#ddd; margin-top:7px; font-size:12px;}
+.footer p.copy{position:absolute; left:-3.12vw;width:206px; height:13px ;color:#ababab; font-size:12px; transform:rotate(-90deg); z-index:150;top: 50%; margin-top: -6.5px;}
+
+/* ---------------------------------------
+-------------반응형--------------------
+---------------------------------------- */
+
+@media screen and (max-width:1400px) {
+  #fullpage #section0{height:100%;}
+  #fullpage #section1{height:100%;}
+  #fullpage #section2{height:100%;}
+  #fullpage #section3{height:100%;}
+  #fullpage .container{width: 85vw;}
+.footer .f_inner{width:85vw;}
+.footer p.copy{left:-5.12vw;}
+}/* max-width:1400 */
+
+@media screen and (max-width:1000px) {
+  #fullpage .container{width:100%;}
+/* 탑버튼 */
+.top{width: 5vw;line-height: 5vw;}
+/* 푸터 */
+.footer{height:120px;}
+.footer:before{height:300px;}
+.footer .f_inner{width:100%; padding-top:0; box-sizing: border-box;}
+.footer .f_inner h2{font-size:20px; }
+.footer .f_inner h2:before{height:34px; top:55px;}
+.footer .f_inner ul{margin-top:55px;}
+.footer .f_inner ul li + li{margin-left:32px;}
+.footer .f_inner ul li + li:before{left:-19px; top:2px;}
+.footer .f_inner dl dt{font-size:15px;}
+.footer .f_inner dl dd{margin: 1.43vw 1vw 0; font-size:12.5px;}
+.footer p.copy{display:none; left:-4.84vw; font-size:8.5px;}
+}
+
+@media screen and (max-width:800px) {
+#logo {display: none;}
+header{display: none; height: 7vw; border-bottom: 1px dashed #e6bebe;background: rgba(255,255,255,0.1);}
+header .menu2 {float: none; width: 100%; height: 100%; margin: 0.86vw 0 0;}
+header .menu2 li {width: 25%;padding: 0; text-align: center;}
+header .menu2 li a {font-size: 20px;}
+header .menu2 li::after { height: 17px;}
+/* 탑버튼 */
+.top{width: 10vw;line-height: 10vw;}
+/* 푸터 */
+.footer{height: 150px;}
+.footer:before{height:79.55vw;}
+.footer .f_inner h2{font-size:25px; }
+.footer .f_inner h2:before{height:5.86vw; top:13.6vw;}
+.footer .f_inner dl{margin-top: 1vw;}
+.footer .f_inner dl dt {font-size: 10.5px;font-weight: normal;}
+.footer .f_inner dl dd{font-size: 1.8vw; margin:1.3vw 1vw 0;}
+/* .footer .f_inner dl dd + dd{} */
+.footer p.copy{display:none;}
+}/* 768 */
+@media screen and (max-width:500px) {
+  .footer{height: 100px;}
+  .footer .f_inner{height: 69px;}
+  .footer .f_inner h2{font-size:18px;}
+  .footer .f_inner dl dt{font-size: 6px;    margin-top: 12px;}
+
+}

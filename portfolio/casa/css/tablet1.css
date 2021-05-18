@@ -1,0 +1,89 @@
+/* 타블렛1 */
+html{font-size: 20px;}
+body{font-size: 1rem;}
+.m0uto{width: 42.6rem; margin: 0 auto;}
+/* ---헤더---------------------------- */
+header .coupon{height: 2.45rem;}
+header .coupon > div{padding:0 .85rem;}
+header .coupon > div p a{font-size: .7rem;line-height: 2.45rem; }
+header .coupon > div span a{font-size: .6rem;line-height: 2.45rem;}
+header .coupon > div span a:after{margin: 0 0 0 .5rem;width: 1.45rem; height: 1.45rem;}
+/* 헤더 fixed */
+header nav{border-bottom:none;}
+header nav > div{padding:0 .85rem;}
+header nav h1{left:50%; transform: translateX(-50%); padding:.7rem 0;}
+header nav h1 a{width: 2.85rem; height: .85rem;}
+header nav .menu{display: inline-block; margin:.65rem 0 0; width: .9rem; height: .85rem; background: url(../images/btn_m_list.png)no-repeat center/100% auto;}
+header nav .menu_lf {display:none;}
+header nav .menu_rg{padding:.65rem 0;}
+header nav .menu_rg li{margin-left: .85rem;}
+header nav .menu_rg li a{width: .8rem; height: 1.05rem;}
+header nav .menu_rg li a.search{display: none;}
+header nav .shopmenu{display:none;}
+/* -----------메인 ------------------*/
+/* 메인베너 */
+main .main_banner{margin:0 .85rem 0;padding:.8rem 0 3.2rem;}
+main .main_banner .banner_img1{ height: 26rem;}
+/*width: 31.7rem; */
+main .main_banner .banner_img1 em{line-height: 2.65rem; font-size: 1.85rem;}
+main .main_banner .banner_img1 em i{padding:0 0 1.7rem; font-size: .75rem;}
+main .production .banner_img1 span{width: 2.15rem; height: 2.15rem;}
+main .main_banner > div a{width: 10rem; height: 12.86rem;}
+main .main_banner > div a.banner_img3{margin: .3rem 0 0;}
+main .main_banner > div a b{ top: 19%; font-size: .75rem;}
+main .main_banner > div a b:before{ width:5.75rem;}
+/*---------------메인 잡지 섹션--------------- */
+main .main_magazine{margin:0 .85rem 0;}
+/* ---메인잡지 오른쪽--- */
+main .magazine_rg{float:none; padding: 0; border: 0; width: 100%;}
+/* magazine_rg 의 오른쪽 ul*/
+main .magazine_rg .img_right{}
+main .magazine_rg .img_right .slider .blu_dot {top:0; left: 4%}
+main .magazine_rg .img_right .slider .blu_dot em{width: 3.75rem; height: 1.5rem; font-size: .55rem; line-height: 1.5rem;}
+main .magazine_rg .img_right .slider .blu_dot b{font-size: .75rem; }
+main .magazine_rg .img_right .slider .blu_dot strong{padding:.75rem 0 .95rem;font-size: 1.1rem; }
+main .magazine_rg .img_right .none_slider .text{top:3%; left:3%;font-size: .55rem;line-height: .820rem;}
+main .magazine_rg .img_right .none_slider .text i{ padding:0 0 .65rem;font-size:1rem; }
+main .magazine_rg .img_right .none_slider:hover .text{left:3%;}
+/* magazine_rg 의 왼쪽 ul*/
+main .magazine_rg .img_left{}
+main .magazine_rg .img_left li:hover span{display:none;}
+
+/* ----메인잡지 왼쪽----- */
+main .magazine_lf{float:none; display: block; padding:2.5% 0 0; width: 100%; font-size: 0;}
+main .magazine_lf li{display: inline-block; margin:0 2.5% 0 0; width: 48.75%;}
+main .magazine_lf li:last-child{margin:0;}
+main .magazine_lf li p{margin: .95rem 0 5.3rem; padding:0; font-size: .6rem; line-height: .85rem; height: 3.8rem; box-sizing: border-box;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+main .magazine_lf li p strong{padding: 0 0 .5rem; font-size: .65rem;}
+main .magazine_lf li p .tablet{display: block;}
+main .magazine_lf li p .web{display: none;}
+/* ----------------메인 컬렉션 부분 센션-------------*/
+main .main_collection{margin:0 .85rem 0 0;}
+main .main_collection .left .blu_dot{top:0; right:0;}
+main .main_collection .left .blu_dot em{width: 3.8rem; height: 1.5rem;font-size: .6rem; line-height: 1.5rem;}
+main .main_collection .left .blu_dot strong{padding:.9rem 0 1rem;font-size: .9rem; }
+main .main_collection .left .blu_dot b{font-size: .75rem;}
+/* 오른쪽 넌슬라이드 inline-block*/
+main .main_collection .none_slider{}
+main .main_collection .none_slider li {margin: 0 0 .85rem;}
+main .main_collection .none_slider .text{top:10%; left:7%;font-size: .8rem; }
+main .main_collection .none_slider .text i{padding:0 0 .8rem;font-size:1.8rem;}
+main .main_collection .none_slider li a:hover .text{left:7%;}
+/*------------------ footer------------ */
+/* --footer notice--*/
+footer{margin:5.65rem 0 0; padding:0 .85rem 0rem;}
+footer .notice{padding:0 0 2.2 rem;}
+footer .notice .casa_open{float:none;}
+footer .notice .title{display:none}
+footer .notice .casa_open  li {padding:0 0 1.25rem;font-size: .65rem;}
+footer .notice .casa_open li a{display: block; line-height:1.05rem ; color:#666;}
+footer .notice .web{display: none;}
+footer .notice .center{display:none}
+/*-- footer utillmenu --*/
+footer .utillmenu{padding:2.3rem 0 0;}/*나중에패딩탑넣기*/
+footer .utillmenu div{float: none;padding:0 0 .8rem; text-align: center;}
+footer .utillmenu div ul li a{font-size: .6rem;}
+footer .utillmenu div ul li:before{height: .6rem;}
+footer .utillmenu div ul .tablet_mb{display: inline-block;;}
+footer .utillmenu address p span{ font-size: .6rem;}
+footer .utillmenu button{display: none;}

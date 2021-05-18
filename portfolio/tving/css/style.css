@@ -1,0 +1,73 @@
+body{padding:100px 0 0; background: #212121;}
+section {margin:0 auto; width: 1200px;}
+section:after{content: "";display: block; clear: both;}
+.ch{display: inline-block; background: url(../images/sprite.png);}
+.ch.no1{width: 32px; height: 13px; background-position:0 0;}
+.ch.no2{width: 73px; height: 37px; background-position:-160px -29px;}
+
+header{position: fixed; left:0; right:0; top:0; z-index: 100;height:100px;}/* left:0; right:0; 하면 가로길이 100%가 된다. */
+.index{ background:linear-gradient(to bottom, #e51c3e,#e51c3e 30px,#ff1f45 30px, #ff1f45);}
+.sub{background:#191919; border-bottom: 1px solid #2c2c2c;}
+header > div {position: relative; margin:0 auto; padding:30px 0 0; width: 1200px;}
+header nav{text-align: center; font-size: 0;}
+header nav li{display: inline-block;}
+header nav li a{display: block; padding: 0 14px; height: 67px; line-height: 67px; font-size: 20px; color: #fafafa; font-weight:bold;}
+header h1 a{display: block; position: absolute; left: 0; top: 53px; width: 90px; height: 21px; background: url(../images/sprite.png) -250px -30px;}
+header .search{position: absolute; right: 0; top: 53px;}
+header .search .box.on{display: flex; align-items: center; padding: 0 10px 0 20px; height: 40px; border-radius: 40px; background: rgba(0,0,0,0.5);}
+header .search .box input{display: none; width: 235px; background: transparent; border:none; outline: 0; color: #fff;}/* 인풋배경과 선 지우기 */
+header .search .list{display: none; position: absolute; left:0; top: 40px; padding:26px; width: 100%; border-radius: 8px; background: #262626; box-sizing:border-box;}/*  box-sizing:border-box; 이게모지 ?*/
+header .search button{background: none; outline: 0; cursor: pointer;}/* 버튼의 기본배경색은 회색  */
+header .search button:after{content: "\e97a"; color:#fff; font-size: 26px;}
+header .search button:hover:before{color: #ff1f45;}
+header .search button.b02:hover:before{color: #000;}
+header .search h2{font-size: 20px; color:#fff; line-height: 1; font-weight:normal;}
+header .search p{font-size: 11px;color: #5d5d5d; padding:9px 0 17px; line-height: 1;}
+header .search ol{counter-reset: num; line-height: 28px;}
+header .search ol li:before{content: counter(num); counter-increment: num 1; margin: 0 9px 0; font-size: 13px; color: #ff1f45; vertical-align: 3px;}
+header .search ol li a{font-size: 17px; color: #fff;}
+header .gnb{position: absolute; right: 0; top:9px;}
+header .gnb li{float: left; line-height: 1; font-size: 0;}
+header .gnb li~li:before{content: ""; display: inline-block; margin: 0 10px; width: 1px; height: 10px; background: #e03f5a;}
+.sub .gnb li~li:before{background: #3a3a3a;}
+header .gnb a{font-size: 12px; color: rgba(255,255,255,.5);}
+header .gnb a:hover{color: #fff;}
+.top2{display: none; position: fixed; right: 20px; bottom: 20px; z-index: 10; width: 50px; height: 50px; border-radius: 100%; background: #000; color: #fff;font-size: 18px; font-weight: lighter; outline: 0;}
+.top2:before{content: "\e915";}
+/* footer */
+footer{padding: 0 0 75px; background: #1c1c1c;}
+footer .top{border-bottom: 1px solid #252525;}
+footer .top > div{margin: 0 auto; width: 1200px;}
+footer .top .left{float: left; line-height: 52px;}
+footer .top .left h2{float: left; padding:0 22px 0 0; color: #fff; font-size: 14px;}
+footer .top .left p{float: left;}
+footer .top .left p a{color: #8e8c8e; font-size: 15px;}
+footer .top .right{display: flex; align-items: center; float: right; height: 52px;}
+footer .top .right > a{margin-left: 4px;}
+footer .top .right .facebook{display: inline-block; width: 36px; height: 36px; border-radius: 100%; background: #141414; text-align: center; line-height: 36px;}
+footer .top .right .facebook:before{content: "\ebd3"; color: #595959; font-size: 17px;}
+footer .top .right .facebook:hover{background: #010101;}
+footer .top .right .facebook:hover:before{color:#4267b2;}
+footer .top .right .select{display: inline-block; position: relative; padding:0 23px 0 14px; width: 170px; height: 36px; line-height: 36px; border-radius: 36px; color: #595959; font-size: 14px; background: #141414; box-sizing: border-box;outline: 0;}
+footer .top .right .select option{line-height: 30px; font-size: 9px; outline: 0;}
+footer .top .right .select:after{content: "\e913"; position: absolute;  right: 16px; top:50%; transform: translateY(-50%); font-size: 9px; color: #666;}
+footer .btn{ margin: 0 auto; width: 1200px; text-align: center; font-size: 0;}
+footer .btn li{display: inline-block;}
+footer .btn .big{line-height: 68px;}
+footer .btn .big a{margin: 0 8.5px; font-size: 15px; color: #969696;}
+footer .btn .big a.b{color: #fff; font-weight: bold;}
+footer .btn .small{line-height: 21px; font-size: 12px; color: #505050;}
+footer .btn .small a{color: #717171; text-decoration: underline;}
+footer .btn .small li~li:before{content: ""; display: inline-block; margin: 0 9px; width: 1px; height: 11px; background: #323232; vertical-align: -1px;}
+footer .btn .small li:empty{display: block;}
+footer .btn .small li:empty + li:before,
+footer .btn .small li:empty:before{display: none;}
+footer .copy { padding: 37px 0 26px; font-size: 12px; color: #505050; line-height: 1;}
+/* 유도버튼 */
+.clk:before{display: inline-block; content: ""; width: 5px; height: 5px; border-radius: 100%; background:rgba(255,255,255,.5); animation: bck 2s infinite;
+}
+@keyframes bck {
+  0% {box-shadow: none;}
+  50%{box-shadow: 0px 0px 4px 3px #ffe2e2;}
+  100%{box-shadow: 0px 0px 5px 3px #ffe2e2;}
+}

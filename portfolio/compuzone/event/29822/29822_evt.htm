@@ -1,0 +1,118 @@
+<style>
+ /* IE8 호환성 */
+ html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
+dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
+html>body .ie8{display:none;}   
+a:hover{text-decoration:none;}
+area{outline:none; border:none;}
+.event_wrap{width:100%; margin:0 auto; overflow:hidden;}
+.event_wrap > div{position:relative; /*z-index: 3;*/ box-sizing:border-box;font-size: 0;}
+.event_wrap img{width: 100%;height: auto; display: block;}
+.event_wrap > div .inner_29822{width: 1300px; position: relative; left: 50%;margin-left:-650px;z-index: 3;} 
+.event_wrap > .sec1_29822 .inner_29822{z-index: auto;} 
+.event_wrap > div .inner_29822 span{display:inline-block; position: absolute;}
+.sec1_29822{height:1040px;background:#eef8ff url(29822/evt29822_bg.jpg) no-repeat center top;}
+.sec2_29822{height:1085px; background:#254775;}
+.sec3_29822{height:886px; background:#e5f4ff;}
+.sec4_29822{height:919px; background:#262626;}
+.sec1_29822:before{display: block; content: ""; width: 100%; height:1040px;position: absolute; top: 0;.left: 0;background: url(29822/evt29822_bg1_left.png) no-repeat left top; z-index: 2;}
+.sec1_29822:after{display: block; content: ""; width: 100%; height:1040px;position: absolute; top: 0;.right:0;background: url(29822/evt29822_bg1_right.png) no-repeat right top; }
+.sec2_29822:before{display: block; content: ""; width: 100%; height:1290px;position: absolute; top: 0;left: 0;background: url(29822/evt29822_bg2_left.png) no-repeat left top; }
+.sec2_29822:after{display: block; content: ""; width: 100%; height:1290px;position: absolute; top: 0;right: 0;background: url(29822/evt29822_bg2_right.png) no-repeat right top; }	
+.sec3_29822:before{display: block; content: ""; width: 100%; height:886px;position: absolute; top: 0;right: 0;background: url(29822/evt29822_bg3_deco.png) no-repeat right bottom; }
+.sec4_29822:before{display: block; content: ""; width: 100%; height:919px;position: absolute; top: 0;left: 0;background: url(29822/evt29822_bg4_deco.png) no-repeat left bottom; }	
+.sec1_29822	.title1{width: 520px;height: 387px;left: 50%; top:115px; margin-left:-260px;  background: url(29822/evt29822_title1.png) no-repeat;}
+.sec1_29822	.title2{width: 584px;height: 194px;left: 50%; top:226px; margin-left: -292px; background: url(29822/evt29822_title2.png) no-repeat;z-index: 3;}
+.sec1_29822	.moving{width: 699px;height: 619px;left: 580px; top:556px;background: url(29822/evt29822_moving.png) no-repeat;z-index: 3;}
+.sec2_29822 .inner_29822 span,.sec3_29822 .inner_29822 span,.sec4_29822 .inner_29822 span{ width: 68px; height: 68px;}
+.sec2_29822 .sec2_cont{left: 714px; top:246px;background: url(29822/evt29822_cont1.png) no-repeat;}
+.sec3_29822 .sec3_cont{left: 785px; top:174px;background: url(29822/evt29822_cont2.png) no-repeat;}
+.sec4_29822 .sec4_cont{left: 856px; top:177px;background: url(29822/evt29822_cont3.png) no-repeat;}
+.sec2_29822 .sec2_cont.ani,.sec3_29822 .sec3_cont.ani,.sec4_29822 .sec4_cont.ani{animation: blink 1.2s linear infinite;}
+	@keyframes blink{
+		0%, 50% {
+			opacity: 1;
+		}
+		50.1%, 100% {
+			opacity: 0;
+		}
+	}
+.sec1_29822	.title1.ani{opacity: 0; transform: translateX(1300px); animation: txt1 0.5s 0.5s ease-out forwards;}
+.sec1_29822	.title2.ani{opacity: 0; transform: translateX(-1300px); animation: txt2 0.5s 1.2s ease-out forwards;}
+.sec1_29822	.moving.ani{opacity: 0; transform: translateX(1300px); animation: moving 0.5s 1.7s ease-out forwards;}
+	@keyframes txt1{
+		0{transform: translateX(1300px);opacity: 0;}
+		100%{transform: translateX(0);opacity: 1;}
+	}
+	@keyframes txt2{
+		0{transform: translateX(-1300px);opacity: 0;}
+		100%{transform: translateX(0);opacity: 1;}
+	}
+	@keyframes moving{
+		0{transform: translateX(-1300px);opacity: 0;}
+		100%{transform: translateX(0);opacity: 1;}
+	}
+.sec1_29822:before{left:50%; margin-left:-960px;}
+.sec1_29822:after{right:50%; margin-right:-960px;}
+@media screen and (min-width:1920px){
+.sec1_29822:before{left:0; margin-left:0;}
+.sec1_29822:after{right:0; margin-right:0;}
+}
+</style>
+ 
+<div class="event_wrap">
+ 	<div class="sec1_29822">
+		<div class="inner_29822">
+			<img src="29822/evt29822_bg1_txt.png" alt="">
+			<span class="title1 ani"></span>
+			<span class="title2 ani"></span>
+			<span class="moving ani"></span>
+		</div>
+ 	</div> 	
+	<div class="sec2_29822">
+		<div class="inner_29822">
+			<img src="29822/evt29822_bg2.png" alt="">
+			<span class="sec2_cont ani"></span>
+		</div>
+ 	</div>	
+	<div class="sec3_29822">
+		<div class="inner_29822">
+			<img src="29822/evt29822_bg3.png" alt="">
+			<span class="sec3_cont ani"></span>
+		</div>
+ 	</div>	
+	<div class="sec4_29822">
+		<div class="inner_29822">
+			<img src="29822/evt29822_bg4.png" alt="">
+			<span class="sec4_cont ani"></span>
+		</div>
+ 	</div>
+</div>
+<script>
+	$(document).ready(function(){
+		//익스 8~9에서는 애니메이트 뺀 클래스로 바꾸는 스크립트입니다.
+		var trident = navigator.userAgent.match(/Trident\/(\d.\d)/i);
+		if(trident != null){
+			if(trident[1] < '6.0'){
+				$(".ani").removeClass('ani');
+			}
+		}
+		// getElementsByClassName 을 IE8 이하에서 동작하게 하는 코드
+		if (!document.getElementsByClassName) {
+			document.getElementsByClassName = function (cn) {
+				var rx = new RegExp("(?:^|\\s)" + cn+ "(?:$|\\s)");
+				var allT = document.getElementsByTagName("*"), allCN = [],ac="", i = 0, a;
+
+				while (a = allT[i=i+1]) {
+					ac=a.className;
+					if ( ac && ac.indexOf(cn) !==-1) {
+						if(ac===cn){ allCN[allCN.length] = a; continue;   }
+							rx.test(ac) ? (allCN[allCN.length] = a) : 0;
+						}
+				}
+				return allCN;
+			};
+		}
+		// getElementsByClassName 을 IE8 이하에서 동작하게 하는 코드
+		});//끝
+</script>

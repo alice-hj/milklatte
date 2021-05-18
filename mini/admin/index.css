@@ -1,0 +1,203 @@
+html{font-size: 20px;}
+body{font-size: 1rem; background:#565c67;}
+button{background: #f9fafb; cursor: pointer;}
+.task{position: relative; margin: 3% auto; width: 100%; max-width: 1200px;height:100%; max-height:130vh;background: #edf3fb;}
+.side-bar{display:none;width:240px; height:100%; background: #1d3741;color: #fff; box-sizing: border-box;float: left; position: absolute;
+transition: all linear 0.2s; animation: dd linear .2s;z-index: 30;}
+@keyframes dd {
+0%{ width: 0%;}
+50%{ width: 120px;}
+100%{ width: 240px;}
+}
+.side-bar .motion{padding:.6rem; display: flex;justify-content: space-between;}
+.side-bar .motion .circle{border-radius: 50%; width: 10px;height: 10px; background-color: #fe4d46; box-shadow: 14px 0 0 0 #fbc023, 28px 0 0 0 #7dd21f; }
+.side-bar .motion .circle2{display: block; border-radius: 50%;width: 4px;height: 4px;background: #d5d7e3;box-shadow: -6px 0 0 0 #d5d7e3, 6px 0 0 0 #d5d7e3;}
+.side-bar ul{padding: 2rem 0 0 1.65rem; width: 30vw;}
+.side-bar li{position:relative; padding:0 0 2% 0; height: 48px; font-size: 13px; }
+.side-bar li button{display: inline-block; padding: 14px 0 0 46px;height: 100%; background:#1d3741;color: #9b9b9b;}
+.side-bar li.on button,
+.side-bar li button:hover{color: #5ac9f4;}
+.side-bar li button::before{ content: "";  display: inline-block; position: absolute;  top: 50%;  left: 0;  width: 30px;  height: 30px;  transform: translateY(-50%);background: no-repeat center/100% auto;}
+.side-bar li:nth-child(1) button:before{background-image:url(images/img_analytics.png);}
+.side-bar li:nth-child(2) button:before{background-image:url(images/img_stock.png);}
+.side-bar li:nth-child(3) button:before{background-image:url(images/img_portfolio.png);}
+.side-bar li:nth-child(4) button:before{background-image:url(images/img_funds.png);}
+.side-bar li:nth-child(5) button:before{background-image:url(images/img_analytics.png);}
+.side-bar li:nth-child(6) button:before{background-image:url(images/img_support.png);}
+.side-bar li:nth-child(7) button:before{background-image:url(images/img_news.png);}
+.side-bar li:nth-child(7) button:after{content: "2";display: inline-block; margin: 0 0 0 1vw; width: 23px;height: 15px;border-radius: 40%;background: #35b8eb;color: #fff;font-size: 10px;}
+.side-bar p{position: absolute; left: 0; right:0; bottom: 0; font-size: 10px; line-height: 40px; text-align: center; color: #727272;}
+
+.main{display: flex; flex-direction: column; flex: 1; }
+.header{position: relative; height: 78px; background: #fff;}
+.btn {display: inline-block; width: 3vw; height: 100%;}
+.header .menu{display: inline-block; padding: 1.4vw;height:100%; background: url(images/img_menu.png) no-repeat center/100% auto;}
+.header .search-container{display: inline-block;padding:0 0 0 4.83vw;}
+.header .search-container button {width: 22px;height: 22px; background: url(images/img_search.png) no-repeat left/100% auto; cursor: pointer;}
+.header .search-container input.search{padding: 0.5vw;font-size: 17px;border: none;line-height: 22px;justify-content: center;align-items: center;}
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+.header .info{position: absolute; padding: 0 2.07rem 0 0;right: 0; top: 50%; transform: translateY(-50%);}
+.header .info button{display: inline-block; margin: 0 0 0 10px; padding: 0 15px; line-height: 24px; border-radius:12px; background: #4fc1ee; color:#fff; font-size: 11px;}
+.header .info button.login{position: relative; padding:0 2.63rem; background:#ebf3fa;color: #1c3a4e;}
+.header .info button i.arrow_down {display: inline-block; position: absolute; right: 9%; top:30%; border: solid #4fc1ee; border-width: 0 1.5px 1.5px 0;padding: 3px;transform: rotate(45deg);-webkit-transform: rotate(45deg);}
+.total-list{display: flex;flex-wrap:nowrap;margin: 0 auto; justify-content:center;}
+.total-list > div {position: relative; padding:1% 0; width: 216px; height: 82px; margin: 18px 10px; text-align: center;background-color: #f1f1f1; box-sizing:border-box; border: 1px solid #ebf0f5; background: #fff;}
+.total-list span.icon{position: absolute; top:0; left: 0; width: 60px; height: 60px; background: #f9fafb  no-repeat center/70% auto; border: 1px solid #ebf0f5;}
+.total-list span.icon.invest{background-image: url(images/img_piechart.png);}
+.total-list span.icon.expense{background-image: url(images/img_diagram.png);}
+.total-list span.icon.revenue{background-image: url(images/img_revenue.png);}
+.total-list span.icon.balance{background-image: url(images/img_balance.png);}
+.total-list p{font-size: 23px; line-height: 37px; color:#2e485b;}
+.total-list span{display: block; font-size: 12px; color:#b7c1d2; line-height: 1;}
+
+
+.arrow_down2{ width: 0;height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent;border-top: 6px solid #38b9ec;}
+.chart-container{margin: 0 auto;width: 918px; height: 380px; background: #fff;}
+
+.top{padding:0 20px; background: #f9fafb; border-bottom: 1px solid #e2e2e2;}
+.top >*{margin: auto 0;  line-height: 42px; }
+.top button {position: relative;}
+.top .topname {font-size: 13px; font-weight: bold;}
+.top button i.arrow_down2{position: absolute; bottom: 40%; right: -25px;}
+.chart-container .top .date{display: inline-block; float: right; }
+.chart-container .top .date form{display: inline-block;}
+.chart-container .top .date form input{border:none;background: transparent;}
+.chart-container .top small{display: inline-block; padding:0 46px; font-size: 12px; color: #b4bfd1;}
+.bar-container{height: 90%;}
+
+
+
+.detail {margin: 10px auto; display: flex; flex-wrap: nowrap;width: 918px;}
+.detail > div {height: 300px; background: #fff;}
+.detail .top{padding:0 10px;}
+.detail .trending {margin: 0 8px 0 0; width:40vw;}
+.detail .trending .top button i.arrow_down2 {bottom: 16px;right: 0;}
+.detail .trending button{float: right;padding: 0 20px 0px 0;}
+.detail .recent-list {width: 60vw;}
+.detail .recent-list .list{height: 220px; overflow: auto;}
+.detail .recent-list .list table{ margin:0 1% 0 5%; width: 94%;}
+.detail .recent-list .list table tr{ height: 72px; border-bottom: 1px dashed #e2e2e2;}
+.detail .recent-list .list table tr td:first-child{width: 33px;padding: 0 3% 0 0;}
+.detail .recent-list .list table tr td img{ width: 30px; height: 22px;}
+.detail .recent-list .list table tr td > p{text-align: left;color: #436989;}
+.detail .recent-list .list table tr td > span{color: #ced8df;}
+.detail .recent-list .list table td button{margin: 0 5%; width: 19px; height: 19px; background: no-repeat center /100% auto;}
+.detail .recent-list .list table td button.star{background-image: url(images/img_star_off.png)}
+.detail .recent-list .list table td button.star.on,
+.detail .recent-list .list table td button.star:hover{background-image: url(images/img_star_on.png)}
+.detail .recent-list .list table td button.remove{width: 28px; height: 28px; background-image : url(images/img_remove.png)}
+.detail .recent-list p{line-height: 38px; text-align: center; font-size: 14px; color: #38b7eb; font-weight: bold;}
+
+/* --------------------
+bar-chart
+------------------------*/
+[class^='eje-'] { position: absolute; left: 0; bottom: 0rem; width: 100%; height: 80%;}
+.eje-x { height: 1.5rem; bottom: 0;}
+.eje-x li { width: 33%; float: left; text-align: center;}
+.eje-y li { height: 25%; border-top: 1px solid #777;}
+
+[data-ejeY]:before { content: attr(data-ejeY); display: inline-block; width: 2rem; text-align: right; line-height: 0; position: relative; left: -2.5rem; top: -.5rem; color: #dcdcdc;}
+.grafico.bar-chart {  width: 95%; height: 100%; position: relative; color: #535c68; font-size: 80%;}
+.bar-chart [class^='eje-'] {padding: 0 1rem 0 2rem; bottom: 0rem;}
+.bar-chart .eje-y li {height: 20%; border-top: 1px solid #efefef; z-index: -1;}
+.bar-chart .eje-x li { width: 8.3%; position: relative; text-align: left;}
+.bar-chart .eje-x li span { position: absolute; bottom: 1.9rem; width: 30%; left: 30%; box-shadow: 3px 0 rgba(0, 0, 0, .1), 3px -3px rgba(0, 0, 0, .1); border-radius: 0.2rem; background: #c9caca; animation: barani 1s ease-in;}
+.bar-chart .eje-x li span.settled{ background: #42b3ff;}
+.bar-chart .eje-x li span.unsettled{ height: 15%;}
+@keyframes barani {
+ 0%{height: 0;}
+ 100%{height: 100%;}
+}
+.bar-chart .eje-x li i { padding: 0 0 0 30%;font-style: normal;font-size: 13px;}
+.bar-chart .eje-x li:nth-child(1) span{height: 570%;}
+.bar-chart .eje-x li:nth-child(2) span{height: 900%;}
+.bar-chart .eje-x li:nth-child(3) span{ height: 400%;}
+.bar-chart .eje-x li:nth-child(4) span{ height: 290%;}
+.bar-chart .eje-x li:nth-child(5)  span{ height: 720%;}
+.bar-chart .eje-x li:nth-child(6)  span{height: 820%;}
+.bar-chart .eje-x li:nth-child(7)  span{height: 520%;}
+/*--------------------
+Donut-charset
+---------------------*/
+
+.donut-chart {position: relative; width: 200px; height: 200px;border-radius: 100%; margin: 5% auto 0; background: white; border: 1px solid #e2e2e2;}
+.center-date {position: absolute; background: #fff;text-align: center; font-size: 28px; top: 0; bottom: 0; left: 0; right: 0;
+  border-radius: 50%; width: 5rem; height: 1rem; margin: auto; padding: 20% 0;}
+.recorte {border-radius: 50%; clip: rect(0px, 200px, 200px, 100px); position: absolute; width: 100%; height: 100%;}
+.quesito {border-radius: 50%;clip: rect(0px, 100px, 200px, 0px);position: absolute;width: 100%; height: 100%;}
+#porcion1{transform: rotate(0deg);}
+#porcion1 .quesito {background-color: #E64C65;  transform: rotate(76deg);}
+#porcion2{transform: rotate(76deg);}
+#porcion2 .quesito {background-color: #11A8AB;  transform: rotate(140deg);}
+#porcion3 {transform: rotate(215deg);}
+#porcion3 .quesito {background-color: #4FC4F6;  transform: rotate(113deg);}
+#porcionFin {transform: rotate(-32deg);}
+#porcionFin .quesito {  background-color: #FCB150;  transform: rotate(32deg);}
+.horizontal-list {list-style-type: none;  padding: 5% 0 0;}
+.horizontal-list li {		float: left;    margin: 0 0 0 7%;}
+.horizontal-list li > * {  display: inline-block;}
+.horizontal-list span{ width: 34px; height: 14px;border-radius: 12%;}
+.company_a span{background: #E64C65;}
+.company_b span{background: #11A8AB;}
+.company_c span{background: #4FC4F6;}
+.company_d span{background: #FCB150;}
+
+@media screen and (max-width: 940px) {
+.header .menu{padding: 2.4vw;}
+.total-list {flex-wrap: wrap;margin: 2vw auto;width:100%;}
+.total-list > div{margin: 0 1.2vw;width:22vw; height:9vw;}
+.total-list p{font-size: 20px; position: absolute;top: 11%; left: 36%;}
+.total-list span{position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%);}
+.total-list span.icon{left: 14%; width:6vw; height:6vw;}
+.chart-container{width: 100%;}
+.grafico.bar-chart{width: 93%;}
+.detail{width: 100%;}
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+.task {margin:0;height: 100%;}
+.side-bar{ width: 100%; height:100%;}
+.btn{width: 6vw;}
+.header .search-container { padding: 0 0 0 3vw;}
+.header .search-container input.search{width: 60%;}
+.header .menu { padding: 4vw;}
+.header .info { padding: 0 0.5rem 0 0;}
+.header .info button.login{padding: 0 1.2rem;}
+.total-list {margin: 0;}
+.total-list > div{width: 47%; height: 20vw;margin: 1vw;}
+.total-list p{font-size:5vw; position: absolute;top: 11%; left: 36%;}
+.total-list span{position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%);font-size: 3vw;}
+.total-list span.icon{left: 14%; width:12vw; height:12vw;}
+.chart-container{width: 100%;height:100%;overflow: hidden;}
+.bar-container{width:720px; white-space:nowrap; overflow-x:scroll;}
+/*막대차트 컨테이너 */
+.grafico.bar-chart {width: 130%; height:265px;}
+[class^='eje-']{width: 70%;}
+.eje-x {height: 1.2rem;}
+.bar-chart [class^='eje-'] {bottom: 0.2rem;}
+/* .top{width: 95%;} */
+.detail{flex-wrap: wrap; margin: 0; width: 100%;}
+.detail > div{margin:0;}
+.detail .trending{margin: 0; width: 100%; height: 338px;}
+.detail .trending .horizontal-list {margin: 5vw auto 0;padding:0; height: 5vw;width:90%;}
+.detail .recent-list{width: 100%;height: 100%;}
+.detail .recent-list .list {height: 292px;}
+}
+@media screen and (max-width: 500px) {
+.header .menu { padding: 5vw;}
+.chart-container .top .date{width: 100%;margin: 0 auto;}
+.chart-container .top small{padding: 0 4vw;}
+.chart-container .top .date form{width: 42%;}
+.header .search-container{width: 43%;}
+.header .search-container input.search{ padding: 0;}
+/* .total-list > div{width: 47vw;} */
+}

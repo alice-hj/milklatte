@@ -1,0 +1,39 @@
+<div class="mw_wrap" >
+	<div class="event">
+		<div class="section1">
+			<img src="../29963/evt29963_m_bg.jpg" usemap="#Map2" border="0">
+			<map name="Map2">
+              <area shape="rect" coords="775,1999,910,2053" data-subtit="1" class="area_sub_title">
+              <area shape="rect" coords="299,2174,705,2566" href="../product/product_detail.htm?ProductNo=755771">
+              <area shape="rect" coords="771,2885,905,2941" data-subtit="2" class="area_sub_title">
+              <area shape="rect" coords="296,3071,713,3455" href="../product/product_detail.htm?ProductNo=775562">
+              <area shape="rect" coords="773,3773,912,3825" data-subtit="3" class="area_sub_title">
+              <area shape="rect" coords="257,3939,713,4340" href="../product/product_detail.htm?ProductNo=775613">
+            </map>
+			<div class="s1_video">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/f3JIuB4RJ1U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+a:hover{text-decoration:none;}
+area {outline: none;}
+.mw_wrap{width:100%;}
+.event{width:100%; max-width: 1000px; margin:0 auto; overflow:hidden;}
+.event > div{position:relative;height: 4659px;}
+.event img{display:block; width:100%; height:100%;}
+.s1_video{position:absolute; display: inline-block; width: 899px; height: 503px; left: 50%; transform: translateX(-50%); top: 1303px; box-sizing: border-box; border: 2px solid #000;}
+
+@media screen and (max-width: 1000px) {
+.event > div{position:relative;height: 465.9vw;}
+.s1_video{width: 87.9vw; height: 50.3vw;top: 130.3vw;}
+}
+</style>
+<script type="text/javascript" src="../script/jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+});
+</script>

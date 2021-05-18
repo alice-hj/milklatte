@@ -1,0 +1,191 @@
+<script type="text/javascript" src="../script/jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});
+</script>
+<style>
+a:hover{text-decoration:none;}
+area {outline: none;}
+.mw_wrap{width:100%;}
+.mw_wrap img{display:block; width:100%;height: auto;}
+.event{width:100%; max-width: 800px; margin:0 auto; overflow:hidden;}
+.event > div{position:relative;font-size:0;}
+.event img{display:block; width:100%; height:auto;}
+.title_29724 span{display:inline-block;position: absolute;}
+.title_29724{height:1000px;}
+/*.body_29724{height:10585px;}*/
+.body_29724 span{display:inline-block;position:relative;}
+.body_29724 .type1{height:1843px;}
+.body_29724 .type2{height:4948px;}
+.body_29724 .type3{height:3794px;}
+.title_29724 .title{width: 699px; height: 193px;top:252px;left:50px;
+	background: url(../29724/29724_title.png) no-repeat center;  background-size: contain;
+	animation-name: blurFadeInOut2; animation-duration: 2s; animation-fill-mode: both;}/*2.8*/
+.title_29724 .watching{width:800px; height: 464px;bottom:0;left: 0;
+	background: url(../29724/mo_watching.png) no-repeat center;background-size: contain;
+	transform: translateY(500px);animation-name: fadeInUpBig;animation-duration:2s; animation-delay:0.8s;animation-fill-mode: both;}
+.blurFadeInOut {animation-name: blurFadeInOut;animation-fill-mode: both;animation-duration:1.5s;}	
+	
+	.body_29724 a{display:inline-block; width: 327px; height: 375px;position: absolute;}
+	.body_29724 .link1,
+	.body_29724 .link3,
+	.body_29724 .link4,
+	.body_29724 .link6,
+	.body_29724 .link7,
+	.body_29724 .link9,
+	.body_29724 .link10,
+	.body_29724 .link12,
+	.body_29724 .link13,
+	.body_29724 .link15{left:61px}
+	.body_29724 .link2,
+	.body_29724 .link5,
+	.body_29724 .link8,
+	.body_29724 .link11,
+	.body_29724 .link14{left:411px;}
+	.body_29724 .link1,
+	.body_29724 .link2{top:623px;}
+	.body_29724 .link3{top:1021px;}
+	.body_29724 .link4,
+	.body_29724 .link5{top:1772px;}
+	.body_29724 .link6{top:2171px;}	
+	.body_29724 .link7,
+	.body_29724 .link8{top:2922px;}
+	.body_29724 .link9{top:3321px;}
+	.body_29724 .link10,
+	.body_29724 .link11{top:4070px;}
+	.body_29724 .link12{top:4469px;}
+	.body_29724 .link13,
+	.body_29724 .link14{top:271px;}
+	.body_29724 .link15{top:671px;}
+	
+@keyframes blurFadeInOut {
+	0% {opacity: 0;text-shadow: 0px 0px 40px #fff; transform: scale(1.2);}
+	100% {opacity: 1;text-shadow: 0px 0px 1px #fff; transform: scale(1);}
+}
+@keyframes blurFadeInOut2 {
+	0% {
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    transform: scale(1.2);
+	}	
+	100% {
+	opacity: 1;
+	text-shadow: 0px 0px 1px #fff;
+	transform: scale(1);
+	}
+}
+@keyframes fadeInUpBig{
+	0% {
+    opacity: 0;
+    transform: translateY(500px);
+}
+	100% {
+    opacity: 1;
+    transform: translateY(0);
+	}
+}
+
+@media screen and (max-width: 800px) {
+.title_29724{height:125.0vw;}
+/*.body_29724{height:1323.1vw;}*/
+.body_29724 .type1{height:230.4vw;}
+.body_29724 .type2{height:618.5vw;}
+.body_29724 .type3{height:474.3vw;}
+
+.title_29724 .title{width: 87.4vw; height: 24.1vw;top:31.5vw;left: 6.3vw;}
+.title_29724 .watching{width:100.0vw; height: 58.0vw;transform: translateY(62.5vw);}
+
+@keyframes fadeInUpBig{
+	0% {
+    opacity: 0;
+    transform: translateY(62.5vw);
+}
+	100% {
+    opacity: 1;
+    transform: translateY(0);
+	}
+}
+	.body_29724 a{ width: 40.9vw; height: 46.9vw;}
+	.body_29724 .link1,
+	.body_29724 .link3,
+	.body_29724 .link4,
+	.body_29724 .link6,
+	.body_29724 .link7,
+	.body_29724 .link9,
+	.body_29724 .link10,
+	.body_29724 .link12,
+	.body_29724 .link13,
+	.body_29724 .link15{left:7.6vw}
+	.body_29724 .link2,
+	.body_29724 .link5,
+	.body_29724 .link8,
+	.body_29724 .link11,
+	.body_29724 .link14{left:51.4vw;}
+	.body_29724 .link1,
+	.body_29724 .link2{top:77.9vw;}
+	.body_29724 .link3{top:127.6vw;}
+	.body_29724 .link4,
+	.body_29724 .link5{top:221.5vw;}
+	.body_29724 .link6{top:271.4vw;}	
+	.body_29724 .link7,
+	.body_29724 .link8{top:365.3vw;}
+	.body_29724 .link9{top:415.1vw;}
+	.body_29724 .link10,
+	.body_29724 .link11{top:508.8vw;}
+	.body_29724 .link12{top:558.6vw;}
+	.body_29724 .link13,
+	.body_29724 .link14{top:33.9vw;}
+	.body_29724 .link15{top:83.9vw;}
+	
+}
+
+</style>
+<div class="mw_wrap" >
+    <div class="event">
+	<div class="title_29724">
+		<img class="blurFadeInOut" src="../29724/27924_mobg_01.jpg" alt="">
+		<span class="title"></span>
+		<span class="watching"></span>
+	</div>	
+	<div class="body_29724">
+		<span class="type1">
+			<img src="../29724/27924_mobg_02.jpg" alt="">
+		</span>
+		<span class="type2">
+			<img src="../29724/27924_mobg_03.jpg" alt="" usemap="#Map" border="0">
+			<a class="link1" href="../product/product_detail.htm?ProductNo=751422"></a>
+			<a class="link2" href="../product/product_detail.htm?ProductNo=695113"></a>
+			<a class="link3" href="../product/product_detail.htm?ProductNo=631557"></a>
+			<a class="link4" href="../product/product_detail.htm?ProductNo=730768"></a>
+			<a class="link5" href="../product/product_detail.htm?ProductNo=733196"></a>
+			<a class="link6" href="../product/product_detail.htm?ProductNo=731712"></a>
+			<a class="link7" href="../product/product_detail.htm?ProductNo=657285"></a>
+			<a class="link8" href="../product/product_detail.htm?ProductNo=766851"></a>
+			<a class="link9" href="../product/product_detail.htm?ProductNo=766850"></a>
+			<a class="link10" href="../product/product_detail.htm?ProductNo=403097"></a>
+			<a class="link11" href="../product/product_detail.htm?ProductNo=752818"></a>
+			<a class="link12" href="../product/product_detail.htm?ProductNo=728228"></a>
+			<map name="Map">
+			  <area shape="rect" coords="650,351,770,474" data-subtit="1" class="area_sub_title">
+			  <area shape="rect" coords="651,1500,771,1621" data-subtit="2" class="area_sub_title">
+			  <area shape="rect" coords="652,2651,768,2771" data-subtit="3" class="area_sub_title">
+			  <area shape="rect" coords="654,3796,774,3921" data-subtit="4" class="area_sub_title">
+			</map>
+		</span>
+		<span class="type3">
+			<img src="../29724/27924_mobg_04.jpg" alt="" usemap="#Map2" border="0">
+			<a class="link13" href="../product/product_detail.htm?ProductNo=730791"></a>
+			<a class="link14" href="../product/product_detail.htm?ProductNo=590207"></a>
+			<a class="link15" href="../product/product_detail.htm?ProductNo=623606"></a>
+			<map name="Map2">
+			  <area shape="rect" coords="655,0,772,122" data-subtit="5" class="area_sub_title">
+			  <area shape="rect" coords="85,2859,371,2979" data-subtit="6" class="area_sub_title">
+			  <area shape="rect" coords="434,2859,718,2979" data-subtit="7" class="area_sub_title">
+			  <area shape="rect" coords="84,3019,371,3142" data-subtit="8" class="area_sub_title">
+			  <area shape="rect" coords="431,3017,720,3142" data-subtit="9" class="area_sub_title">
+			  <area shape="rect" coords="4,3528,794,3791" href="http://m.compuzone.co.kr/product/product_list.htm?BigDivNo=7&MediumDivNo=1050&DivNo=2144">
+			</map>
+		</span>
+	</div>
+</div>

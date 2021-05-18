@@ -1,0 +1,576 @@
+
+<style>
+a:hover{text-decoration:none;}
+area {outline: none;}
+.mw_wrap{width:100%;}
+.event{width:100%; max-width:1000px; margin:0 auto; overflow:hidden;}
+.event > div{position:relative; }
+.event > div > div{position:absolute; display:inline-block;}
+.event img{display:block; width:100%; height:auto;}
+.title_29819{height:1260px;}
+.body_29819{height:1740px;}
+.title_29819 .light_box{left: 40px; top: 236px; width: 933px; height: 282px;  box-sizing: border-box;}
+.body_29819 .s_light_box{left:167px; top:88px; width:667px; height: 181px; box-sizing: border-box;}	
+.body_29819 .rolette_box{left: 108px; top: 575px; width: 782px; height: 784px; border-radius: 50%;  box-sizing: border-box; }
+.body_29819 .rolette_box>*{position:absolute; display:inline-block;}
+.body_29819 .rolette_box .rolette{margin-left:-345px; margin-top:-345px; width:689px; height: 690px;left: 50%;top: 50%;background: url(../29819/evt29819_rolette.png) no-repeat center/contain;transition: all 5s ease-in-out;}
+.body_29819 .rolette_box .btn_box{left:323px; top:322px; width:154px; height: 153px;z-index: 3;}
+.body_29819 .rolette_box .btn_box button{width:154px; height: 153px;background: url(../29819/evt29819_btn.png) no-repeat center/contain;}
+.body_29819 .rolette_box .btn_box button .btn_txt{position:absolute; display:inline-block; width:93px; height: 52px; top:50%; left: 50%; transform: translate(-52%,-58%); background: url(../29819/evt29819_btn_txt1.png) no-repeat center/contain;}
+.body_29819 .rolette_box .pin{left: 377px; top:-67px; width: 24px; height: 109px;}
+.body_29819 .rolette_box .r_light_box{width: 782px; height: 784px; top:0; left:0;z-index: 1;}
+.body_29819 .txt_29819{left: 29px; bottom: 225px; width: 942px; height: 110px; box-sizing: border-box;}
+.body_29819 .txt_29819 p{line-height: 110px;font-size: 30px; letter-spacing: -3px; font-family:noto-R; color: #b9bddb; text-align: center; margin: 0;}
+.body_29819 .txt_29819 p em{display: inline-block; font-weight: bold; color: #fff; font-style: normal; letter-spacing: 1px;}
+.body_29819 .comment_29819{display:inline-block; position: absolute;bottom: 108px;left: 50%;width: 100%; transform: translateX(-50%);}
+.body_29819 .comment_29819 p{font-size:24px; color:#969bba; text-align:center; line-height: 35px;font-family: 'Noto-R';letter-spacing: -3.2px;}
+/* light 1 position */
+.title_29819 .light_box span{position:absolute; display:inline-block; width: 26px; height: 26px; background:url(../29819/evt29819_light1.png) no-repeat center/contain;}
+.title_29819 .light_box span:nth-child(odd){animation: light1 2s linear infinite;opacity: 0;}
+.title_29819 .light_box span:nth-child(even){animation: light2 2s linear infinite; }
+.title_29819 .light1,.title_29819 .light2,.title_29819 .light3,.title_29819 .light4,.title_29819 .light5,.title_29819 .light6,.title_29819 .light7{left: 0px;}
+.title_29819 .light7,.title_29819 .light8,.title_29819 .light9,.title_29819 .light10,.title_29819 .light11,.title_29819 .light12,.title_29819 .light13,.title_29819 .light14,.title_29819 .light15,.title_29819 .light16,.title_29819 .light17,.title_29819 .light18,.title_29819 .light19,.title_29819 .light20,.title_29819 .light21,.title_29819 .light22,.title_29819 .light23,.title_29819 .light24,.title_29819 .light25,.title_29819 .light26,.title_29819 .light27{bottom: 0;}
+.title_29819 .light27,.title_29819 .light28,.title_29819 .light29,.title_29819 .light30,.title_29819 .light31,.title_29819 .light32,.title_29819 .light33{right: 0px;}
+.title_29819 .light28,.title_29819 .light29,.title_29819 .light33,.title_29819 .light34,.title_29819 .light35,.title_29819 .light36,.title_29819 .light52,.title_29819 .light53,.title_29819 .light54,.title_29819 .light1{top:0px;}
+.title_29819 .light2,.title_29819 .light32{top:41px;}
+.title_29819 .light3,.title_29819 .light31{top:84px;}
+.title_29819 .light4,.title_29819 .light30{top:126px;}
+.title_29819 .light5,.title_29819 .light29{top:167px;}
+.title_29819 .light6,.title_29819 .light28{top:210px;}
+.title_29819 .light8{ left: 42px;}
+.title_29819 .light9{left: 86px;}
+.title_29819 .light10{left: 129px;}
+.title_29819 .light11{left: 175px;}
+.title_29819 .light12{left: 223px;}
+.title_29819 .light13{left: 266px;}
+.title_29819 .light14{left: 314px;}
+.title_29819 .light15{left: 358px;}
+.title_29819 .light16{left: 403px;}
+.title_29819 .light17{left: 448px;}
+.title_29819 .light18{left: 495px;}
+.title_29819 .light19{left: 539px;}
+.title_29819 .light20{left: 585px;}
+.title_29819 .light21{left: 631px;}
+.title_29819 .light22{left: 676px;}
+.title_29819 .light23{left: 722px;}
+.title_29819 .light24{left: 767px;}
+.title_29819 .light25{left: 813px;}
+.title_29819 .light26{left: 859px;}
+.title_29819 .light34{right: 39px;}
+.title_29819 .light35{right: 75px;}
+.title_29819 .light36{right: 117px;}
+.title_29819 .light52{left: 125px;}
+.title_29819 .light53{left: 83px;}
+.title_29819 .light54{left: 41px;}
+.title_29819 .light37{right:158px ; top:0px;}
+.title_29819 .light38{right:195px ; top:-18px;}
+.title_29819 .light39{right:237px ; top:-32px;}
+.title_29819 .light40{right:279px ; top:-42px;}
+.title_29819 .light41{right:320px ; top:-50px;}
+.title_29819 .light42{right:363px ; top:-54px;}
+.title_29819 .light43{right:405px ; top:-57px;}
+.title_29819 .light44{right:446px ; top:-59px;}
+.title_29819 .light45{right: 488px; top:-59px;}
+.title_29819 .light46{right: 529px; top:-56px;}
+.title_29819 .light47{right: 571px; top:-53px;}
+.title_29819 .light48{right: 613px; top:-47px;}
+.title_29819 .light49{left: 292px; top:-46px;}
+.title_29819 .light49{left: 250px; top:-37px;}
+.title_29819 .light50{left: 208px; top:-24px;}
+.title_29819 .light51{left: 166px; top:-3px;}
+/* s_light2 positon*/
+.body_29819 .s_light_box span{display: inline-block;  position: absolute;  width: 23px;height:24px; background:url(../29819/evt29819_light2.png) no-repeat center/contain;}
+.body_29819 .s_light_box span:nth-child(odd){animation: light1 2s linear infinite;opacity: 0;}
+.body_29819 .s_light_box span:nth-child(even){animation: light2 2s linear infinite; }
+.body_29819 .s_light1,.body_29819 .s_light2,.body_29819 .s_light3,.body_29819 .s_light4,.body_29819 .s_light5{left: 0;}
+.body_29819 .s_light19,.body_29819 .s_light20,.body_29819 .s_light21,.body_29819 .s_light22,.body_29819 .s_light23{right: 0;}
+.body_29819 .s_light5,.body_29819 .s_light6,.body_29819 .s_light7,.body_29819 .s_light8,.body_29819 .s_light9,.body_29819 .s_light10,.body_29819 .s_light11,.body_29819 .s_light12,.body_29819 .s_light13,.body_29819 .s_light14,.body_29819 .s_light15,.body_29819 .s_light16,.body_29819 .s_light17,.body_29819 .s_light18,.body_29819 .s_light19{bottom: 0;}
+.body_29819 .s_light23,.body_29819 .s_light24,.body_29819 .s_light25,.body_29819 .s_light26,.body_29819 .s_light27,.body_29819 .s_light28,.body_29819 .s_light29,.body_29819 .s_light30,.body_29819 .s_light31,.body_29819 .s_light32,.body_29819 .s_light33,.body_29819 .s_light34,.body_29819 .s_light35,.body_29819 .s_light36{top: 0;}
+.body_29819 .s_light2,
+.body_29819 .s_light22{top:35px;}
+.body_29819 .s_light3,
+.body_29819 .s_light21{top:75px;}
+.body_29819 .s_light4,
+.body_29819 .s_light20{top:117px;}
+.body_29819 .s_light6,
+.body_29819 .s_light36{left:49px;}
+.body_29819 .s_light7,
+.body_29819 .s_light35{left:93px;}
+.body_29819 .s_light8,
+.body_29819 .s_light34{left:143px;}
+.body_29819 .s_light9,
+.body_29819 .s_light33{left:186px;}
+.body_29819 .s_light10,
+.body_29819 .s_light32{left:230px;}
+.body_29819 .s_light11,
+.body_29819 .s_light31{left:276px;}
+.body_29819 .s_light12,
+.body_29819 .s_light30{left:321px;}
+.body_29819 .s_light13,
+.body_29819 .s_light29{left:366px;}
+.body_29819 .s_light14,
+.body_29819 .s_light28{right:229px;}
+.body_29819 .s_light15,
+.body_29819 .s_light27{right:184px;}
+.body_29819 .s_light16,
+.body_29819 .s_light26{right:139px;}
+.body_29819 .s_light17,
+.body_29819 .s_light25{right:93px;}
+.body_29819 .s_light18,
+.body_29819 .s_light24{right:48px;}
+.body_29819 .s_light1,
+.body_29819 .s_light5{left:4px}
+.body_29819 .s_light19,
+.body_29819 .s_light23{right:4px}	
+/* 롤렛 r_light position */
+.body_29819 .r_light_box span{position:absolute; display:inline-block; width: 32px;height:32px; background:url(../29819/evt29819_light3.png) no-repeat center/contain;transform: scale(1.2);transition: all 0.8s;opacity: 0;}
+.body_29819 .r_light1{left:318px; top:-2px;}
+.body_29819 .r_light2{left:200px; top:37px;}
+.body_29819 .r_light3{left:107px; top: 103px;}
+.body_29819 .r_light4{left:40px; top: 191px;}
+.body_29819 .r_light5{left:2px; top: 307px;}
+.body_29819 .r_light6{left:0px; top: 435px;}
+.body_29819 .r_light7{left:38px; top: 550px;}
+.body_29819 .r_light8{left:107px; top: 643px;}
+.body_29819 .r_light9{left:199px; top: 707px;}
+.body_29819 .r_light10{left:316px; top: 747px;}
+
+.body_29819 .r_light11{right:314px; top: 747px;}
+.body_29819 .r_light12{right:198px; top: 707px;}
+.body_29819 .r_light13{right:101px; top: 633px;}
+.body_29819 .r_light14{right:33px; top: 534px;}
+.body_29819 .r_light15{right:1px; top: 425px;}
+.body_29819 .r_light16{right:0px; top: 308px;}
+.body_29819 .r_light17{right:38px; top: 200px;}
+.body_29819 .r_light18{right:109px; top: 102px;}
+.body_29819 .r_light19{right:197px; top: 37px;}
+.body_29819 .r_light20{right:316px; top: -3px;}	
+@keyframes light1 {
+	0%,50%{opacity: 0.2;}
+	50.1%,100%{opacity: 1;}
+}
+@keyframes light2 {
+	0%,50%{opacity: 1;}
+	50.1%,100%{opacity: 0.2;}
+}
+/* 팝업*/
+#popbox_29819{display: block; overflow-x: hidden; position: fixed;top: 0;left: 0;width: 100%;height: 100%; z-index: 99999; background-color: rgba(0,0,0,.4);}
+#popbox_29819 .layer_pop {max-width: 400px; max-height: 450px;  width: 370px; padding: 35px 15px; position: relative; text-align:center; transform: translate(-50%,-50%);overflow-y:hidden;top: 50%;left: 50%;}
+#popbox_29819 .layer_pop .info_text {margin-bottom: 30px;color: #000;font-size: 18px;line-height: 25px;letter-spacing: -1px;font-weight: normal;}
+#popbox_29819 .layer_pop .info_text em{font-size: 18px; font-weight: bold;}
+#popbox_29819 .layer_pop .check_btn a.bk {width: 221px;border: 1px solid #000;background-color: #000;color: #fff;padding: 13px 0;font-size: 15px;line-height: 15px;}
+	
+@media screen and (max-width:1000px) {
+.title_29819{height:126.0vw;}
+.body_29819{height:174.0vw;}
+.title_29819 .light_box{left: 4.0vw; top: 23.6vw; width: 93.3vw; height: 28.2vw;  }
+.body_29819 .s_light_box{left:16.7vw; top:8.8vw; width:66.7vw; height: 18.1vw;}	
+.body_29819 .rolette_box{left: 10.8vw; top: 57.5vw; width: 78.2vw; height: 78.4vw;}
+.body_29819 .rolette_box .rolette{margin-left:-34.5vw; margin-top:-34.5vw; width:68.9vw; height: 69.0vw;}
+.body_29819 .rolette_box .btn_box{left:32.3vw; top:32.2vw; width:15.4vw; height: 15.3vw;}
+.body_29819 .rolette_box .btn_box button{width:15.4vw; height: 15.3vw;}
+.body_29819 .rolette_box .btn_box button .btn_txt{  width:9.3vw; height: 5.2vw;}
+.body_29819 .rolette_box .pin{left: 37.7vw; top:-6.7vw; width: 2.4vw; height: 10.9vw;}
+.body_29819 .rolette_box .r_light_box{width: 78.2vw; height: 78.4vw;}
+.body_29819 .txt_29819{left: 2.9vw; bottom: 22.5vw; width: 94.2vw; height: 11.0vw; }
+.body_29819 .txt_29819 p{line-height: 11.0vw;font-size: 3.0vw; letter-spacing: -0.3vw;}
+.body_29819 .txt_29819 p em{letter-spacing: 0.1vw;}
+.body_29819 .comment_29819{ bottom: 10.8vw;}
+.body_29819 .comment_29819 p{font-size:2.4vw;line-height: 3.5vw;letter-spacing: -0.3vw;}
+/* light 1 position */
+.title_29819 .light_box span{width: 2.6vw; height: 2.6vw;}
+.title_29819 .light2,.title_29819 .light32{top:4.1vw;}
+.title_29819 .light3,.title_29819 .light31{top:8.4vw;}
+.title_29819 .light4,.title_29819 .light30{top:12.6vw;}
+.title_29819 .light5,.title_29819 .light29{top:16.7vw;}
+.title_29819 .light6,.title_29819 .light28{top:21.0vw;}
+.title_29819 .light8{ left: 4.2vw;}
+.title_29819 .light9{left: 8.6vw;}
+.title_29819 .light10{left: 12.9vw;}
+.title_29819 .light11{left: 17.5vw;}
+.title_29819 .light12{left: 22.3vw;}
+.title_29819 .light13{left: 26.6vw;}
+.title_29819 .light14{left: 31.4vw;}
+.title_29819 .light15{left: 35.8vw;}
+.title_29819 .light16{left: 40.3vw;}
+.title_29819 .light17{left: 44.8vw;}
+.title_29819 .light18{left: 49.5vw;}
+.title_29819 .light19{left: 53.9vw;}
+.title_29819 .light20{left: 58.5vw;}
+.title_29819 .light21{left: 63.1vw;}
+.title_29819 .light22{left: 67.6vw;}
+.title_29819 .light23{left: 72.2vw;}
+.title_29819 .light24{left: 76.7vw;}
+.title_29819 .light25{left: 81.3vw;}
+.title_29819 .light26{left: 85.9vw;}
+.title_29819 .light34{right: 3.9vw;}
+.title_29819 .light35{right: 7.5vw;}
+.title_29819 .light36{right: 11.7vw;}
+.title_29819 .light52{left: 12.5vw;}
+.title_29819 .light53{left: 8.3vw;}
+.title_29819 .light54{left: 4.1vw;}
+.title_29819 .light37{right:15.8vw ; top:0.0vw;}
+.title_29819 .light38{right:19.5vw ; top:-1.8vw;}
+.title_29819 .light39{right:23.7vw ; top:-3.2vw;}
+.title_29819 .light40{right:27.9vw ; top:-4.2vw;}
+.title_29819 .light41{right:32.0vw ; top:-5.0vw;}
+.title_29819 .light42{right:36.3vw ; top:-5.4vw;}
+.title_29819 .light43{right:40.5vw ; top:-5.7vw;}
+.title_29819 .light44{right:44.6vw ; top:-5.9vw;}
+.title_29819 .light45{right: 48.8vw; top:-5.9vw;}
+.title_29819 .light46{right: 52.9vw; top:-5.6vw;}
+.title_29819 .light47{right: 57.1vw; top:-5.3vw;}
+.title_29819 .light48{right: 61.3vw; top:-4.7vw;}
+.title_29819 .light49{left: 29.2vw; top:-4.6vw;}
+.title_29819 .light49{left: 25.0vw; top:-3.7vw;}
+.title_29819 .light50{left: 20.8vw; top:-2.4vw;}
+.title_29819 .light51{left: 16.6vw; top:-0.3vw;}
+/* s_light2 positon*/
+.body_29819 .s_light_box span{width: 2.3vw;height:2.4vw;}
+.body_29819 .s_light2,
+.body_29819 .s_light22{top:3.5vw;}
+.body_29819 .s_light3,
+.body_29819 .s_light21{top:7.5vw;}
+.body_29819 .s_light4,
+.body_29819 .s_light20{top:11.7vw;}
+.body_29819 .s_light6,
+.body_29819 .s_light36{left:4.9vw;}
+.body_29819 .s_light7,
+.body_29819 .s_light35{left:9.3vw;}
+.body_29819 .s_light8,
+.body_29819 .s_light34{left:14.3vw;}
+.body_29819 .s_light9,
+.body_29819 .s_light33{left:18.6vw;}
+.body_29819 .s_light10,
+.body_29819 .s_light32{left:23.0vw;}
+.body_29819 .s_light11,
+.body_29819 .s_light31{left:27.6vw;}
+.body_29819 .s_light12,
+.body_29819 .s_light30{left:32.1vw;}
+.body_29819 .s_light13,
+.body_29819 .s_light29{left:36.6vw;}
+.body_29819 .s_light14,
+.body_29819 .s_light28{right:22.9vw;}
+.body_29819 .s_light15,
+.body_29819 .s_light27{right:18.4vw;}
+.body_29819 .s_light16,
+.body_29819 .s_light26{right:13.9vw;}
+.body_29819 .s_light17,
+.body_29819 .s_light25{right:9.3vw;}
+.body_29819 .s_light18,
+.body_29819 .s_light24{right:4.8vw;}
+.body_29819 .s_light1,
+.body_29819 .s_light5{left:0.4vw}
+.body_29819 .s_light19,
+.body_29819 .s_light23{right:0.4vw}	
+/* 롤렛 r_light position */
+.body_29819 .r_light_box span{width: 3.2vw;height:3.2vw;}
+.body_29819 .r_light1{left:31.8vw; top:-0.2vw;}
+.body_29819 .r_light2{left:20.0vw; top:3.7vw;}
+.body_29819 .r_light3{left:10.7vw; top: 10.3vw;}
+.body_29819 .r_light4{left:4.0vw; top: 19.1vw;}
+.body_29819 .r_light5{left:0.2vw; top: 30.7vw;}
+.body_29819 .r_light6{left:0.0vw; top: 43.5vw;}
+.body_29819 .r_light7{left:3.8vw; top: 55.0vw;}
+.body_29819 .r_light8{left:10.7vw; top: 64.3vw;}
+.body_29819 .r_light9{left:19.9vw; top: 70.7vw;}
+.body_29819 .r_light10{left:31.6vw; top: 74.7vw;}
+
+.body_29819 .r_light11{right:31.4vw; top: 74.7vw;}
+.body_29819 .r_light12{right:19.8vw; top: 70.7vw;}
+.body_29819 .r_light13{right:10.1vw; top: 63.3vw;}
+.body_29819 .r_light14{right:3.3vw; top: 53.4vw;}
+.body_29819 .r_light15{right:0.1vw; top: 42.5vw;}
+.body_29819 .r_light16{right:0.0vw; top: 30.8vw;}
+.body_29819 .r_light17{right:3.8vw; top: 20.0vw;}
+.body_29819 .r_light18{right:10.9vw; top: 10.2vw;}
+.body_29819 .r_light19{right:19.7vw; top: 3.7vw;}
+.body_29819 .r_light20{right:31.6vw; top: -0.3vw;}	
+	}
+@media screen and (max-width:600px) {
+	#popbox_29819 .layer_pop {max-width: 66.7vw; max-height: 75.0vw;  width: 61.7vw; padding: 5.8vw 2.5vw;   transform: translate(-50%,-50%);overflow-y: none;top: 50%;left: 50%;}
+	#popbox_29819 .layer_pop .info_text {margin-bottom: 4.0vw;font-size: 3.0vw;line-height: 4.2vw;letter-spacing: -0.2vw;}
+	#popbox_29819 .layer_pop .info_text em{font-size: 3.0vw;font-weight: bold;}
+	#popbox_29819 .layer_pop .check_btn a.bk {width: 36.8vw;border: 0.2vw solid #000;padding: 2.2vw 0;font-size: 2.5vw;line-height: 2.5vw;}
+}
+</style>
+<div class="mw_wrap">
+	<div class="event">
+		<div class="title_29819">
+			<img src="../29819/evt29819_mo_bg1.jpg" alt="">
+			<div class="light_box">
+				<span class="light1"></span>
+				<span class="light2"></span>
+				<span class="light3"></span>
+				<span class="light4"></span>
+				<span class="light5"></span>
+				<span class="light6"></span>
+				<span class="light7"></span>
+				<span class="light8"></span>
+				<span class="light9"></span>
+				<span class="light10"></span>
+				<span class="light11"></span>
+				<span class="light12"></span>
+				<span class="light13"></span>
+				<span class="light14"></span>
+				<span class="light15"></span>
+				<span class="light16"></span>
+				<span class="light17"></span>
+				<span class="light18"></span>
+				<span class="light19"></span>
+				<span class="light20"></span>
+				<span class="light21"></span>
+				<span class="light22"></span>
+				<span class="light23"></span>
+				<span class="light24"></span>
+				<span class="light25"></span>
+				<span class="light26"></span>
+				<span class="light27"></span>
+				<span class="light28"></span>
+				<span class="light29"></span>
+				<span class="light30"></span>
+				<span class="light31"></span>
+				<span class="light32"></span>
+				<span class="light33"></span>
+				<span class="light34"></span>
+				<span class="light35"></span>
+				<span class="light36"></span>
+				<span class="light37"></span>
+				<span class="light38"></span>
+				<span class="light39"></span>
+				<span class="light40"></span>
+				<span class="light41"></span>
+				<span class="light42"></span>
+				<span class="light43"></span>
+				<span class="light44"></span>
+				<span class="light45"></span>
+				<span class="light46"></span>
+				<span class="light47"></span>
+				<span class="light48"></span>
+				<span class="light49"></span>
+				<span class="light50"></span>
+				<span class="light51"></span>
+				<span class="light52"></span>
+				<span class="light53"></span>
+				<span class="light54"></span>
+			</div>
+		</div>
+		<div class="body_29819">
+			<img src="../29819/evt29819_mo_bg2.jpg" alt="">
+			<div class="s_light_box">
+				<span class="s_light1"></span>
+				<span class="s_light2"></span>
+				<span class="s_light3"></span>
+				<span class="s_light4"></span>
+				<span class="s_light5"></span>
+				<span class="s_light6"></span>
+				<span class="s_light7"></span>
+				<span class="s_light8"></span>
+				<span class="s_light9"></span>
+				<span class="s_light10"></span>
+				<span class="s_light11"></span>
+				<span class="s_light12"></span>
+				<span class="s_light13"></span>
+				<span class="s_light14"></span>
+				<span class="s_light15"></span>
+				<span class="s_light16"></span>
+				<span class="s_light17"></span>
+				<span class="s_light18"></span>
+				<span class="s_light19"></span>
+				<span class="s_light20"></span>
+				<span class="s_light21"></span>
+				<span class="s_light22"></span>
+				<span class="s_light23"></span>
+				<span class="s_light24"></span>
+				<span class="s_light25"></span>
+				<span class="s_light26"></span>
+				<span class="s_light27"></span>
+				<span class="s_light28"></span>
+				<span class="s_light29"></span>
+				<span class="s_light30"></span>
+				<span class="s_light31"></span>
+				<span class="s_light32"></span>
+				<span class="s_light33"></span>
+				<span class="s_light34"></span>
+				<span class="s_light35"></span>
+				<span class="s_light36"></span>
+			</div>
+			<div class="rolette_box">
+				<span class="rolette"></span>
+				<div class="btn_box" id="spin">
+					<button type="button">
+						<p class="btn_txt"></p>
+					</button>
+				</div>
+				<span class="pin"><img src="../29819/evt29819_pin.png" alt=""></span>
+				<div class="r_light_box">
+					<span class="r_light1"></span>
+					<span class="r_light2"></span>
+					<span class="r_light3"></span>
+					<span class="r_light4"></span>
+					<span class="r_light5"></span>
+					<span class="r_light6"></span>
+					<span class="r_light7"></span>
+					<span class="r_light8"></span>
+					<span class="r_light9"></span>
+					<span class="r_light10"></span>
+					<span class="r_light11"></span>
+					<span class="r_light12"></span>
+					<span class="r_light13"></span>
+					<span class="r_light14"></span>
+					<span class="r_light15"></span>
+					<span class="r_light16"></span>
+					<span class="r_light17"></span>
+					<span class="r_light18"></span>
+					<span class="r_light19"></span>
+					<span class="r_light20"></span>
+				</div>
+			</div>
+			<div class="txt_29819">
+			  <p><em><?php echo $sess1['username']; ?></em>님의 구매 수량은 <em><?php echo $CntCanTry; ?></em><em id="CntCanTry">개</em> 이며, 참여 횟수는 <em id="CntTried"><?php echo $CntTried; ?></em><em>번</em> 입니다.</p>
+			</div>
+			<div class="comment_29819">
+				<p>※ 본 이벤트는 회원 전용 행사로 비회원, 네이버페이 회원 등은 참여 할 수 없습니다.</p>
+				<p>※ 당첨된 회원은 마이페이지에서 당첨 내역을 확인할 수 있습니다.</p>
+			</div>
+		</div>
+		<div class="popbox_29819" id="popbox_29819" style="display:none;">
+			<div class="layer_pop">
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var totalDegree = 0;
+	var ChkCntCanTry = <?php echo $CntCanTry; ?>;
+	var ChkCntTried = <?php echo $CntTried; ?>;
+	
+	$(document).ready(function(){
+		$('#spin').click(function(){
+<?php
+	if(!$sess1['userid1'] || $sess1['userid1']=='비회원구매'){
+?>
+			$("#popbox_29819").show();
+			$(".layer_pop").html('');
+			$(".layer_pop").append(
+				'<p class="info_text">로그인 후에 참여해주세요!</p>'+
+				'<div class="check_btn"><a href="javascript:login();" class="bk">확인</a></div>'
+			);
+			return;
+<?php
+	}
+	
+	if(!$CntCanTry || $CntCanTry <= 0 || $CntCanTry <= $CntTried){
+?>
+			$("#popbox_29819").show();
+			$(".layer_pop").html('');
+			$(".layer_pop").append(
+				'<p class="info_text">행사제품 구매 시 참여 가능 합니다.</p>'+
+				'<div class="check_btn"><a href="javascript:$(\'#popbox_29819\').hide();" class="bk">확인</a></div>'
+			);
+			return;
+<?php
+	}
+?>
+			if(ChkCntCanTry <= ChkCntTried){
+				$("#popbox_29819").show();
+				$(".layer_pop").html('');
+				$(".layer_pop").append(
+					'<p class="info_text">행사제품 구매 시 참여 가능 합니다.</p>'+
+					'<div class="check_btn"><a href="javascript:$(\'#popbox_29819\').hide();" class="bk">확인</a></div>'
+				);
+				return;	
+			}
+			
+			fn_spin();
+		});
+	});
+	
+	function fn_spin(){
+		$.ajax({
+			url: '../indepage/indepage_function.php',
+			data: {'actype':'save_roulette_result','EventNo':$("#EventNo").val()},
+			success: function(data){
+				console.log(data);
+				if(data){
+					// 경품번호 및 경품이름
+					var GiftNo = data.split("|")[0];
+					var GiftName = data.split("|")[1];
+					var CntCanTry = data.split("|")[2];
+					var CntTried = data.split("|")[3];
+					
+					ChkCntCanTry = CntCanTry;
+					ChkCntTried = CntTried;
+					
+					totalDegree = (totalDegree + (360 - totalDegree % 360)) + (360*3);
+					
+					var RandomNo = Math.random();
+					if(GiftNo == '1'){
+						totalDegree = totalDegree + Math.floor(RandomNo * (-329 + 271) - 271);
+					}else if(GiftNo == '2'){
+						totalDegree = totalDegree + Math.floor(RandomNo * (-59 + 31) - 31);
+					}else if(GiftNo == '3'){
+						totalDegree = totalDegree + Math.floor(RandomNo * (-91 + 149) - 149);
+					}else if(GiftNo == '4'){
+						totalDegree = totalDegree + Math.floor(RandomNo * (-149 + 91) - 91);
+					}else if(GiftNo == '5'){
+						totalDegree = totalDegree + Math.floor(RandomNo * (-151 + 209) - 209);	
+					}else if(GiftNo == '6'){
+						totalDegree = totalDegree + Math.floor(RandomNo * (-269 + 211) - 211);	
+					}
+					
+					$('.rolette').css({'transform':'rotate('+ totalDegree + 'deg)'});
+					$( '.btn_txt' ).addClass( 'off' );
+					$(".r_light_box span.ani").eq(0).delay(100).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(1).delay(200).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(2).delay(300).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(3).delay(400).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(4).delay(500).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(5).delay(600).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(6).delay(700).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(7).delay(800).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(8).delay(900).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(9).delay(1000).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(10).delay(1100).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(11).delay(1200).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(12).delay(1300).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(13).delay(1400).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(14).delay(1500).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(15).delay(1600).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(16).delay(1700).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(17).delay(1800).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(18).delay(1900).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(19).delay(2000).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					$(".r_light_box span.ani").eq(20).delay(2100).animate({opacity:"0"},200,"easeInOutBack").animate({opacity:"1"},200);
+					
+					if($('.btn_txt').hasClass("off")){
+						$('.btn_txt').removeClass("off");
+					}
+					setTimeout(function(){
+						$("#popbox_29819").show();
+						if(GiftNo == '6'){
+							$(".layer_pop").html('');
+							$(".layer_pop").append(
+								'<p class="info_text">아쉬워요!<br>다음 기회에 재도전 하세요!</p>'+
+								'<div class="check_btn"><a href="javascript:$(\'#popbox_29819\').hide();" class="bk">확인</a></div>'
+							);
+						}else{
+							$(".layer_pop").html('');
+							$(".layer_pop").append(
+								'<p class="info_text">축하합니다!<br><em>'+GiftName+'</em> 당첨되었습니다.</p>'+
+								'<div class="check_btn"><a href="javascript:fn_GoMypage();" class="bk">확인</a></div>'
+							);
+						}
+						$("#CntTried").html(CntTried);
+					},5000);
+					
+				}
+			}
+		});
+	}
+	
+	function fn_GoMypage(){
+		location.href = "../mypage/m_evtlist.htm";
+		return;
+	}
+</script>

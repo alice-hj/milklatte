@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CompuZone - 컴퓨터 전문 쇼핑몰 -</title>
+<!-- 
+<script language='javascript' src='../script/common.js'></script>
+<script type="text/javascript" src='../script/design.js'></script>
+<link href="../css/coz2005.css" rel="stylesheet" type="text/css"> 
+<link type="text/css" rel="stylesheet" href="../css/font.css?utime=210401">
+<link type="text/css" rel="stylesheet" href="../css/common_style.css?utime=210401">
+ -->
+<link rel="stylesheet" href="defalt.css">
+</head>
+<style>
+html,body {width:100%; box-sizing:border-box; }
+body {word-wrap:break-word; word-break:keep-all; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0; padding:0;}
+dl,ul,ol,menu,li {list-style:none;}
+
+.bsksimp_winpop{padding:30px;}
+.bsksimp_winpop *{color:#1a1a1a; letter-spacing:-0.5px; font-family:Noto-R; box-sizing:border-box;}
+.winpop_wrap{text-align:center;}
+.winpop_wrap > h1{margin-bottom:13px; padding-bottom:15px; color:#1a1a1a; font-size:18px; font-family:Noto-B; text-align:center; border-bottom:1px solid #1a1a1a;}
+.tableWrap{margin-top:20px; box-sizing:border-box;}
+.tableWrap th , .tableWrap td{text-align:left;}
+.tableWrap th{padding:20px; background:#f9f9f9; color:#1a1a1a; font-size:16px; font-weight:normal; border-top:1px solid #e8e8e8;}
+.tableWrap td{padding:20px 15px; border-top:1px solid #e8e8e8;}
+.tableWrap tr:last-child th , .tableWrap tr:last-child td{border-bottom:1px solid #e8e8e8;}
+.okConfirm{color:#585858; font-size:16px;}
+.ingConfirm{color:#3262c1; font-size:16px;}
+.chkConfirm{color:#f14738; font-size:16px; }
+.modConfirm{font-size:16px;}
+.hp_wrap > span {position:relative; margin-right:25px; width:100px;}
+.hp_wrap > span:last-child{margin-right:0;}
+.hp_wrap > span + span:before{content:""; position:Absolute; left:-17px; top:11px; display:block; width:7px; height:1px; background:#d8d8d8; }
+.hp_wrap + .hp_wrap{margin-top:8px;}
+
+.bskS_file .fileName{display:inline-block; padding:0 13px; width:230px; height:40px; line-height:40px; border:1px solid #d8d8d8; border-right:none; color:#1a1a1a; font-size:14px; outline:none; vertical-align:top;}
+.bskS_file .bskS_MBtnG{margin-left: -5px;padding: 10px 20px;height: 40px;line-height: 40px;font-size: 13px;border: 1px solid #d8d8d8;
+    border-left: none;background: #efefef;}
+.bskS_file input[type="file"]{position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; border:0; z-index:-1;}
+.address_tr .bskS_input{display:block; margin-top:9px; width:470px; }
+.address_tr .bskS_input input{width: 100%;}
+/* .bskS_address > a{height:40px; line-height:38px; font-family:Noto-R; text-align:center; vertical-align:top; text-decoration:none;} */
+.bskS_address > a{display: inline-block; height: 21px; line-height: 20px; font-family: Noto-R; text-align: center;vertical-align: top; text-decoration: none; font-size: 13px;background: #efefef;margin-top: 1px;padding: 0 5px; margin-left: 2px;}
+.email_wrap{color:#d8d8d8;}
+.email_wrap .bskS_input{ width:150px; vertical-align:middle;}
+.email_wrap .bskS_select {margin-left:10px; width:100px;}
+.num_tr .bskS_MBtnG{padding:0; margin-left:8px; width:88px; font-size:14px; }
+.noticeBox{margin-top:20px; padding:15px 18px; background:#f9f9f9; text-align:left;}
+.noticeBox > p{position:relative; padding-left:10px; color:#6c6c6c; font-size:13px; line-height:1.3; font-family:Noto-R;}
+.noticeBox > p + p{margin-top:5px;}
+.noticeBox > p:before{content:""; position:absolute; left:0; top:8px; display:inline-block; width:2px; height:2px; background:#6c6c6c; }
+.noticeBox .fcr{color:#f14738;}
+.noticeBox .ntRG13{display:block; color:#6c6c6c; font-size:13px; }
+.noticeBox .ntRG13 + .ntRG13{margin-top:3px; }
+.btn_area{margin-top:30px;}
+.btn_area button{width:200px;}
+.btn_area button + button {margin-left:10px;}
+
+</style>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div class="bsksimp_winpop">
+	<div class="winpop_wrap">
+		<h1>사업자정보 추가</h1>
+		<div class="tableWrap">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<colgroup>
+					<col width="25%">
+					<col width="75%">
+				</colgroup>
+				<tr>
+					<th>상태</th>
+					<td>
+						<span class="okConfirm">[사업자 확인 완료]</span>
+						<span class="ingConfirm">[사업자 확인중]</span>
+						<span class="chkConfirm">[사업자 확인필요]</span>
+						<span class="modConfirm">[사업자 수정 요청]</span>
+					</td>
+				</tr>
+				<tr class="num_tr">
+					<th>등록번호</th>
+					<td>
+						<span class="hp_wrap">
+							<span class="bskS_input"><input type="text"></span>
+							<span class="bskS_input"><input type="text"></span>
+							<span class="bskS_input"><input type="text"></span>
+						</span>
+						<button class="bskS_MBtnG">승인확인</button>
+					</td>
+				</tr>
+				<tr>
+					<th>사업자등록증</th>
+					<td>
+						<span class="bskS_file" style="position:relative; display:inline-block;">
+							<input type="type" class="fileName" id="CompanyImageTxt" readonly="readonly" value="">
+							<label for="CompanyImage" class="bskS_MBtnG">파일선택</label>
+							<input type="file" id="CompanyImage" name="CompanyImage" class="uploadBtn">
+						</span>
+						<div class="noticeBox" style="margin-top:10px;">
+							<span class="ntRG13" >※ 사업자등록증명 업로드 시 주민번호 뒷자리는 가린 후 올려 주세요.</span>
+							<span class="ntRG13" >※ 승인된 사업자에 한해 세금계산서 발급이 가능합니다.</span>
+							<span class="ntRG13" >※ 승인은 영업일 기준 1일 소요됩니다.</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>상호(법인명)</th>
+					<td>
+						<span class="bskS_input"><input type="text"></span>
+					</td>
+				</tr>
+				<tr>
+					<th>대표자 성명</th>
+					<td>
+						<span class="bskS_input"><input type="text"></span>
+					</td>
+				</tr>
+				<tr>
+					<th>전화번호</th>
+					<td>
+						<div class="hp_wrap">
+							<span class="bskS_select">
+								<select name="">
+									<option>010</option>
+									<option>011</option>
+									<option>019</option>
+									<option>018</option>
+									<option>016</option>
+									<option>017</option>
+								</select>
+							</span>
+							<span class="bskS_input"><input type="text"></span>
+							<span class="bskS_input"><input type="text"></span>
+						</div>
+					</td>
+				</tr>
+				<tr class="address_tr">
+					<th>사업장 주소</th>
+					<td>
+						<div class="conS_right">
+							<div class="bskS_address">
+								<input type="text" placeholder="우편번호" readonly="">
+								<a href="javascript:open_searchaddress('ReceiverZipCode1','ReceiverZipCode2','ReceiverAddr1','ReceiverAddr2','orderpage');" class="bskS_MBtnG" title="우편번호 찾기" tabindex="1">우편번호 찾기</a>
+							</div>
+							<span class="bskS_input"><input type="text" placeholder="기본주소"></span>
+							<span class="bskS_input"><input type="text" placeholder="상세주소"></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>업태</th>
+					<td>
+						<span class="bskS_input"><input type="text"></span>
+					</td>
+				</tr>
+				<tr>
+					<th>종목</th>
+					<td>
+						<span class="bskS_input"><input type="text"></span>
+					</td>
+				</tr>
+				<tr class="email_tr">
+					<th>수신 이메일</th>
+					<td>
+						<div class="email_wrap">
+							<span class="bskS_input"><input type="text"></span>&nbsp;&nbsp;@&nbsp;
+							<span class="bskS_input"><input type="text"></span>
+							<span class="bskS_select">
+								<select name="">
+									<option>직접입력</option>
+									<option>naver.com</option>
+									<option>nate.com</option>
+									<option>gamil.com</option>
+									<option>hotmail.com</option>
+									<option>dreamwiz.com</option>
+									<option>lycos.co.kr</option>
+									<option>korea.com</option>
+								</select>
+							</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>수신 핸드폰</th>
+					<td>
+						<div class="hp_wrap">
+							<span class="bskS_select">
+								<select name="">
+									<option>010</option>
+									<option>011</option>
+									<option>019</option>
+									<option>018</option>
+									<option>016</option>
+									<option>017</option>
+								</select>
+							</span>
+							<span class="bskS_input"><input type="text"></span>
+							<span class="bskS_input"><input type="text"></span>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="noticeBox">
+			<p>사업자정보 수정은 <span class="fcr">[사업자 확인필요]</span> 상태에서만 가능합니다.</p>
+			<p>사업자 정보 수정 요청시 <span class="fcr">[사업자 정보 수정 요청]</span>상태로 표기되며, 승인은 영업일 기준 1일 소요됩니다.</p>
+		</div>
+		<div class="btn_area">
+			<button class="bskS_BBtnB" >추가</button>
+			<button class="bskS_BBtnG">닫기</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

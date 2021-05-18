@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CompuZone - 컴퓨터 전문 쇼핑몰 -</title>
+<!-- 
+<script language='javascript' src='../script/common.js'></script>
+<script type="text/javascript" src='../script/design.js'></script>
+<link href="../css/coz2005.css" rel="stylesheet" type="text/css"> 
+<link type="text/css" rel="stylesheet" href="../css/font.css?utime=210401">
+<link type="text/css" rel="stylesheet" href="../css/common_style.css?utime=210401">
+ -->
+<link rel="stylesheet" href="defalt.css">
+</head>
+<style>
+html,body {width:100%; box-sizing:border-box; }
+body {word-wrap:break-word; word-break:keep-all; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0; padding:0;}
+dl,ul,ol,menu,li {list-style:none;}
+
+.bsksimp_winpop{padding:30px;}
+.bsksimp_winpop *{color:#1a1a1a; letter-spacing:-0.5px; font-family:Noto-R; box-sizing:border-box;}
+.winpop_wrap{text-align:center;}
+.winpop_wrap > h1{margin-bottom:13px; padding-bottom:15px; color:#1a1a1a; font-size:18px; font-family:Noto-B; text-align:center; border-bottom:1px solid #1a1a1a;}
+.tableWrap{margin-top:20px; box-sizing:border-box;}
+.tableWrap tr{cursor:pointer;}
+.tableWrap tr:hover{background:#fdfdfd;}
+.tableWrap th , .tableWrap td{text-align:center;}
+.tableWrap th{padding:20px; background:#f9f9f9; color:#1a1a1a; font-size:16px; border-top:1px solid #e8e8e8;}
+.tableWrap td{padding:15px 10px; border-top:1px solid #e8e8e8; color:#1a1a1a; font-size:14px;}
+.tableWrap tr:last-child th , .tableWrap tr:last-child td{border-bottom:1px solid #e8e8e8;}
+.tableWrap tr th:first-child , .tableWrap tr td:nth-child(2){text-align:left;}
+.tableWrap tr td:nth-child(2){font-size:16px;}
+.tableWrap tr td .bskS_SBtnN{display:block; margin-bottom:3px; width:62px; padding:0; color:#fff; }
+.okConfirm{margin-top:3px; color:#585858; font-size:14px;}
+.ingConfirm{margin-top:3px;color:#3262c1; font-size:14px;}
+.chkConfirm{margin-top:3px;color:#f14738; font-size:14px; }
+.modConfirm{margin-top:3px; font-size:14px;}
+input.bskS_radio[type="radio"] + label.bskS_radio > i{margin:0;}
+
+.btn_area{margin-top:30px;}
+.btn_area button{width:200px;}
+.btn_area button + button {margin-left:10px;}
+
+</style>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div class="bsksimp_winpop">
+	<div class="winpop_wrap">
+		<h1>사업자 선택/추가</h1>
+		<div class="tableWrap">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<colgroup>
+					<col width="3%">
+					<col width="23%">
+					<col width="24%">
+					<col width="17%">
+					<col width="33%">
+				</colgroup>
+				<tr>
+					<th colspan="2" style="padding-left:80px;">사업자 번호</th>
+					<th>상호명</th>
+					<th>성명</th>
+					<th>선택</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="bskS_rdo">
+							<input type="radio" class="bskS_radio" id="basicTaxAccount1" name="basicTaxAccount">
+							<label for="basicTaxAccount1" class="bskS_radio"><i></i></label>
+						</span>
+					</td>
+					<td>
+						<p class="bskS_SBtnN">기본설정</p>
+						<strong>106-86-36192</strong>
+						<p class="okConfirm">[사업자 확인완료]</p>
+					</td>
+					<td>휴먼시스템휴먼시스템</td>
+					<td>황경자</td>
+					<td>
+						<button class="bskS_SBtnW">선택</button>
+						<button class="bskS_SBtnW">수정</button>
+						<button class="bskS_SBtnW">삭제</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="bskS_rdo">
+							<input type="radio" class="bskS_radio" id="basicTaxAccount2" name="basicTaxAccount">
+							<label for="basicTaxAccount2" class="bskS_radio"><i></i></label>
+						</span>
+					</td>
+					<td>
+						<strong>106-86-36192</strong>
+						<p class="modConfirm">[사업자 수정요청]</p>
+					</td>
+					<td>휴먼시스템휴먼시스템</td>
+					<td>황경자</td>
+					<td>
+						<button class="bskS_SBtnW">선택</button>
+						<button class="bskS_SBtnW">수정</button>
+						<button class="bskS_SBtnW">삭제</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="bskS_rdo">
+							<input type="radio" class="bskS_radio" id="basicTaxAccount3" name="basicTaxAccount">
+							<label for="basicTaxAccount3" class="bskS_radio"><i></i></label>
+						</span>
+					</td>
+					<td>
+						<strong>106-86-36192</strong>
+						<p class="chkConfirm">[사업자 확인필요]</p>
+					</td>
+					<td>휴먼시스템휴먼시스템</td>
+					<td>황경자</td>
+					<td>
+						<button class="bskS_SBtnW">선택</button>
+						<button class="bskS_SBtnW">수정</button>
+						<button class="bskS_SBtnW">삭제</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="bskS_rdo">
+							<input type="radio" class="bskS_radio" id="basicTaxAccount4" name="basicTaxAccount">
+							<label for="basicTaxAccount4" class="bskS_radio"><i></i></label>
+						</span>
+					</td>
+					<td>
+						<strong>106-86-36192</strong>
+						<p class="ingConfirm">[사업자 확인중]</p>
+					</td>
+					<td>유렉스유렉스</td>
+					<td>컴퓨존</td>
+					<td>
+						<button class="bskS_SBtnW">선택</button>
+						<button class="bskS_SBtnW">수정</button>
+						<button class="bskS_SBtnW">삭제</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn_area">
+			<button class="bskS_BBtnN">기본설정</button>
+			<button class="bskS_BBtnB" >추가</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

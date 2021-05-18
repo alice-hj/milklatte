@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HowRU/전화번호인증</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <!-- <script type="text/javascript" src="js/default.js"></script> -->
+  <script type="text/javascript" src="js/cleave.min.js"></script>
+</head>
+
+<body>
+  <section class="addnum">
+    <span class="back_page"><a href="#"><img src="images/ico_before.png" alt="이전페이지로 이동아이콘"></a></span>
+    <div class="m0auto">
+      <h2>휴대 전화번호 입력</h2>
+      <div class="input_num">
+          <input class="input-element" placeholder="+82(010)1234 5678" />
+        </div>
+      <p>전화번호 입력은'_'빼고 붙여서 숫자만 입력해주세요</p>
+      <small>* 대한민국 국가번호는 82 입니다.</small>
+      <button class="accept" onclick="location.href='sub_intro4.html'">가입완료</button>
+    </div>
+  </section>
+  <script type="text/javascript">
+  var cleave = new Cleave('.input-element', {
+      delimiters: [')','-','-','-'],
+      blocks: [2, 3, 4, 4],
+      uppercase: true
+  });
+  </script>
+</body>
+
+</html>

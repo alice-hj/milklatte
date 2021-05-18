@@ -1,0 +1,154 @@
+button{background: none;}
+#container{margin:0 3.65vw; }
+#grid-container{min-height:100vh;padding:50px 0 100px;}
+#section4{border-top: 1px dashed #e9e9e9;}
+.section_01{position:relative; height:980px; padding-top:60px; padding-left:140px;}
+.section_01:before{content:""; position:absolute; left:4%; top:0; width:100%; height:36.46vw; background:#a77b7b; text-align:left; z-index:-1;}
+.section_01 h2{}
+.section_01 h2 a{display:inline-block;font-weight:bold; font-size:25px; line-height:1; color:#fff; }
+.section_01 .s01_txt{position:absolute; top:5%;left:0; z-index:10;}
+.section_01 .s01_txt h3{font-weight:bold; font-size:80px; padding: 0 1vw; background: #fff;color: #a77b7b;line-height: 1.3;}
+.section_01 .s01_txt p{margin-top:0.7vw; font-size:18px; padding: 0 1vw;  color:#a77b7b; background: #fff;line-height: 2.1vw;font-weight: 600; font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Nanum Gothic', sans-serif;}
+.visual{position:absolute; right:0; top:4.81vw;}
+.visual li{width:75vw; height:39.37vw;}
+.visual .v_01{background:url(../images/main5.png) no-repeat center/cover;}
+
+.section_02{position:relative; padding-bottom:100px;}
+.section_02 .s2_txt{padding-left:6.71vw; }
+.section_02 .s2_txt h2{font-size:50px; color:#fff; font-weight:bold; line-height:1;}
+.section_02 .s2_txt h2:after {content: ""; display: inline-block; vertical-align: middle; width: 275px; height: 2px; background: #fff;  margin-left: 18px;}
+.section_02 .s2_txt p{margin-top:40px; font-size:15px; color:#fff; }
+
+
+
+.button {position:relative; display: inline-block; font-size:20px; color:#735555; font-weight:bold; padding:20px 10px; text-transform: uppercase;}
+.button:after{content:""; display:inline-block; position:absolute; bottom:15px; left:0; width:100%; height:4px; z-index:-1; }
+.button:active:after,
+.button.is-checked:after {background:#d39b9b; font-weight:bold;}
+.button:hover {color:#e9e9e9;}
+.button:active,
+.button.is-checked {color:#fff; outline: none; }
+.button-group {text-align: center;}
+.button-group button + button{margin-left:35px; }
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: 160px;
+}
+.grid article {
+  background-color: #FFFFFF;
+  display: block;
+  float: left; position:relative;
+  width: 25%;
+}
+.grid article:hover dl{opacity:1;}
+.grid article dl{position:absolute; top:50%; transform:translateY(-50%); width:100%; text-align:Center; opacity:0; transition:0.5s all;}
+.grid article dl dt{font-size:24px; color:#fff; font-weight:bold;}
+.grid article dl dd{font-size:14px; color:#fff; margin-top:10px;}
+.grid article:before{content:""; position:absolute; left:0; top:0; width:100%; height:100%; background:transparent; transition:0.5s all;}
+.grid article:hover:before{content:""; background:rgba(30,30,30,0.9); }
+.grid article a{position:absolute; left:0; top:0; width:100%;height:100%; }
+.grid article img{width:100%;}
+
+
+@media screen and (max-width:1720px) {
+.section_01{height:820px;}
+}
+
+
+@media screen and (max-width:1530px) {
+.section_01{height:800px;}
+}
+
+
+
+@media screen and (max-width:1400px) {
+.menu_content{height:87.12vw; }
+.menu_content:before{width:132px; height:137px; right:10px;}
+.menu_inner{width:1190px;}
+.menu_inner:before{left:150px;}
+
+.section_01{height:900px; padding-top:60px; padding-left:70px;}
+.section_01:before{height:50vw;}
+.section_01 .s01_txt{top:8%}
+.visual{right:0; top:10.71vw;}
+.visual:before{right:65px; top:-55px;  width:132px; height:137px; background:url("/images/dot01.png") no-repeat;}
+.visual li{width:71.21vw; height:47.14vw;}
+/* .visual .v_01{ background:url("/images/work_visual_pc.jpg") left top no-repeat; background-size:cover;} */
+
+.section_02 .s2_txt{padding-left:0;}
+.section_02 .s2_txt h2{font-size:50px; color:#464646; font-weight:bold; line-height:1;}
+}
+
+
+
+
+@media (max-width: 1024px) {
+#container{margin-left:5.07vw;}
+.section_01{padding:45px 0 0 52px; height:717px;}
+.section_01 h2{font-size:18px;}
+.section_01 .s01_txt{top:22.36vw;}
+.section_01 .s01_txt h3{font-size:43px;}
+.section_01 .s01_txt p{font-size:13px;}
+.visual{top:110px;}
+.visual:before{right:5.07vw; top:-3.9vw;/* 40px; */ width:97px; height:100px; background:url("/images/dot01_tab.png") no-repeat;}
+.visual li{width:71.28vw; height:47.26vw;}
+.section_02{padding-left:0; padding-bottom:80px;}
+.section_02 .s2_txt h2{font-size:36px;}
+.section_02 .s2_txt p{font-size:11px; margin-top:2.9vw;}
+.grid article {width:calc(100% / 3);}
+}
+
+
+@media (max-width: 768px) {
+.menu_inner ul li a{font-size:4.55vw;/* 35px; */ line-height:1; font-weight:600;}
+.menu_inner ul li + li{margin-top:6.22vw; margin-left:0;}
+.menu_inner ul li + li:before{display:none;}
+.menu_inner dl{margin-top:13.02vw;}
+.menu_inner dl:before{margin-bottom:8.07vw; width:14.98vw;}
+.menu_inner dl dt{font-size:3.9vw;/* 30px;*/ font-weight:600;}
+.menu_inner dl dd{display:inline-block; font-size:2.47vw;/* 19px; */}
+.menu_inner dl dd:nth-of-type(2){margin-left:2.6vw;}
+.menu_inner dl dd + dd{margin-left:0;}
+.menu_inner address{font-size:2.47vw;/* 19px; */}
+.gnb{display:none;}
+#top_btn{right:20px; width:45px; height:45px;}
+#top_btn.on{bottom:20px;}
+#top_btn a{line-height:45px; font-size:14px;}
+
+.grid article {width: 50%;}
+
+
+#container{position:relative; margin:0;}
+.section_01{padding:0; height:96.35vw;}
+.section_01 h2{position:absolute; left:2.6vw; top:7.42vw; font-size:4.55vw; z-index:10;}
+.section_01:before{display:none;}
+.section_01 .s01_txt{ top:39.7vw; left:50%; transform:translateX(-50%); text-align:center; width:78.52vw;}
+.section_01 .s01_txt h3{font-size:7.87vw;}
+.section_01 .s01_txt p{ margin: 1.5vw auto 0; width: 83%; font-size: 2.8vw;line-height: 4vw; }
+.visual{top:0;}
+.visual:before{display:none;}
+.visual li{width:100vw; height:96.35vw;}
+.section_02{width:100%; padding:19.53vw 0 6.51vw;}
+.section_02 .s2_txt{padding:0 3.9vw;}
+.section_02 .s2_txt h2{font-size:6.51vw;}
+.section_02 .s2_txt > p{display:none;}
+.button-group button + button {margin: 0 0.7vw;}
+}
+
+
+
+
+@media (max-width: 479px) {
+.grid article {margin: 2% 0; width: 100%; }
+.button {font-size: 4vw;}
+.button-group button + button { margin-left: 0;}
+
+}

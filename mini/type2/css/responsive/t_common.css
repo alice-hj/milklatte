@@ -1,0 +1,93 @@
+/* width:768 */
+/************ s:header***********/
+.headerIn {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 64px;
+  padding: 0 50px;
+}
+/* 로고 */
+.headerIn > h1.logo {
+  left: 50px;
+  height: 22px;
+}
+.logo img {
+  width: 130px;
+  display: none;
+}
+.logo a {
+  display: inline-block;
+  background: url(../../images/tablet_logo.png) no-repeat center;
+  width: 130px;
+  height: 23px;
+}
+/* 메뉴 css */
+nav {
+  display: none;
+}
+/* 언어선택, 로그인, 회원가입 영역 css */
+.utill {
+  display: none;
+}
+.lang_box {
+  display: none;
+}
+.headerIn button {
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  width: 18px;
+  height: 14px;
+  transform: translateY(-50%);
+  background: url(../../images/menu_w.png) no-repeat center;
+}
+/************ e:header***********/
+/************ s:notice***********/
+#notice {
+  top: 63px;
+}
+#notice .inner {
+  width: 100%;
+  height: 70px;
+}
+#notice .inner a {
+  padding: 0 50px;
+}
+#notice .inner a div {
+  display: block;
+  line-height: 1;
+}
+#notice .inner a .date {
+  float: none;
+  display: none;
+}
+#notice .inner a .txt {
+  position: relative;
+  padding: 19px 0 0 27px;
+  font-size: 14px;
+}
+#notice .inner a .txt::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url(../../images/icon_notice_w2.png) no-repeat center;
+}
+#notice .inner a .more {
+  float: left;
+  position: relative;
+  left: 27px;
+  padding: 7px 0 0;
+}
+#notice .inner a .more::before {
+  right: -9px;
+  top: 10px;
+  transform: translate(0);
+}
+#notice .inner button.removebtn {
+  display: none;
+}
+/************ e:notice***********/

@@ -1,0 +1,179 @@
+<?php
+	$db14 = new Db('coz_pr');
+	$Rlt = SelectAsTableWhileOptionWithClass('coz_pr','ProductNo,Amount','ProductAmount',"where ProductNo IN(768110)",'',$db14,0);
+	$Arr = array();
+	
+	while($Row = getNextFetch($Rlt)){
+		$Arr[$Row['ProductNo']] = $Row['Amount'];
+	}
+	
+?>
+
+
+<style>
+a:hover{text-decoration:none;}
+area {outline: none;}
+.mw_wrap{width:100%;}
+.event{width:100%; max-width:1000px; margin:0 auto; overflow:hidden;}
+.event > div{position:relative; }
+.event img{display:block; width:100%; height:auto;}
+
+.section1{height:1534px; background:url("../29773/evt29773_bgmo_01.jpg") center top no-repeat;}
+.subTxt_top{display:block; position:Absolute; left:50%; /*margin-left:-223px; top:190px; */margin-left:-256px; top:196px; width:512px; height:26px; background:url("../29773/29773subTit_txt.png") center top no-repeat;background-size: contain;}
+.mainTit{position:Absolute; left:50%; margin-left:-334px; top:226px;}
+.mainTit .main_bg{display:block; position:absolute; left:50%; width:668px; height:170px; background:url("../29773/29773mainTit_bg.png") center top no-repeat; 
+    background-size: contain;animation:titbg 0.8s ease-in-out forwards;  animation-iteration-count:1; opacity:0; transform:scale(0);}
+@keyframes titbg{
+	0% {opacity:0; transform:scale(0);}
+	100% {opacity:1; transform:scale(1);}
+}
+
+.mainTit .main_bgTit{display:block; position:absolute; left:50%;/* margin-left:43px; top:45px; width:597px; height:60px; */
+	width: 422px; height: 51px; top:57px; margin-left:-211px; background:url("../29773/29773mainTit_txt.png") center top no-repeat; background-size: contain;
+animation:subtitle 0.6s ease-in-out forwards;  animation-iteration-count:1; opacity:0;  animation-delay:0.8s;}
+@keyframes subtitle {
+  0% {margin-left:350px; width:0; opacity:0;}
+  100% {margin-left:43px; width:597px; opacity:1;}
+}
+
+
+.subTit_txt{display:block; position:absolute; left:50%; margin-left:-430px; top:320px; width:860px; height:237px; background:url("../29773/29773subTit2_txt.png") center top no-repeat; z-index:10;
+animation:subtitle2 0.6s ease-in-out forwards; animation-iteration-count:1; opacity:0; transform:scale(0); animation-delay:1.2s;}
+@keyframes subtitle2 {
+	0% {opacity:0; transform:scale(0);}
+	100% {opacity:1; transform:scale(1);}
+}
+
+
+.bnr .left{position:absolute; top:562px; left:50%; margin-left:-240px;width: 211px; height: 76px; background:url("../29773/29773_sale.png") center top no-repeat; animation:sale_left 0.6s ease-in-out forwards; animation-iteration-count:1; opacity:0; transform:scale(0); animation-delay:2s;}
+.bnr .right{position:absolute; top:562px; right:28%; width:221px; height:80px; background:url("../29773/29773_total.png") center top no-repeat; animation:sale_right 0.6s ease-in-out forwards;  animation-iteration-count:1; opacity:0; transform:scale(0); animation-delay:2s;}
+
+@keyframes sale_left {
+	0% {left:0; opacity:0; transform:scale(0);}
+	100% {left:50%; opacity:1; transform:scale(1);}
+}
+@keyframes sale_right {
+	0% {right:0; opacity:0; transform:scale(0);}
+	100% {right:28%; opacity:1; transform:scale(1);}
+}
+
+.section1 .c_img_move{ width:359px; height:435px; position:Absolute; /*left:50%; margin-left:115px;*/right:37px; top:50%;  margin-top:-120px; z-index: 90;
+animation:img_move 1.5s ease-in-out infinite; animation-delay:1.2s;}
+
+@keyframes img_move {
+	0% {margin-top:-120px;}
+	50%{margin-top:-140px;}
+	100% {margin-top:-120px;}
+}
+
+
+.section1 .pc{ font-size:0;}
+.section1 .pc img{display:inline-block; width:100%; height:100%;}
+.section1 .pc > div{display:inline-block;}
+.section1 .pc .pc{position:Absolute; left:0; top:765px; height:712px;}
+.section1 .pc .txt{position:Absolute; left:50%; top:50%; margin-left:130px; margin-top:272px; text-align:left; }
+.section1 .pc .txt *{color:#fff; font-family: 'spoqa M';}
+.section1 .pc .txt .name{display:block; font-size:28px;}
+.section1 .pc .txt .top_pri {margin-top:20px; font-size:30px;}
+.section1 .pc .txt .top_pri  em{text-decoration: line-through;}
+.section1 .pc .txt .top_pri > strong{display:inline-block; margin-left:10px; width:70px ; height:34px; line-height:34px; background:#000; font-size:20px; color:#16f700; border-radius:20px; text-align:center; vertical-align:3px; }
+.section1 .pc .txt > p{font-size:50px; line-height:1.2; font-family: 'spoqa B'; font-weight:bold; }
+.section1 .pc .sticker{display:inline-block; margin-left:-9px; width:126px; height:126px; background:url("../29598/sticker.png") center top no-repeat;}
+.section1 .pc .txt .sticker > em{display:inline-block; font-size:28px; padding-top:55px; width:100%; height:100%; font-weight:bold; text-align:center; box-sizing: border-box;}
+
+.section2{height:1336px; background:url("../29773/evt29773_bgmo_02.jpg") center top no-repeat;}
+
+
+@media screen and (max-width:1000px) {
+	.section1{height:153.40vw; background-size:cover;}
+	.subTxt_top{  left:50%;margin-left:-25.6vw; top:19.6vw; width:51.2vw; height:2.6vw;}
+	.mainTit{ left:50%; margin-left:-33.4vw; top:22.6vw;}
+	.mainTit .main_bg{  left:50%; width:66.80vw; height:17.00vw;animation:titbg 0.8s ease-in-out forwards;  animation-iteration-count:1; opacity:0; transform:scale(0); background-size:cover;}
+	@keyframes titbg{
+		0% {opacity:0; transform:scale(0);}
+		100% {opacity:1; transform:scale(1);}
+	}
+	.mainTit .main_bgTit{  left:50%; /* margin-left:4.3vw; top:4.5vw; width:59.7vw; height:6.0vw; */
+	width: 42.2vw; height: 5.1vw; top:5.7vw; margin-left:-21.1vw;
+	animation:subtitle 0.6s ease-in-out forwards;  animation-iteration-count:1; opacity:0;  animation-delay:0.8s;/* background-size:cover;*/}
+	@keyframes subtitle {
+	  0% {margin-left:35.00vw; width:0; opacity:0;}
+	  100% {margin-left:4.30vw; width:59.70vw; opacity:1;}
+	}
+
+	.subTit_txt{  left:50%; margin-left:-43vw; top:32vw; width:86.00vw; height:23.70vw; 
+	animation:subtitle2 0.6s ease-in-out forwards; animation-iteration-count:1; opacity:0; transform:scale(0); animation-delay:1.2s; 
+		background-size:cover;}
+	@keyframes subtitle2 {
+		0% {opacity:0; transform:scale(0);}
+		100% {opacity:1; transform:scale(1);}
+	}
+
+	.bnr .left{ top:56.2vw; left:50%; margin-left:-24.00vw; width:22.10vw; height:7.60vw; animation:sale_left 0.6s ease-in-out forwards; animation-iteration-count:1; opacity:0; transform:scale(0); animation-delay:2s; background-size:contain;}
+	.bnr .right{ top:56.2vw; right:28%; width:22.10vw; height:7.60vw; animation:sale_right 0.6s ease-in-out forwards;  animation-iteration-count:1; opacity:0; transform:scale(0); animation-delay:2s; background-size:contain;}
+
+	@keyframes sale_left {
+		0% {left:0; opacity:0; transform:scale(0);}
+		100% {left:50%; opacity:1; transform:scale(1);}
+	}
+	@keyframes sale_right {
+		0% {right:0; opacity:0; transform:scale(0);}
+		100% {right:28%; opacity:1; transform:scale(1);}
+	}
+
+	.section1 .c_img_move{ width:35.90vw; height:43.50vw;  /*left:50%; margin-left:11.50vw;*/ right: 3.7vw; top:50%;  margin-top:-12.00vw; 
+	animation:img_move 1.5s ease-in-out infinite; animation-delay:1.2s;}
+
+	@keyframes img_move {
+		0% {margin-top:-12.00vw;}
+		50%{margin-top:-14.00vw;}
+		100% {margin-top:-12.00vw;}
+	}
+
+
+	.section1 .pc{ font-size:0;}
+	.section1 .pc img{ width:100%; height:100%;}
+	.section1 .pc > div{}
+	.section1 .pc .pc{ left:0; top:76.50vw; height:71.20vw;}
+	.section1 .pc .txt{ left:50%; top:50%;  margin-left:13.00vw; margin-top:26.20vw;   }
+	.section1 .pc .txt *{ }
+	.section1 .pc .txt .name{ font-size:2.80vw;}
+	.section1 .pc .txt .top_pri {margin-top:2.00vw; font-size:3.00vw;}
+	.section1 .pc .txt .top_pri  em{text-decoration: line-through;}
+	.section1 .pc .txt .top_pri > strong{ margin-left:1.00vw; width:7.00vw ; height:3.40vw; line-height:3.40vw; background:#000; font-size:2.00vw;  border-radius:2.00vw;  vertical-align:0.30vw; }
+	.section1 .pc .txt > p{font-size:5.00vw; line-height:1.2; }
+	.section1 .pc .sticker{ margin-left:-0.90vw; width:12.60vw; height:12.60vw; background-size:cover;}
+	.section1 .pc .txt .sticker > em{ font-size:2.80vw; padding-top:5.50vw; width:100%; height:100%; background-size:cover;}
+
+	.section2{height:133.60vw; background-size:cover;}
+
+}
+</style>
+
+
+<div class="mw_wrap" >
+	<div class="event">
+		<div class="section1">
+			<span class="subTxt_top"></span>
+			<div class="mainTit">
+				<span class="main_bg"></span>
+				<span class="main_bgTit"></span>
+			</div>
+			<span class="subTit_txt"></span>
+			<div class="bnr">
+				<span class="left"></span>
+				<span class="right"></span>
+			</div>
+			<div class="c_img_move"><img src="../29773/29773_mo_dragon.png"/></div>
+			<div class="pc">
+				<div class="txt">
+					<span class="sticker"><em><?php echo ($Arr[768110]) ? $Arr[768110] : 0;?>대</em></span>
+					<span class="name">게이밍추천PC_R0052 (R5/3060)</span>
+					<div class="top_pri"><em>1,301,000원</em><strong>3%</strong></div>
+					<p>1,259,000원</p>
+				</div>
+			</div>
+		</div>
+		<div class="section2"></div>
+	</div>
+</div>

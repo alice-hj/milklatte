@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="default.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+  <title>adminpage</title>
+</head>
+
+<body>
+  <div class="task">
+    <nav class="side-bar">
+        <div class="motion">
+          <span class="circle"></span>
+          <span class="circle2"></span>
+        </div>
+        <ul>
+          <li class="on"><button>Analytics</button></li>
+          <li><button>Top Stocks</button></li>
+          <li><button>Trading</button></li>
+          <li><button>Funds</button></li>
+          <li><button>Forum</button></li>
+          <li><button>Support</button></li>
+          <li><button>News</button></li>
+        </ul>
+        <p>2020 HYUNJEONG LEE</p>
+    </nav>
+    <div class="main">
+      <div class="header">
+        <span class="btn"><button class="menu"></button></span>
+        <!-- <a href="#side-bar" class="menu"></a> -->
+        <div class="search-container">
+          <button type="submit"></button>
+          <input type="text" placeholder="Search.." name="search" class="search">
+        </div>
+        <div class="info">
+          <button class="login">Alice Lee<i class="arrow_down"></i></button>
+          <button>Logout</button>
+        </div>
+      </div>
+      <div class="total-list">
+        <div>
+          <span class="icon invest"></span>
+          <p>$32300</p>
+          <span>Total Invest</span>
+        </div>
+        <div>
+          <span class="icon expense"></span>
+          <p>$16500</p>
+          <span>Total Expense</span>
+        </div>
+        <div>
+          <span class="icon revenue"></span>
+          <p>$22700</p>
+          <span>Total Revenue</span>
+        </div>
+        <div>
+          <span class="icon balance"></span>
+          <p>$66400</p>
+          <span>Total Balance</span>
+        </div>
+      </div>
+      <div class="chart-container">
+        <div class="top">
+          <button class="topname">PORTFORLIO <i class="arrow_down2"></i></button>
+          <div class="date">
+            <form>
+              <input type="date" value="2018-09-22">
+              <label for="submit" class="hide"></label>
+            </form>
+            <small>to</small>
+            <form>
+              <input type="date" value="2019-09-22">
+              <label for="submit" class="hide"></label>
+            </form>
+          </div>
+        </div>
+        <div class="bar-container">
+          <div class='grafico bar-chart'>
+            <ul class='eje-y'>
+              <li data-ejeY='800'></li>
+              <li data-ejeY='600'></li>
+              <li data-ejeY='400'></li>
+              <li data-ejeY='200'></li>
+              <li data-ejeY='0'></li>
+            </ul>
+            <ul class='eje-x'>
+              <li data-ejeX='37'><span class="settled"></span><i>Jan</i></li>
+              <li data-ejeX='56'><span class="settled"></span><i>Feb</i></li>
+              <li data-ejeX='25'><span class="settled"></span><i>Mar</i></li>
+              <li data-ejeX='18'><span class="settled"></span><i>Apr</i></li>
+              <li data-ejeX='45'><span class="settled"></span><i>May</i></li>
+              <li data-ejeX='50'><span class="settled"></span><i>Jun</i></li>
+              <li data-ejeX='33'><span class="settled"></span><i>Jul</i></li>
+              <li data-ejeX='0'><span class="unsettled"></span><i>Aug</i></li>
+              <li data-ejeX='0'><span class="unsettled"></span><i>Sep</i></li>
+              <li data-ejeX='0'><span class="unsettled"></span><i>Oct</i></li>
+              <li data-ejeX='0'><span class="unsettled"></span><i>Nov</i></li>
+              <li data-ejeX='0'><span class="unsettled"></span><i>Deb</i></li>
+            </ul>
+        </div>
+      </div>
+      </div>
+      <div class="detail">
+        <div class="trending">
+          <div class="top">
+            <span class="topname">MARKET TRENDS</span>
+            <button>THIS WEEK<i class="arrow_down2"></i></button>
+          </div>
+          <div class="donut-chart-block block">
+            <div class="donut-chart">
+              <div id="porcion1" class="recorte">
+                <div class="quesito ios" data-rel="21"></div>
+              </div>
+              <div id="porcion2" class="recorte">
+                <div class="quesito mac" data-rel="39"></div>
+              </div>
+              <div id="porcion3" class="recorte">
+                <div class="quesito win" data-rel="31"></div>
+              </div>
+              <div id="porcionFin" class="recorte">
+                <div class="quesito linux" data-rel="9"></div>
+              </div>
+              <p class="center-date"></p>
+            </div>
+            <ul class="os-percentages horizontal-list">
+              <li class="company_a">
+                <span></span>
+                <i>A</i>
+              </li>
+              <li class="company_b">
+                <span></span>
+                <i>B</i>
+              </li>
+              <li class="company_c">
+                <span></span>
+                <i>C</i>
+              </li>
+              <li class="company_d">
+                <span></span>
+                <i>기타</i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="recent-list">
+          <div class="top">
+            <span class="topname">RECENT ACTIVITY</span>
+          </div>
+          <div class="list">
+            <table>
+              <tr>
+                <td><img src="images/img_linechart.png" alt=""></td>
+                <td>
+                  <p>Your diposit has updated to : Paid $1950</p>
+                  <span>34 MINUTES AGO</span>
+                </td>
+                <td>
+                  <button class="star on"></button>
+                  <button class="remove"></button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/img_linechart.png" alt=""></td>
+                <td>
+                  <p>Your diposit has updated to : Paid $1950</p>
+                  <span>34 MINUTES AGO</span>
+                </td>
+                <td>
+                  <button class="star"></button>
+                  <button class="remove"></button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/img_linechart.png" alt=""></td>
+                <td>
+                  <p>Your diposit has updated to : Paid $1950</p>
+                  <span>34 MINUTES AGO</span>
+                </td>
+                <td>
+                  <button class="star"></button>
+                  <button class="remove"></button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/img_linechart.png" alt=""></td>
+                <td>
+                  <p>Your diposit has updated to : Paid $1950</p>
+                  <span>34 MINUTES AGO</span>
+                </td>
+                <td>
+                  <button class="star"></button>
+                  <button class="remove"></button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/img_linechart.png" alt=""></td>
+                <td>
+                  <p>Your diposit has updated to : Paid $1950</p>
+                  <span>34 MINUTES AGO</span>
+                </td>
+                <td>
+                  <button class="star"></button>
+                  <button class="remove"></button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/img_linechart.png" alt=""></td>
+                <td>
+                  <p>Your diposit has updated to : Paid $1950</p>
+                  <span>34 MINUTES AGO</span>
+                </td>
+                <td>
+                  <button class="star"></button>
+                  <button class="remove"></button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>SEE ALL</p>
+        </div>
+      </div>
+    </div>
+<script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

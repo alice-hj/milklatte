@@ -1,0 +1,128 @@
+.m0auto{ margin: 0 auto; width: 1160px;}
+.m0auto_2{ margin: 0 auto; width: 992px;}
+/* section1 비쥬얼*/
+.slider{position: relative; width: 100%; height: 800px; left: 0;	transition: left .3s ease-in;	-webkit-transition: left .3s ease-in;}
+.visual{position: absolute;overflow: hidden; top:50%; transform: translateY(-50%);
+width: 100%; height: 799px; background: url(../images/bg_visual.png) no-repeat center; border-top: 1px solid #d3d3d3;}
+.visual.type1{ background-image: url(../images/bg_visual.png);}
+.visual.type2{ background-image: url(../images/bg_visual2.png);}
+.visual.type3{ background-image: url(../images/bg_visual3.png);}
+.visual > div{ padding: 225px 0 0 16px;}
+.visual span{ position: relative; font-size: 30px; color: #fff; font-weight: bold; text-shadow: 2px 2px 2px rgba(0,0,0,.4); line-height: 1; animation: ani1 1 1s both; }
+.visual p{ padding: 20px 0 0; width: 670px; font-size: 88px; color: #fff; font-family: 'jn'; text-shadow: 3px 3px 5px rgba(0,0,0,.6); line-height: 110px; animation: ani2 1 1s .3s both;}
+@keyframes ani1 {
+  0%{opacity: 0; top: -30px;}
+  100%{opacity: 1; top: 0;}
+}
+@keyframes ani2 {
+  0%{opacity: 0; transform: translateY(30px);}
+  100%{opacity: 1; transform: translateY(0);}
+}
+/* section2 : 어떤 제품을 찾으시나요?*/
+.find_product > div {padding:115px 0 0; box-sizing: border-box;}/*padding: 115px 85px 0*/
+.find_product h2{ position: relative; padding: 0 0 44px; text-align: center; font-size: 48px; color: #000; font-weight: normal; line-height: 1; animation: ani3 1 1s .3s both;}
+@keyframes ani3 {
+  0%{opacity: 0; top: -30px;}
+  100%{opacity: 1; top: 0;}
+}
+.find_product h2 span{font-weight: bold;}
+.find_product nav{text-align: center;position: relative;animation: ani3 1 1s .3s both;}
+.find_product nav > ul{display: inline-block;font-size: 0; background: #efefef; border-radius: 30px; }
+/* table 을 하고 전체길이를 주면 1/n 을 하게 된다.  */
+.find_product nav > ul li{display: inline-block;}
+.find_product nav > ul li a{display: block;width: 164px; height: 47px; border-radius: 47px; line-height: 47px; font-size: 15px; color: #999; transition: all .5s;}
+.find_product nav > ul li.show a{background: #368362; color: #fff; }
+.find_product .list{ display: none; padding: 107px 0 0;}
+.find_product .list.on{display: block;}
+.find_product .list > div{ position: relative;}
+.find_product .list > div h3{ display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; width: 174px; height: 174px; border: 12px solid #ececec; border-radius: 19px; box-sizing: border-box; font-size: 27px; color:#000; line-height:1;}
+.find_product .list > div h3 span{ display: block; padding: 0 7px; margin: 0 0 8px; height: 22px; background: #dcdcdc; border: 1px solid #d6d6d6; color: #fff; font-size: 13px; border-radius: 22px; line-height: 22px;}
+.find_product .list > div li{ float: left; padding: 0 30px 0 0;}
+.find_product .list > div li:empty{ width: 174px; height: 229px;}
+.find_product .list > div li:nth-child(5n){ padding: 0;}
+.find_product .list > div li a{ display: block; width: 174px; height: 229px; position: relative;}
+.find_product .list > div li div{ padding: 16px 0 0; font-size: 15px; color: #ddd; line-height: 21px;}
+.find_product .list > div li div span{ display:inline-block; padding: 0 10px; margin: 5px; height: 17px; border-radius: 21px; border: 2px solid #000; line-height: 17px; font-size: 14px; color: #424542;}
+.find_product button{ width: 262px; height: 54px; line-height: 54px; font-size: 13px; border:2px solid #e4e4e8; color:#888; border-radius: 54px; background: #f9f9f9; margin:34px 453px 101px; text-align: center;}
+.find_product .list > div li p { display: none; width:152px; height:152px; border-radius: 21px; background: rgba(70,129,70,.8) url(../images/ico_plus.png) no-repeat center; position: absolute; top: 10px; left:12px; }
+.find_product .list > div li a:hover p{display: block;}
+/* section3 :인테리어 스타일 보실래요?*/
+.find_product.initial{background:#f9f9f9;}
+.find_product.initial .tom {padding: 40px 0 100px;}
+.find_product.initial .bx-viewport{height: auto !important;}
+.find_product.initial .interial_list{ display: none; height: 0;font-size: 0; clear: both;}
+.find_product.initial .interial_list.on{ display: block;}
+.find_product.initial .interial_list li{display: inline-block; width: 556px !important;}
+.find_product.initial .interial_list li a{display: block; position: relative; }
+.find_product.initial .interial_list li a img {width: 551px; height: 378px; }
+.find_product.initial .interial_list .interial_position{}
+.find_product.initial .interial_list .interial_position img{position: absolute;top:0; left: 0;width: 551px; height: 378px; z-index: 20;}
+.find_product.initial .interial_list .interial_position em{display: block;  position: absolute; bottom: 0px; left: 0; height: 48px; width:310px; background: #efefef; border-radius: 48px; font-size: 17px; line-height: 48px; text-align: center; color: #7e7e7e; z-index: 21;}
+.find_product.initial .interial_list .interial_position span{display: none; position: absolute; bottom: 0; right:22px; height: 67px; width: 200px; background: #368932; border-radius: 67px; font-size: 19px; line-height: 67px; text-align: center; color:#f5f9f5;  z-index: 22;}
+.find_product.initial .interial_list li a:hover .interial_position span{display: block; }
+/* section4 : 다른 정보가 더 필요하신가요?*/
+.find_product.moreinf{padding: 0 0 107px 0;}
+.find_product.moreinf ul{text-align: center; }
+.find_product.moreinf ul li{display: inline-block; padding:0 51px; }
+.find_product.moreinf ul li a {display:block; text-align: center; width: 100%;}
+.find_product.moreinf ul li a img{width: 200px; height: 200px; transition:all 0.7s; transform:rotate(0deg);position:relative;animation: ani4 .5s .2s 1 both;}
+/* .5초동안 하고 .2초뒤에 한번더 하고 1번 하고 끝낸다 */
+@keyframes ani4 {
+  0%{transform: translateY(0);}
+  25%{transform:translateY(-30px);}
+  50%{transform:translateY(-15px);}
+  75%{transform:translateY(-30px);}
+  100%{transform: translateY(0);}
+}
+.find_product.moreinf ul li a h3{ font-size: 27px; line-height: 1; text-align:center; padding: 32px 0 18px;}
+.find_product.moreinf ul li a p{ text-align: center; color: #9999a6; line-height: 30px; font-size: 17px;}
+.find_product.moreinf ul li a:hover img{transform: rotate(10deg) scale(1.2);}
+/* section5 : 동화자연마루 블로그/인스타그램 */
+.find_product.blog ul{}
+.find_product.blog ul li{display:inline-block; padding-right:21px; overflow: hidden;}
+.find_product.blog ul li:last-of-type{padding-right:0;}
+.find_product.blog ul li a{display: block;}
+.find_product.blog ul li a img:hover{transform: scale(1.1); transition:all 0.5s;}
+.find_product.blog ul li a img{width: 271px; height:382px; transform: 0;}
+.find_product.blog > div > span{ display:block; position: relative;margin:51px auto 0; width:100%; height: 5px; background: #dddddd; }
+.find_product.blog > div > span:before{display: block; content: "";position: absolute;top:0; left:0; width: 90%; height: 5px; background: #000; transition: .3s;}
+.find_product.blog > div > span:hover:before{width: 100%;}
+/* section6 : 인스타그램 사진들 */
+.find_product.initial.list ul{text-align: center; position:relative; animation: ani5 .4s .2s 1 both;}
+@keyframes ani5 {
+  0%{transform: translateX(-100%);}
+  25%{transform: translateX(-50%);}
+  50%{transform: translateX(-25%);}
+  75%{transform: translateX(5%);}
+  100%{transform: translateX(0);}
+}
+.find_product.initial.list ul li{display: inline-block; font-size: 0; padding: 0 4px 22px; position: relative;}
+.find_product.initial.list ul li a{display: block; width: 100%;}
+.find_product.initial.list ul li a img{width: 221px; height: 221px; border-radius:10px;}
+.find_product.initial.list ul li:nth-child(5n){ margin: 0;}
+.find_product.initial.list ul li a p {display:none; width:166px; height:166px; background: rgba(70,129,70,.8) url(../images/ico_plus.png) no-repeat center; position: absolute; top: 50%; left:50%; transform: translate(-50%,-50%);border-radius: 10px;}
+.find_product.initial.list ul li a:hover p{display: block;}
+.find_product .inst_id {display: block; text-align: center; padding:51px 0 99px;}
+.find_product .inst_id p{color: #9ca2ae;}
+
+/*
+:-ms-input-placeholder 는 IE전용
+::placeholder 는 firefox전용
+::-webkit-input-placeholder 는 사파리,크롬 전용*/
+
+/* 캡쳐된화면에서 폰트사이즈를 측정할때는 +2~3 을 추가하면 오차가 적다. */
+
+/*
+**CSS 속성 입력 순서 ***
+overflow
+display,flex
+float
+position ,left,right,top,bottom
+padding, margin
+width,height
+background
+border,border-radius,box-sizing
+font관련(letter-spacing,line-height,font-size,color,text-indent등등)
+animation,transition
+etc
+ */

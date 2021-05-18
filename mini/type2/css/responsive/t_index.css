@@ -1,0 +1,300 @@
+/************ s:visual***********/
+.visual_bg {
+  height: 492px;
+  /* background: url(../images/main_title_bg.gif) no-repeat center; */
+}
+.visual_bg span {
+  padding-top: 124px;
+  font-size: 15px;
+}
+.visual_bg h2 {
+  padding-top: 19px;
+}
+.visual_bg strong {
+  padding-top: 49px;
+}
+.visual_bg p {
+  padding-top: 14px;
+}
+.visual_bg .detail {
+  margin: 64px auto 0;
+}
+.visual_bg .detail a {
+  font-weight: 500;
+}
+.visual_bg .detail a em {
+  display: inline-block;
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+  background: url(../../images/arrow_right_m.png) no-repeat center/100% 100%;
+}
+.market_list .none-swiper {
+  display: none;
+}
+.market_list .swiper-container {
+  display: block;
+  margin: 0 0 4px;
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(153, 153, 153, 1);
+  -moz-box-shadow: 0px 8px 0px 0px rgba(153, 153, 153, 1);
+  box-shadow: 0px 8px 0px 0px rgba(153, 153, 153, 1);
+}
+.market_list > div .swiper-wrapper {
+  font-size: 0;
+}
+.market_list div ul {
+  width: calc(100% / 3);
+  height: 160px;
+  clear: both;
+}
+.market_list div ul:after {
+  height: 100px;
+}
+.market_list div ul li {
+  float: left;
+  padding: 32px 0 0;
+  text-align: left;
+}
+.market_list div ul li:first-child {
+  width: 60%;
+  padding-left: 29px;
+}
+.market_list div ul li:last-child {
+  width: 40%;
+}
+.market_list li:first-of-type img {
+  width: 24px;
+}
+.market_list div p.name {
+  padding-left: 5px;
+}
+.market_list div p.name span {
+  font-size: 13px;
+  text-align: left;
+}
+.market_list div p.name span.en {
+  font-size: 10px;
+}
+.market_list .m_price {
+  padding: 10px 0;
+}
+.market_list .m_payment {
+  padding-left: 0;
+  font-size: 12px;
+}
+.market_list .m_payment small {
+  font-size: 12px;
+  padding-left: 3px;
+}
+.market_list .gab {
+  margin: 10px 0 0 18px;
+  width: 52px;
+  height: 17px;
+  line-height: 17px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+.graph {
+  width: 77px;
+  margin-top: 10px;
+}
+/****************************************swiper */
+
+.swiper-slide {
+  text-align: center;
+  display: flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+  align-items: center; /* 위아래 기준 중앙정렬 */
+  justify-content: center; /* 좌우 기준 중앙정렬 */
+}
+.swiper-pagination span {
+  width: 10px;
+  height: 3px;
+  background: #999999;
+  border-radius: 3px;
+}
+.swiper-pagination span.swiper-pagination-bullet-active {
+  width: 42px;
+  background: #fff;
+}
+/************ e:visual***********/
+/************ s:coin_box***********/
+#coin_box {
+  padding: 54px 0 0;
+  border-top: 2px solid #ffb200;
+}
+#coin_box .inner {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+#coin_box .inner .inner_in {
+  padding: 0 50px;
+  box-shadow: none;
+}
+#coin_box .table_top {
+  margin-bottom: 14px;
+}
+#coin_box .table_tablist {
+  float: left;
+  margin-top: 0;
+}
+#coin_box .table_tablist span {
+  position: relative;
+}
+#coin_box .table_tablist span:after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: #707070;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#coin_box .table_tablist span:first-child:after {
+  display: none;
+}
+
+#coin_box .ttl {
+  display: inline-block;
+  float: right;
+  padding: 8px 19px 0 0;
+  font-size: 14px;
+  font-family: 'Nanucm Gothic';
+  color: #212121;
+}
+#coin_box .ttl em {
+  color: #999999;
+  font-size: 12px;
+}
+/* table */
+#coin_box .coin_table col:nth-child(4) {
+  width: 164px;
+}
+#coin_box .coin_table col:nth-child(5) {
+  width: 183px;
+}
+#coin_box .coin_table thead th:last-child {
+  padding-right: 19px;
+}
+#coin_box .coin_table thead th span {
+  color: #555555;
+  font-weight: 500;
+}
+#coin_box .coin_table thead th.coin {
+  color: #555555;
+  padding-left: 45px;
+  font-weight: 500;
+}
+#coin_box .coin_table tbody td {
+  padding: 15px 0;
+}
+#coin_box .coin_table tbody .icon_logo {
+  width: 45px;
+}
+#coin_box .coin_table tbody td p.tit {
+  font-weight: 500;
+  font-size: 14px;
+}
+#coin_box .coin_table tbody td p.tit_en {
+  font-size: 12px;
+  font-weight: 400;
+}
+#coin_box .coin_table tbody td.price {
+  padding-right: 0;
+  font-size: 14px;
+}
+#coin_box .coin_table tbody td.price em {
+  display: none;
+}
+#coin_box .coin_table tbody td.gap {
+  padding-right: 0;
+  font-size: 14px;
+}
+#coin_box .coin_table tbody td.payment {
+  padding-right: 19px;
+  font-size: 14px;
+  font-family: 'Nanucm Gothic';
+  color: #212121;
+}
+#coin_box .coin_table tbody td.payment small {
+  font-size: 14px;
+  color: #999999;
+}
+.add {
+  padding: 27px 0 25px;
+  font-size: 18px;
+}
+.add:after {
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+}
+/************ e:coin_box***********/
+
+/************ s:h_service***********/
+#h_service .inner {
+  width: 100%;
+  padding: 0 0 103px;
+}
+#h_service dt {
+  padding: 105px 0 0;
+}
+#h_service dt strong {
+  font-weight: 500;
+}
+#h_service dd {
+  padding: 10px 100px 0;
+  font-size: 18px;
+}
+#h_service dd br {
+  display: none;
+}
+#h_service button {
+  margin: 20px 0 0;
+}
+#h_service .service_container {
+  margin: 30px 0 0;
+}
+#h_service .service_container div {
+  float: none;
+  margin: 0 auto 23px;
+}
+#h_service .service_container div:last-of-type {
+  margin: 0 auto;
+}
+/************ e:h_service***********/
+/************ s:contents***********/
+#contents > .parallax {
+  height: 54%;
+}
+#contents .inner {
+  width: 100%;
+  padding: 100px 50px;
+}
+#contents .inner div {
+  display: inline-block;
+  width: 320px;
+  padding: 0 18px;
+  margin: 0 27px 40px 0;
+}
+#contents dl dt {
+  padding: 47px 0 0;
+  font-size: 26px;
+}
+#contents dl dt:after {
+  width: 260px;
+  margin: 15px auto 20px;
+}
+#contents dl dd {
+  width: auto;
+  font-size: 14px;
+}
+#contents dl dd br {
+  display: none;
+}
+#contents button {
+  padding: 0 42px;
+  margin: 27px 0 0;
+}

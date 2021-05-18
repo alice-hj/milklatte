@@ -1,0 +1,24 @@
+/* 포트폴리오 팝업 */
+/* .poppage{position: absolute; overflow: hidden;  left;0; right: 0; top:0; bottom: 0 ;height: 100vh; } */
+.popup{display: none;position:absolute;top:0; left: 0; right: 0; bottom: 0;z-index: 60; background:#e4e4e4;}
+.popup.on{display: block;}
+.sub_header{margin: 0 auto;width: 1400px; height: 65px; text-align: center; }
+.sub_header h1{position: absolute; top: 14px; left:13.5%;font-size: 23px; color: #030303; font-weight: normal;}
+.sub_header .icon{display: inline-block;}
+.sub_header .icon button span{display: block; margin:44px 0 -2px; color:#363124;}
+.sub_header .icon button{display: inline-block; margin:0 10px; width: 41px; outline: 0; background-repeat: no-repeat;  background-color: transparent; background-size: 55% auto; background-position: center;}
+.sub_header .icon button.ico_list{background-image: url(../images/ico_list_off.png) ;}
+.sub_header .icon button.ico_web{background-image: url(../images/ico_we_off_b.png) ;}
+.sub_header .icon button.ico_tablet{background-image: url(../images/ico_tablet_off_b.png) ;}
+.sub_header .icon button.ico_mobile{background-image: url(../images/ico_mobile_off_b.png) ;}
+.sub_header .icon button.ico_list:hover{background-image: url(../images/ico_list_on.png) ;}
+.sub_header .icon button.ico_web:hover{background-image: url(../images/ico_web_on.png) ;}
+.sub_header .icon button.ico_tablet:hover{background-image: url(../images/ico_tablet_on.png) ;}
+.sub_header .icon button.ico_mobile:hover{background-image: url(../images/ico_mobile_on.png) ;}
+.sub_header .icon button:hover span{color:#569ba9;}
+.sub_header .icon button:after{display: block; content: ""; width:0; height: 2px; background: #569ba9;transition: width .5s;}
+.sub_header .icon button:hover:after{width:100%;}
+.sub_header .close{position:absolute;top:2%; right: 8%;width:53px;height: 53px;background: url(../images/btn_close_b.png)no-repeat center transparent;}
+.iframe_bck{margin: 27px auto 0; width: 1504px; height:auto; background: #363124; border: 9px solid #363124; border-radius: 14px; text-align: center; box-shadow:21px 21px 16px #c0c0c0;transition: .3s;}
+iframe{width: 1500px; height: 770px; border-radius: 7px; border:1px solid #1c1c1c; vertical-align: middle; transition: .3s;}
+/* .web{width: 140px;}/.tablet{width: 60px;}/.mobile{width: 360px;}/.list{width: 1280px;} */

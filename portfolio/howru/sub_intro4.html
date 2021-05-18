@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HowRU/전화번호인증약관</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <script type="text/javascript" src="js/cleave.min.js"></script>
+</head>
+<body>
+  <section class="phonum_agree">
+    <span class="back_page"><a href="#"><img src="images/ico_before.png" alt="이전페이지로 이동아이콘"></a></span>
+    <div class="m0auto">
+        <h2> 전송 받은 4자리<br>인증번호를 입력해주세요</h2>
+        <div class="certifi_num">
+          <!-- <input type="text" title="인증번호"> -->
+          <!-- <label for="cc-cvv">Security code</label> -->
+          <input type="text" class="type-cvv" name="cc-cvv" id="cc-cvv" />
+          <button onclick="btn()">인증</button>
+        </div>
+        <button class="reset" onclick="resend()">인증번호다시받기</button>
+        <ul>
+          <li>
+            <p>이용 약관</p>
+            <em>약관은 계약의 당사자가 다수의 상대방과 계약체결을 위하여 미리 작성한 계약을 말한다. 일반적인 계약과 다른 점은 다수를 상대로 계약 이전에 미리 만들어놓았다는 점이라 할 수 있다. 약관의 대표적인 종류로는 보험약관, 운송약관, 은행예금약관 등이 있다.
+            약관의 내용은 계약 당사자 간의 권리의무에 대한 사항, 의무불이행 시 가하는 제재, 약관의 존속기간 등으로 구성된다. 약관은 작성하는 회사나 기업의 종류와 특성에 따라 매우 다양해지며, 계약 체결 전 상대방에게 미리 정보를 제공하는 기능을 가진다. 상대방은 약관을 통해 계약 체결의 의사를 결정하게 되며, 실제로 계약을 체결하기 이전부터 잠정적인 합의를 이끌어낼 수 있다는 장점이 있다.
+          </em>
+            <div class="agree">
+              <input type="checkbox"  id="chk2_1" class="hide">
+              <label for="chk2_1">동의합니다.</label>
+            </div>
+          </li>
+          <li>
+            <p>개인정보 수집 및 이용안내</p>
+            <em>약관은 계약의 당사자가 다수의 상대방과 계약체결을 위하여 미리 작성한 계약을 말한다. 일반적인 계약과 다른 점은 다수를 상대로 계약 이전에 미리 만들어놓았다는 점이라 할 수 있다. 약관의 대표적인 종류로는 보험약관, 운송약관, 은행예금약관 등이 있다.
+            약관의 내용은 계약 당사자 간의 권리의무에 대한 사항, 의무불이행 시 가하는 제재, 약관의 존속기간 등으로 구성된다. 약관은 작성하는 회사나 기업의 종류와 특성에 따라 매우 다양해지며, 계약 체결 전 상대방에게 미리 정보를 제공하는 기능을 가진다. 상대방은 약관을 통해 계약 체결의 의사를 결정하게 되며, 실제로 계약을 체결하기 이전부터 잠정적인 합의를 이끌어낼 수 있다는 장점이 있다.
+          </em>
+            <div class="agree">
+              <input type="checkbox"  id="chk2_2" class="hide">
+              <label for="chk2_2">동의합니다.</label>
+            </div>
+          </li>
+        </ul>
+        <button class="accept" onclick="location.href='sub_intro5.html'">가입완료</button>
+    </div>
+  </section>
+  <script type="text/javascript">
+  var cleaveCVV = new Cleave('#cc-cvv', {
+    blocks: [4],
+    numericOnly: true
+  });
+
+  function btn(){
+    var strN =document.getElementById('cc-cvv').value;
+    var n = Number(strN);
+    if (n < 4 ){
+      alert('다시입력해주세요.');
+    }else{
+      alert('인증번호 확인되었습니다.');
+    }
+  }
+
+  function resend(){
+    alert('인증 번호가 전송되었습니다.');
+  }
+
+
+  </script>
+</body>
+</html>

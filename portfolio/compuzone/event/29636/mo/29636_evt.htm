@@ -1,0 +1,119 @@
+<script type="text/javascript" src="../script/jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});
+</script>
+<style>
+a:hover{text-decoration:none;}
+area {outline: none;}
+.mw_wrap{width:100%;}
+.mw_wrap img{display:block; width:100%;height: auto;}
+.event{width:100%; max-width: 1000px; margin:0 auto; overflow:hidden;}
+.event > div{position:relative;font-size:0; width: 1000px;}
+.event img{display:block; width:100%; height:auto;}
+.event span{display:inline-block;}
+.title_29636{height:1222px;}
+.body_29636{height:3480px;}
+.body_29636 .img1{height:1921px;}
+.body_29636 .img2{height:1559px;}
+.title_29636 span{position:absolute; background-size: contain !important;}	
+.title_29636 .txt1{width:198px; height:23px; left:400px; top:96px; background: url(../29636/mo_txt1.png) no-repeat center;}	
+.title_29636 .txt2{width:595px; height:101px; left:209px; top:141px;background: url(../29636/mo_txt2.png) no-repeat center;}		
+.title_29636 .txt3{width:856px; height:206px; left:44px; top:226px;background: url(../29636/mo_txt3.png) no-repeat center;}	
+.title_29636 .lg{width:362px; height:320px; left:112px; top:507px;background: url(../29636/mo_lg.png) no-repeat center;}	
+.title_29636 .msi{width:304px; height:372px; right:137px; top:435px;background: url(../29636/mo_mis.png) no-repeat center;}	
+.title_29636 .samsung{width:982px; height:990px;left:0; top:308px;background: url(../29636/mo_samsung.png) no-repeat center;}	
+.title_29636 .bigbang{width:385px; height:380px; left:313px; top:406px;background: url(../29636/mo_bigbang.png) no-repeat center;}	
+
+.title_29636 .txt1{transform: translateY(-119px); animation: txt_down1 0.3s 0.3s ease-out forwards;}
+.title_29636 .txt2{transform: translateY(-240px); animation: txt_down2 0.3s 0.3s ease-out forwards;}
+.title_29636 .txt3{transform: translateY(-394px); animation: txt_down3 0.3s 0.3s ease-out forwards;}
+@keyframes txt_down1{0%{transform: translateY(-119px;)}100%{transform: translateY(0);}}
+@keyframes txt_down2{0%{transform: translateY(-240px;)}100%{transform: translateY(0);}}
+@keyframes txt_down3{0%{transform: translateY(-394px;)}100%{transform: translateY(0);}}
+.title_29636 .lg{transform: translateX(-474px); animation: moving1 0.3s 0.9s ease-out forwards;}
+.title_29636 .msi{transform: translateX(441px); animation: moving2 0.3s 0.9s ease-out forwards;}
+.title_29636 .samsung{transform: translateY(915px); animation: moving3 0.3s 0.9s ease-out forwards;}
+@keyframes moving1{0%{transform: translateX(-474px;)}100%{transform: translateX(0);}}
+@keyframes moving2{0%{transform: translateX(441px;)}100%{transform: translateX(0);}}
+@keyframes moving3{0%{transform: translateY(915px;)}100%{transform: translateY(0);}}
+	
+.title_29636 .bigbang{opacity: 0; transform-origin: 50% 50%; transform: scaleY(0);  animation: com_light_S 0.5s 0.9s linear, com_light_O 1s 1s linear; animation-fill-mode: forwards;}
+
+@keyframes com_light_S{
+	0%{transform: scale(0);}
+	100%{transform: scale(1);}
+}
+	@keyframes com_light_O{
+	0%{opacity: 0;}
+	26%{opacity: 1;}
+	70%{opacity: 0.7;}
+	100%{opacity: 1;}
+}
+	
+@media screen and (max-width: 1000px) {
+	.event > div{width:100vw;}
+	.title_29636{height:122.2vw}
+	.body_29636{height:348.0vw;}
+	.body_29636 .img1{height:192.1vw;}
+	.body_29636 .img2{height:155.9vw;}
+	.title_29636 .txt1{width:19.8vw; height:2.3vw; left:40.0vw; top:9.6vw;}	
+	.title_29636 .txt2{width:59.5vw; height:10.1vw; left:20.9vw; top:14.1vw;}	
+	.title_29636 .txt3{width:85.6vw; height:20.6vw; left:4.4vw; top:22.6vw;}	
+	.title_29636 .lg{width:36.2vw; height:32.0vw; left:11.2vw; top:50.7vw;}	
+	.title_29636 .msi{width:30.4vw; height:37.2vw; right:13.7vw; top:43.5vw;}	
+	.title_29636 .samsung{width:98.2vw; height:99.0vw;left:0; top:30.8vw;}	
+	.title_29636 .bigbang{width:38.5vw; height:38.0vw; left:31.3vw; top:40.6vw;}	
+	.title_29636 .txt1{transform: translateY(-11.9vw); }
+	.title_29636 .txt2{transform: translateY(-24.0vw);}
+	.title_29636 .txt3{transform: translateY(-39.4vw);}
+	@keyframes txt_down1{0%{transform: translateY(-11.9vw;)}100%{transform: translateY(0);}}
+	@keyframes txt_down2{0%{transform: translateY(-24.0vw;)}100%{transform: translateY(0);}}
+	@keyframes txt_down3{0%{transform: translateY(-39.4vw;)}100%{transform: translateY(0);}}
+	.title_29636 .lg{transform: translateX(-47.4vw);}
+	.title_29636 .msi{transform: translateX(44.1vw);}
+	.title_29636 .samsung{transform: translateY(91.5vw);}
+	@keyframes moving1{0%{transform: translateX(-47.4vw;)}100%{transform: translateX(0);}}
+	@keyframes moving2{0%{transform: translateX(44.1vw;)}100%{transform: translateX(0);}}
+	@keyframes moving3{0%{transform: translateY(91.5vw;)}100%{transform: translateY(0);}}
+
+}
+</style>
+<div class="mw_wrap" >
+    <div class="event">
+		<div class="title_29636">
+			<img src="../29636/evt_29636_mo_bg1.jpg" alt="">
+			<div class="txt_box">
+				<span class="txt1"></span>
+				<span class="txt2"></span>
+				<span class="txt3"></span>
+			</div>	
+			<span class="lg"></span>
+			<span class="msi"></span>
+			<span class="bigbang"></span>
+			<span class="samsung"></span>
+		</div>
+		<div class="body_29636">
+			<span class="img1">
+				<img src="../29636/evt_29636_mo_bg2.jpg" alt="" usemap="#Map" border="0">
+                <map name="Map">
+                  <area shape="rect" coords="96,786,247,830" data-subtit="1" class="area_sub_title">
+                  <area shape="rect" coords="314,788,468,831" data-subtit="2" class="area_sub_title">
+                  <area shape="rect" coords="531,789,686,829" data-subtit="3" class="area_sub_title">
+                  <area shape="rect" coords="747,787,901,830" data-subtit="4" class="area_sub_title">
+                  <area shape="rect" coords="96,1124,250,1169" data-subtit="5" class="area_sub_title">
+                  <area shape="rect" coords="315,1125,467,1167" data-subtit="6" class="area_sub_title">
+                  <area shape="rect" coords="530,1125,683,1169" data-subtit="7" class="area_sub_title">
+                  <area shape="rect" coords="749,1124,901,1169" data-subtit="8" class="area_sub_title">
+                  <area shape="rect" coords="97,1463,248,1507" data-subtit="9" class="area_sub_title">
+                  <area shape="rect" coords="313,1464,467,1507" data-subtit="10" class="area_sub_title">
+                  <area shape="rect" coords="531,1463,684,1505" data-subtit="11" class="area_sub_title">
+                  <area shape="rect" coords="749,1462,901,1507" data-subtit="12" class="area_sub_title">
+				  <area shape="rect" coords="92,1799,256,1845" data-subtit="13" class="area_sub_title">
+                </map>
+			</span>
+			<span class="img2"><img src="../29636/evt_29636_mo_bg3.jpg" alt=""></span>
+		</div>
+    </div>
+</div>
