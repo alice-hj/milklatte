@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=3" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- <link rel="stylesheet" media="screen and (max-width:1200px)" href="css/responsive/t_common.css" />
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="css/responsive/t_index.css" />
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="css/responsive/m_common.css" />
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="css/responsive/m_index.css" /> -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> 잠시 -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 잠시-->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="js/main.js"></script>
+
+    <title>New BorntoBit</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerIn">
+        <h1 class="logo">
+          <a href="index.html">
+            <!-- <img src="images/pc_logo.png" alt="" /> -->
+          </a>
+        </h1>
+        <nav>
+          <ul class="clear">
+            <li><a href="market.html">마켓</a></li>
+            <li><a href="funding.html">투자</a></li>
+            <li><a href="">커뮤니티</a></li>
+            <li><a href="">자산관리</a></li>
+            <li><a href="">고객지원</a></li>
+          </ul>
+        </nav>
+        <div class="lang_box">
+          <div class="lang_select">
+            <p class="flag_box">
+              <img src="images/icon_kr_flag_rectangle.png" alt="한국국기" class="lang_flag" />
+            </p>
+            <p class="txt_box"><span>￦ KRW</span></p>
+          </div>
+        </div>
+        <ul class="utill clear">
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+        </ul>
+        <button class="menu_btn"></button>
+      </div>
+    </header>
+
+    <section id="visual">
+      <div class="visual_bg">
+        <span>BEGINNING OF FINANCIAL INVESTMENT</span>
+        <h2>BORN TO BIT</h2>
+        <strong>새로운 글로벌 가상자산 거래소</strong>
+        <p>
+          본투빗을 이용하는 모든 고객에게<br />
+          믿을 수 있는 투자환경과 보안, 안정성을 약속합니다.
+        </p>
+        <div class="detail">
+          <a href="exchange.html" class="hvr-sweep-to-right">자세히 보기<em></em></a>
+        </div>
+      </div>
+      <div class="market_list">
+        <div class="none-swiper">
+          <!-- 1/6 -->
+          <ul>
+            <!-- 페딩가질값 -->
+            <li>
+              <!-- 왼쪽 -->
+              <img src="images/bit_coin.png" alt="비트코인이미지" />
+              <p class="name">
+                <span>비트코인</span>
+                <span class="en">btc/krw</span>
+              </p>
+              <p class="m_price">11,302,000</p>
+              <p class="m_payment">2,568<small>백만</small></p>
+            </li>
+            <li>
+              <!-- 오른쪽 -->
+              <em class="gab blue">-0.22%</em>
+              <img src="images/graph_01.gif" alt="그래프이미지" class="graph" />
+            </li>
+          </ul>
+          <!-- 2/6 -->
+          <ul>
+            <!-- 페딩가질값 -->
+            <li>
+              <!-- 왼쪽 -->
+              <img src="images/eth2.png" alt="이더리움이미지" />
+              <p class="name">
+                <span>이더리움</span>
+                <span class="en">eth/krw</span>
+              </p>
+              <p class="m_price">283,000</p>
+              <p class="m_payment">99<small>백만</small></p>
+            </li>
+            <li>
+              <!-- 오른쪽 -->
+              <em class="gab red">+2.11%</em>
+              <img src="images/graph_02.gif" alt="그래프이미지" class="graph" />
+            </li>
+          </ul>
+          <!-- 3/6 -->
+          <ul>
+            <!-- 페딩가질값 -->
+            <li>
+              <!-- 왼쪽 -->
+              <img src="images/xrp2.png" alt="리플이미지" />
+              <p class="name">
+                <span>리플</span>
+                <span class="en">xrp/krw</span>
+              </p>
+              <p class="m_price">2226</p>
+              <p class="m_payment">596,165</p>
+            </li>
+            <li>
+              <!-- 오른쪽 -->
+              <em class="gab">0.00%</em>
+              <img src="images/graph_03.gif" alt="그래프이미지" class="graph" />
+            </li>
+          </ul>
+          <!-- 4/6 -->
+          <ul>
+            <!-- 페딩가질값 -->
+            <li>
+              <!-- 왼쪽 -->
+              <img src="images/LTC.png" alt="라이트이미지" />
+              <p class="name">
+                <span>라이트코인</span>
+                <span class="en">ltc/krw</span>
+              </p>
+              <p class="m_price">52,650</p>
+              <p class="m_payment">5,492<small>백만</small></p>
+            </li>
+            <li>
+              <!-- 오른쪽 -->
+              <em class="gab red">+0.91%</em>
+              <img src="images/graph_04.gif" alt="그래프이미지" class="graph" />
+            </li>
+          </ul>
+          <!-- 5/6 -->
+          <ul>
+            <!-- 페딩가질값 -->
+            <li>
+              <!-- 왼쪽 -->
+              <img src="images/ETC_classic.png" alt="이더리움클래식이미지" />
+              <p class="name">
+                <span>이더리움클래식</span>
+                <span class="en">trx/krw</span>
+              </p>
+              <p class="m_price">7,580</p>
+              <p class="m_payment">312<small>백만</small></p>
+            </li>
+            <li>
+              <!-- 오른쪽 -->
+              <em class="gab red">+1.93%</em>
+              <img src="images/graph_05.gif" alt="그래프이미지" class="graph" />
+            </li>
+          </ul>
+          <!-- 6/6 -->
+          <ul>
+            <!-- 페딩가질값 -->
+            <li>
+              <!-- 왼쪽 -->
+              <img src="images/BCH.png" alt="비트코인캐시이미지" />
+              <p class="name">
+                <span>비트코인캐시</span>
+                <span class="en">bch/krw</span>
+              </p>
+              <p class="m_price">286,300</p>
+              <p class="m_payment">5,918<small>백만</small></p>
+            </li>
+            <li>
+              <!-- 오른쪽 -->
+              <em class="gab red">+1.89%</em>
+              <img src="images/graph_06.gif" alt="그래프이미지" class="graph" />
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-container2">
+          <div class="swiper-wrapper">
+            <!-- 1/6 -->
+            <ul class="swiper-slide">
+              <!-- 페딩가질값 -->
+              <li>
+                <!-- 왼쪽 -->
+                <img src="images/bit_coin.png" alt="비트코인이미지" />
+                <p class="name">
+                  <span>비트코인</span>
+                  <span class="en">btc/krw</span>
+                </p>
+                <p class="m_price">11,302,000</p>
+                <p class="m_payment">2,568<small>백만</small></p>
+              </li>
+              <li>
+                <!-- 오른쪽 -->
+                <em class="gab blue">-0.22%</em>
+                <img src="images/graph_01.gif" alt="그래프이미지" class="graph" />
+              </li>
+            </ul>
+            <!-- 2/6 -->
+            <ul class="swiper-slide">
+              <!-- 페딩가질값 -->
+              <li>
+                <!-- 왼쪽 -->
+                <img src="images/eth2.png" alt="이더리움이미지" />
+                <p class="name">
+                  <span>이더리움</span>
+                  <span class="en">eth/krw</span>
+                </p>
+                <p class="m_price">283,000</p>
+                <p class="m_payment">99<small>백만</small></p>
+              </li>
+              <li>
+                <!-- 오른쪽 -->
+                <em class="gab red">+2.11%</em>
+                <img src="images/graph_02.gif" alt="그래프이미지" class="graph" />
+              </li>
+            </ul>
+            <!-- 3/6 -->
+            <ul class="swiper-slide">
+              <!-- 페딩가질값 -->
+              <li>
+                <!-- 왼쪽 -->
+                <img src="images/xrp2.png" alt="리플이미지" />
+                <p class="name">
+                  <span>리플</span>
+                  <span class="en">xrp/krw</span>
+                </p>
+                <p class="m_price">2226</p>
+                <p class="m_payment">596,165</p>
+              </li>
+              <li>
+                <!-- 오른쪽 -->
+                <em class="gab">0.00%</em>
+                <img src="images/graph_03.gif" alt="그래프이미지" class="graph" />
+              </li>
+            </ul>
+            <!-- 4/6 -->
+            <ul class="swiper-slide">
+              <!-- 페딩가질값 -->
+              <li>
+                <!-- 왼쪽 -->
+                <img src="images/LTC.png" alt="라이트이미지" />
+                <p class="name">
+                  <span>라이트코인</span>
+                  <span class="en">ltc/krw</span>
+                </p>
+                <p class="m_price">52,650</p>
+                <p class="m_payment">5,492<small>백만</small></p>
+              </li>
+              <li>
+                <!-- 오른쪽 -->
+                <em class="gab red">+0.91%</em>
+                <img src="images/graph_04.gif" alt="그래프이미지" class="graph" />
+              </li>
+            </ul>
+            <!-- 5/6 -->
+            <ul class="swiper-slide">
+              <!-- 페딩가질값 -->
+              <li>
+                <!-- 왼쪽 -->
+                <img src="images/ETC_classic.png" alt="이더리움클래식이미지" />
+                <p class="name">
+                  <span>이더리움클래식</span>
+                  <span class="en">trx/krw</span>
+                </p>
+                <p class="m_price">7,580</p>
+                <p class="m_payment">312<small>백만</small></p>
+              </li>
+              <li>
+                <!-- 오른쪽 -->
+                <em class="gab red">+1.93%</em>
+                <img src="images/graph_05.gif" alt="그래프이미지" class="graph" />
+              </li>
+            </ul>
+            <!-- 6/6 -->
+            <ul class="swiper-slide">
+              <!-- 페딩가질값 -->
+              <li>
+                <!-- 왼쪽 -->
+                <img src="images/BCH.png" alt="비트코인캐시이미지" />
+                <p class="name">
+                  <span>비트코인캐시</span>
+                  <span class="en">bch/krw</span>
+                </p>
+                <p class="m_price">286,300</p>
+                <p class="m_payment">5,918<small>백만</small></p>
+              </li>
+              <li>
+                <!-- 오른쪽 -->
+                <em class="gab red">+1.89%</em>
+                <img src="images/graph_06.gif" alt="그래프이미지" class="graph" />
+              </li>
+            </ul>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <article id="notice">
+      <div class="inner clear">
+        <a href="#">
+          <div class="date">2020-04-01</div>
+          <div class="txt">본투빗 거래소 VER 2.0 을 오픈했습니다.</div>
+          <div class="more">더보기</div>
+        </a>
+        <button class="removebtn"></button>
+      </div>
+    </article>
+
+    <section id="h_service">
+      <div class="inner">
+        <dl>
+          <dt>
+            H-IEO SERVICE
+            <strong>H-IEO 서비스</strong>
+          </dt>
+          <dd>기존의 IEO 방식의 Hybrid 버전으로 사용자들이 코인을 균등하게 투자할 수 있도록 배분하며, <br />판매되지 않은 코인에 대해서는 소각을 통해 디플레이션 방지함으로써 사용자에게 안전한 H-IEO 서비스를 제공합니다.</dd>
+        </dl>
+        <button>MORE <em></em></button>
+        <div class="service_container clear">
+          <div class="dor">
+            <p class="img no1"></p>
+            <!-- <img src="/images/dor_img.png" alt="dor이미지" /> -->
+            <ul>
+              <li>
+                <p>금일 판매 수량</p>
+                <span>269,159 DOR</span>
+              </li>
+              <li>
+                <p>판매 종료일</p>
+                <span class="red">+1,742% (92원)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="csp">
+            <p class="img no2"></p>
+            <!-- <img src="/images/csp_img.png" alt="csp이미지" /> -->
+            <ul>
+              <li>
+                <p>금일 판매 수량</p>
+                <span>10.256 CSP</span>
+              </li>
+              <li>
+                <p>판매 종료일</p>
+                <span class="red">+3,013% (934원)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="tip">
+            <p class="img no3"></p>
+            <!-- <img src="/images/tip_img.png" alt="tip이미지" /> -->
+            <ul>
+              <li>
+                <p>금일 판매 수량</p>
+                <span>102,032 TIP</span>
+              </li>
+              <li>
+                <p>판매 종료일</p>
+                <span class="red">+5,924% (3,012원)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="coin_box">
+      <div class="inner">
+        <div class="inner_in">
+          <div class="table_top clear">
+            <p class="table_tablist">
+              <span class="on"><a href="">메이저</a></span>
+              <span><a href="">하이브리드</a></span>
+              <span><a href="">BSDT</a></span>
+            </p>
+            <span class="ttl">99<em>백만</em></span>
+          </div>
+          <table class="coin_table">
+            <colgroup>
+              <col width="" />
+              <col width="" />
+              <col width="" />
+              <col width="" />
+              <col width="" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="coin" colspan="2">코인명</th>
+                <th class="order price" data-sort="default">
+                  <span>가격<em class="arw"></em> </span>
+                </th>
+                <th class="order net_change" data-sort="default">
+                  <span>전일대비<em class="arw"></em> </span>
+                </th>
+                <th class="order ransaction_price" data-sort="default">
+                  <span>거래대금<em class="arw"></em> </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="icon_logo"><img src="images/bit_coin.png" alt="비트코인이미지" /></td>
+                <td class="tit_w">
+                  <p class="tit">비트코인</p>
+                  <p class="tit_en">btc/krw</p>
+                </td>
+                <td class="price blue">11,302,000 <em>krw</em></td>
+                <td class="gap blue">-0.22%</td>
+                <td class="payment">2,568<small>백만</small></td>
+              </tr>
+              <tr>
+                <td class="icon_logo"><img src="images/ETC_classic.png" alt="" /></td>
+                <td class="tit_w">
+                  <p class="tit">이더리움</p>
+                  <p class="tit_en">eth/krw</p>
+                </td>
+                <td class="price red">283,000<em>krw</em></td>
+                <td class="gap red">+2.11%</td>
+                <td class="payment">99<small>백만</small></td>
+              </tr>
+              <tr>
+                <td class="icon_logo"><img src="images/XRP.png" alt="" /></td>
+                <td class="tit_w">
+                  <p class="tit">리플</p>
+                  <p class="tit_en">xrp/krw</p>
+                </td>
+                <td class="price">226 <em>krw</em></td>
+                <td class="gap">0.00%</td>
+                <td class="payment">596,165</td>
+              </tr>
+              <tr>
+                <td class="icon_logo"><img src="images/BCH.png" alt="" /></td>
+                <td class="tit_w">
+                  <p class="tit">비트코인캐시</p>
+                  <p class="tit_en">bch/krw</p>
+                </td>
+                <td class="price red">286,300 <em>krw</em></td>
+                <td class="gap red">+1.89%</td>
+                <td class="payment">5,918<small>백만</small></td>
+              </tr>
+              <tr>
+                <td class="icon_logo"><img src="images/LTC.png" alt="" /></td>
+                <td class="tit_w">
+                  <p class="tit">라이트코인</p>
+                  <p class="tit_en">ltc/krw</p>
+                </td>
+                <td class="price red">52,650 <em>krw</em></td>
+                <td class="gap">+0.91%</td>
+                <td class="payment">5,492<small>백만</small></td>
+              </tr>
+              <!-- <tr>
+              <td class="icon_logo"><img src="images/eos.png" alt="" /></td>
+              <td class="tit_w">
+                <p class="tit">이오스</p>
+                <p class="tit_en">eos/krw</p>
+              </td>
+              <td class="price red">1,086 <em>krw</em></td>
+              <td class="gap red">+1.06%</td>
+              <td class="payment">86<small>백만</small></td>
+            </tr>
+            <tr>
+              <td class="icon_logo"><img src="images/ADA.png" alt="" /></td>
+              <td class="tit_w">
+                <p class="tit">에이다</p>
+                <p class="tit_en">ada/krw</p>
+              </td>
+              <td class="price blue">99.1 <em>krw</em></td>
+              <td class="gap blue">-0.73%</td>
+              <td class="payment">108<small>백만</small></td>
+            </tr>
+            <tr>
+              <td class="icon_logo"><img src="images/XLM.png" alt="" /></td>
+              <td class="tit_w">
+                <p class="tit">스텔라루멘</p>
+                <p class="tit_en">xlm/krw</p>
+              </td>
+              <td class="price blue">85 <em>krw</em></td>
+              <td class="gap blue">-0.02%</td>
+              <td class="payment">189,804</td>
+            </tr>
+            <tr>
+              <td class="icon_logo"><img src="images/trx.png" alt="" /></td>
+              <td class="tit_w">
+                <p class="tit">트론</p>
+                <p class="tit_en">trx/krw</p>
+              </td>
+              <td class="price red">201 <em>krw</em></td>
+              <td class="gap red">+0.33%</td>
+              <td class="payment">4,856<small>백만</small></td>
+            </tr>
+            <tr>
+              <td class="icon_logo"><img src="images/ETC_classic.png" alt="" /></td>
+              <td class="tit_w">
+                <p class="tit">이더리움클래식</p>
+                <p class="tit_en">trx/krw</p>
+              </td>
+              <td class="price red">7,580 <em>krw</em></td>
+              <td class="gap red">+4.93%</td>
+              <td class="payment">312<small>백만</small></td>
+            </tr>
+            <tr>
+              <td class="icon_logo"><img src="images/xem.png" alt="" /></td>
+              <td class="tit_w">
+                <p class="tit">넴</p>
+                <p class="tit_en">xem/krw</p>
+              </td>
+              <td class="price red">56.1 <em>krw</em></td>
+              <td class="gap red">+0.12%</td>
+              <td class="payment">72,897</td>
+            </tr>
+            <tr>
+              <td class="icon_logo"><img src="images/QTUM.png" alt="" /></td>
+              <td class="tit_w">
+                <p class="tit">퀸텀</p>
+                <p class="tit_en">qtum/krw</p>
+              </td>
+              <td class="price red">2,155 <em>krw</em></td>
+              <td class="gap red">+1.00%</td>
+              <td class="payment">3,123<small>백만</small></td>
+            </tr>
+            <tr>
+              <td class="icon_logo"><img src="images/BTG.png" alt="" /></td>
+              <td class="tit_w">
+                <p class="tit">비트코인골드</p>
+                <p class="tit_en">btg/krw</p>
+              </td>
+              <td class="price red">10,840 <em>krw</em></td>
+              <td class="gap red">+1.00%</td>
+              <td class="payment">163<small>백만</small></td>
+            </tr>
+            <tr>
+              <td class="icon_logo"><img src="images/rvn.png" alt="" /></td>
+              <td class="tit_w">
+                <p class="tit">레이븐</p>
+                <p class="tit_en">rvn/krw</p>
+              </td>
+              <td class="price">580 <em>krw</em></td>
+              <td class="gap">0.00%</td>
+              <td class="payment">5,264<small>백만</small></td>
+            </tr> -->
+            </tbody>
+          </table>
+          <button class="add" onclick = "location.href = 'exchange.html' ">더보기</button>
+        </div>
+      </div>
+    </section>
+    <section id="contents">
+      <div class="inner">
+        <div class="contents_bx1" data-aos="fade-up" data-aos-duration="1500">
+          <dl>
+            <dt>디지털 자산 거래소</dt>
+            <dd>
+              최고의 보안 기술과 전문성이<br />
+              더해진 System<br />
+              사용성이 높은 최상의 거래 환경 제공
+            </dd>
+          </dl>
+          <button onclick = "location.href = 'exchange.html' ">거래하러가기</button>
+        </div>
+        <div class="contents_bx2" data-aos="fade-up" data-aos-duration="3000">
+          <dl>
+            <dt>H-IEO</dt>
+            <dd>기존의 ICO, IEO 모금방식을 개선하여, 균일하고 공평한 투자기회 확보, 암호화폐의 거버넌스와 상한선, 소각, 락업 등 다양한 요소를 가미하여 가격 변동성 최소화</dd>
+          </dl>
+          <button onclick = "location.href = 'market.html' ">입찰하러가기</button>
+        </div>
+        <div class="contents_bx3" data-aos="fade-up" data-aos-duration="1500">
+          <dl>
+            <dt>FUNDING</dt>
+            <dd>
+              스테이블 토큰을 활용하여 펀딩에 <br />투자하는 신개념 서비스<br />
+              상품 우선 입찰 및 자동입찰 기능과<br />
+              높은 안정성 및 리워드(reward) 혜택 제공
+            </dd>
+          </dl>
+          <button onclick = "location.href = 'funding.html' ">펀딩하러가기</button>
+        </div>
+        <div class="contents_bx4" data-aos="fade-up" data-aos-duration="3000">
+          <dl>
+            <dt>토큰세일</dt>
+            <dd>
+              토큰세일을 통해 참여하는 암호화폐들은<br />
+              기술적 구현과 정상 가동에 대한 검증이 완료된 암호화폐로만 취급하며 다양한 혜택들을 제공합니다.
+            </dd>
+          </dl>
+          <button onclick = "location.href = 'token.html' ">구매하러가기</button>
+        </div>
+      </div>
+    </section>
+    <section id="bitgo">
+      <div class="inner">
+        <h2>세계에서 가장 안전한 BitGo의 강력한 멀티 시그니처 월렛사용</h2>
+        <div class="conts">
+          <img src="images/bitgo_logo1.png" alt="bitgo" class="b_logo1" />
+          <span class="circle s_circle"></span>
+          <span class="circle m_circle"></span>
+          <span class="circle b_circle"></span>
+          <img src="images/lock.png" alt="B" class="b_logo2" />
+          <span class="circle b_circle b_circle2"></span>
+          <span class="circle m_circle m_circle2"></span>
+          <span class="circle s_circle s_circle2"></span>
+          <img src="images/bitgo_logo3.png" alt="born to bit" class="b_logo3" />
+        </div>
+        <p class="conts_info">전세계 20%의 암호화폐를 책임지는 BitGo 월렛 사용으로 다양한 코인의 지갑을 안전하게 운영</p>
+      </div>
+    </section>
+    <section id="partners">
+      <div class="inner clear">
+        <dl class="text">
+          <dd class="s_txt">Partners</dd>
+          <dt>협력하는 파트너 소개</dt>
+        </dl>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/partners_logo1.png" alt="한국신용정보주식회사" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners_logo2.png" alt="tradingview" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners_logo3.png" alt="bitgo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners_logo4.png" alt="weilaicaijing.com" />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </section>
+    <section id="value">
+      <div class="inner clear">
+        <div class="bg value_txt">
+          <div class="txt_inner">
+            <h2>
+              Our Value,<br />
+              BORN TO BIT
+            </h2>
+            <p class="conts_info">최첨단 보안 기술력과 전문성을 통해 <br />고객의 디지털 자산을 안전하게 보호합니다.</p>
+          </div>
+        </div>
+        <div class="bg">
+          <ul class="value_list">
+            <li class="contents">
+              <strong>Diversity</strong>
+              <h3>코인의 다양성</h3>
+              <p class="explan">KRW&USD 마켓을 통해서더 많은 코인을 제공할 예정입니다.</p>
+            </li>
+            <li class="contents">
+              <strong>Prompt</strong>
+              <h3>신속한 거래 입출금</h3>
+              <p class="explan">안전하고 정확한 거래 환경 제공합니다.</p>
+            </li>
+            <li class="contents">
+              <strong>Security</strong>
+              <h3>보안성</h3>
+              <p class="explan">자산 관리를 안전하게 유지하고 취약점 및 공격을 사전에 차단합니다.</p>
+            </li>
+            <li class="contents">
+              <strong>Efficiency</strong>
+              <h3>효율성</h3>
+              <p class="explan">전 세계 화폐를 지원하여, 간편하게 코인구매와 거래가 가능합니다.</p>
+            </li>
+          </ul>
+        </div>
+        <p class="ani"></p>
+      </div>
+      <ul class="sns">
+        <li>
+          <a href="" class="sns_icon_1"><img src="images/icon_kakao.png" alt="카카오톡아이콘" /></a>
+        </li>
+        <li>
+          <a href="" class="sns_icon_2"><img src="images/icon_youtube.png" alt="유투브아이콘" /></a>
+        </li>
+        <li>
+          <a href="" class="sns_icon_3"><img src="images/icon_telegram.png" alt="텔리그램아이콘" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="inner">
+        <div class="clear">
+          <div class="footer_top">
+            <ul>
+              <li><a href="">회사소개</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">이용약관</a></li>
+              <li><a href="">개인 정보 보호 정책</a></li>
+              <li><a href="">거래 및 입출금 이용안내</a></li>
+            </ul>
+          </div>
+          <div class="footer_btm">
+            <div class="fl">
+              <ul>
+                <li>주식회사 로아프롭테크</li>
+                <li>서울특별시 서초구 사임당로 174,701호</li>
+              </ul>
+              <ul>
+                <li>사업자등록번호 477-81-01663</li>
+                <li>법인등록번호 110111-7239753</li>
+              </ul>
+            </div>
+            <div class="fr">
+              <p>본투빗 고객센터 10:00 ~ 18:00 (주말 및 공휴일 제외)</p>
+              <p>*고객응대는 온라인으로만 진행하며, 본사 방문 상담은 진행하지 않습니다.</p>
+            </div>
+          </div>
+          <p class="copy">©2020 BORNTOBIT. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- <script>
+      AOS.init(
+        disable : 'mobile',
+      );
+    </script> -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 130,
+        slidesPerGroup: 1,
+        //pagination: {
+        //el: '.swiper-pagination',
+        // clickable: true,
+        //},
+        // 그룹수가 맞지 않을 경우 빈칸으로 메우기
+        // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
+        loopFillGroupWithBlank: true,
+        loop: true, // 무한 반복
+        autoplay: {
+          speed: 1500,
+          //delay: 1000,
+        },
+        breakpoints: {
+          1900: {
+            slidesPerView: 3,
+            spaceBetween: 130,
+          },
+          1600: {
+            slidesPerView: 3,
+            spaceBetween: 100,
+          },
+          930: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            autoplay: {
+              speed: 1500,
+            },
+          },
+          690: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            autoplay: {
+              speed: 1500,
+            },
+          },
+          500: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          300: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            autoplay: {
+              speed: 1500,
+            },
+          },
+        },
+      });
+      var swiper = new Swiper('.swiper-container2', {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        //loop: true, // 무한 반복
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        // 그룹수가 맞지 않을 경우 빈칸으로 메우기
+        // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
+        //loopFillGroupWithBlank: true,
+        // autoplay: {
+        //  delay: 1000,
+        // },
+        //speed: 1500,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+/* width : 768 */
+/********************* e:header****************/
+header {
+}
+.headerIn {
+  position: relative;
+  margin: 0 0;
+  height: 64px;
+  width: 100%;
+  padding: 0 6.5vw;
+}
+.headerIn h1.logo {
+  left: 50px;
+}
+/* header .logo a {
+  width: 130px;
+  height: 22px;
+  background: url(../../images/tablet_logo.png) no-repeat center;
+} */
+header nav {
+  display: none;
+}
+header .utill {
+  display: none;
+}
+header .lang_box {
+  display: none;
+}
+header .m_menu {
+  display: inline-block;
+  background: url(../../images/icon_menu.png) no-repeat center;
+  width: 18px;
+  height: 64px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  outline: none;
+}
+/********************* e:header****************/
+/********************* s:footer****************/
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* height: 65px; */
+  background: #141720;
+  z-index: 5;
+}
+footer div {
+  font-size: 0;
+}
+footer div a {
+  display: inline-block;
+  padding: 16px 0;
+  width: calc(100% / 5);
+  height: 65px;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 4px solid transparent;
+}
+footer div a.on {
+  border-top: 4px solid #ffb200;
+}
+footer div a b {
+  display: block;
+  margin: 0 auto;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+footer div a:nth-child(1) b {
+  background-image: url(../../images/icon_home_off.png);
+}
+footer div a:nth-child(2) b {
+  background-image: url(../../images/icon_market_off.png);
+}
+footer div a:nth-child(3) b {
+  background-image: url(../../images/icon_hieo_off.png);
+}
+footer div a:nth-child(4) b {
+  background-image: url(../../images/icon_asset_off.png);
+}
+footer div a:nth-child(5) b {
+  background-image: url(../../images/icon_info_off.png);
+}
+footer div a span {
+  color: #fff;
+  font-size: 13px;
+}
+footer div a.on span {
+  color: #ffb200;
+}
+footer div a:nth-child(1).on b {
+  background-image: url(../../images/icon_home_on.png);
+}
+footer div a:nth-child(2).on b {
+  background-image: url(../../images/icon_market_on.png);
+}
+footer div a:nth-child(3).on b {
+  background-image: url(../../images/icon_hieo_on.png);
+}
+footer div a:nth-child(4).on b {
+  background-image: url(../../images/icon_asset_on.png);
+}
+footer div a:nth-child(5).on b {
+  background-image: url(../../images/icon_info_on.png);
+}
+
+/********************* e:footer****************/

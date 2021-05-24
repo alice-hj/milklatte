@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘은</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/font.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css"> -->
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/all.css"> -->
+  <!-- <link rel="stylesheet" href="css/brand.css"> -->
+  <!-- <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">  -->
+  <!-- <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+  <header class="clear">
+    <div class="fl logo"><h1><span class="hide">오늘은</span></h1></div>
+    <div class="fr utill">
+      <ul>
+        <li class="grn manager">관리자</li>
+        <li class="level">level 2</li>
+        <li class="name">홍길동님</li>
+        <li class="loginout"><a href="#">로그아웃</a></li>
+      </ul>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <button onclick="location.href='member_admin.html' ">회원관리</button>
+        <ul>
+          <li><a href="member_detail.html">-고객</a></li>
+          <li><a href="#">-사장님</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <button onclick="location.href='store_admin.html' ">매장관리</button>
+        <ul>
+          <li><a href="store_detail.html">-매장관리</a></li>
+          <li><a href="storeinfo_detail.html">-매장정보 신고</a></li>
+          <li><a href="store_review.html">-후기</a></li>
+          <li><a href="store_review_detail.html">-후기신고</a></li>
+          <li><a href="#">-키워드 관리</a></li>
+        </ul>
+      </li>
+      <li> 
+        <button>운영관리</button>
+        <ul>
+          <li><a href="manageinquiry_admin.html">-고객문의</a></li>
+          <li><a href="#">-FAQ</a></li>
+          <li><a href="#">-관리자 관리</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="container-inner">
+    <div class="search-container">
+      <span class="select">
+        <select>
+          <option>상호명</option>
+          <option>-</option>
+          <option>-</option>
+          <option>-</option>
+          <option>-</option>
+        </select>
+      </span>
+      <div>
+      <input type="text" id="search"placeholder="검색어를 입력해주세요.">
+      <input type="button">
+    </div>
+    </div>
+    <div class="check-container">
+      <div class="status-type">
+        <span class="title">상태</span>
+        <label>전체
+          <input type="radio" name="radio" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label>정상
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label>차단
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="other-type">
+        <span class="title">신고유형</span>
+        <div class="report-type">
+          <span class="select">
+            <select>
+              <option>전체</option>
+              <option>-</option>
+              <option>-</option>
+              <option>-</option>
+              <option>-</option>
+            </select>
+          </span>
+        </div>
+
+      </div>
+      <div class="date-type">
+        <span class="title">신고일</span>
+        <div class="ym">
+          <span class="select">
+            <select>
+              <option>선택</option>
+              <option>2019년</option>
+              <option>2020년</option>
+              <option>2021년</option>
+              <option>2022년</option>
+            </select>
+          </span>
+          <span class="select">
+            <select>
+              <option>선택</option>
+              <option>1월</option>
+              <option>2월</option>
+              <option>3월</option>
+              <option>4월</option>
+            </select>
+          </span>
+        </div>
+        <div class="calendar" >
+          <form>
+            <input type="date" value="">
+            <label for="submit" class="hide"></label>
+          </form>
+          <small>~</small>
+          <form>
+            <input type="date" value="">
+            <label for="submit" class="hide"></label>
+          </form>
+        </div>
+      </div>
+      <div class="filterbtn">
+        <button class="grnback">필터적용</button>
+        <button>필터초기화</button>
+    </div>
+     
+    </div>
+    <div class="total clear">
+      <p >전체<em>(1,234,567)</em></p>
+      <!-- <span class="excel-down">엑셀다운로드<button>등록</button></span> -->
+  </div>
+    <table>
+      <thead>
+        <tr>
+          <th>신고번호</th>
+          <th>상태</th>
+          <th>매장번호</th>
+          <th>상호명</th>
+          <th>신고유형</th>
+          <th>회원번호</th>
+          <th>이름</th>
+          <th>신고일</th>
+          <th>메모</th>
+        </tr>
+      </thead>
+       <tbody>
+      <tr>
+        <td>4256</td>
+        <td><span>처리완료</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>상호명 변경</td>
+        <td><a href="#">426</a></td>
+        <td>홍길동</td>
+        <td>2021.01.01</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>처리완료</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>미처리</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>처리완료</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>미처리</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>처리완료</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>미처리</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>처리완료</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>미처리</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>처리완료</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>미처리</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>처리완료</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+      <tr>
+        <td>#{정정신고번호}</td>
+        <td><span>미처리</span></td>
+        <td><a href="#">426</a></td>
+        <td>찜닭전문111</td>
+        <td>찜,탕류</td>
+        <td><a href="#">426</a></td>
+        <td>#{이름}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button class="grnback memobtn">보기</button></td>
+      </tr>
+   
+      </tbody>
+    </table>
+    </div>
+    <div class="page-btn">
+      <a href="#" class="double-arrow"><span></span></a>
+      <!-- <a href="#" class="arrow-lf">❮</a> -->
+      <a href="#" class="arrow-lf"><span></span></a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">7</a>
+      <a href="#">8</a>
+      <a href="#">9</a>
+      <a href="#">10</a>
+      <a href="#" class="arrow-rg"><span></span></a>
+      <!-- <a href="#" class="arrow-rg">❯</a> -->
+      <a href="#" class="double-arrow "><span></span></a>
+      <!-- <a href="#" class="double-arrow "><i  class="xi-angle-right"></i>&raquo;</a> -->
+    </div>
+  </div>
+</body>
+</html>

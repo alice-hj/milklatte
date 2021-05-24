@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘은</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/font.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css"> -->
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/detail_common.css">
+  <link rel="stylesheet" href="css/store_detail.css">
+  <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+  <header class="clear">
+    <div class="fl logo"><h1><span class="hide">오늘은</span></h1></div>
+    <div class="fr utill">
+      <ul>
+        <li class="grn manager">관리자</li>
+        <li class="level">level 2</li>
+        <li class="name">홍길동님</li>
+        <li class="loginout"><a href="#">로그아웃</a></li>
+      </ul>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <button onclick="location.href='member_admin.html' ">회원관리</button>
+        <ul>
+          <li><a href="member_detail.html">-고객</a></li>
+          <li><a href="#">-사장님</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <button onclick="location.href='store_admin.html' ">매장관리</button>
+        <ul>
+          <li><a href="store_detail.html">-매장관리</a></li>
+          <li><a href="storeinfo_detail.html">-매장정보 신고</a></li>
+          <li><a href="store_review.html">-후기</a></li>
+          <li><a href="store_review_detail.html">-후기신고</a></li>
+          <li><a href="#">-키워드 관리</a></li>
+        </ul>
+      </li>
+      <li> 
+        <button>운영관리</button>
+        <ul>
+          <li><a href="manageinquiry_admin.html">-고객문의</a></li>
+          <li><a href="#">-FAQ</a></li>
+          <li><a href="#">-관리자 관리</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="container-top clear">
+      <h2>매장 상세</h2>
+      <section id="section1">
+        <div class="savebtn">
+          <div class="toggle-btn">
+            <span>서비스 게시</span>
+            <input class="tgl tgl-light" id="cb1" type="checkbox"/>
+            <label class="tgl-btn" for="cb1"></label>
+          </div>
+          <button>저장</button>
+        </div> 
+        </div>
+        <div class="container-inner">
+          <p class="intro">이 업체는 현재 <em>33</em>개의 후기와 <em>4</em>명의 고객에게 찜된 가게이며,<br>
+            <em>21</em>개의 상품을 보유하고 있습니다.</p>
+          <span class="vendor-index">업체지수</span>
+          <p class="vendor-score"><em>74.5</em>점</p>
+          <div class="chart-container">
+            <div class="graph"></div>
+            <div class="chart-list">
+              <ul>
+                <li>
+                  <p>맛</p>
+                  <span><strong>82.1</strong>점</span>
+                </li>
+                <li>
+                  <p>직원 친절도</p>
+                  <span><strong>82.1</strong>점</span>
+                </li>
+                <li>
+                  <p>청결도</p>
+                  <span><strong>82.1</strong>점</span>
+                </li>
+                <li>
+                  <p>분위기</p>
+                  <span><strong>82.1</strong>점</span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p>맛</p>
+                  <span><strong>82.1</strong>점</span>
+                </li>
+                <li>
+                  <p>직원 친절도</p>
+                  <span><strong>82.1</strong>점</span>
+                </li>
+                <li>
+                  <p>청결도</p>
+                  <span><strong>82.1</strong>점</span>
+                </li>
+                <li>
+                  <p>분위기</p>
+                  <span><strong>82.1</strong>점</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="basic-bar">기본 정보</div>
+        <div class="container-inner">
+          <div class="basic-info-container">
+            <div class="clear">
+              <p>업체 이미지<small>이미지를 드래그하여 순서를 변경할 수 있습니다.</small></p>
+              <span>* 10MB이하의 jpg, png 형식의 이미지 최대 10장까지 등록 가능합니다.</span>
+            </div>
+            <ul class="store-img">
+              <li class="product-img delectbtn active"><img src="img/sample-img1.png" alt="샘플이미지"><em class="img-text">대표이미지</em></li>
+              <li class="product-img delectbtn"><img src="img/sample-img2.png" alt="샘플이미지"></li>
+              <li class="product-img"></li>
+            </ul>
+            <div class="storeinfo-container">
+              <ul>
+                <li>
+                  <label for="storename">상호명</label>
+                  <input id="storename"name="storename" type="text" placeholder="상호명을 입력해주세요">
+                </li>
+                <li>
+                  <label for="storeaddress">매장 주소</label>
+                  <div class="searchbox">
+                    <input id="storeaddress" name="address" type="text" placeholder="주소를 검색해주세요">
+                    <input type="button" value="우편번호검색">
+                  </div>
+                  <input id="addsearch"name ="detailaddress" type="text" placeholder="상세주소">
+                </li>
+                <li>
+                  <label>매장 전화번호</label>
+                  <input name="storenumber" type="text" placeholder="'-'제외하고 입력해주세요.">
+                </li>
+                <li>
+                  <label>1차 카테고리</label>
+                  <form class="select">
+                    <select>
+                      <option>선택해주세요</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                    </select>
+                  </form>
+                </li>
+                <li>
+                  <label>2차 카테고리</label>
+                  <form class="select">
+                    <select>
+                      <option>선택해주세요</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label>사업자등록번호</label>
+                  <input name="number" type="text" placeholder="'-'제외하고 입력해주세요.">
+                </li>
+                <li>
+                  <label>사업자등록증</label>
+                  <div class="searchbox">
+                    <input name="number" type="text" placeholder="사업자등록증을 등록해주세요.">
+                    <input type="button" value="파일검색" >
+                  </div>
+                  <p class="refer">* 10MB 이하의 jpg, png만 등록 가능합니다.</p>
+                </li>
+                <li style="padding:27px 0 17px 0">
+                  <label>개업일</label>
+                  <input name="date" type="date" placeholder="'-'제외하고 입력해주세요.">
+                </li>
+                <li class="certification">
+                  <label>인증여부</label>
+                  <div>
+                    <input type="radio" id="check" value="certification" name="certifi">
+                    <label for="check">인증</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="uncheck" value="notcertified" name="certifi">
+                    <label for="uncheck">미인증</label>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="clear">
+                  <label for="keyword">매장 키워드(해시태그)<em>* 최대 10개까지 작성하실 수 있습니다.</em></label>
+                  <div class="hashtag-container">
+                    <span class="hashtag">카공족 환영</span>
+                    <span class="hashtag">콘센트 다수</span>
+                    <div class="searchbox"> 
+                      <input id="keyword" type="text" placeholder="키워드를 입력해주세요.">
+                      <input type="button" class="addbtn" value="추가">
+                  </div>
+                  </div>
+                </li>
+                <li class="storeintro">
+                  <label for="store-info">매장소개</label>
+                  <!-- <input type="text" id="store-info"> -->
+                  <form>
+                    <textarea>매장에 대해 소개해주세요.</textarea>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section3">
+        <div class="basic-bar">부가 정보</div>
+        <div class="container-inner">
+          <div class="storeinfo-container pd27">
+            <ul>
+              <li>
+                <label for="storename">주차장</label>
+                <form class="select">
+                  <select>
+                    <option>선택해주세요</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                  </select>
+                </form>
+                <div class="add-info-box">
+                  <form>
+                    <div>
+                      <input type="radio" id="free"name="time">
+                      <label for="free"></label>
+                      <input type="text">
+                      <label >분 무료버튼</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="free2"name="time">
+                      <label for="free2">식사시간동안 무료</label>               
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <label>포장</label>
+                <form class="select">
+                  <select>
+                    <option>선택해주세요</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                  </select>
+                </form>
+                <div class="add-info-box">
+                  <form>
+                    <div>
+                      <input type="radio" id="discount" name="discount">
+                      <label for="discount"></label>
+                      <label >할인 있음</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="discount2" name="discount">
+                      <label for="discount2">할인 없음</label>               
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <label>영업시간 <button class="addlist">+추가하기</button></label>
+                <div class="workingtime">
+                  <form class="select">
+                    <select class="dayofw">
+                      <option>요일</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                    </select>
+                  </form>
+                  <form class="select">
+                    <select>
+                      <option>00:00</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                    </select>
+                  </form>
+                  <span>~</span>
+                  <form class="select">
+                    <select>
+                      <option>00:00</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                    </select>
+                  </form>
+              </div>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <label for="storename">배달</label>
+                <form class="select">
+                  <select>
+                    <option>선택해주세요</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                  </select>
+                </form>
+                <div class="add-info-box">
+                  <form>
+                    <div>
+                      <input type="radio" id="delivery"name="delivery">
+                      <label for="delivery"></label>
+                      <input type="text">
+                      <label >원 부터</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="delivery2"name="delivery">
+                      <label for="delivery2">최소금액 없음</label>               
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <label>예약</label>
+                <form class="select">
+                  <select>
+                    <option>선택해주세요</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                  </select>
+                </form>
+                <div class="add-info-box mgtp6">
+                  <form>
+                    <div>
+                      <input type="radio" id="least"name="least">
+                      <label for="least"></label>
+                      <span class="pd92">최소</span>
+                      <input type="text">
+                      <label >인 이상</label>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <label>휴무일<button class="addlist">+추가하기</button></label>
+                <form class="select">
+                  <select class="dayofw">
+                    <option>선택해주세요</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                  </select>
+                </form>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <label for="storename">화장실</label>
+                <form class="select">
+                  <select>
+                    <option>선택해주세요</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                  </select>
+                </form>
+                <div class="mgbt35"></div>
+              </li>
+              <li>
+                <label>좌석 수</label>
+                <form class="select">
+                  <select>
+                    <option>선택해주세요</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                    <option>-</option>
+                  </select>
+                </form>
+                <div class="mgbt35"></div>
+              </li>
+              <li class="clear">
+                <label>브레이크 타임<button class="addlist">+추가하기</button></label>
+                <div class="workingtime">
+                  <form class="select">
+                    <select class="dayofw">
+                      <option>요일</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                    </select>
+                  </form>
+                  <form class="select">
+                    <select>
+                      <option>00:00</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                    </select>
+                  </form>
+                  <span>~</span>
+                  <form class="select">
+                    <select>
+                      <option>00:00</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                      <option>-</option>
+                    </select>
+                  </form>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+      <section id="section4" class="clear">
+        <div class="fl clear">
+          <div class="basic-bar">메뉴(상품) 정보  <input type="button" class="addbtn" value="추가"></div>
+          <table>
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>순번</th>
+                <th>이미지</th>
+                <th>상품</th>
+                <th>메뉴설명</th>
+                <th>가격</th>
+                <th>삭제</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="display:none">
+                <td colspan="6" class="notlist">메뉴 또는 상품을 추가해주세요.</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>아메리카노</td>
+                <td>아메리카노</td>
+                <td>후식1등</td>
+                <td>6,500</td>
+                <td><button class="delectbtn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>#{순서번호}</td>
+                <td>#{이미지 또는 없음 또는 텍스트}</td>
+                <td>#{상품명}</td>
+                <td>#{비고입력}</td>
+                <td>#{가격}</td>
+                <td><button class="delectbtn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>#{순서번호}</td>
+                <td>#{이미지 또는 없음 또는 텍스트}</td>
+                <td>#{상품명}</td>
+                <td>#{비고입력}</td>
+                <td>#{가격}</td>
+                <td><button class="delectbtn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>#{순서번호}</td>
+                <td>#{이미지 또는 없음 또는 텍스트}</td>
+                <td>#{상품명}</td>
+                <td>#{비고입력}</td>
+                <td>#{가격}</td>
+                <td><button class="delectbtn">삭제</button></td>
+              </tr>
+
+              <tr>
+                <td>#{순서번호}</td>
+                <td>#{이미지 또는 없음 또는 텍스트}</td>
+                <td>#{상품명}</td>
+                <td>#{비고입력}</td>
+                <td>#{가격}</td>
+                <td><button class="delectbtn">삭제</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="fr">
+          <div class="basic-bar">메뉴(상품) 정보</div>
+          <div class="menuinfo lf">
+            <span>전체</span>
+            <ul>
+              <li>와이파이</li>
+              <li>후식제공</li>
+      
+            </ul>
+          </div>
+          <div class="menu-btn">
+            <button><img src="img/double-arrow-rg.png" alt="화살표"></button>
+            <button><img src="img/double-arrow-lf.png" alt="화살표"></button>
+          </div>
+          <div class="menuinfo rg">
+            <span>사용</span>
+            <ul>
+              <li>동물복지제공</li>
+              <li>비건식당</li>
+              <li>친환경인증</li>
+              <li>반려동물 입장가능</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div ids="modal" class="modal">
+      <div class="modal-container">
+        <p class="modal-title">메뉴(상품) 추가
+          <button class="delect-btn"></button>
+        </p>
+        <form class="menuadd">
+            <button class="product-img"></button>
+            <p class="img-refer">* 10MB 이하의 jpg, png 형식만 등록 가능합니다.</p>
+            <div>
+              <label for="">상품명</label>
+              <input type="text" placeholder="상품명을 입력해주세요.">
+            </div>
+            <div>
+              <label for="">비고</label>
+              <input type="text" placeholder="예) 국내산, 300g 등">
+            </div>
+            <div>
+              <label for="">가격</label>
+              <input type="text" placeholder="가격을 입력해주세요.">
+            </div>
+            <div>
+              <label for="">순서</label>
+              <form class="select">
+                <select>
+                  <option>선택해주세요.</option>
+                  <option>-</option>
+                  <option>-</option>
+                  <option>-</option>
+                  <option>-</option>
+                </select>
+              </form>
+            </div>
+        </form>
+        <button type="submit">변경사항 저장</button>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,513 @@
+.container {
+  display: block;
+  clear: both;
+  content: '';
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 1904px;
+  height: 956px;
+}
+.container > div {
+  height: 100%;
+  float: left;
+}
+.graph_container {
+  /* width: 23%; */
+  width: 454px;
+
+  margin-right: 0.5%;
+  background: #242632;
+}
+.market_container {
+  /* width: 55.8%; */
+  width: 1050px;
+  margin-right: 0.5%;
+}
+.coin_container {
+  /* width: 20%; */
+  width: 380px;
+  background: #242632;
+}
+
+.graph_container .inner {
+  width: 100%;
+  height: 100%;
+  background: #131313;
+}
+/*************** s:market_container ****************/
+.market_container .chart {
+  width: 100%;
+  /* height: 24.84vw; */
+  height: 437px;
+  background: url(../images/chart.png) no-repeat left/100% 100%;
+  margin-bottom: 10px;
+}
+/* 미체결, 체결 */
+.market_container .order_list {
+  /* clear: both;
+  content: '';
+  display: block; */
+  font-size: 0;
+}
+.market_container .order_list > div {
+  /* float: left;
+  width: 49.5%;
+  margin-left: 1%; */
+  display: inline-block;
+  width: 520px;
+  margin-left: 10px;
+  background: #242632;
+  vertical-align: top;
+}
+.market_container .order_list > div.conclusion {
+  margin-left: 0;
+}
+.conclusion .sub_menu {
+  width: 100%;
+  font-size: 0;
+  margin-bottom: 4px;
+}
+.conclusion .sub_menu li {
+  display: inline-block;
+  width: 50%;
+  line-height: 40px;
+  background: #191826;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.conclusion .sub_menu li.on {
+  color: #fff3b7;
+  position: relative;
+  font-weight: 700;
+}
+.conclusion .sub_menu li.on:after {
+  display: inline-block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #fff3b7;
+}
+.conclusion .lists-container {
+  display: none;
+  margin: 20px 0;
+  padding: 0 20px;
+  width: 100%;
+  /* height: 384px; */
+  height: 425px;
+  color: #eee;
+  overflow-y: auto;
+}
+.conclusion .lists-container.active {
+  display: block;
+}
+.conclusion .lists {
+  padding: 20px 0 6px;
+  border-bottom: 1px solid #101010;
+}
+.conclusion .lists:nth-child(1) {
+  padding: 0 0 6px;
+}
+.conclusion .lists li {
+  display: block;
+  position: relative;
+  padding: 0 0 5px;
+  clear: both;
+}
+/* .conclusion .lists li:first-child {
+  line-height: auto;
+} */
+.conclusion .lists li > * {
+  display: inline-block;
+}
+
+.conclusion .lists li span {
+  font-size: 12px;
+}
+.conclusion .lists li em {
+  float: right;
+  text-align: right;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #fff;
+}
+.conclusion .lists li .date {
+  position: absolute;
+  bottom: 7px;
+  left: 59px;
+  /* width: 74%; */
+  font-size: 13px;
+  font-weight: 400;
+  color: #999999;
+  text-align: left;
+}
+.conclusion .lists li .cancel {
+  float: right;
+  background: #ff6161;
+  width: 58px;
+  font-size: 12px;
+  line-height: 25px;
+}
+.conclusion .conclu .lists li .date {
+}
+.conclusion .lists li h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ff6161;
+}
+/* 매수 매도 */
+.buy_sell {
+}
+.buy_sell .sub_menu {
+  width: 100%;
+  font-size: 0;
+}
+.buy_sell .sub_menu li {
+  display: inline-block;
+  position: relative;
+  background: #191826;
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* .sub_menu li button {
+  width: 100%;
+  background: transparent;
+  outline: none;
+} */
+.buy_sell .sub_menu li:first-child.on {
+  color: #ff6161;
+  font-weight: 700;
+}
+.buy_sell .sub_menu li:last-child.on {
+  color: #578ef1;
+  font-weight: 700;
+}
+
+.buy_sell .sub_menu li.on:after {
+  display: inline-block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 4px;
+}
+.buy_sell .sub_menu li:first-child.on:after {
+  background: #ff6161;
+}
+.buy_sell .sub_menu li:last-child.on:after {
+  background: #578ef1;
+}
+.buy_sell .sub-container {
+  display: none;
+  /* height: 420px; */
+  height: 461px;
+  padding: 15px 20px 60px;
+  margin-top: 4px;
+  color: #eee;
+}
+.buy_sell .sub-container.active {
+  display: block;
+}
+.buy_sell .sub-container ul {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.buy_sell .sub-container ul:nth-child(3) {
+  border-bottom: 1px solid #101010;
+  padding: 0 0 10px;
+}
+.buy_sell .sub-container ul li {
+  display: inline-block;
+
+  vertical-align: middle;
+}
+.buy_sell .sub-container li.left {
+  width: 27%;
+  /* line-height: 42px; */
+  font-size: 12px;
+}
+.buy_sell .sub-container li.right {
+  width: 71%;
+  font-family: 'Roboto';
+  font-size: 15px;
+  text-align: right;
+  position: relative;
+  color: #fff;
+  /* font-size: 0; */
+}
+.buy_sell .sub-container li.right input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  text-align: right;
+  border: 1px solid #eee;
+}
+#buy_qty {
+  /* padding-right: 87px; */
+  /* width: 260px; */
+  width: 341px;;
+}
+.buy_sell .sub-container li.right input::placeholder {
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: #444;
+}
+.buy_sell .sub-container li.right .qty_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  font-size: 0;
+  margin-left: -4px;
+  vertical-align: top;
+}
+.buy_sell .sub-container li.right .qty_btn button {
+  width: 40px;
+  line-height: 38px;
+  background: #fff;
+  color: #131313;
+  border: 1px solid #eee;
+}
+.buy_sell .sub-container li.buy_percent {
+  margin-top: 5px;
+  font-size: 0;
+}
+.buy_sell .sub-container li.buy_percent button {
+  display: inline-block;
+  line-height: 38px;
+  background: #fff;
+  color: #212121;
+  font-size: 12px;
+  font-family: 'Roboto';
+  text-align: center;
+  width: calc((100% - 8px) / 5);
+  margin-right: 2px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+}
+.buy_sell .sub-container li.buy_percent button:nth-child(5) {
+  margin-right: 0;
+}
+.buy_sell .sub-container li.buy_percent button.on {
+  background: #ff6161;
+  color: #fff;
+  border: 1px solid #ff6161;
+}
+.buy_sell .sub-container.sell li.buy_percent button.on {
+  background: #578ef1;
+  color: #fff;
+  border: 1px solid #578ef1;
+}
+.market_container p.message {
+  margin: 53px 0 12px;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: right;
+}
+.buy_sell .buying {
+  display: inline-block;
+  width: 100%;
+  background: #ff6161;
+  font-size: 15px;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 500;
+}
+.buy_sell .sell .buying {
+  background: #578ef1;
+}
+/******************* e :market_container *******************/
+/************ s:coin_container***********/
+.coin_container .inner {
+  padding-bottom: 36px;
+}
+.coin_container .table_top {
+  padding: 12px 0 12px 10px;
+}
+.coin_container .table_top .coin_search {
+  width: 16.77vw;
+  height: 40px;
+  padding: 0 0 0 37px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: #fff url(../images/icon_search.png) no-repeat 5% 50%;
+  background-size: 12px 12px;
+}
+
+.coin_container .table_top input[type='text'] {
+  border: none;
+}
+.coin_container .table_top .coin_search::-webkit-input-placeholder {
+  color: #999;
+  font-size: 14px;
+}
+.coin_container .table_top .coin_search::-ms-input-placeholder {
+  color: #999;
+  font-size: 14px;
+}
+.coin_container .table_top .fav {
+  display: inline-block;
+  width: 25px;
+  /* width: 1.3vw; */
+  height: 40px;
+  text-align: right;
+  vertical-align: top;
+}
+.coin_container .table_top .fav button {
+  width: 15px;
+  height: 40px;
+  background: url(../images/icon_fav_off.png) no-repeat center;
+  outline: none;
+}
+.coin_container .table_top .fav button:hover {
+  background: url(../images/icon_fav_on.png) no-repeat center;
+}
+.table_box {
+  padding: 13px 20px 0 10px;
+}
+.coin_container .table_tablist {
+  content: '';
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #191826;
+}
+.coin_container .table_tablist li {
+  float: left;
+  width: calc(100% / 3);
+}
+.coin_container .table_tablist li a {
+  display: block;
+  line-height: 40px;
+  font-size: 15px;
+  text-align: center;
+}
+.coin_container .table_tablist li.on a {
+  color: #ffb200;
+  border-bottom: 4px solid #ffb200;
+}
+.coin_container .coin_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.coin_container .coin_table colgroup col:nth-child(4),
+.coin_container .coin_table colgroup col:nth-child(5) {
+  /* width: 77px; */
+  width: 4vw;
+}
+.coin_container .coin_table thead {
+  border-bottom: 1px solid #101010;
+}
+.coin_container .coin_table thead th {
+  font-size: 12px;
+  text-align: right;
+  color: #eeeeee;
+  cursor: pointer;
+}
+.coin_container .coin_table thead th:last-child {
+}
+.coin_container .coin_table thead th span {
+  display: block;
+  line-height: 32px;
+  font-size: 12px;
+  vertical-align: middle;
+  font-weight: 400;
+}
+.coin_container .coin_table thead span.order em {
+  vertical-align: middle;
+}
+.coin_container .coin_table thead th .arw {
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  vertical-align: middle;
+  width: 8px;
+  height: 12px;
+  background: url(../images/icon_arow_default.png) no-repeat;
+  background-size: cover;
+}
+.coin_container .coin_table thead th[data-sort='up'] .arw {
+  background-image: url(../images/icon_arow_up.png);
+}
+.coin_container .coin_table thead th[data-sort='down'] .arw {
+  background-image: url(../images/icon_arow_down.png);
+}
+.coin_container .coin_table thead th.coin {
+  text-align: left;
+  padding-left: 21px;
+  font-weight: 400;
+}
+.coin_container .coin_table tbody tr {
+  cursor: pointer;
+  color: #eee;
+}
+/* .coin_container .coin_table tbody tr:hover {
+  background: #eee;
+} */
+.coin_container .coin_table tbody td {
+  padding: 10px 0 5px;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #101010;
+  text-transform: uppercase;
+}
+.coin_container .coin_table tbody tr:last-child td {
+  border-bottom: none;
+}
+/* ******************* */
+.coin_container .coin_table tbody td.down {
+  color: #578ef1;
+}
+.coin_container .coin_table tbody td.up {
+  color: #ff6161;
+}
+.coin_container .coin_table tbody .icon_logo {
+  text-align: center;
+  width: 21px;
+  background: url(../images/icon_star_off.png) no-repeat center;
+}
+.coin_container .coin_table tbody .icon_logo:hover {
+  background: url(../images/icon_star_on.png) no-repeat center;
+}
+.coin_container .coin_table tbody .icon_logo img {
+  width: 12px;
+}
+.coin_container .coin_table tbody td.tit_w p {
+  text-align: left;
+}
+.coin_container .coin_table tbody td p.tit {
+  font-family: 'Noto Sans KR';
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+}
+.coin_container .coin_table tbody td p.tit_en {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+}
+
+.coin_container .coin_table tbody td.price {
+  font-size: 13px;
+}
+.coin_container .coin_table tbody td.price b {
+  display: none;
+}
+.coin_container .coin_table tbody td.gap {
+  font-size: 13px;
+}
+.coin_container .coin_table tbody td.payment {
+  font-size: 12px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.coin_container .coin_table tbody td.payment small {
+}

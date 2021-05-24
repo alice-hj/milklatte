@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘은</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/font.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css"> -->
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <header class="clear">
+    <div class="fl logo"><h1><span class="hide">오늘은</span></h1></div>
+    <div class="fr utill">
+      <ul>
+        <li class="grn manager">관리자</li>
+        <li class="level">level 2</li>
+        <li class="name">홍길동님</li>
+        <li class="loginout"><a href="#">로그아웃</a></li>
+      </ul>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li  class="active">
+        <button onclick="location.href='member_admin.html' ">회원관리</button>
+        <ul>
+          <li><a href="member_detail.html">-고객</a></li>
+          <li><a href="#">-사장님</a></li>
+        </ul>
+      </li>
+      <li>
+        <button onclick="location.href='store_admin.html' ">매장관리</button>
+        <ul>
+          <li><a href="store_detail.html">-매장관리</a></li>
+          <li><a href="storeinfo_detail.html">-매장정보 신고</a></li>
+          <li><a href="store_review.html">-후기</a></li>
+          <li><a href="store_review_detail.html">-후기신고</a></li>
+          <li><a href="#">-키워드 관리</a></li>
+        </ul>
+      </li>
+      <li> 
+        <button>운영관리</button>
+        <ul>
+          <li><a href="manageinquiry_admin.html">-고객문의</a></li>
+          <li><a href="#">-FAQ</a></li>
+          <li><a href="#">-관리자 관리</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="container-inner">
+    <div class="search-container">
+      <span class="select">
+        <select>
+          <option>선택</option>
+          <option>아이디</option>
+          <option>-</option>
+          <option>-</option>
+          <option>-</option>
+        </select>
+      </span>
+      <div>
+      <input type="text" id="search"placeholder="검색어를 입력해주세요.">
+      <input type="button">
+    </div>
+    </div>
+    <div class="check-container">
+      <div class="status-type">
+        <span class="title">상태</span>
+        <label>전체
+          <input type="radio" name="radio" >
+          <span class="checkmark"></span>
+        </label>
+        <label>정상
+          <input type="radio" name="radio" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label>차단
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="date-type">
+        <span class="title">가입일</span>
+        <div class="ym">
+          <span class="select">
+            <select>
+              <option>선택</option>
+              <option>2019년</option>
+              <option>2020년</option>
+              <option>2021년</option>
+              <option>2022년</option>
+            </select>
+          </span>
+          <span class="select">
+            <select>
+              <option>선택</option>
+              <option>1월</option>
+              <option>2월</option>
+              <option>3월</option>
+              <option>4월</option>
+            </select>
+          </span>
+        </div>
+        <div class="calendar">
+          <form>
+            <input type="date" value="">
+            <label for="submit" class="hide"></label>
+          </form>
+          <small>~</small>
+          <form>
+            <input type="date" value="">
+            <label for="submit" class="hide"></label>
+          </form>
+        </div>
+      </div>
+      <div class="filterbtn">
+        <button class="grnback">필터적용</button>
+        <button>필터초기화</button>
+      </div>
+     
+    </div>
+    <p class="total">전체<em>(1,234,567)</em></p>
+    <table>
+      <thead>
+        <tr>
+          <th>회원가입</th>
+          <th>상태</th>
+          <th>아이디(이메일)</th>
+          <th>이름</th>
+          <th>휴대폰번호</th>
+          <th>가입일</th>
+          <th>차단</th>
+        </tr>
+      </thead>
+       <tbody>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>abcd123@ohneulen.com</td>
+        <td>홍길동</td>
+        <td>01012345678</td>
+        <td>2021.01.01</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      <tr>
+        <td>C20.0522.234</td>
+        <td>정상</td>
+        <td>#{이메일}</td>
+        <td>#{본인이름인증}</td>
+        <td>#{본인인증휴대폰번호}</td>
+        <td>#{yyyy.mm.dd}</td>
+        <td><button>해제</button></td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="page-btn">
+      <a href="#" class="double-arrow"><span></span></a>
+      <!-- <a href="#" class="arrow-lf">❮</a> -->
+      <a href="#" class="arrow-lf"><span></span></a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">7</a>
+      <a href="#">8</a>
+      <a href="#">9</a>
+      <a href="#">10</a>
+      <a href="#" class="arrow-rg"><span></span></a>
+      <!-- <a href="#" class="arrow-rg">❯</a> -->
+      <a href="#" class="double-arrow "><span></span></a>
+      <!-- <a href="#" class="double-arrow "><i  class="xi-angle-right"></i>&raquo;</a> -->
+    </div>
+  </div>
+</body>
+</html>

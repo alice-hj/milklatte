@@ -44,7 +44,7 @@
 .work .txt{width: 45%;position: relative;}
 .work .work_01 .img{ background-image: url(../images/evnt29467.png);}
 .work .work_02 .img{ background-image: url(../images/evnt1.png);}
-.work .work_03 .img{ background-image: url(../images/evnt29727.png);}
+.work .work_03 .img{ background-image: url(../images/today_img.png);}
 .work .work_04 .img{ background-image: url(../images/ori_borntobit.png);}
 
 .work .txt dl{position: absolute; bottom: 140px;}
@@ -111,7 +111,7 @@ rect{width: 100%; height: 100%;}
 .work2 .mini li a{display: block; height: 17vw; background:no-repeat center/contain;}
 .work2 .mini li p{font-size: 17px;line-height: 62px;color:#fefcfc;}
 .work2 .mini .work2_01 a{background-image: url(../images/evnt29662.png);}
-.work2 .mini .work2_02 a{background-image: url(../images/slide.png);}
+.work2 .mini .work2_02 a{background-image: url(../images/evnt29727.png);}
 .work2 .mini .work2_03 a{background-image: url(../images/howru2.png);}
 .work2 .mini .work2_04 a{background-image: url(../images/login.png);}
 /* ---------------------------------------

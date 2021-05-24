@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘은</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/font.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css"> -->
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/storeinfo_detail.css">
+  <link rel="stylesheet" href="css/detail_common.css">
+  <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+  <header class="clear">
+    <div class="fl logo"><h1><span class="hide">오늘은</span></h1></div>
+    <div class="fr utill">
+      <ul>
+        <li class="grn manager">관리자</li>
+        <li class="level">level 2</li>
+        <li class="name">홍길동님</li>
+        <li class="loginout"><a href="#">로그아웃</a></li>
+      </ul>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <button onclick="location.href='member_admin.html' ">회원관리</button>
+        <ul>
+          <li><a href="member_detail.html">-고객</a></li>
+          <li><a href="#">-사장님</a></li>
+        </ul>
+      </li>
+      <li>
+        <button onclick="location.href='store_admin.html' ">매장관리</button>
+        <ul>
+          <li><a href="store_detail.html">-매장관리</a></li>
+          <li class="active"><a href="storeinfo_detail.html">-매장정보 신고</a></li>
+          <li><a href="store_review.html">-후기</a></li>
+          <li><a href="store_review_detail.html">-후기신고</a></li>
+          <li><a href="#">-키워드 관리</a></li>
+        </ul>
+      </li>
+      <li> 
+        <button>운영관리</button>
+        <ul>
+          <li><a href="manageinquiry_admin.html">-고객문의</a></li>
+          <li><a href="#">-FAQ</a></li>
+          <li><a href="#">-관리자 관리</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="container-top clear">
+      <h2>매장정보신고 상세</h2>
+      <div class="savebtn">
+        <button>처리완료</button>
+    </div>
+    </div>
+    <div class="container-inner">
+      <div class="info-container">
+        <p>신고 정보</p>
+        <dl>
+          <dt>상태</dt>
+          <dd>미처리</dd>
+        </dl>
+        <dl>
+            <dt>상호명</dt>
+            <dd><a href="#">오늘의 족발</a></dd>
+        </dl>
+        <dl>
+            <dt>이름</dt>
+            <dd><a href="#">홍길동</a></dd>
+        </dl>
+        <dl>
+            <dt>신고일</dt>
+            <dd>2020-01-06</dd>
+        </dl>
+        </dl>
+      </div>
+      <div class="contents-container">
+        <p>신고 내용</p>
+        <dl>
+          <dt>유형</dt>
+          <dd>상호명 변경</dd>
+        </dl>
+        <dl>
+          <dt>내용</dt>
+          <dd>여기 이름 오늘은 족발에서 오늘은 족발&보쌈으로 바뀌어 있었어요.</dd>
+        </dl>
+        <dl>
+          <dt>답변</dt>
+          <dd style="width:94.9%;">      
+            <form>
+            <textarea name="memo" >업체 확인 전화 후 매장 정보 변경 처리했습니다. 
+            </textarea>
+            <div class="info-below clear">
+              <span>관리자명: 김철수</span>
+              <em>0/5000자</em>
+            </div>
+            </form>
+        </dd>
+        </dl>
+      </div>
+    </div>
+
+</body>
+</html>

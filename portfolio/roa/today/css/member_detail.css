@@ -1,0 +1,57 @@
+.info-container > div {
+  display: inline-block;
+  vertical-align: top;
+}
+.member-img {
+  margin-right: 20px;
+}
+.member-img p {
+  padding: 8px 0 0;
+  text-align: center;
+  font-size: 18px;
+  color: #383838;
+}
+.member-info {
+  padding: 17px 20px 20px;
+  border: 1px solid #ebebeb;
+}
+.member-info ul:last-of-type {
+  margin: 17px 0 30px;
+}
+.member-info ul {
+  font-size: 0;
+}
+.member-info li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.member-info li:last-child {
+  margin: 0;
+}
+.member-info li label {
+  display: block;
+  padding: 0 0 6px;
+  color: #777777;
+  font-size: 15px;
+}
+.member-info li input[type='text'] {
+  padding: 0 10px;
+  width: 350px;
+  height: 32px;
+  background: #ebebeb;
+  border: 1px solid #d7d7d7;
+}
+.member-info li input[type='text']::placeholder {
+  color: #777777;
+  font-size: 14px;
+}
+.pwchange {
+  width: 165px;
+  height: 40px;
+  border: 1px solid #00ca62;
+  background: #fff;
+  font-size: 14px;
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  color: #00ca62;
+}

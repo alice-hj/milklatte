@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>TIP TOKEN</title>
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="fullpage.css" />
+        <link rel="stylesheet" type="text/css" href="examples.css" />
+        <link rel="stylesheet" href="css/aos.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div class="container" id="fullpage">
+            <div class="main1 video-box section" id="section0" >
+                <div class="videoWrapper" style=" background: rgba(132, 64, 255, 0.1);">
+                    <div class="inner main1-conts-box">
+                        <p class="lang-select">
+                            <a href="#"class="en-Ver">EN <em></em></a>
+                        </p>
+                        <div class="txt-box">
+                            <div class="typing-txt"> 
+                                <ul>
+                                    <li>TECHNOLOGY</li>
+                                    <li>INNOVATION</li>
+                                    <li>PROJECT</li>
+                                </ul>
+                            </div> 
+                            <div class="typing">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div><!-- //txt-box -->
+                        <div class="group_btn">
+                            <div type="button" class="btn_play tracking-in-expand" onclick="window.open('https://youtu.be/pNk8qv1R8T0')">
+                                <img src="img/btn_play_icon.png" alt="재생버튼" class="play-circle">
+                                <span class="play-text">Play</span>
+                            </div>
+                        </div>
+                        <div class="only_mb arw_w">
+                            <img src="img/icon_scroll_arw.png" alt="">
+                            <img src="img/icon_scroll_arw.png" alt="">
+                        </div>
+                    </div><!-- //main1-conts-box -->
+                    <div id="tiptokenPlayer"></div><!-- //iframe-->
+                    
+                </div><!-- //videoWrapper -->
+            </div><!-- //main1 -->
+
+            <!-- <div class="bg-gd"> -->
+                <!-- <img src="img/bg_gd_deco_img.png" alt="" class="bg-gd-deco"> -->
+                <div class="main2 section" id="section0">
+                    <div class="inner">
+                        <div class="main2-wrap">
+                            <p class="main2-title"><em >새로운 표준</em>을 <em>제시</em>하다</p>
+                            <!-- <p class="main2-title" data-aos="fade-right" data-aos-duration="800"><em>새로운 표준</em>을 <em>제시</em>하다</p> -->
+                            <div class="main2-info">
+                                <p>인공지능이라고 추천을 받아도 제가 좋아하는 게 아니던데요?</p>
+                                <p>왜 검색하는 사이트마다 매장 정보가 제각각일까요?</p>
+                                <p>어떤 상품이 누구에게 잘 팔리는 걸까요?</p>
+                                <p>매장 관리를 언제 어디서나 손쉽게 할 수 없을까요?</p>
+                                <p class="after_dot">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </p>
+                                <p class="last">표준화되어 있지 않아 관리하기 어려운 생태계로<br>불편함을 겪는 소비자와 사업자를 위해 시작합니다.</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <img src="img/web_img.gif" class="img-cus" alt="pc-img">
+                            <!-- <img src="img/pc.png" class="img-cus img-bak" alt="pc-img"> -->
+                        </div>
+                    </div>
+                </div><!-- //main2 -->
+                <div class="main3 section" id="section1">
+                    <div class="inner">
+                        <div class ="main3-title-container">
+                            <p class="main3-title" >
+                                <em>다양한 비지니스</em>를 통해
+                                <em>기술 혁신</em>을 <em>이루어</em>냅니다
+                            </p>
+                            <span class="btn-wp2"><a href="#">White paper <em></em></a></span>
+                        </div>
+                        <ul class="main3-info-w clearfix">
+                            <li class="fl_right">
+                                <p class="tit_border"><span>초개인화 인공지능 추천 서비스</span></p>
+                                <div class="txt">
+                                    소비자의 취향부터 결제 내역, 소비 패턴 등 인공신경망(Deep Leauning)알고리즘으로
+                                    분석합니다.<br>계산 적합성, 유효성, 유사성 등의 요소들로 소비자에게 가장 최적화된 추천을 제공함으로써
+                                    음식, 영화, 음악, 전시회, 여행 등 초개인화 라이프스타일 케어를 목표로 세상을 연결합니다.
+                                </div>
+                            </li>
+                            <li class="fl_left" >
+                                <p class="tit_border"><span>자영업 · 소상공인 표준화 플랫폼</span></p>
+                                <div class="txt">
+                                        POS와 플랫폼을 연동하여 매장부터 상품, 방문 고객까지 통합, 체계적으로
+                                        관리할 수 있는 브랜딩 플랫폼을 제공합니다.<br/>
+                                        이로써 고객은 정말 필요한 정보를 실시간으로 알 수 있고 매장은
+                                        더욱 체계적이고 효율적으로 운영할 수 있는 생태계가 만들어집니다.
+                                        향후 ERP · BA · 유통 관리까지 확장할 수 있는 플랫폼 생태계의 기반이 됩니다.
+                                </div>
+                            </li>
+                            <li class="fl_right">
+                                <p class="tit_border"><span>포스 비즈니스케어(PBC) 서비스</span></p>
+                                <div class="txt">
+                                    Pos Business Care(PBC)는 신용카드사 및 오픈 뱅킹과 연동하여 기존 POS 기능에 확장성,
+                                    유동성을 더한 멀티 플랫폼 매장 관리 서비스입니다.<br>
+                                    손님 유형 분석, 상품 상세 분석, 상점 유입 분석, Adviser 기능 등 자영업자와 소상공인들에게
+                                    가장 필요한 도구이자 신뢰도 높은 마케터, 비즈니스 매니저가 됩니다.
+                                </div>
+                            </li>
+                        </ul><!-- //main3-info-w -->
+                        <!-- <div class="btn-wp">
+                            <a href="https://www.notion.so/TIP-TOKEN-c049df0154c2405d91d15b32a13d7deb" target="_blank">White paper <em></em>
+                                <img src="img/btn_wpaper.png" alt="White paper">
+                            </a>
+                        </div> -->
+                </div><!-- //inner-->
+                </div><!-- //main3 -->
+
+                <div class="main4 section" id="section2">
+                    <div class="inner df">
+                        <div class="main4-wrap">
+                            <div class="btn-bg b-bg1"><p>오픈뱅킹 X 인공지능 초개인화 추천 서비스</p></div>
+                            <div class="btn-bg b-bg2"><p>POS 연동 실시간 표준화 플랫폼</p></div>
+                            <div class="btn-bg b-bg3"><p>ERP X BA 기능 추가 지원</p></div>
+                            <div class="btn-bg b-bg4"><p>자영업 · 소상공인 데이터 통합 표준화</p></div>
+                        </div><!-- //main4-wrap-->
+               
+                    <div class="img-txt">
+                        <div class="text-center">
+                            <img src="img/phone.png" class="img-cus3 only_pc"  alt="휴대폰이미지">
+                            <img src="img/mb_phone.png" class="img-cus3 only_mb"  alt="휴대폰이미지">
+                            <img src="img/mb_phone_txt.png" class="img-cus3-txt only_mb"  alt="TIPTOKEN">
+                        </div>
+                        <div class="box text-focus-in1"><p>인공지능</p></div>
+                        <div class="box text-focus-in3"><p>블록체인</p></div>
+                        <div class="box text-focus-in4"><p>혁신의 기준이 되다</p></div>
+                        <div class="box text-focus-in2"><p>빅데이터</p></div>
+                    </div><!-- //img-txt-->
+                </div><!-- //inner-->
+                </div><!-- //main4-->
+           <!-- </div> //bg-gd-->
+
+            <div class="main5 section" id="section3">
+                <div class="inner df">
+                <div class="main5-wrap info_txt">
+                    <p class="main5-title consumer">소비자</p>
+                    <div class="main5-info">
+                        <p>TIP은 플랫폼 내 핵심 경제 요소로
+                            암호화폐 결제부터 쿠폰, 마일리지, 적립, 할인 등
+                            다양한 비즈니스에서 활용됩니다.<br><br>
+                            블록체인 기술의 투명성과 보안성, 안전성을
+                            소비자와 업체간 1:1 연결에 적용하면서
+                            필연적으로 발생하는 중개 비용을 절감하고
+                            블록체인 금융의 표준화를 선도합니다.<br><br>
+                            파편화 되어있는 다양한 비즈니스 데이터
+                            (포인트, 쿠폰, 마일리지, 적립, 할인 등)를 통합하여
+                            어디서나 사용할 수 있는 인프라를 조성하고
+                            실물 경제로의 진출이 가능해집니다.<br><br>
+                            지금까지 볼 수 없었던 새로운 경제 생태계가
+                            TIP을 통해 실현됩니다.</p>
+                    </div>
+                    <p class="main5-title business only_pc">사업자<sub>(Comming soon)</sub></p>
+                </div>
+                <div class="main5-wrap info_img">
+                    <div class="cloud cl-left-up"><p>프리미엄<br/>월 정기 구독<br/>서비스</p></div>
+                    <div class="cloud cl-right-up"><p>서비스 참여<br/>리워드 지급</p></div>
+                    <div class="cloud cl-left-down"><p>암호화폐<br/>실시간 결제<br/><sub>*프로모션 포함</sub></p></div>
+                    <div class="cloud cl-right-down"><p>초개인화<br/>데이터 기반<br/>인공지능 추천</p></div>
+                    <img src="img/cell_2.png" class="cell_2_img" alt="cell_2">
+                </div>
+                <p class="only_mb business_tit">사업자<sub>(Comming soon)</sub></p>
+            </div>
+            </div><!-- //main5-->
+
+            <div class="main5_add section" id="section4">
+                <p class="team_title">TIP TOKEN TEAM</p>
+                <ul class="team_list">
+                    <li>
+                        <img src="img/profile_01.png" alt="프로필이미지">
+                        <strong>CEO</strong>
+                            <p>Kim Ju Young</p>
+                            <div>
+                            <span>Goodchoice inc. CEO</span>
+                            <span>PRINT-F Cofounder</span>
+                            <span>KYSIS Technology Advisor</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/profile_02.png" alt="프로필이미지">
+                        <strong>CTO</strong>
+                            <p>Bea Sung Ryeol</p>
+                            <div>
+                            <span>Goodchoice CTO</span>
+                            <span>Amazon Nineple Korea CTO</span>
+                            <span>IDEA interactive inc. <em>Development manager</em></span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/profile_03.png" alt="프로필이미지">
+                        <strong>Planning Leader</strong>
+                            <p>Moon Ye Ji</p>
+                            <div>
+                            <span>Rencar Planning Leader</span>
+                            <span>Blex Co., Ltd DApp Leader</span>
+                            <span>Needidsoft inc. Planning Manger</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/profile_04.png" alt="프로필이미지">
+                        <strong>UI/UX Leader</strong>
+                            <p>Ryu Da Eun</p>
+                            <div>
+                            <span>Namee inc. Design Leader</span>
+                            <span>UIUX Design Freelancer</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/profile_05.png" alt="프로필이미지">
+                        <strong>Developer</strong>
+                            <p>Lee Dong Uk</p>
+                            <div>
+                            <span>Hyperledger Fabric DApp development</span>
+                            <span>IITP Blockchain Engineer Institute</span>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- //main5_add-->
+
+            
+            <div class="main6 section" id="section5">
+                <div class="main6-wrap only_pc">
+                    <div class="inner">
+                        <div class="tit_w">
+                            <span class="main6-title">ROAD MAP</span>
+                            <span class="btn-notice">
+                                <a href="https://www.notion.so/NOTICE-c1c2d402eb894364990da0f10a50e526" 
+                                target="_blank">Notice <em></em></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="main6-info">
+                        <svg wiph="2000px" height="1400px" viewBox="-1421 -325 2842 650">
+                            <path id="curve" d="M-1423,19 Q-757,309.5 0,0 C325.6428524036187,-133.13931680174372 683,-359 1445,-351"></path>
+
+                            <g>
+                                <circle id="meet" r="3" cx="-1150" cy="112"></circle>
+                                <text x="-1150" y="170" class="colors">법인 설립</text>
+                                <text x="-1150" y="201" class="colors">사업 준비</text>
+                                <text x="-1150" y="85" class="y-color">2020'1Q</text>
+                            </g>
+                            
+                            <g>
+                                <circle id="meet" r="3" cx="-850" cy="155"></circle>
+                                <text x="-850" y="200" class="colors">소비자 서비스</text>
+                                <text x="-850" y="230" class="colors">Web/App 개발</text>
+                                <text x="-850" y="125" class="y-color">2020'2Q</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="3" cx="-500" cy="140"></circle>
+                                <text x="-500" y="80" class="colors">베타 출시</text>
+                                <text x="-500" y="110" class="colors">제휴 영업</text>
+                                <text x="-500" y="190" class="y-color">2020'3Q</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="3" cx="-200" cy="72" class="dot-b"></circle>
+                                <text x="-200" y="110" class="colors">소비자 서비스 정식 출시</text>
+                                <text x="-200" y="140" class="colors">사업자 서비스 Web/App 개발</text>
+                                <text x="-200" y="25" class="y-color">2020'4Q</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="3" cx="85" cy="-37"></circle>
+                                <text x="85" y="5" class="colors">TIP AI 기술 개발</text>
+                                <text x="85" y="35" class="colors">POS 서비스 개발</text>
+                                <text x="85" y="-95" class="y-color">2021'1Q</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="3" cx="350" cy="-152"></circle>
+                                <text x="350" y="-110" class="colors">TIP AI 기술 적용(소비자)</text>
+                                <text x="350" y="-80" class="colors">POS 서비스 베타 출시</text>
+                                <text x="350" y="-200" class="y-color">2021'2Q</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="3" cx="650" cy="-256"></circle>
+                                <text x="650" y="-220" class="colors">POS 서비스 정식 출시</text>
+                                <text x="650" y="-185" class="colors">PCB 서비스 개발</text>
+                                <text x="650" y="-295" class="y-color">2021'3Q</text>
+                            </g>
+                            <g>                            
+                                <circle id="meet" r="3" cx="950" cy="-320"></circle>
+                                <text x="950" y="-285" class="colors">PCB 서비스 베타 출시</text>
+                                <text x="950" y="-250" class="colors">POSXERP 서비스 개발</text>
+                                <text x="950" y="-345" class="y-color">2021'4Q</text>
+                            </g>
+                        </svg>
+                          
+                    </div>
+                    <footer>
+                        <div class="inner clearfix">
+                            <div class="left-wrap">
+                                <a href="mailto:help@tiptoken.io" class="mail">help@tiptoken.io</a>
+                                <p class="copyright">Copyright © 2020 TIP TOKEN All rights reserved.</p>
+                            </div><!-- //left-wrap-->
+                            <ul class="right-wrap">
+                                <li>
+                                    <a href="https://open.kakao.com/o/grmhhdVb" target="_blank">
+                                        <img src="img/kakao_logo.png" alt="kakao_logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://t.me/tiptoken" target="_blank">
+                                        <img src="img/telegram_logo.png" alt="telegram_logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/TechnologyInn12" target="_blank">
+                                        <img src="img/twitter_logo.png" alt="twitter_logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/tip__token/" target="_blank">
+                                        <img src="img/insta_logo.png" alt="insta_logo">
+                                    </a>
+                                </li>
+                            </ul><!-- //right-wrap -->
+                        </div>
+                    </footer>
+                </div>
+                <div class="main6-wrap only_mb">
+                    <div class="inner">
+                        <div class="tit_w">
+                            <span class="main6-title">ROAD MAP</span>
+                            <span class="btn-notice">
+                                <a href="https://www.notion.so/NOTICE-c1c2d402eb894364990da0f10a50e526" 
+                                target="_blank"><img src="img/btn_notice.png" alt="notice"></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="main6-info">
+                        <svg viewBox="-250 -500 900 900">
+                            <g>
+                                <path d="M-13,-899 C-540,-65 500,-22 589,1608"></path>
+                                <circle id="meet" r="7" cx="-160" cy="-450"></circle>
+                                <text x="-140" y="-440" class="y-color">2020'1Q</text>
+                                <text x="-10" y="-440" class="colors">법인 설립 사업 준비</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="7" cx="-130" cy="-280"></circle>
+                                <text x="-110" y="-270" class="y-color">2020'2Q</text>
+                                <text x="20" y="-270" class="colors">소비자 서비스 Web/App 개발</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="7" cx="-40" cy="-100"></circle>
+                                <text x="-10" y="-100" class="y-color">2020'3Q</text>
+                                <text x="125" y="-100" class="colors">베타 출시 제휴 영업</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="7" cx="80" cy="90" class="dot-b"></circle>
+                                <text x="100" y="100" class="y-color">2020'4Q</text>
+                                <text x="240" y="100" class="colors">소비자 서비스 정식 출시</text>
+                                <text x="240" y="140" class="colors">사업자 서비스 Web/App 개발</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="7" cx="180" cy="250"></circle>
+                                <text x="195" y="260" class="y-color">2021'1Q</text>
+                                <text x="320" y="260" class="colors">TIP AI 기술 개발</text>
+                                <text x="320" y="300" class="colors">POS 서비스 개발</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="7" cx="266" cy="400"></circle>
+                                <text x="290" y="408" class="y-color">2021'2Q</text>
+                                <text x="-55" y="406" class="colors">TIP AI 기술 적용(소비자)</text>
+                                <text x="-25" y="450" class="colors">POS 서비스 베타 출시</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="7" cx="345" cy="560"></circle>
+                                <text x="365" y="570" class="y-color">2021'3Q</text>
+                                <text x="50" y="567" class="colors">POS 서비스 정식 출시</text>
+                                <text x="120" y="610" class="colors">PCB 서비스 개발</text>
+                            </g>
+                            <g>
+                                <circle id="meet" r="7" cx="410" cy="710"></circle>
+                                <text x="430" y="717" class="y-color">2021'4Q</text>
+                                <text x="120" y="717" class="colors">PCB 서비스 베타 출시</text>
+                                <text x="120" y="760" class="colors">POSXERP 서비스 개발</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>            
+            <!-- <footer>
+                <div class="inner clearfix">
+                    <div class="left-wrap">
+                        <a href="mailto:help@tiptoken.io" class="mail">help@tiptoken.io</a>
+                        <p class="copyright">Copyright © 2020 TIP TOKEN All rights reserved.</p>
+                    </div>
+                    <ul class="right-wrap">
+                        <li>
+                            <a href="https://open.kakao.com/o/grmhhdVb" target="_blank">
+                                <img src="img/kakao_logo.png" alt="kakao_logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/tiptoken" target="_blank">
+                                <img src="img/telegram_logo.png" alt="telegram_logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/TechnologyInn12" target="_blank">
+                                <img src="img/twitter_logo.png" alt="twitter_logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/tip__token/" target="_blank">
+                                <img src="img/insta_logo.png" alt="insta_logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer> -->
+        </div><!-- //container-->
+
+        
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- <script src="js/bootstrap.min.js"></script>         -->
+        <script type="text/javascript" src="fullpage.js"></script>
+        <script type="text/javascript" src="examples.js"></script>
+        <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            lazyLoad: true
+        });
+        </script>
+    </body>
+</html> 
+

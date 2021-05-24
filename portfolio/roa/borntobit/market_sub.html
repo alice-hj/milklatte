@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/common_sub.css" />
+    <link rel="stylesheet" href="css/market_sub.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>DOR</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerIn">
+        <h1 class="logo">
+          <a href="index.html"> </a>
+        </h1>
+        <nav>
+          <ul class="clear">
+            <li><a href="" class="on">마켓</a></li>
+            <li><a href="">투자</a></li>
+            <li><a href="">커뮤니티</a></li>
+            <li><a href="">자산관리</a></li>
+            <li><a href="">고객지원</a></li>
+          </ul>
+        </nav>
+        <div class="lang_box">
+          <div class="lang_select">
+            <p class="flag_box">
+              <img src="images/icon_kr_flag_rectangle.png" alt="한국국기" class="lang_flag" />
+            </p>
+            <p class="txt_box"><span>￦ KRW</span></p>
+          </div>
+        </div>
+        <ul class="utill clear">
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+        </ul>
+        <button class="menu_btn"></button>
+      </div>
+    </header>
+
+    <section>
+      <div class="H-IEO">
+        <div class="mti">
+          <div class="inner clearfix">
+            <div class="fl left">
+              <img src="images/dor_img_blk.png" alt="dor이미지" />
+            </div>
+            <div class="right">
+              <h1 class="en">DOR</h1>
+              <p>영상 크리에이터 등을 글로벌 시청자와 연결하는 플랫폼</p>
+              <div class="info1">
+                <div>
+                  <p class="en">Price</p>
+                  <span class="en">1 LOA = 10 KRW</span>
+                </div>
+                <div>
+                  <p class="en">Session Supply</p>
+                  <span class="en">2,000,000 LOA</span>
+                </div>
+                <div>
+                  <p class="en">Allocation per Daily Supply</p>
+                  <span class="en">1,000 LOA / Days</span>
+                </div>
+              </div>
+              <div class="info2">
+                <ul>
+                  <li class="icon-web">
+                    <a href="#none" target="_blank">Web Site</a>
+                  </li>
+                  <li class="icon-wp"><a href="#none" target="_blank">White Paper</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner hieo_conts">
+          <div class="mti-tap">
+            <ul>
+              <li class="active en" data-id="ieo-list1">H-IEO</li>
+              <li class="en" data-id="ieo-list2">H-IEO Time Line</li>
+              <li class="last">남은 시간: <span class="en" id="txtRemainTime">--:--:--</span></li>
+            </ul>
+          </div>
+          <div id="ieo-list1" class="ieo-container active">
+            <div class="ieo-contents">
+              <div class="left fl">
+                <div class="top">
+                  <img src="images/bg_eve.png" alt="" />
+                </div>
+                <p class="ieo-noti">※ 본 이미지는 H-IEO 공모시스템에 대해 이해를 돕기 위한 이미지로, 투자 권유를 위한것이 아닙니다.</p>
+                <div class="btm" style="display: none">
+                  <ul class="panel-tabs">
+                    <li class="fl"><a href="#ieo-tap01">신청내역</a></li>
+                    <li class="fl active"><a href="#ieo-tap02">체결내역</a></li>
+                  </ul>
+                  <div class="panel-body">
+                    <div class="tab-content">
+                      <div id="ieo-tap01" class="tab-pane"></div>
+                      <div id="ieo-tap02" class="tab-pane active">
+                        <div class="container table-responsive">
+                          <table>
+                            <colgroup>
+                              <col width="" />
+                              <col width="" />
+                              <col width="" />
+                              <col width="" />
+                              <col width="" />
+                              <col width="" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th>No.</th>
+                                <th>체결일자</th>
+                                <th>체결가(KRW)</th>
+                                <th>체결량(EVE)</th>
+                                <th>수수료</th>
+                                <th>체결금액(KRW)</th>
+                                <th>비고</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>20/04/09</td>
+                                <td>50.00</td>
+                                <td>1,620.00</td>
+                                <td>1,620.00</td>
+                                <td>1,620.00</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>20/04/09</td>
+                                <td>50.00</td>
+                                <td>1,620.00</td>
+                                <td>1,620.00</td>
+                                <td>1,620.00</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>20/04/09</td>
+                                <td>50.00</td>
+                                <td>1,620.00</td>
+                                <td>1,620.00</td>
+                                <td>1,620.00</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>20/04/09</td>
+                                <td>50.00</td>
+                                <td>1,620.00</td>
+                                <td>1,620.00</td>
+                                <td>1,620.00</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btm2">
+                  <ul class="panel-tabs">
+                    <li class="fl active"><a href="#ieo-tap03 ">현재 입찰 수량(예상치)</a></li>
+                    <li class="fl"><a href="#ieo-tap04 ">신청내역</a></li>
+                  </ul>
+                  <div class="panel-body">
+                    <div id="ieo-tap03" class="tab-pane active">
+                      <div class="bar-container">
+                        <div class="bar">
+                          <em></em>
+                          <p>10,000/1,200,000</p>
+                        </div>
+                      </div>
+                      <ul class="bar_btm">
+                        <li>
+                          <p>진행일수</p>
+                          <span>22/90</span>
+                        </li>
+                        <li>
+                          <p>전일 판매가격</p>
+                          <span>1,020 KRW</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div id="ieo-tap04" class="tab-pane">
+                      <div class="panel-list">
+                        <ul>
+                          <li>10-31 17:05:21</li>
+                          <li>5,000</li>
+                          <li><button class="cancel">취소</button></li>
+                        </ul>
+                        <ul>
+                          <li>10-31 17:05:21</li>
+                          <li>5,000</li>
+                          <li><button class="cancel">취소</button></li>
+                        </ul>
+                        <ul>
+                          <li>10-31 17:05:21</li>
+                          <li>5,000</li>
+                          <li><button class="cancel">취소</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <ul class="ieo-tabmenu">
+                  <li class="active fl" data-id="bid-history1">입찰</li>
+                  <li class="fl" data-id="bid-history2">입찰 내역</li>
+                </ul>
+                <div id="bid-history1" class="info1 ieo-tab-container active">
+                  <form method="POST" accept-charset="UTF-8" role="form" class="mws-form ng-pristine ng-valid" id="save_purchase" enctype="multipart/form-data">
+                    <div class="valueInfo clear">
+                      <div class="left-blk">금일 공모가</div>
+                      <p class="fr en"><span>1,224 </span> KRW</p>
+                    </div>
+                    <div class="valueInfo clear">
+                      <div class="left-blk">금일 공모수량</div>
+                      <p class="fr en"><span> 1,000 </span> KRW</p>
+                    </div>
+                    <div class="valueInfo clear">
+                      <div class="left-blk">금일 공모금액</div>
+                      <p class="fr en"><span> 10,000 </span>KRW</p>
+                    </div>
+                    <div class="valueInfo clear">
+                      <div class="left-blk">금일 입찰금액</div>
+                      <p class="fr en"><span>215,622,931</span>KRW</p>
+                    </div>
+                    <div class="valueInfo clear">
+                      <div class="left-blk">금일 공모금액 대비 입찰금액</div>
+                      <p class="fr en red"><span>17,668</span>%</p>
+                    </div>
+                    <hr />
+                    <div class="ieo-login-box">
+                      <h2>거래를 시작하세요</h2>
+                      <p>최고의 글로벌 암호화폐 거래소 BornToBit</p>
+                      <div class="btn-set">
+                        <a href="#none" class="logged-in">로그인</a>
+                        <a href="#none" class="create-account">회원가입</a>
+                      </div>
+                    </div>
+                    <div class="value-wrap" style="display: none">
+                      <div class="valueInfo clear">
+                        <div class="left-blk">입찰 가능금액</div>
+                        <p class="fr en"><span>214,389,609,988 </span>KRW</p>
+                      </div>
+                      <div class="cry-payment">
+                        <div class="left-blk">입찰 신청금액</div>
+                        <input id="paymentInput" class="amt-holder numeric_only input ng-pristine ng-untouched ng-valid" placeholder="0 KRW" name="payment" type="text" value="" />
+                        <!-- <div class="right-blk payment_coin en">KRW</div> -->
+                      </div>
+                      <div class="payment-wrap">
+                        <div class="paymentSelector fr">
+                          <button>25%</button>
+                          <button>50%</button>
+                          <button>75%</button>
+                          <button>100%</button>
+                        </div>
+                      </div>
+                      <div class="checkBox">
+                        <input class="term" id="termCondition" name="term_condition" type="checkbox" value="yes" />
+                        <label class="chk-agree" for="termCondition"> <span></span><a href="#none" target="_blank">토큰 구매 조건</a>에 동의 합니다. </label>
+                        <!-- <div class="error-message help-inline term_condition_error"></div> -->
+                      </div>
+                      <div class="checkBox">
+                        <input class="term citizen_policy" id="citizenPolicy" name="citizen_policy" type="checkbox" value="yes" />
+                        <label class="chk-agree" for="citizenPolicy"> <span></span>금지 국가의 거주자 또는 시민권자가 아닙니다. </label>
+                      </div>
+
+                      <a class="log-button" href="#none">입찰</a>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- <input class="coin_rate" name="coin_rate" type="hidden" value="" />
+                <input class="coin" name="coin" type="hidden" value="" />
+                <input class="ieo_coin" name="ieo_coin" type="hidden" value="OND" />
+                <input class="ieo_coin" name="ieo_coin_id" type="hidden" value="12" /> -->
+
+                <div id="bid-history2" class="info2 ieo-tab-container">
+                  <div class="ieo-top">
+                    <ul class="top-type1">
+                      <li>평균단가</li>
+                      <li>평가손익</li>
+                      <li>수익률</li>
+                    </ul>
+                    <ul class="top-type2">
+                      <li>50.0</li>
+                      <li class="red">761,400원</li>
+                      <li class="red">940%</li>
+                    </ul>
+                  </div>
+
+                  <table>
+                    <caption></caption>
+                    <colgroup>
+                      <col width="" />
+                      <col width="" />
+                      <col width="" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>총보유수량</th>
+                        <th>입찰평균가</th>
+                        <th>총입찰금액</th>
+                      </tr>
+                    </thead>
+                    <tbody class="space">
+                      <tr>
+                        <td class="first">50.00</td>
+                        <td>61,400원</td>
+                        <td>761,400원</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <p class="txt">공모를 통해 입찰에 참여한 내용에 대한 평단가와 평가손익입니다. 거래 가능한 20% 언락 물량 및 락업 물량을 포함한 100% 물량에 대한 반영이며, 실제 매수매도를 통한 거래 내역은 이곳에서 반영되지 않습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ieo-list2" class="ieo-container">
+            <div class="ieo-contents">
+              <div class="left">
+                <div class="ieo-con1">
+                  <ul>
+                    <li>
+                      <div class="circle">01</div>
+                      <span>준비기간</span>
+                    </li>
+                    <li>
+                      <div class="circle">02</div>
+                      <span>토큰 세일기간</span>
+                    </li>
+                    <li>
+                      <div class="circle">03</div>
+                      <span>KRW 마켓 상장</span>
+                    </li>
+                    <li style="padding-right: 0">
+                      <div class="circle">04</div>
+                      <span>배분종료</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ieo-con2">
+                  <h2>주요특징</h2>
+                  <dl class="channel">
+                    <dt>소셜채널</dt>
+                    <dd>
+                      <a href="#none" target="_blank">
+                        <img src="images/intsa_45.png" alt="" />
+                      </a>
+                      <a href="#none" target="_blank">
+                        <img src="images/tele_45.png" alt="" />
+                      </a>
+                      <a href="#none" target="_blank">
+                        <img src="images/twiter_45.png" alt="" />
+                      </a>
+                    </dd>
+                  </dl>
+                  <dl class="meaning">
+                    <dt>EVE 토큰 정의</dt>
+                    <dd class="ieo-detail">- 영상 크리에이터, 작가, 광고 스폰서 등을 글로벌 시청자와 연결하는 플랫폼 서비스를 제공</dd>
+                  </dl>
+                  <dl class="economy">
+                    <dt>EVE 토큰 이코노미</dt>
+                    <dd class="ieo-detail">
+                      <img src="images/dor_token_conomy.png" alt="이코노미이미지" />
+                    </dd>
+                  </dl>
+                  <dl class="matrix">
+                    <dt>EVE 토큰 매트릭스</dt>
+                    <dd class="ieo-detail matrix"><img src="images/dor_token_matrix.png" alt="매트릭스이미지" /></dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="right fix-menu">
+                <div class="fix-con1">
+                  <h3>공모 정보</h3>
+                  <ul>
+                    <li class="">
+                      <p class="fl">총 판매수</p>
+                      <span class="fr"> <em>20,000</em>개</span>
+                    </li>
+                    <li class="">
+                      <p class="fl">판매 시간</p>
+                      <span class="fr"> <em>17:00 ~ 18:00</em>(1시간)</span>
+                    </li>
+                    <li class="">
+                      <p class="fl">거래 시간</p>
+                      <span class="fr"> <em>18:30 ~ 16:30</em>(22시간)</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fix-con1">
+                  <ul>
+                    <li class="">
+                      <p class="fl">가격 상승률</p>
+                      <span class="fr red"><em>1020</em>%</span>
+                    </li>
+                    <li class="">
+                      <p class="fl">공모 진행률</p>
+                      <span class="fr"><em>70%</em></span>
+                    </li>
+                  </ul>
+                </div>
+                <p class="fix-con3">
+                  해당 코인에 대한 정보는 이해를 돕기 위해서 제공하는 것으로, 투자 권유를 목적으로 하지 않습니다.
+                  <br />
+                  제공되는 정보는 오류 또는 지연이 발생할 수 있으며, 본투빗은 제공된 정보에 의한 투자결과에 대해 법적인 책임을 지지 않습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="inner">
+        <div class="clear">
+          <div class="footer_top">
+            <ul>
+              <li><a href="">회사소개</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">이용약관</a></li>
+              <li><a href="">개인 정보 보호 정책</a></li>
+              <li><a href="">거래 및 입출금 이용안내</a></li>
+            </ul>
+          </div>
+          <div class="footer_btm">
+            <div class="fl">
+              <ul>
+                <li>주식회사 로아프롭테크</li>
+                <li>서울특별시 서초구 사임당로 174,701호</li>
+              </ul>
+              <ul>
+                <li>사업자등록번호 477-81-01663</li>
+                <li>법인등록번호 110111-7239753</li>
+              </ul>
+            </div>
+            <div class="fr">
+              <p>본투빗 고객센터 10:00 ~ 18:00 (주말 및 공휴일 제외)</p>
+              <p>*고객응대는 온라인으로만 진행하며, 본사 방문 상담은 진행하지 않습니다.</p>
+            </div>
+          </div>
+          <p class="copy">©2020 BORNTOBIT. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+  /* s:sandoll */
+  @font-face {
+     font-family: 'AppleSDGothicNeoB00';
+     font-style: normal;
+     src: url('../fonts/SDGothic/AppleSDGothicNeoB.woff') format('woff'),
+     url('../fonts/SDGothic/AppleSDGothicNeoB.ttf') format('truetype');
+  }
+  @font-face {
+     font-family: 'AppleSDGothicNeoEB00';
+     font-style: normal;
+     src: url('../fonts/SDGothic/AppleSDGothicNeoEB.woff') format('woff'),
+     url('../fonts/SDGothic/AppleSDGothicNeoEB.ttf') format('truetype');
+  }
+  @font-face {
+     font-family: 'AppleSDGothicNeoH00';
+     font-style: normal;
+     src: url('../fonts/SDGothic/AppleSDGothicNeoH.woff') format('woff'),
+     url('../fonts/SDGothic/AppleSDGothicNeoH.ttf') format('truetype');
+  }
+  @font-face {
+     font-family: 'AppleSDGothicNeoL00';
+     font-style: normal;
+     src: url('../fonts/SDGothic/AppleSDGothicNeoL.woff') format('woff'),
+     url('../fonts/SDGothic/AppleSDGothicNeoL.ttf') format('truetype');
+  }
+  @font-face {
+     font-family: 'AppleSDGothicNeoM00';
+     font-style: normal;
+     src: url('../fonts/SDGothic/AppleSDGothicNeoM.woff') format('woff'),
+     url('../fonts/SDGothic/AppleSDGothicNeoM.ttf') format('truetype');
+  }
+  @font-face {
+     font-family: 'AppleSDGothicNeoR00';
+     font-style: normal;
+     src: url('../fonts/SDGothic/AppleSDGothicNeoR.woff') format('woff'),
+     url('../fonts/SDGothic/AppleSDGothicNeoR.ttf') format('truetype');
+  }
+  @font-face {
+     font-family: 'AppleSDGothicNeoSB00';
+     font-style: normal;
+     src: url('../fonts/SDGothic/AppleSDGothicNeoSB.woff') format('woff'),
+     url('../fonts/SDGothic/AppleSDGothicNeoSB.ttf') format('truetype');
+  }
+  @font-face {
+     font-family: 'AppleSDGothicNeoT00';
+     font-style: normal;
+     src: url('../fonts/SDGothic/AppleSDGothicNeoT.woff') format('woff'),
+     url('../fonts/SDGothic/AppleSDGothicNeoT.ttf') format('truetype');
+  }
+  @font-face {
+     font-family: 'AppleSDGothicNeoUL00';
+     font-style: normal;
+     src: url('../fonts/SDGothic/AppleSDGothicNeoUL.woff') format('woff'),
+     url('../fonts/SDGothic/AppleSDGothicNeoUL.ttf') format('truetype');
+  }
+
+  /* e:sandoll */
+ 
+ 

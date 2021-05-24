@@ -1,0 +1,63 @@
+.container-top {
+  margin: 71px 0 0px !important;
+}
+.container-inner {
+  margin: 0 !important;
+}
+.container-inner > p {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 0 17px;
+}
+.container-inner .info-container {
+  padding: 27px 0 0;
+}
+.container-inner .info-container > p,
+.container-inner .contents-container > p{
+  padding:  0 0 10px;
+}
+.container-inner .contents-container {
+  padding: 38px 0 0;
+}
+.container-inner dl {
+  display: block;
+  padding: 0 0 8px;
+  font-size: 0;
+}
+.container-inner dl:last-child {
+  padding: 0;
+}
+.container-inner dl > * {
+  display: inline-block;
+  font-size: 13px;
+  color: #777777;
+  vertical-align: top;
+}
+.container-inner dl dt {
+  width: 65px;
+}
+.container-inner dl dd {
+}
+.container-inner dl dd a {
+  font-size: 13px;
+  color: #578ef1;
+  text-decoration: underline;
+}
+.container-inner dl dd form textarea {
+  padding: 7px 12px;
+  min-height: 267px;
+  width: 100%;
+  font-size: 13px;
+  border: 1px solid #ebebeb;
+}
+.container-inner dl dd form .info-below > * {
+  padding: 2px 0 0;
+  font-size: 13px;
+  color: #777;
+}
+.container-inner dl dd form .info-below span {
+  float: left;
+}
+.container-inner dl dd form .info-below em {
+  float: right;
+}

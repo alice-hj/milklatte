@@ -1,0 +1,315 @@
+/**********nav************ */
+nav {
+  float: left;
+  width: 200px;
+  height: 100%;
+  background: #eef1f6;
+  position: fixed;
+  top: 70px;
+}
+.container {
+  width: 1320px;
+  margin-left: 200px;
+  padding: 0 0 150px 0;
+}
+.container-inner {
+  margin: 100px 0 0;
+  padding: 0 0 0 40px;
+}
+nav > ul {
+  margin: 37px 0 0 40px;
+}
+nav > ul > li {
+  padding-top: 28px;
+}
+nav > ul > li:first-child {
+  padding: 0;
+}
+nav > ul > li button {
+  font-size: 16px;
+}
+nav > ul > li:hover button,
+nav > ul > li.active button {
+  color: #ffb900;
+}
+nav > ul > li > ul li {
+  padding: 13px 0 0;
+}
+nav > ul > li > ul li a {
+  font-size: 15px;
+}
+nav > ul > li > ul li.active a,
+nav > ul > li > ul li:hover a {
+  color: #ffb900;
+}
+/******************************************임시 */
+/* nav > ul > li > ul {
+  display: none;
+}
+nav > ul > li:first-child ul {
+  display: block;
+} */
+/********************************************* */
+.search-container .select select {
+  width: 152px;
+  height: 36px;
+  margin-right: 10px;
+  padding: 0 10px;
+  color: #777;
+  font-size: 14px;
+}
+.search-container input::placeholder,
+.search-container input[type='text'] {
+  font-size: 14px;
+  color: #777777;
+}
+#search {
+  width: 100%;
+  height: 36px;
+  padding: 0 10px;
+}
+.search-container > div {
+  display: inline-block;
+  width: 87.1%;
+}
+.search-container input[type='button'] {
+  display: none;
+}
+.check-container {
+  position: relative;
+  margin: 20px 0 0;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+}
+.check-container > div {
+  margin: 0 0 20px;
+  font-size: 0;
+}
+.check-container .date-type {
+  margin: 0;
+}
+.check-container > div > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.check-container .title {
+  width: 55px;
+  font-size: 13px;
+  color: #777777;
+}
+.status-type label {
+  position: relative;
+  padding-left: 20px;
+  font-size: 13px;
+  color: #777;
+  margin-right: 14px;
+}
+.status-type label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #777777;
+}
+.status-type label input:checked ~ .checkmark {
+  background: #777777;
+}
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.status-type label input:checked ~ .checkmark:after {
+  display: block;
+}
+.status-type label .checkmark:after {
+  left: 3px;
+  top: 1px;
+  width: 5px;
+  height: 7px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+.date-type {
+  font-size: 0;
+}
+.date-type > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* store-info에추가 */
+.other-type > * {
+}
+.other-type .report-type select {
+  width: 150px;
+  padding: 0 10px;
+}
+.calendar form {
+  display: inline-block;
+}
+.ym select {
+  width: 90px;
+  padding: 0 10px;
+  margin-right: 5px;
+}
+.calendar {
+  margin: 0 0 0 62px;
+}
+.calendar input[type='date'] {
+  width: 138px;
+  height: 30px;
+  background: #f7f7f7;
+  border: 1px solid #d7d7d7;
+  padding: 0 10px;
+  color: #777777;
+  transition: all 0.1s;
+}
+.calendar input[type='date']:hover,
+.calendar input[type='date']:focus {
+  background: #dbffec;
+  border: 1px solid #00ca62;
+  color: #00ca62;
+}
+.calendar small {
+  padding: 0 10px;
+  color: #777;
+  font-size: 14px;
+}
+.filterbtn {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+.filterbtn button {
+  margin: 0 0 0 16px;
+  width: 165px;
+  height: 40px;
+  background: #707070;
+  color: #fff;
+  font-family: 'Noto Sans KR';
+  font-size: 14px;
+  font-weight: 500;
+}
+.grnback {
+  background: #00ca62 !important  ;
+}
+.total {
+  padding: 47px 0 6px;
+}
+.total p {
+  float: left;
+  line-height: 30px;
+  font-size: 15px;
+}
+.total span {
+  float: right;
+  font-size: 13px;
+  color: #777;
+}
+.total span button {
+  margin-left: 10px;
+  width: 80px;
+  height: 30px;
+  background: #212121;
+  color: #fff;
+  font-size: 13px;
+}
+table thead tr {
+  height: 40px;
+  line-height: 40px;
+  background: #eef1f6;
+}
+table thead tr th {
+  /* width: calc(100% / 7); */
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+table tbody tr td {
+  /* width: calc(100% / 7); */
+  height: 50px;
+  line-height: 50px;
+  font-size: 13px;
+  text-align: center;
+  color: #555;
+  border-bottom: 1px solid #d7d7d7;
+}
+table tbody tr td a {
+  color: #578ef1;
+  text-decoration: underline;
+}
+
+table tbody tr td button {
+  width: 70px;
+  height: 30px;
+  background: #777;
+  color: #fff;
+}
+table tbody tr td button.memobtn {
+  width: 50px;
+}
+.page-btn {
+  padding: 50px 0 0;
+  text-align: center;
+}
+.page-btn a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  border: 2px solid #ebebeb;
+  text-align: center;
+}
+.page-btn a:hover,
+.page-btn a.active {
+  background: #ebebeb;
+}
+/* .page-btn a.double-arrow {
+  font-size: 20px;
+} */
+.page-btn .arrow-lf {
+  margin: 0 30px 0 0;
+}
+.page-btn .arrow-lf span {
+  display: inline-block;
+  background: url(../img/arrow-lf.png) no-repeat 50% 50%;
+  vertical-align: middle;
+  width: 11px;
+  height: 20px;
+}
+.page-btn a.arrow-rg {
+  margin: 0 0 0 30px;
+}
+.page-btn a.arrow-rg span {
+  display: inline-block;
+  background: url(../img/arrow-rg.png) no-repeat 50% 50%;
+  vertical-align: middle;
+  width: 11px;
+  height: 20px;
+}
+.double-arrow span {
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  vertical-align: middle;
+}
+.double-arrow:first-child span {
+  background: url(../img/double-arrow-lf.png) no-repeat 50% 50%;
+}
+.double-arrow:last-child span {
+  background: url(../img/double-arrow-rg.png) no-repeat 50% 50%;
+}

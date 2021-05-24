@@ -1,0 +1,38 @@
+.inner {
+  position: relative;
+}
+.popup-btn {
+  margin: 40px auto;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  width: 400px;
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 20px solid #ffb200;
+  font-size: 0;
+}
+.popup-btn p {
+  padding: 45px 0 34px;
+  text-align: center;
+  color: #212121;
+  font-size: 18px;
+  line-height: 1;
+}
+.popup-btn button {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #ffb200;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.yesORno button {
+  width: 50%;
+}
+.yesORno button.no {
+  background: #cccccc;
+}

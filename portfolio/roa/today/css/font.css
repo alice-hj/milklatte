@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/************* Common *************/
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url('../font/NanumBarunGothic/NanumBarunGothic.ttf') format('truetype');
+}

@@ -1,0 +1,88 @@
+.detail-container {
+  display: flex;
+  padding: 45px 0 0;
+}
+.detail-container > div {
+  flex: 1;
+  margin-right: 50px;
+}
+.visual-container {
+  width: 430px;
+}
+.score-container {
+  display: flex;
+}
+.score-container > div {
+  flex: 1;
+}
+.score-container > div p {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #212121;
+}
+.score-container > div span {
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+  color: #212121;
+  text-align: center;
+}
+.score-container > div span strong {
+  color: #ffb900;
+  font-size: 49px;
+  padding: 0 4px;
+}
+.visual-container .graph {
+  margin: 13px 0 0;
+  width: 431px;
+  height: 257px;
+  border: 1px solid #ebebeb;
+  background: url(../img/graph.png) no-repeat center;
+}
+.product-list {
+  display: block;
+  padding: 10px 0 15px;
+  font-size: 0;
+}
+.product-list li {
+  display: inline-block;
+  width: 103px;
+  height: 103px;
+  border: 1px solid #ebebeb;
+  margin: 0 6px 5px 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+  text-align: center;
+}
+.product-list li:nth-child(4),
+.product-list li:nth-child(8) {
+  margin: 0 0 5px 0;
+}
+.product-list li p {
+  padding: 41px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.visual-container textarea {
+  width: 431px;
+  height: 122px;
+  padding: 17px 20px;
+  font-size: 16px;
+  color: #212121;
+  font-weight: bold;
+  border: 1px solid #ebebeb;
+}
+.like-container {
+  width: 333px;
+}
+.like-container > p {
+  padding: 0 0 6px;
+  font-size: 15px;
+  color: #212121;
+}
+.like-container table thead tr {
+  height: 40px;
+  background: #eef1f6;
+}

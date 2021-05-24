@@ -1,0 +1,44 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.grn {
+  color: #00ca62;
+}
+/**********header************ */
+header {
+  height: 70px;
+  border-bottom: 1px solid #ebebeb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 2;
+}
+h1 {
+  width: 200px;
+  height: 70px;
+  margin: 0 auto;
+  background: url(../img/logo.png) no-repeat center;
+}
+.utill {
+  padding-right: 80px;
+}
+.utill ul li {
+  display: inline-block;
+  line-height: 70px;
+  font-size: 16px;
+  padding-left: 23px;
+}
+.utill ul li.level {
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+.utill ul li.level,
+.utill ul li.name {
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}

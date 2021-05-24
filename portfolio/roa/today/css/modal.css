@@ -1,0 +1,136 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+.error {
+  display: none;
+}
+.red {
+  color: #ff0000;
+}
+.errorft {
+  display: inline-block;
+  font-size: 12px;
+  /* padding: 2px 0 0 101px; */
+  padding: 2px 0 0;
+}
+.delect-btn {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 23px;
+  right: 30px;
+  background: url(../img/icon_delect_blk.png) no-repeat;
+}
+/* 비밀번호 변경s */
+.modal-container {
+  margin: auto;
+  width: 420px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-container .modal-title {
+  height: 60px;
+  line-height: 60px;
+  background: #ebebeb;
+  font-size: 18px;
+  text-align: center;
+}
+.modal-container button[type='submit'] {
+  width: 100%;
+  height: 42px;
+  background: #00ca62;
+  color: #fff;
+  font-size: 14px;
+}
+.modal-container form {
+  padding: 20px;
+  background: #fff;
+}
+.modal-container form div:first-child {
+  margin-bottom: 10px;
+}
+.modal-container form label {
+  display: inline-block;
+  width: 98px;
+  font-size: 12px;
+  color: #777777;
+}
+.modal-container form input[type='password'] {
+  width: 277px;
+  padding: 0 10px;
+  border: 1px solid #d7d7d7;
+  height: 40px;
+  font-size: 20px;
+  letter-spacing: -5px;
+}
+/* 비밀번호 변경e */
+/* 메모 s */
+textarea {
+  resize: none;
+  width: 380px;
+  height: 100px;
+  border: 1px solid #d7d7d7;
+  padding: 17px 20px 0;
+  font-size: 14px;
+  color: #777;
+}
+/* 메모 e */
+/* 메뉴(상품) 추가 s */
+.modal-container form.menuadd {
+  padding: 30px 35px 50px;
+}
+button.product-img {
+  margin: 0 auto 7px;
+  display: block;
+  width: 110px;
+  height: 110px;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: url(../img/img_none.png) no-repeat center;
+}
+.img-refer {
+  padding-bottom: 18px;
+  font-size: 12px;
+  color: #777777;
+  text-align: center;
+}
+.modal-container form.menuadd div {
+  padding-bottom: 17px;
+}
+.modal-container form.menuadd label {
+  font-size: 15px;
+  padding-bottom: 6px;
+  color: #212121;
+}
+.modal-container form.menuadd input {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #d7d7d7;
+}
+.modal-container form.menuadd input::placeholder {
+  color: #777777;
+  font-size: 13px;
+}
+.modal-container form.menuadd select {
+  width: 100%;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #d7d7d7;
+}
+
+/* 메뉴(상품) 추가 e */ ;
